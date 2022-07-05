@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # HCYFrameWork
 
 [![CI Status](https://img.shields.io/travis/tanxianj/HCYFrameWork.svg?style=flat)](https://travis-ci.org/tanxianj/HCYFrameWork)
@@ -15,11 +14,18 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Installation
 
 HCYFrameWork is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+it, simply add the following line to your Podfile
 
-```ruby
-pod 'HCYFrameWork'
-```
+## 格式
+        ```
+        source 'https://github.com/tanxianj/HCYFrameWork.git'
+        source 'https://github.com/CocoaPods/Specs.git'
+            platform:ios,'10.0'
+            target 'ProjectName' do
+            inhibit_all_warnings! #隐藏所有pod警告
+            pod 'HCYFrameWork', '~> 0.1.0'
+            end
+        ```
 
 ## Author
 
@@ -28,6 +34,3 @@ tanxianj, xianjing.tan@techstudio.com.sg
 ## License
 
 HCYFrameWork is available under the MIT license. See the LICENSE file for more info.
-=======
-# HCYFrameWork
->>>>>>> 064f17a641c55e86722cead2fb0e29987d25a5da
