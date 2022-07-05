@@ -52,57 +52,8 @@ extension UIColor{
             return light
         }
     }
-    public class func appBGColor()->UIColor{
-        
-        return .white
-    }
     public class func APPColor_000000_1()->UIColor {
         return backCurrentMode(.colorWithHexString("000000"), .colorWithHexString("000000"))
-    }
-    public class func AppColor_019AE8() -> UIColor {
-        backCurrentMode(.colorWithHexString("019AE8"), .colorWithHexString("019AE8"))
-    }
-    public class func AppColor_222222() -> UIColor {
-        backCurrentMode(.colorWithHexString("222222"), .colorWithHexString("222222"))
-    }
-    public class func AppColor_F2F2F2() -> UIColor {
-        backCurrentMode(.colorWithHexString("F2F2F2"), .colorWithHexString("F2F2F2"))
-    }
-    public class func AppColor_070707() -> UIColor {
-        backCurrentMode(.colorWithHexString("070707"), .colorWithHexString("070707"))
-    }
-    public class func AppColor_F4F4F4() -> UIColor {
-        backCurrentMode(.colorWithHexString("F4F4F4"), .colorWithHexString("F4F4F4"))
-    }
-    
-    public class func AppColor_BEBEBE() -> UIColor {
-        backCurrentMode(.colorWithHexString("BEBEBE"), .colorWithHexString("BEBEBE"))
-    }
-    public class func AppColor_00FF92() -> UIColor {
-        backCurrentMode(.colorWithHexString("00FF92"), .colorWithHexString("00FF92"))
-    }
-    
-    public class func AppColor_FC4E82() -> UIColor {
-        backCurrentMode(.colorWithHexString("FC4E82"), .colorWithHexString("FC4E82"))
-    }
-    public class func AppColor_009A4C() -> UIColor {
-        backCurrentMode(.colorWithHexString("009A4C"), .colorWithHexString("009A4C"))
-    }
-    public class func AppColor_01D97D() -> UIColor {
-        backCurrentMode(.colorWithHexString("01D97D"), .colorWithHexString("01D97D"))
-    }
-    
-    
-    /// 渐变按钮左侧
-    /// - Returns: -
-    public class func APPColor_btnleft_FA3179_1()->UIColor {
-        return backCurrentMode(.colorWithHexString("FA3179"), .colorWithHexString("FA3179"))
-    }
-    
-    /// /// 渐变按钮右侧
-    /// - Returns: -
-    public class func APPColor_btnright_FB5E4A_1()->UIColor {
-        return backCurrentMode(.colorWithHexString("FB5E4A"), .colorWithHexString("FB5E4A"))
     }
     
     public func alpha(_ alpha:CGFloat)->UIColor{

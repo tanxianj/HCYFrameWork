@@ -40,7 +40,7 @@
 		1BF0AAC50F1303846215696D67B9544B /* Pods-HCYFrameWork_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HCYFrameWork_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2D6C5BC8444FAA58BB18C75529FFA8BA /* HCYFrameWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HCYFrameWork.release.xcconfig; sourceTree = "<group>"; };
 		335BE274C22A3DD10B47E62D44FE2C0B /* Pods-HCYFrameWork_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HCYFrameWork_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		3EE0BBA931E0CBBE33A44AA19717856E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3EE0BBA931E0CBBE33A44AA19717856E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		445A66A59FFBFD358C274ABED0CB9EC5 /* Pods-HCYFrameWork_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HCYFrameWork_Example.modulemap"; sourceTree = "<group>"; };
 		634320EE9DE67E79386752520011805B /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "HCYFrameWork/Classes/UIColor+Extension.swift"; sourceTree = "<group>"; };
 		63C09F7351CFF154ABD3E1FE7C9C6D0A /* APPScale+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "APPScale+Extension.swift"; path = "HCYFrameWork/Classes/APPScale+Extension.swift"; sourceTree = "<group>"; };
@@ -49,14 +49,14 @@
 		89B24673715A9C67E5BA8AA1253A993F /* Pods-HCYFrameWork_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HCYFrameWork_Example-Info.plist"; sourceTree = "<group>"; };
 		8BEB6648C2310A2E978B7C0206C84E07 /* HCYFrameWork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HCYFrameWork-umbrella.h"; sourceTree = "<group>"; };
 		9133B986BA19095FE335954139BD7B3E /* Pods-HCYFrameWork_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HCYFrameWork_Example.release.xcconfig"; sourceTree = "<group>"; };
-		98FEDEAAC0E518CB42043A210EC7ACC2 /* HCYFrameWork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HCYFrameWork.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98FEDEAAC0E518CB42043A210EC7ACC2 /* HCYFrameWork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HCYFrameWork.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A43BC607A42915A53AF54A2C5C2547E9 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extension.swift"; path = "HCYFrameWork/Classes/UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		A45FCBDC188670565FAFF86B7A88550B /* HCYFrameWork */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HCYFrameWork; path = HCYFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE08570C442BFC81F00A7BFCABEA45F8 /* Pods-HCYFrameWork_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HCYFrameWork_Example-dummy.m"; sourceTree = "<group>"; };
 		BC5294656D9C756154A83186E14CDE97 /* Pods-HCYFrameWork_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HCYFrameWork_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C09C90EAE78893B03488823151FC1F52 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "HCYFrameWork/Classes/UIDevice+Extension.swift"; sourceTree = "<group>"; };
-		C0ADDDBE7FE33A87DFD41A597822D798 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C0ADDDBE7FE33A87DFD41A597822D798 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C95A67BB3C343BE1976592F0DB963116 /* HCYFrameWork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HCYFrameWork-prefix.pch"; sourceTree = "<group>"; };
 		D0F4A7DEA9FE69E27B58DEB32D11D1C4 /* UIImage+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "HCYFrameWork/Classes/UIImage+Extension.swift"; sourceTree = "<group>"; };
 		D164D193ADC5004791AE1ACAFBB6AF0A /* HCYFrameWork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HCYFrameWork.modulemap; sourceTree = "<group>"; };
@@ -491,8 +491,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
