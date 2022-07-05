@@ -1,0 +1,16 @@
+PODS:
+  - HCYFrameWork (0.1.0)
+
+DEPENDENCIES:
+  - HCYFrameWork (from `../`)
+
+EXTERNAL SOURCES:
+  HCYFrameWork:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HCYFrameWork: f7125098f8dea122f5903f616473d0be0e7b09e7
+
+PODFILE CHECKSUM: 0111010147bde3483b8a90034e04cb959595dc92
+
+COCOAPODS: 1.11.2
