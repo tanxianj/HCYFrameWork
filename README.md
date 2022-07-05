@@ -15,15 +15,14 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 HCYFrameWork is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile
-
 ## 格式
-  source 'https://github.com/tanxianj/HCYFrameWork.git'
-  source 'https://github.com/CocoaPods/Specs.git'
-    platform:ios,'10.0'
-    target 'ProjectName' do
-      inhibit_all_warnings! #隐藏所有pod警告
-    pod 'HCYFrameWork', '~> 0.1.0'
-    end
+        source 'https://github.com/tanxianj/HCYFrameWork.git'
+        source 'https://github.com/CocoaPods/Specs.git'
+            platform:ios,'10.0'
+            target 'ProjectName' do
+            inhibit_all_warnings! #隐藏所有pod警告
+            pod 'HCYFrameWork', '~> 0.1.0'
+            end
 ## Author
 
 tanxianj, xianjing.tan@techstudio.com.sg
