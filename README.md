@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HCYFrameWork
 
 [![CI Status](https://img.shields.io/travis/tanxianj/HCYFrameWork.svg?style=flat)](https://travis-ci.org/tanxianj/HCYFrameWork)
@@ -27,3 +28,6 @@ tanxianj, xianjing.tan@techstudio.com.sg
 ## License
 
 HCYFrameWork is available under the MIT license. See the LICENSE file for more info.
+=======
+# HCYFrameWork
+>>>>>>> 064f17a641c55e86722cead2fb0e29987d25a5da

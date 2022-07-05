@@ -19,7 +19,7 @@ extension UIView{
             objc_setAssociatedObject(self, &VIEW_ACTION_KEY, newValue, .OBJC_ASSOCIATION_COPY)
         }
     }
-    func addEventHandler(action:@escaping()->()) {
+   public func addEventHandler(action:@escaping()->()) {
         UIViewController.getCurrentVC().view.endEditing(true)
         self.isUserInteractionEnabled = true
         self.vaiewAction = action

@@ -13,8 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        DebugLog("这是测试DeBUGLog")
-        DebugLog("w is \(view.mj_w) h is \(view.mj_h)")
+        view.addEventHandler {
+            DebugLog("视图点击事件")
+        }
     }
 
     override func didReceiveMemoryWarning() {
