@@ -7,24 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		042219113A7C1E961B965C447450DA5D /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F4A7DEA9FE69E27B58DEB32D11D1C4 /* UIImage+Extension.swift */; };
-		209B2796EA0EB0911F0E04C4665FC41A /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C90EAE78893B03488823151FC1F52 /* UIDevice+Extension.swift */; };
-		219D846B593AD021CF344FB4CB7F8C1E /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A2AE6BA9F7D3C8D03C9E110E8E8F99 /* Common.swift */; };
-		3DCD517779D181FDCB8C871FC8FE7E74 /* APPScale+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C09F7351CFF154ABD3E1FE7C9C6D0A /* APPScale+Extension.swift */; };
+		1DBDE2014E47C2BA3B9629D93EBE06CE /* HCYFrameWork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F54E2C11C41DCA9D9CBB20C1B9878AEE /* HCYFrameWork-dummy.m */; };
+		2CD3A18DC79EBA095E5DB6B0D3C31A12 /* SHFullscreenPopGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F2717B1E7F52C0C12F29FD82859AB7 /* SHFullscreenPopGesture.swift */; };
+		3DB2D0B9CBDB11874041A66898CAA7BA /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF2CF33ADF22CF025FBB4DD3DA9B393 /* UIColor+Extension.swift */; };
 		4B9D21318DC8C08C267F6DA31FB94B49 /* Pods-HCYFrameWork_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEA72D9D794C83AEC133BE2CC50A0B74 /* Pods-HCYFrameWork_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F7D7904B720931CFAF890A0FE13EB41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		54F561129F7FD2D3383533D5B1FC9BB6 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634320EE9DE67E79386752520011805B /* UIColor+Extension.swift */; };
-		575AF1D7C2029D56E6DC3A928994C14E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43BC607A42915A53AF54A2C5C2547E9 /* UIViewController+Extension.swift */; };
-		85A76DC4CC336E347937F6632012DBBB /* HCYFrameWork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEB6648C2310A2E978B7C0206C84E07 /* HCYFrameWork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E41E1AF310FAB557E135E20F32D2DF3 /* APPScale+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE88019B57581B7CEAB51844D53D42 /* APPScale+Extension.swift */; };
+		5BA988906C97841778DD8684D0BBBA06 /* VIewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60121561B5B316A6132C4B091CBDB742 /* VIewProtocol.swift */; };
+		5C0ED1027D6DD8B1C28927C7B0CA276C /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCE7C9636ABB72FBCAD54BFC437DF6B /* UIVIew+Extension.swift */; };
+		6DDAD829C43DB5737D938ABA21BDDBE5 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8B6713A605C6B6963601F491981807 /* Button.swift */; };
+		736B7D292EAE3A95A72BB4884482FDD6 /* BaseTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB768925B6CCBB1EB16A8DE0420A144C /* BaseTabbarViewController.swift */; };
+		75AEA0217371B918D1A9B62650413FE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		83B5DE32B5727553597ABE47CCB1C7BA /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7981DDE6218D6643C08FD7AEF109E9 /* BaseNavigationController.swift */; };
+		8AA6108C5697203F1820FF35CE4F46D7 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32165ADC9F15BA1027A620F754D2A6C /* UIDevice+Extension.swift */; };
+		999CAF44A255123ADF79671D0E1CB20D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FECA444FD096F487F50B6FB9BF110D /* BaseViewController.swift */; };
+		9FC67CEABF7DB98637046E18D9069BF1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B828BB07BF23CEEAF48958797E1F6D7 /* Common.swift */; };
 		B7CAE067ADF8378D67E76CCEFE18ED00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		BA13C17EFA3E945A5CA22743CAD51D35 /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9133E51C75C1D0BDC5130AF797686FF /* UIVIew+Extension.swift */; };
+		BAF58D9BDE2384695E44EE367565CAF2 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63445EB555DD29E1C2A5DEFD41FB2C6 /* UIImage+Extension.swift */; };
+		D01B47F9C60D23985F806962D9848E69 /* HCYFrameWork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 258C9B0FF3603185A11331026EAA1B2C /* HCYFrameWork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D32138E887D90E7DE6B9A71A922237C6 /* Pods-HCYFrameWork_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE08570C442BFC81F00A7BFCABEA45F8 /* Pods-HCYFrameWork_Example-dummy.m */; };
-		DB03D21885A2334746A71ED75E932CBE /* HCYFrameWork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD215D9461C03566FE8B743822708106 /* HCYFrameWork-dummy.m */; };
-		F853001B17BECE75C0B39CF238D47800 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B54B6BE49AE4271FD906CCCF2E21C88 /* Button.swift */; };
+		D68B8505EA6A466CE338B5B8DE4B8C25 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E59A5156BFFA131A0CDF8764FB5C39 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9A0A230271D2E0AC056E4A883A16D110 /* PBXContainerItemProxy */ = {
+		DD89224FEF043E07C2268B9A6E2696CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -34,36 +39,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B54B6BE49AE4271FD906CCCF2E21C88 /* Button.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Button.swift; path = HCYFrameWork/Classes/Button.swift; sourceTree = "<group>"; };
-		19A2AE6BA9F7D3C8D03C9E110E8E8F99 /* Common.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Common.swift; path = HCYFrameWork/Classes/Common.swift; sourceTree = "<group>"; };
-		1A03CADAC8F20B6E33E073780905D800 /* HCYFrameWork-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HCYFrameWork-Info.plist"; sourceTree = "<group>"; };
+		0CCE7C9636ABB72FBCAD54BFC437DF6B /* UIVIew+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIVIew+Extension.swift"; path = "HCYFrameWork/Classes/UIVIew+Extension.swift"; sourceTree = "<group>"; };
+		0CF2CF33ADF22CF025FBB4DD3DA9B393 /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "HCYFrameWork/Classes/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		18BE88019B57581B7CEAB51844D53D42 /* APPScale+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "APPScale+Extension.swift"; path = "HCYFrameWork/Classes/APPScale+Extension.swift"; sourceTree = "<group>"; };
 		1BF0AAC50F1303846215696D67B9544B /* Pods-HCYFrameWork_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HCYFrameWork_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2D6C5BC8444FAA58BB18C75529FFA8BA /* HCYFrameWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HCYFrameWork.release.xcconfig; sourceTree = "<group>"; };
+		258C9B0FF3603185A11331026EAA1B2C /* HCYFrameWork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HCYFrameWork-umbrella.h"; sourceTree = "<group>"; };
+		27417FE9293B36CF8D0DFAB3730A62CD /* HCYFrameWork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HCYFrameWork.modulemap; sourceTree = "<group>"; };
+		2F713FDD4C898B0DD6B900167C46EDE0 /* HCYFrameWork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HCYFrameWork.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		335BE274C22A3DD10B47E62D44FE2C0B /* Pods-HCYFrameWork_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HCYFrameWork_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		3EE0BBA931E0CBBE33A44AA19717856E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		33BE9ED9C1A029887ED9DC65184544EB /* HCYFrameWork-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HCYFrameWork-Info.plist"; sourceTree = "<group>"; };
+		3550ACAEB89755C1DFF935B5A27A4476 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3D8B6713A605C6B6963601F491981807 /* Button.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Button.swift; path = HCYFrameWork/Classes/Button.swift; sourceTree = "<group>"; };
 		445A66A59FFBFD358C274ABED0CB9EC5 /* Pods-HCYFrameWork_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HCYFrameWork_Example.modulemap"; sourceTree = "<group>"; };
-		634320EE9DE67E79386752520011805B /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "HCYFrameWork/Classes/UIColor+Extension.swift"; sourceTree = "<group>"; };
-		63C09F7351CFF154ABD3E1FE7C9C6D0A /* APPScale+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "APPScale+Extension.swift"; path = "HCYFrameWork/Classes/APPScale+Extension.swift"; sourceTree = "<group>"; };
+		46F2717B1E7F52C0C12F29FD82859AB7 /* SHFullscreenPopGesture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHFullscreenPopGesture.swift; path = HCYFrameWork/Classes/SHFullscreenPopGesture.swift; sourceTree = "<group>"; };
+		60121561B5B316A6132C4B091CBDB742 /* VIewProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VIewProtocol.swift; path = HCYFrameWork/Classes/VIewProtocol.swift; sourceTree = "<group>"; };
 		6EF33992D62C42CF609BE8530B3B14DB /* Pods-HCYFrameWork_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HCYFrameWork_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6FD34699D3ACA3E339BF052BDF4DE812 /* HCYFrameWork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HCYFrameWork-prefix.pch"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		87E59A5156BFFA131A0CDF8764FB5C39 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extension.swift"; path = "HCYFrameWork/Classes/UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		89B24673715A9C67E5BA8AA1253A993F /* Pods-HCYFrameWork_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HCYFrameWork_Example-Info.plist"; sourceTree = "<group>"; };
-		8BEB6648C2310A2E978B7C0206C84E07 /* HCYFrameWork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HCYFrameWork-umbrella.h"; sourceTree = "<group>"; };
+		8A40C67691C036B7E95DF91ECD67211D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		9133B986BA19095FE335954139BD7B3E /* Pods-HCYFrameWork_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HCYFrameWork_Example.release.xcconfig"; sourceTree = "<group>"; };
-		98FEDEAAC0E518CB42043A210EC7ACC2 /* HCYFrameWork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HCYFrameWork.podspec; sourceTree = "<group>"; tabWidth = 2; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A43BC607A42915A53AF54A2C5C2547E9 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extension.swift"; path = "HCYFrameWork/Classes/UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		9B828BB07BF23CEEAF48958797E1F6D7 /* Common.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Common.swift; path = HCYFrameWork/Classes/Common.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A45FCBDC188670565FAFF86B7A88550B /* HCYFrameWork */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HCYFrameWork; path = HCYFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A767480596FDA728ADCEDC5077339C0A /* HCYFrameWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HCYFrameWork.release.xcconfig; sourceTree = "<group>"; };
 		AE08570C442BFC81F00A7BFCABEA45F8 /* Pods-HCYFrameWork_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HCYFrameWork_Example-dummy.m"; sourceTree = "<group>"; };
+		BB768925B6CCBB1EB16A8DE0420A144C /* BaseTabbarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseTabbarViewController.swift; path = HCYFrameWork/Classes/BaseTabbarViewController.swift; sourceTree = "<group>"; };
 		BC5294656D9C756154A83186E14CDE97 /* Pods-HCYFrameWork_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HCYFrameWork_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C09C90EAE78893B03488823151FC1F52 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "HCYFrameWork/Classes/UIDevice+Extension.swift"; sourceTree = "<group>"; };
-		C0ADDDBE7FE33A87DFD41A597822D798 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C95A67BB3C343BE1976592F0DB963116 /* HCYFrameWork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HCYFrameWork-prefix.pch"; sourceTree = "<group>"; };
-		D0F4A7DEA9FE69E27B58DEB32D11D1C4 /* UIImage+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "HCYFrameWork/Classes/UIImage+Extension.swift"; sourceTree = "<group>"; };
-		D164D193ADC5004791AE1ACAFBB6AF0A /* HCYFrameWork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HCYFrameWork.modulemap; sourceTree = "<group>"; };
+		BC7981DDE6218D6643C08FD7AEF109E9 /* BaseNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseNavigationController.swift; path = HCYFrameWork/Classes/BaseNavigationController.swift; sourceTree = "<group>"; };
 		D8819B3A906E9227C68FEEA8AE1D5E40 /* Pods-HCYFrameWork_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HCYFrameWork_Example"; path = Pods_HCYFrameWork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9133E51C75C1D0BDC5130AF797686FF /* UIVIew+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIVIew+Extension.swift"; path = "HCYFrameWork/Classes/UIVIew+Extension.swift"; sourceTree = "<group>"; };
-		E79EC4BE6D16F48326CC7660E11E683B /* HCYFrameWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HCYFrameWork.debug.xcconfig; sourceTree = "<group>"; };
-		FD215D9461C03566FE8B743822708106 /* HCYFrameWork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HCYFrameWork-dummy.m"; sourceTree = "<group>"; };
+		D8980F2F0852B22BC160B3F00C7E4E39 /* HCYFrameWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HCYFrameWork.debug.xcconfig; sourceTree = "<group>"; };
+		E3FECA444FD096F487F50B6FB9BF110D /* BaseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = HCYFrameWork/Classes/BaseViewController.swift; sourceTree = "<group>"; };
+		E63445EB555DD29E1C2A5DEFD41FB2C6 /* UIImage+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "HCYFrameWork/Classes/UIImage+Extension.swift"; sourceTree = "<group>"; };
+		F32165ADC9F15BA1027A620F754D2A6C /* UIDevice+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "HCYFrameWork/Classes/UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		F54E2C11C41DCA9D9CBB20C1B9878AEE /* HCYFrameWork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HCYFrameWork-dummy.m"; sourceTree = "<group>"; };
 		FEA72D9D794C83AEC133BE2CC50A0B74 /* Pods-HCYFrameWork_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HCYFrameWork_Example-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,30 +86,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6EE7F8154634E9CB7CDC527F81BAC3C3 /* Frameworks */ = {
+		D39087C7843BDF2C3D7869DDE903B8B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F7D7904B720931CFAF890A0FE13EB41 /* Foundation.framework in Frameworks */,
+				75AEA0217371B918D1A9B62650413FE5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1678D8B1DA210A1A369BB25A2DE09C43 /* HCYFrameWork */ = {
+		1B71530D9316206DBCE554FADD5EAEE1 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				63C09F7351CFF154ABD3E1FE7C9C6D0A /* APPScale+Extension.swift */,
-				0B54B6BE49AE4271FD906CCCF2E21C88 /* Button.swift */,
-				19A2AE6BA9F7D3C8D03C9E110E8E8F99 /* Common.swift */,
-				634320EE9DE67E79386752520011805B /* UIColor+Extension.swift */,
-				C09C90EAE78893B03488823151FC1F52 /* UIDevice+Extension.swift */,
-				D0F4A7DEA9FE69E27B58DEB32D11D1C4 /* UIImage+Extension.swift */,
-				D9133E51C75C1D0BDC5130AF797686FF /* UIVIew+Extension.swift */,
-				A43BC607A42915A53AF54A2C5C2547E9 /* UIViewController+Extension.swift */,
-				B6E2F3D604F10258F4C29043C66548B5 /* Pod */,
-				F3970BE1F0FAE8A119D1C53FE03DDB05 /* Support Files */,
+				2F713FDD4C898B0DD6B900167C46EDE0 /* HCYFrameWork.podspec */,
+				3550ACAEB89755C1DFF935B5A27A4476 /* LICENSE */,
+				8A40C67691C036B7E95DF91ECD67211D /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		25CD0171791DED6E58E22FA8A7924285 /* HCYFrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				18BE88019B57581B7CEAB51844D53D42 /* APPScale+Extension.swift */,
+				BC7981DDE6218D6643C08FD7AEF109E9 /* BaseNavigationController.swift */,
+				BB768925B6CCBB1EB16A8DE0420A144C /* BaseTabbarViewController.swift */,
+				E3FECA444FD096F487F50B6FB9BF110D /* BaseViewController.swift */,
+				3D8B6713A605C6B6963601F491981807 /* Button.swift */,
+				9B828BB07BF23CEEAF48958797E1F6D7 /* Common.swift */,
+				46F2717B1E7F52C0C12F29FD82859AB7 /* SHFullscreenPopGesture.swift */,
+				0CF2CF33ADF22CF025FBB4DD3DA9B393 /* UIColor+Extension.swift */,
+				F32165ADC9F15BA1027A620F754D2A6C /* UIDevice+Extension.swift */,
+				E63445EB555DD29E1C2A5DEFD41FB2C6 /* UIImage+Extension.swift */,
+				0CCE7C9636ABB72FBCAD54BFC437DF6B /* UIVIew+Extension.swift */,
+				87E59A5156BFFA131A0CDF8764FB5C39 /* UIViewController+Extension.swift */,
+				60121561B5B316A6132C4B091CBDB742 /* VIewProtocol.swift */,
+				1B71530D9316206DBCE554FADD5EAEE1 /* Pod */,
+				91FDA40B9639756B1676DED45899EBA1 /* Support Files */,
 			);
 			name = HCYFrameWork;
 			path = ../..;
@@ -121,6 +146,29 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		8D7EF9355445121AD4BD2EDFEADF0E8B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25CD0171791DED6E58E22FA8A7924285 /* HCYFrameWork */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		91FDA40B9639756B1676DED45899EBA1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				27417FE9293B36CF8D0DFAB3730A62CD /* HCYFrameWork.modulemap */,
+				F54E2C11C41DCA9D9CBB20C1B9878AEE /* HCYFrameWork-dummy.m */,
+				33BE9ED9C1A029887ED9DC65184544EB /* HCYFrameWork-Info.plist */,
+				6FD34699D3ACA3E339BF052BDF4DE812 /* HCYFrameWork-prefix.pch */,
+				258C9B0FF3603185A11331026EAA1B2C /* HCYFrameWork-umbrella.h */,
+				D8980F2F0852B22BC160B3F00C7E4E39 /* HCYFrameWork.debug.xcconfig */,
+				A767480596FDA728ADCEDC5077339C0A /* HCYFrameWork.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HCYFrameWork";
+			sourceTree = "<group>";
+		};
 		AD6FCA0A013CA5F495A8D85DD7243E97 /* Pods-HCYFrameWork_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,21 +186,11 @@
 			path = "Target Support Files/Pods-HCYFrameWork_Example";
 			sourceTree = "<group>";
 		};
-		B6E2F3D604F10258F4C29043C66548B5 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				98FEDEAAC0E518CB42043A210EC7ACC2 /* HCYFrameWork.podspec */,
-				3EE0BBA931E0CBBE33A44AA19717856E /* LICENSE */,
-				C0ADDDBE7FE33A87DFD41A597822D798 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				FC5A9D2D82C6C775A10D90429987D6A5 /* Development Pods */,
+				8D7EF9355445121AD4BD2EDFEADF0E8B /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				D97E986B8F2F84D021A636FE3700F1EC /* Products */,
 				449B207A561A62531D3C2C5D08380F83 /* Targets Support Files */,
@@ -176,29 +214,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F3970BE1F0FAE8A119D1C53FE03DDB05 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D164D193ADC5004791AE1ACAFBB6AF0A /* HCYFrameWork.modulemap */,
-				FD215D9461C03566FE8B743822708106 /* HCYFrameWork-dummy.m */,
-				1A03CADAC8F20B6E33E073780905D800 /* HCYFrameWork-Info.plist */,
-				C95A67BB3C343BE1976592F0DB963116 /* HCYFrameWork-prefix.pch */,
-				8BEB6648C2310A2E978B7C0206C84E07 /* HCYFrameWork-umbrella.h */,
-				E79EC4BE6D16F48326CC7660E11E683B /* HCYFrameWork.debug.xcconfig */,
-				2D6C5BC8444FAA58BB18C75529FFA8BA /* HCYFrameWork.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HCYFrameWork";
-			sourceTree = "<group>";
-		};
-		FC5A9D2D82C6C775A10D90429987D6A5 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1678D8B1DA210A1A369BB25A2DE09C43 /* HCYFrameWork */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -210,11 +225,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB1266DCF8BE77001227547270D0497D /* Headers */ = {
+		F2A98724162866163D165E074727F1FE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85A76DC4CC336E347937F6632012DBBB /* HCYFrameWork-umbrella.h in Headers */,
+				D01B47F9C60D23985F806962D9848E69 /* HCYFrameWork-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +248,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				90F9933449A124109924C3E96451EAFE /* PBXTargetDependency */,
+				557AC03852728DECA88E3E11EA8223C7 /* PBXTargetDependency */,
 			);
 			name = "Pods-HCYFrameWork_Example";
 			productName = Pods_HCYFrameWork_Example;
@@ -242,12 +257,12 @@
 		};
 		F2C5F2C94E5275E294CDC76FA357A448 /* HCYFrameWork */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC9900CEA1640BE2E1AFA1EC3CA01856 /* Build configuration list for PBXNativeTarget "HCYFrameWork" */;
+			buildConfigurationList = 868A398EFBB2E56440BC418C5C484F27 /* Build configuration list for PBXNativeTarget "HCYFrameWork" */;
 			buildPhases = (
-				BB1266DCF8BE77001227547270D0497D /* Headers */,
-				7B386AF61D14519147593AF5C75BBC9F /* Sources */,
-				6EE7F8154634E9CB7CDC527F81BAC3C3 /* Frameworks */,
-				6C5227FC7F04D30738A7FF2A1ED6C778 /* Resources */,
+				F2A98724162866163D165E074727F1FE /* Headers */,
+				BAC1851114A58B4E96AAD06C5FF7381A /* Sources */,
+				D39087C7843BDF2C3D7869DDE903B8B4 /* Frameworks */,
+				9F756336EE76712F089FFBD45B817BAC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -294,7 +309,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C5227FC7F04D30738A7FF2A1ED6C778 /* Resources */ = {
+		9F756336EE76712F089FFBD45B817BAC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -304,19 +319,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7B386AF61D14519147593AF5C75BBC9F /* Sources */ = {
+		BAC1851114A58B4E96AAD06C5FF7381A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DCD517779D181FDCB8C871FC8FE7E74 /* APPScale+Extension.swift in Sources */,
-				F853001B17BECE75C0B39CF238D47800 /* Button.swift in Sources */,
-				219D846B593AD021CF344FB4CB7F8C1E /* Common.swift in Sources */,
-				DB03D21885A2334746A71ED75E932CBE /* HCYFrameWork-dummy.m in Sources */,
-				54F561129F7FD2D3383533D5B1FC9BB6 /* UIColor+Extension.swift in Sources */,
-				209B2796EA0EB0911F0E04C4665FC41A /* UIDevice+Extension.swift in Sources */,
-				042219113A7C1E961B965C447450DA5D /* UIImage+Extension.swift in Sources */,
-				BA13C17EFA3E945A5CA22743CAD51D35 /* UIVIew+Extension.swift in Sources */,
-				575AF1D7C2029D56E6DC3A928994C14E /* UIViewController+Extension.swift in Sources */,
+				4E41E1AF310FAB557E135E20F32D2DF3 /* APPScale+Extension.swift in Sources */,
+				83B5DE32B5727553597ABE47CCB1C7BA /* BaseNavigationController.swift in Sources */,
+				736B7D292EAE3A95A72BB4884482FDD6 /* BaseTabbarViewController.swift in Sources */,
+				999CAF44A255123ADF79671D0E1CB20D /* BaseViewController.swift in Sources */,
+				6DDAD829C43DB5737D938ABA21BDDBE5 /* Button.swift in Sources */,
+				9FC67CEABF7DB98637046E18D9069BF1 /* Common.swift in Sources */,
+				1DBDE2014E47C2BA3B9629D93EBE06CE /* HCYFrameWork-dummy.m in Sources */,
+				2CD3A18DC79EBA095E5DB6B0D3C31A12 /* SHFullscreenPopGesture.swift in Sources */,
+				3DB2D0B9CBDB11874041A66898CAA7BA /* UIColor+Extension.swift in Sources */,
+				8AA6108C5697203F1820FF35CE4F46D7 /* UIDevice+Extension.swift in Sources */,
+				BAF58D9BDE2384695E44EE367565CAF2 /* UIImage+Extension.swift in Sources */,
+				5C0ED1027D6DD8B1C28927C7B0CA276C /* UIVIew+Extension.swift in Sources */,
+				D68B8505EA6A466CE338B5B8DE4B8C25 /* UIViewController+Extension.swift in Sources */,
+				5BA988906C97841778DD8684D0BBBA06 /* VIewProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,11 +351,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		90F9933449A124109924C3E96451EAFE /* PBXTargetDependency */ = {
+		557AC03852728DECA88E3E11EA8223C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HCYFrameWork;
 			target = F2C5F2C94E5275E294CDC76FA357A448 /* HCYFrameWork */;
-			targetProxy = 9A0A230271D2E0AC056E4A883A16D110 /* PBXContainerItemProxy */;
+			targetProxy = DD89224FEF043E07C2268B9A6E2696CB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -367,69 +387,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3C9877D8F2D3B547F0F3EFBBC6C86784 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D6C5BC8444FAA58BB18C75529FFA8BA /* HCYFrameWork.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HCYFrameWork/HCYFrameWork-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HCYFrameWork/HCYFrameWork-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HCYFrameWork/HCYFrameWork.modulemap";
-				PRODUCT_MODULE_NAME = HCYFrameWork;
-				PRODUCT_NAME = HCYFrameWork;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7D5AF1C926ECAEC1A70221F07000494B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E79EC4BE6D16F48326CC7660E11E683B /* HCYFrameWork.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HCYFrameWork/HCYFrameWork-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HCYFrameWork/HCYFrameWork-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HCYFrameWork/HCYFrameWork.modulemap";
-				PRODUCT_MODULE_NAME = HCYFrameWork;
-				PRODUCT_NAME = HCYFrameWork;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -491,9 +448,71 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		967AF0C25ABBCE6D48398A48C21E6355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8980F2F0852B22BC160B3F00C7E4E39 /* HCYFrameWork.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HCYFrameWork/HCYFrameWork-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HCYFrameWork/HCYFrameWork-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HCYFrameWork/HCYFrameWork.modulemap";
+				PRODUCT_MODULE_NAME = HCYFrameWork;
+				PRODUCT_NAME = HCYFrameWork;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA8CE216A7B3DCFF67B9601ACF891BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A767480596FDA728ADCEDC5077339C0A /* HCYFrameWork.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HCYFrameWork/HCYFrameWork-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HCYFrameWork/HCYFrameWork-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HCYFrameWork/HCYFrameWork.modulemap";
+				PRODUCT_MODULE_NAME = HCYFrameWork;
+				PRODUCT_NAME = HCYFrameWork;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -618,11 +637,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC9900CEA1640BE2E1AFA1EC3CA01856 /* Build configuration list for PBXNativeTarget "HCYFrameWork" */ = {
+		868A398EFBB2E56440BC418C5C484F27 /* Build configuration list for PBXNativeTarget "HCYFrameWork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7D5AF1C926ECAEC1A70221F07000494B /* Debug */,
-				3C9877D8F2D3B547F0F3EFBBC6C86784 /* Release */,
+				967AF0C25ABBCE6D48398A48C21E6355 /* Debug */,
+				CA8CE216A7B3DCFF67B9601ACF891BD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

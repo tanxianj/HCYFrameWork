@@ -188,3 +188,20 @@ extension UIImage{
         return newimage!
     }
 }
+extension UIImage{
+    
+    /// change image Color
+    /// - Parameter color: -
+    /// - Returns: image
+    public func changeColor(color:UIColor)->UIImage{
+        UIGraphicsBeginImageContextWithOptions(self.size, false, 0.0)
+        color.setFill()
+        let rect = CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height)
+        UIRectFill(rect)
+        self.draw(at: .zero, blendMode: .overlay, alpha: 1.0)
+        self.draw(at: .zero, blendMode: .destinationIn, alpha: 1.0)
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return image
+    }
+}

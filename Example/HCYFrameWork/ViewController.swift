@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         view.addEventHandler {
             DebugLog("视图点击事件")
         }
+        
     }
 
     override func didReceiveMemoryWarning() {

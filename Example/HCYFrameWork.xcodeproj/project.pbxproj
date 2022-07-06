@@ -13,15 +13,12 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		FDA37FAC87765D31BF100CF5 /* Pods_HCYFrameWork_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52F9245D24687EE227D8A9B /* Pods_HCYFrameWork_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0095846F13CF4E40253277A0 /* Pods-HCYFrameWork_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCYFrameWork_Example.debug.xcconfig"; path = "Target Support Files/Pods-HCYFrameWork_Example/Pods-HCYFrameWork_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		02B6D39978238503C2BFF297 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		1CE6E7E0618A3037F290DE7B /* Pods-HCYFrameWork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCYFrameWork_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HCYFrameWork_Tests/Pods-HCYFrameWork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2F986B5C2873EBD500140514 /* HCYFrameWork.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HCYFrameWork.podspec; path = ../HCYFrameWork.podspec; sourceTree = "<group>"; };
-		3E3A828648B37D867639783A /* Pods-HCYFrameWork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCYFrameWork_Tests.release.xcconfig"; path = "Target Support Files/Pods-HCYFrameWork_Tests/Pods-HCYFrameWork_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		478DB2C0E877F97F5D6920D9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		49FDAC754A98C8C816037983 /* HCYFrameWork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HCYFrameWork.podspec; path = ../HCYFrameWork.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* HCYFrameWork_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCYFrameWork_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,7 +29,6 @@
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B50AA891B01431E03E6DCFF1 /* Pods-HCYFrameWork_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCYFrameWork_Example.release.xcconfig"; path = "Target Support Files/Pods-HCYFrameWork_Example/Pods-HCYFrameWork_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E52F9245D24687EE227D8A9B /* Pods_HCYFrameWork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCYFrameWork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDA37FAC87765D31BF100CF5 /* Pods_HCYFrameWork_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +45,6 @@
 		4A59D054E729BB3392686269 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E52F9245D24687EE227D8A9B /* Pods_HCYFrameWork_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,8 +106,6 @@
 			children = (
 				0095846F13CF4E40253277A0 /* Pods-HCYFrameWork_Example.debug.xcconfig */,
 				B50AA891B01431E03E6DCFF1 /* Pods-HCYFrameWork_Example.release.xcconfig */,
-				1CE6E7E0618A3037F290DE7B /* Pods-HCYFrameWork_Tests.debug.xcconfig */,
-				3E3A828648B37D867639783A /* Pods-HCYFrameWork_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -129,7 +121,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				0B1696A75E01E428667A1EEE /* [CP] Embed Pods Frameworks */,
+				05AF03CA2274A7400D7A7CD8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,7 +182,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B1696A75E01E428667A1EEE /* [CP] Embed Pods Frameworks */ = {
+		05AF03CA2274A7400D7A7CD8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
