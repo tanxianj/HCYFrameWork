@@ -1,6 +1,6 @@
 {
   "name": "HCYFrameWork",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "summary": "A short description of HCYFrameWork.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/tanxianj/HCYFrameWork",
@@ -13,10 +13,42 @@
   },
   "source": {
     "git": "https://github.com/tanxianj/HCYFrameWork.git",
-    "tag": "0.1.3"
+    "tag": "0.1.4"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "12.0"
   },
-  "source_files": "HCYFrameWork/Classes/**/*"
+  "source_files": "HCYFrameWork/Classes/**/*",
+  "dependencies": {
+    "SnapKit": [
+      "~> 5.0.0"
+    ],
+    "SVGKit": [
+
+    ],
+    "RxSwift": [
+      "~> 5.0"
+    ],
+    "RxCocoa": [
+      "~> 5.0"
+    ],
+    "RxDataSources": [
+
+    ],
+    "RxAlamofire": [
+
+    ],
+    "MJRefresh": [
+
+    ],
+    "Kingfisher": [
+
+    ],
+    "SVProgressHUD": [
+
+    ],
+    "IQKeyboardManagerSwift": [
+
+    ]
+  }
 }
