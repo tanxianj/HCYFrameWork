@@ -114,7 +114,17 @@ extension NSLayoutConstraint{
         }
     }
 }
-
+extension UIStackView{
+    @IBInspectable public var scale:Bool{
+        get{
+            return true
+        }
+        set{
+            guard newValue else{return}
+            self.spacing = self.spacing.scale()
+        }
+    }
+}
 import RxSwift
 import RxCocoa
 extension Reactive where Base:UILabel{

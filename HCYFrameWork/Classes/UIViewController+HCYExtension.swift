@@ -12,9 +12,9 @@ public enum itemType{
     case right
 }
 extension UIViewController{
-   public typealias itemAction = ()->()
+    public typealias itemAction = ()->()
     
-    /// back UIBarButtonItem
+    /// Create Navigation Item
     /// - Parameters:
     ///   - type: left or right
     ///   - title: btn title

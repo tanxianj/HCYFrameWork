@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 fileprivate let KWindow = UIApplication.shared.keyWindow
+
+/// Popup show Type
 public enum BasePopupType:Int{
     case bottomToTop = 0
     case bottomToCenter
@@ -16,6 +18,8 @@ public enum BasePopupType:Int{
     case leftToRight
     case rightToLeft
 }
+
+/// Popup Show In Type
 public enum BasePopupShowInType{
     case viewIsWindow
     case viewIs(_ view:UIView)

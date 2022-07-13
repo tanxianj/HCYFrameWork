@@ -61,12 +61,12 @@ public func RGBColor(r:CGFloat,g:CGFloat,b:CGFloat,a:CGFloat = 1) -> UIColor {
 
 /// Debugging method printout
 
- public func DebugLog<T>(_ message: T, filePath: String = #file, function:String = #function, rowCount: Int = #line) {
-     #if DEBUG
-     let fileName = (filePath as NSString).lastPathComponent.replacingOccurrences(of: ".swift", with: "")
-     print("file: " + fileName +  "  line"  + " \(rowCount) " + "function: " + "\(function)" + "\n\(message)\n")
-     #endif
- }
+public func DebugLog<T>(_ message: T, filePath: String = #file, function:String = #function, rowCount: Int = #line) {
+#if DEBUG
+    let fileName = (filePath as NSString).lastPathComponent.replacingOccurrences(of: ".swift", with: "")
+    print("file: " + fileName +  "  line"  + " \(rowCount) " + "function: " + "\(function)" + "\n\(message)\n")
+#endif
+}
 
 //MARK: Generic closure definition
 public typealias KAppBlockToVoid<T> = (T)->()

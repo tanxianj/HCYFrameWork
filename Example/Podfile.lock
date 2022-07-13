@@ -4,7 +4,7 @@ PODS:
     - CocoaLumberjack/Core (= 3.7.4)
   - CocoaLumberjack/Core (3.7.4)
   - Differentiator (4.0.1)
-  - HCYFrameWork (0.1.4):
+  - HCYFrameWork (0.1.5):
     - IQKeyboardManagerSwift
     - Kingfisher
     - MJRefresh
@@ -16,7 +16,7 @@ PODS:
     - SVGKit
     - SVProgressHUD
   - IQKeyboardManagerSwift (6.5.10)
-  - Kingfisher (6.3.1)
+  - Kingfisher (7.3.0)
   - MJRefresh (3.7.5)
   - RxAlamofire (5.7.1):
     - RxAlamofire/Core (= 5.7.1)
@@ -66,9 +66,9 @@ SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
   CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
-  HCYFrameWork: 711d281f947aef1cf7e554f393374a7310b1ad5e
+  HCYFrameWork: b33778e409bba844ee39bddd8f56e45a88f225f0
   IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
-  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  Kingfisher: cdb1189a9223b1bc028816bd47c8b8101a58831c
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   RxAlamofire: 8e144c62dcc01d68dcb366bfc542eb6dd46bab78
   RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354

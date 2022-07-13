@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0852BF83300B0ABCACF64851 /* Pods_HCYFrameWork_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AAB3C6B8ACBD60C2907D53E /* Pods_HCYFrameWork_Example.framework */; };
+		2F0B27192877E52C002333DF /* finger.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B27182877E52C002333DF /* finger.svg */; };
+		2F0B271B2877E611002333DF /* eye_off.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B271A2877E611002333DF /* eye_off.svg */; };
+		2F0B271D2877F039002333DF /* SVG.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B271C2877F039002333DF /* SVG.svg */; };
+		2F0B271F2878187E002333DF /* fistBump.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B271E2878187E002333DF /* fistBump.svg */; };
 		2F0E74622875821400FA47E1 /* APPTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E74612875821400FA47E1 /* APPTabbarViewController.swift */; };
 		2F0E74652875822100FA47E1 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0E74632875822100FA47E1 /* HomeViewController.storyboard */; };
 		2F0E74662875822100FA47E1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E74642875822100FA47E1 /* HomeViewController.swift */; };
@@ -23,6 +27,10 @@
 /* Begin PBXFileReference section */
 		0095846F13CF4E40253277A0 /* Pods-HCYFrameWork_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCYFrameWork_Example.debug.xcconfig"; path = "Target Support Files/Pods-HCYFrameWork_Example/Pods-HCYFrameWork_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		02B6D39978238503C2BFF297 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2F0B27182877E52C002333DF /* finger.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = finger.svg; sourceTree = "<group>"; };
+		2F0B271A2877E611002333DF /* eye_off.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = eye_off.svg; sourceTree = "<group>"; };
+		2F0B271C2877F039002333DF /* SVG.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SVG.svg; sourceTree = "<group>"; };
+		2F0B271E2878187E002333DF /* fistBump.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = fistBump.svg; sourceTree = "<group>"; };
 		2F0E74612875821400FA47E1 /* APPTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APPTabbarViewController.swift; sourceTree = "<group>"; };
 		2F0E74632875822100FA47E1 /* HomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		2F0E74642875822100FA47E1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +98,10 @@
 				2F0E74682875822A00FA47E1 /* MeViewController.swift */,
 				2F0E74612875821400FA47E1 /* APPTabbarViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				2F0B271A2877E611002333DF /* eye_off.svg */,
+				2F0B27182877E52C002333DF /* finger.svg */,
+				2F0B271E2878187E002333DF /* fistBump.svg */,
+				2F0B271C2877F039002333DF /* SVG.svg */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -137,7 +149,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				05AF03CA2274A7400D7A7CD8 /* [CP] Embed Pods Frameworks */,
+				D295E3014D0EA0F7E7FD5ACA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +172,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = MUKHGSGFGK;
 						LastSwiftMigration = 0900;
 					};
 				};
@@ -188,19 +201,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F0B271F2878187E002333DF /* fistBump.svg in Resources */,
 				2F0E74652875822100FA47E1 /* HomeViewController.storyboard in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				2F986B5D2873EBD500140514 /* HCYFrameWork.podspec in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				2F0E74692875822A00FA47E1 /* MeViewController.storyboard in Resources */,
+				2F0B271D2877F039002333DF /* SVG.svg in Resources */,
+				2F0B271B2877E611002333DF /* eye_off.svg in Resources */,
+				2F0B27192877E52C002333DF /* finger.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05AF03CA2274A7400D7A7CD8 /* [CP] Embed Pods Frameworks */ = {
+		D295E3014D0EA0F7E7FD5ACA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -408,6 +425,7 @@
 			baseConfigurationReference = 0095846F13CF4E40253277A0 /* Pods-HCYFrameWork_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MUKHGSGFGK;
 				INFOPLIST_FILE = HCYFrameWork/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -424,6 +442,7 @@
 			baseConfigurationReference = B50AA891B01431E03E6DCFF1 /* Pods-HCYFrameWork_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MUKHGSGFGK;
 				INFOPLIST_FILE = HCYFrameWork/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

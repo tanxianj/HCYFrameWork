@@ -8,6 +8,9 @@
 import UIKit
 
 public class HCYStringWithTime: NSObject {
+    
+    /// get timeInterval
+    /// - Returns: timeInterval String
     public static  func gettimeInterval()->String{
         // 当前时间戳
         let timestamp = Date().timeIntervalSince1970
@@ -23,6 +26,9 @@ public class HCYStringWithTime: NSObject {
         //        print(CLongLong(round(time*1000))) // 1586851311174
     }
     
+    /// date Convert String
+    /// - Parameter date: Date
+    /// - Returns: Date String yyyy-MM-dd
     public static func dateConvertString(date:Date) -> String {
         /*
          let timeZone = TimeZone.init(identifier: "UTC")
@@ -58,6 +64,9 @@ public class HCYStringWithTime: NSObject {
         return day + moth + year
     }
     
+    /// Date Convert AM PM
+    /// - Parameter date: date
+    /// - Returns: HH:mm  AM  or PM
     public static func dateConvertHourMinString(date:Date) -> String {
         /*
          let timeZone = TimeZone.init(identifier: "UTC")
@@ -114,6 +123,9 @@ public class HCYStringWithTime: NSObject {
         return tempString
     }
     
+    /// Roman numerals Month convert English Month
+    /// - Parameter number: Roman numerals Month
+    /// - Returns: English Month
     public static func backmonth(_ number:String)->String{
         return ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"][Int(number)! - 1]
     }

@@ -8,6 +8,9 @@
 import Foundation
 extension String{
     //MARK:String转字典
+    
+    /// string to Dictionary
+    /// - Returns: Dictionary
     public func toDictionary() -> [String:Any] {
         var result = [String:Any]()
         guard !self.isEmpty else {

@@ -9,35 +9,69 @@ import Foundation
 import UIKit
 import SVGKit
 extension UIImage{
-    public class func svgImgWith(name:String, size:CGSize, color:UIColor) -> UIImage{
+    
+    
+    /*
+     Assertion failure in SVGLength.m when running on Apple Silicon Simulator
+     
+     https://github.com/BurleighCreative/SVGKit/commit/c4dbac4fd86ad8108afb85004213209b214c9739
+     
+     
+     SVGLength.m 232 line if( [platform hasPrefix:@"x86_64"] || [platform hasPrefix:@"arm64"])
+     */
+    
+    /// SVG image change color and orientation
+    /// - Parameters:
+    ///   - name: svg Name
+    ///   - size: change  size
+    ///   - color: change size
+    ///   - orientation: orientation
+    /// - Returns: UIimage
+    public class func svgImgWith(name:String, size:CGSize, color:UIColor,orientation:Orientation = .up) -> UIImage{
         let svgImg = SVGKImage.init(named: name)
         svgImg?.size = size
         svgImg?.caLayerTree.sublayers?.forEach({ layer in
             (layer as? CAShapeLayer)?.fillColor = color.cgColor
         })
+        if let ciimage =  svgImg?.uiImage.cgImage{
+            let tmpImage = UIImage(cgImage: ciimage, scale: 1.0, orientation: orientation)
+            return tmpImage
+        }
         return svgImg?.uiImage ?? UIImage()
     }
     
-    public class func getImageWithColor(color: UIColor, size: CGSize) -> UIImage {
-
+    /// Create Image With Color
+    /// - Parameters:
+    ///   - color: Color
+    ///   - size: size
+    /// - Returns: UIimage
+    public class func CreateImageWithColor(color: UIColor, size: CGSize) -> UIImage {
+        
         let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
-
+        
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
-
+        
         color.setFill()
-
+        
         UIRectFill(rect)
-
+        
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
-
+        
         UIGraphicsEndImageContext()
-
+        
         return image
-
+        
     }
     
-    public class func getImageWithGrad(colors: [UIColor], size: CGSize,direction:DirectionType = .leftToRight,locations:[NSNumber]? = nil) -> UIImage {
-
+    /// Create Image With Grad colors
+    /// - Parameters:
+    ///   - colors: colors
+    ///   - size: size
+    ///   - direction: direction Type
+    ///   - locations: locations 0...1
+    /// - Returns: UIimage
+    public class func CreateImageWithGrad(colors: [UIColor], size: CGSize,direction:DirectionType = .leftToRight,locations:[NSNumber]? = nil) -> UIImage {
+        
         let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         
         UIGraphicsBeginImageContextWithOptions(size, true, 0)
@@ -50,7 +84,7 @@ extension UIImage{
         if colors.count == 0{
             gradientColors = [UIColor.red,UIColor.blue]
         }else if colors.count == 1{
-            return getImageWithColor(color: colors.first!, size: size)
+            return CreateImageWithColor(color: colors.first!, size: size)
         }else{
             gradientColors = colors.map {(color: UIColor) -> UIColor in return color }
         }
@@ -62,7 +96,7 @@ extension UIImage{
             var tmplocations:[NSNumber] = []
             if colors.count > 0 {
                 for i in 0..<colors.count{
-                tmplocations.append( CGFloat(i) * CGFloat(a) as NSNumber)    
+                    tmplocations.append( CGFloat(i) * CGFloat(a) as NSNumber)    
                 }
                 gradientLayer.locations = tmplocations
                 print("tmplocations is \(tmplocations)")
@@ -115,6 +149,8 @@ extension UIImage{
         
     }
 }
+
+/// Direction Type
 public enum DirectionType{
     case leftToRight
     case topToBottom
@@ -124,6 +160,12 @@ public enum DirectionType{
 }
 extension UIImage{
     
+    
+    /// back Image with Colors
+    /// - Parameters:
+    ///   - colors: colors
+    ///   - direction: direction
+    ///   - size: size
     public convenience init(colors:[UIColor],direction:DirectionType = .leftToRight,size:CGSize){
         
         UIGraphicsBeginImageContextWithOptions(size, false, 1)
@@ -170,6 +212,12 @@ extension UIImage{
     }
 }
 extension UIImage{
+    
+    /// Image Scale
+    /// - Parameters:
+    ///   - image:  Image before
+    ///   - newSize: newSize
+    /// - Returns: UIimage
     public func ScaleImage(image:UIImage, newSize:CGSize)->UIImage{
         let imageSize  = image.size
         let w = imageSize.width
@@ -193,7 +241,7 @@ extension UIImage{
     /// change image Color
     /// - Parameter color: -
     /// - Returns: image
-    public func changeColor(color:UIColor)->UIImage{
+    public func changeColor(color:UIColor,orientation:Orientation = .up)->UIImage{
         UIGraphicsBeginImageContextWithOptions(self.size, false, 0.0)
         color.setFill()
         let rect = CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height)
@@ -202,6 +250,10 @@ extension UIImage{
         self.draw(at: .zero, blendMode: .destinationIn, alpha: 1.0)
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
+        if let ciimage =  image.cgImage{
+            let tmpImage = UIImage(cgImage: ciimage, scale: 1.0, orientation: orientation)
+            return tmpImage
+        }
         return image
     }
 }

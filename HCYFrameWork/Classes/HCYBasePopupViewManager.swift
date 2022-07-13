@@ -86,10 +86,10 @@ extension HCYBasePopupViewManager{
     ///   - withDuration: 动画时长
     ///   - action: 呈现视图中的点击事件 本视图点击事件默认 关闭弹出 index = -1  呈现视图中的点击事件需发送RxSwift通知
     public func showPoputWith(in showinView:BasePopupShowInType = .viewIsWindow ,
-                       contentView:UIView,
-                       popupType:BasePopupType = .bottomToCenter,
-                       config:HCYBasePopupConfig =  HCYBasePopupConfig(),
-                       action:Action!){
+                              contentView:UIView,
+                              popupType:BasePopupType = .bottomToCenter,
+                              config:HCYBasePopupConfig =  HCYBasePopupConfig(),
+                              action:Action!){
         
         
         //        guard self.continuePopup == false else{return}
@@ -166,7 +166,7 @@ extension HCYBasePopupViewManager{
         self.contenView.bottomAnchor.constraint(equalTo: self.superView.topAnchor).isActive = true
         self.contenView.heightAnchor.constraint(lessThanOrEqualToConstant: self.superView.mj_h * 0.8).isActive = true
         self.contenView.translatesAutoresizingMaskIntoConstraints = false
-
+        
         
         //        self.contenView.snp.makeConstraints { make in
         //            make.centerX.equalToSuperview()
@@ -197,7 +197,7 @@ extension HCYBasePopupViewManager{
     }
     public func doanimateWith_bottomToCenter(_ withDuration:CGFloat){
         UIView.animate(withDuration: withDuration) {
-
+            
             self.contenView.transform = CGAffineTransform.init(translationX: 0, y: -self.contenView.mj_h - (self.superView.mj_h - self.contenView.mj_h) / 2.0 + self.offset)
             self.grayView.alpha = 1.0
             self.contenView.alpha = 1.0
@@ -205,7 +205,7 @@ extension HCYBasePopupViewManager{
     }
     public func doanimateWith_topToCenter(_ withDuration:CGFloat){
         UIView.animate(withDuration: withDuration) {
-        
+            
             self.contenView.transform = CGAffineTransform.init(translationX: 0, y: self.contenView.mj_h + (self.superView.mj_h - self.contenView.mj_h) / 2.0 + self.offset)
             self.grayView.alpha = 1.0
             self.contenView.alpha = 1.0

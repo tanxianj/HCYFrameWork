@@ -19,7 +19,7 @@ extension UIView{
             objc_setAssociatedObject(self, &VIEW_ACTION_KEY, newValue, .OBJC_ASSOCIATION_COPY)
         }
     }
-   public func addEventHandler(action:@escaping()->()) {
+    public func addEventHandler(action:@escaping()->()) {
         UIViewController.getCurrentVC().view.endEditing(true)
         self.isUserInteractionEnabled = true
         self.vaiewAction = action
@@ -30,12 +30,19 @@ extension UIView{
     }
     
     
-    class func viewForXib() -> UIView{
+    /// View for Xib
+    /// - Returns: VIew
+    public class func viewForXib() -> UIView{
         
         let name = String(cString: object_getClassName(self)).components(separatedBy: ".").last!
         return UINib(nibName: name, bundle: nil).instantiate(withOwner: self, options: nil).last as! UIView
     }
-    
+    /// Parameter subviews: array of subviews to add to self.
+    /// - Parameter subviews: Parameter subviews: array of subviews to add to self.
+    public  func addSubviews(_ subviews: [UIView]) {
+        subviews.forEach { addSubview($0) }
+    }
+    /// set self corner Radius
     @IBInspectable public var cornerRadius: CGFloat {
         get {
             layer.cornerRadius
@@ -43,10 +50,11 @@ extension UIView{
         set {
             layer.cornerRadius = newValue.scale()
             clipsToBounds = true
-//            layer.masksToBounds = true
+            //            layer.masksToBounds = true
         }
     }
     
+    /// set self border width
     @IBInspectable public var borderwidth: CGFloat {
         get {
             layer.borderWidth
@@ -55,7 +63,7 @@ extension UIView{
             layer.borderWidth = newValue.scale()
         }
     }
-    
+    /// set self border Color
     @IBInspectable public var borderColor: UIColor {
         get {
             UIColor(cgColor: layer.borderColor!)
@@ -65,6 +73,7 @@ extension UIView{
         }
     }
     
+    /// set self shadow Color
     @IBInspectable public var shadowColor:UIColor{
         get{
             UIColor(cgColor: layer.shadowColor ?? UIColor.clear.cgColor)
@@ -73,7 +82,7 @@ extension UIView{
             layer.shadowColor = newValue.cgColor
         }
     }
-    
+    /// set self shadow Offset
     @IBInspectable public var shadowOffset:CGSize{
         get{
             return layer.shadowOffset
@@ -83,6 +92,7 @@ extension UIView{
         }
     }
     
+    /// set self shadow Opacity
     @IBInspectable public var shadowOpacity:Float{
         get{
             return layer.shadowOpacity
@@ -92,6 +102,7 @@ extension UIView{
         }
     }
     
+    /// set self shadow Radius
     @IBInspectable public var shadowRadius:CGFloat{
         get{
             return layer.shadowRadius
@@ -100,7 +111,7 @@ extension UIView{
             layer.shadowRadius = newValue
         }
     }
-    
+    ///  back self height
     public var mj_h: CGFloat {
         get {
             return self.bounds.size.height
@@ -109,7 +120,7 @@ extension UIView{
             self.bounds.size.height = newValue
         }
     }
-    
+    ///  back self width
     public var mj_w: CGFloat {
         get {
             return self.bounds.size.width
@@ -118,7 +129,7 @@ extension UIView{
             self.bounds.size.width = newValue
         }
     }
-    
+    /// back self frame origin x
     public var mj_x: CGFloat {
         get {
             return self.frame.origin.x
@@ -128,6 +139,7 @@ extension UIView{
         }
     }
     
+    /// back self frame origin y
     public var mj_y: CGFloat {
         get {
             return self.frame.origin.y

@@ -13,7 +13,10 @@ public protocol viewModelProtocol{
     associatedtype ViewModelT
     var viewModel: ViewModelT! { get set }
 }
+//MARK: Base ViewController
 open class HCYBaseViewController: UIViewController {
+    
+    /// Rxswift disposeBag
     let disposeBag = DisposeBag()
     //The line below the navigation bar
     lazy var topLine: UIView = {
@@ -23,13 +26,13 @@ open class HCYBaseViewController: UIViewController {
         return lineView
     }()
     
-    /// The line below the navigation bar  1 -> 2 -> 3 ==== 1 -> 3
+    /// Delete from the end . delete count
     var deleteViewCount = 0
-
+    
     /// Page request initial page
     var pageNum:Int = 1
     
-    /// Delete from start 1
+    /// Delete from to behind
     var deleteViewCountFirst = 0
     
     open override class func setValue(_ value: Any?, forUndefinedKey key: String) {
@@ -40,14 +43,15 @@ open class HCYBaseViewController: UIViewController {
     }
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(self.hiddenNavigationBarHidden(), animated: false)
+        self.navigationController?.setNavigationBarHidden(self.hcy_hiddenNavigationBarHidden(), animated: false)
     }
     open override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-
+        
     }
     open override func viewDidLoad() {
         super.viewDidLoad()
+        //MARK: auto add back btn
         if let vcs = self.navigationController?.viewControllers, vcs.count > 1{
             DebugLog("vcs.count \(vcs.count)")
             addleftbutton()
@@ -55,8 +59,8 @@ open class HCYBaseViewController: UIViewController {
         
         self.view.backgroundColor = .white
         
-        self.sh_prefersNavigationBarHidden = self.hiddenNavigationBarHidden()
-        self.sh_interactivePopDisabled = self.interactivePopDisabled()
+        self.hcy_prefersNavigationBarHidden = self.hcy_hiddenNavigationBarHidden()
+        self.hcy_interactivePopDisabled = self.hcy_interactivePopDisabled()
         changeNavigationStyle()
         setupNavigationItems()
         initializeSubViews()
@@ -65,9 +69,10 @@ open class HCYBaseViewController: UIViewController {
         
         view.addSubview(topLine)
         view.bringSubview(toFront: topLine)
-        guard self.hiddenNavigationBarHidden() else{return}
-        topLine.isHidden = self.hiddenNavigationBarHidden()
-
+        //        view.bringSubviewToFront(topLine)
+        guard self.hcy_hiddenNavigationBarHidden() else{return}
+        topLine.isHidden = self.hcy_hiddenNavigationBarHidden()
+        
         
         
         
@@ -75,6 +80,7 @@ open class HCYBaseViewController: UIViewController {
     }
     open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        //MARK:  Delete from to behind
         guard deleteViewCountFirst == 0 else{
             var array = self.navigationController?.viewControllers
             
@@ -87,6 +93,7 @@ open class HCYBaseViewController: UIViewController {
             deleteViewCount = 0
             return
         }
+        //MARK: Delete from the end
         guard deleteViewCount == 0 else {
             var array = self.navigationController?.viewControllers
             
@@ -102,17 +109,17 @@ open class HCYBaseViewController: UIViewController {
     
     /// Hide navigation bar? Default false
     /// - Returns: true / false
-    open func hiddenNavigationBarHidden() -> Bool {
+    open func hcy_hiddenNavigationBarHidden() -> Bool {
         return false
     }
     
     /// Whether to disable sideslip return gesture, default false
     /// - Returns: true / false
-    open func interactivePopDisabled() -> Bool {
+    open func hcy_interactivePopDisabled() -> Bool {
         return false
     }
     
-    /// Add navigation left Item
+    /// Add navigation left  back Item
     open func addleftbutton()  {
         self.navigationItem.leftBarButtonItem = self.CreateNavigationItem(type: .left, imageName: "return", titleColor: .red, itemAction: nil)
     }
@@ -126,7 +133,8 @@ open class HCYBaseViewController: UIViewController {
     }
     
     fileprivate func changeNavigationStyle(){
-//        setNeedsStatusBarAppearanceUpdate()
+        //        setNeedsStatusBarAppearanceUpdate()
+        guard let _ = self.navigationController else { return }
         switch self.preferredStatusBarStyle{
         case .lightContent:
             DebugLog("lightContent")
@@ -139,16 +147,14 @@ open class HCYBaseViewController: UIViewController {
                 navBarAppearance.backgroundEffect = nil
                 navBarAppearance.shadowColor = .clear
                 navBarAppearance.titleTextAttributes = [.foregroundColor:UIColor.white ,.font:UIFont.systemFont(ofSize: 18.scale(), weight: .semibold)]
-                guard let _ = self.navigationController else { return }
                 self.navigationController!.navigationBar.scrollEdgeAppearance = navBarAppearance
                 self.navigationController!.navigationBar.standardAppearance = navBarAppearance
             }else{
                 
                 self.navigationController!.navigationBar.setBackgroundImage(UIImage(colors: [RGBColor(r: 140, g: 228, b: 152),
-                                                                       RGBColor(r:85,g:195,b:179),
-                                                                       RGBColor(r:78,g:178,b:184)],
-                                                              size: CGSize(width: KScreenW, height: KNavigationH)), for: .default)
-                guard let _ = self.navigationController else { return }
+                                                                                             RGBColor(r:85,g:195,b:179),
+                                                                                             RGBColor(r:78,g:178,b:184)],
+                                                                                    size: CGSize(width: KScreenW, height: KNavigationH)), for: .default)
                 self.navigationController!.navigationBar.shadowImage = UIImage()
                 self.navigationController!.navigationBar.titleTextAttributes = [.foregroundColor:UIColor.white,.font:UIFont.systemFont(ofSize: 18.0.scale(), weight: .semibold)]
             }
@@ -161,11 +167,9 @@ open class HCYBaseViewController: UIViewController {
                 navBarAppearance.backgroundEffect = nil
                 navBarAppearance.shadowColor = .clear
                 navBarAppearance.titleTextAttributes = [.foregroundColor:UIColor.black ,.font:UIFont.systemFont(ofSize: 18.scale(), weight: .semibold)]
-                guard let _ = self.navigationController else { return }
                 self.navigationController!.navigationBar.scrollEdgeAppearance = navBarAppearance
                 self.navigationController!.navigationBar.standardAppearance = navBarAppearance
             }else{
-                guard let _ = self.navigationController else { return }
                 self.navigationController!.navigationBar.setBackgroundImage(UIImage(named: ""), for: .default)
                 self.navigationController!.navigationBar.shadowImage = UIImage()
                 self.navigationController!.navigationBar.titleTextAttributes = [.foregroundColor:UIColor.black,.font:UIFont.systemFont(ofSize: 18.0.scale(), weight: .semibold)]
@@ -182,18 +186,23 @@ open class HCYBaseViewController: UIViewController {
 }
 
 extension HCYBaseViewController:Initialization{
+    
+    /// initialize SubViews
     @objc open func initializeSubViews() {
         
     }
     
+    /// addSubViews
     @objc open func addSubViews() {
         
     }
     
+    /// setup SubView Margins
     @objc open func setupSubViewMargins() {
         
     }
     
+    /// setup Navigation Items
     @objc open func setupNavigationItems() {
         
     }
@@ -202,7 +211,7 @@ extension HCYBaseViewController:Initialization{
 }
 
 extension UIViewController{
-    static public func makeVCWithXIB<T:viewModelProtocol>(viewController:T.Type,viewModel:T.ViewModelT)->T{
+    public static func makeVCWithXIB<T:viewModelProtocol>(viewController:T.Type,viewModel:T.ViewModelT)->T{
         let viewControllerName = String(describing: viewController)
         //动态获取命名空间
         let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
@@ -217,12 +226,12 @@ extension UIViewController{
         }
         
     }
-    static public func makeVCWithSB<T:viewModelProtocol>(viewController:T.Type,viewModel:T.ViewModelT)->T{
+    public static func makeVCWithSB<T:viewModelProtocol>(viewController:T.Type,viewModel:T.ViewModelT)->T{
         var vc = makeVCWithSB(viewController: viewController)
         vc.viewModel = viewModel
         return vc
     }
-    static public  func makeVCWithSB<T>(viewController:T.Type)->T{
+    public static func makeVCWithSB<T>(viewController:T.Type)->T{
         
         let viewControllerName = String(describing: viewController)
         

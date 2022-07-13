@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HCYFrameWork'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'A short description of HCYFrameWork.'
 
 # This description is used to generate tags and improve search results.
@@ -40,7 +40,7 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'SnapKit' ,'~> 5.0.0'
-  s.dependency 'SVGKit' #, :git => 'https://github.com/SVGKit/SVGKit.git', :branch => '3.x'
+  s.dependency 'SVGKit'  #  SVGLength.m 232 line if( [platform hasPrefix:@"x86_64"] || [platform hasPrefix:@"arm64"])
   s.dependency 'RxSwift','~> 5.0'
   s.dependency 'RxCocoa','~> 5.0'
   s.dependency 'RxDataSources'
