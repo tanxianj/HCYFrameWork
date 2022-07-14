@@ -9,15 +9,18 @@ import UIKit
 import SnapKit
 import RxSwift
 import RxCocoa
-public protocol viewModelProtocol{
-    associatedtype ViewModelT
-    var viewModel: ViewModelT! { get set }
+
+public protocol HCYBaseViewControllerDelegate:UIViewController{
+    func willResignActiveNotification()
+    func didEnterBackgroundNotification()
+    func willEnterForegroundNotification()
+    func didBecomeActiveNotification()
 }
 //MARK: Base ViewController
 open class HCYBaseViewController: UIViewController {
-    
+    weak var hcy_baseViewDelegate:HCYBaseViewControllerDelegate?
     /// Rxswift disposeBag
-    let disposeBag = DisposeBag()
+    public let disposeBag = DisposeBag()
     //The line below the navigation bar
     lazy var topLine: UIView = {
         let lineView = UIView()
@@ -27,13 +30,13 @@ open class HCYBaseViewController: UIViewController {
     }()
     
     /// Delete from the end . delete count
-    var deleteViewCount = 0
+    public var deleteViewCount = 0
     
     /// Page request initial page
-    var pageNum:Int = 1
+    public var pageNum:Int = 1
     
     /// Delete from to behind
-    var deleteViewCountFirst = 0
+    public var deleteViewCountFirst = 0
     
     open override class func setValue(_ value: Any?, forUndefinedKey key: String) {
         DebugLog("Error setting routing parameters. No key exists: \(key)")
@@ -44,32 +47,39 @@ open class HCYBaseViewController: UIViewController {
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(self.hcy_hiddenNavigationBarHidden(), animated: false)
+        guard hcy_baseViewDelegateisEnabled() else{return}
+        self.hcy_baseViewDelegate = self
     }
     open override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
+    }
+    open override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.hcy_baseViewDelegate = nil
     }
     open override func viewDidLoad() {
         super.viewDidLoad()
         //MARK: auto add back btn
         if let vcs = self.navigationController?.viewControllers, vcs.count > 1{
             DebugLog("vcs.count \(vcs.count)")
-            addleftbutton()
+            hcy_addleftbutton()
         }
         
         self.view.backgroundColor = .white
         
         self.hcy_prefersNavigationBarHidden = self.hcy_hiddenNavigationBarHidden()
         self.hcy_interactivePopDisabled = self.hcy_interactivePopDisabled()
-        changeNavigationStyle()
+//        changeNavigationStyle()
         setupNavigationItems()
         initializeSubViews()
         addSubViews()
         setupSubViewMargins()
         
+        registerNotifaction()
+        
         view.addSubview(topLine)
-        view.bringSubview(toFront: topLine)
-        //        view.bringSubviewToFront(topLine)
+        view.bringSubviewToFront(topLine)
         guard self.hcy_hiddenNavigationBarHidden() else{return}
         topLine.isHidden = self.hcy_hiddenNavigationBarHidden()
         
@@ -77,6 +87,28 @@ open class HCYBaseViewController: UIViewController {
         
         
         // Do any additional setup after loading the view.
+    }
+    
+    /// register Notifaction
+    func registerNotifaction(){
+        NotificationCenter.default.rx.notification(UIApplication.willResignActiveNotification).subscribe(onNext: { [weak self] notification in
+            guard let weakSelf = self else {return}
+            weakSelf.hcy_baseViewDelegate?.willResignActiveNotification()
+        }).disposed(by: disposeBag)
+        
+        NotificationCenter.default.rx.notification(UIApplication.didEnterBackgroundNotification).subscribe(onNext: {  [weak self] notification in
+            guard let weakSelf = self else {return}
+            weakSelf.hcy_baseViewDelegate?.didEnterBackgroundNotification()
+        }).disposed(by: disposeBag)
+        
+        NotificationCenter.default.rx.notification(UIApplication.willEnterForegroundNotification).subscribe(onNext: { [weak self] notification in
+            guard let weakSelf = self else {return}
+            weakSelf.hcy_baseViewDelegate?.willEnterForegroundNotification()
+        }).disposed(by: disposeBag)
+        NotificationCenter.default.rx.notification(UIApplication.didBecomeActiveNotification).subscribe(onNext: { [weak self] notification in
+            guard let weakSelf = self else {return}
+            weakSelf.hcy_baseViewDelegate?.didBecomeActiveNotification()
+        }).disposed(by: disposeBag)
     }
     open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -119,16 +151,22 @@ open class HCYBaseViewController: UIViewController {
         return false
     }
     
+    /// APP activity Delegate isEnabled? Default false
+    /// - Returns: true / false
+    open func hcy_baseViewDelegateisEnabled()->Bool{
+        return false
+    }
+    
     /// Add navigation left  back Item
-    open func addleftbutton()  {
+    open func hcy_addleftbutton()  {
         self.navigationItem.leftBarButtonItem = self.CreateNavigationItem(type: .left, imageName: "return", titleColor: .red, itemAction: nil)
     }
     /// Add navigation right Item
-    open func addRightButton(title:String? = nil,imageName:String? = nil,action:@escaping ()->()){
+    open func hcy_addRightButton(title:String? = nil,imageName:String? = nil,action:@escaping ()->()){
         self.navigationItem.rightBarButtonItem = self.CreateNavigationItem(type: .right, title: title, imageName: imageName, titleColor: .black, itemAction: action)
     }
     //MARK:Quick jump
-    open func currentVCpushTo(_ vc:UIViewController) {
+    open func hcy_currentVCpushTo(_ vc:UIViewController) {
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -180,66 +218,24 @@ open class HCYBaseViewController: UIViewController {
     deinit {
         DebugLog("deinit")
     }
-    
-    
-    
 }
 
 extension HCYBaseViewController:Initialization{
-    
     /// initialize SubViews
-    @objc open func initializeSubViews() {
-        
-    }
-    
+    @objc open func initializeSubViews() {}
     /// addSubViews
-    @objc open func addSubViews() {
-        
-    }
-    
+    @objc open func addSubViews() {}
     /// setup SubView Margins
-    @objc open func setupSubViewMargins() {
-        
-    }
-    
+    @objc open func setupSubViewMargins() {}
     /// setup Navigation Items
-    @objc open func setupNavigationItems() {
-        
-    }
-    
-    
+    @objc open func setupNavigationItems() {}
+}
+extension HCYBaseViewController:HCYBaseViewControllerDelegate{
+    @objc open func willResignActiveNotification(){}
+    @objc open func didEnterBackgroundNotification(){}
+    @objc open func willEnterForegroundNotification(){}
+    @objc open func didBecomeActiveNotification(){}
 }
 
-extension UIViewController{
-    public static func makeVCWithXIB<T:viewModelProtocol>(viewController:T.Type,viewModel:T.ViewModelT)->T{
-        let viewControllerName = String(describing: viewController)
-        //动态获取命名空间
-        let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
-        //注意工程中必须有相关的类，否则程序会crash
-        let classT:AnyObject = NSClassFromString(namespace + "." + viewControllerName)!
-        // 告诉编译器它的真实类型
-        if let viewControllerClass = classT as? UIViewController.Type, var vc = viewControllerClass.init() as? T{
-            vc.viewModel = viewModel
-            return vc
-        }else{
-            fatalError("Unable to create ViewController: \(viewControllerName) from XIB: \(viewControllerName)")
-        }
-        
-    }
-    public static func makeVCWithSB<T:viewModelProtocol>(viewController:T.Type,viewModel:T.ViewModelT)->T{
-        var vc = makeVCWithSB(viewController: viewController)
-        vc.viewModel = viewModel
-        return vc
-    }
-    public static func makeVCWithSB<T>(viewController:T.Type)->T{
-        
-        let viewControllerName = String(describing: viewController)
-        
-        let storyboard = UIStoryboard(name: viewControllerName, bundle: nil)
-        
-        guard let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerName) as? T else {  fatalError("Unable to create ViewController: \(viewControllerName) from storyboard: \(storyboard)") }
-        return viewController
-    }
-}
 
 

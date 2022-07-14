@@ -15,14 +15,19 @@ public struct HCYLabelAlignment : OptionSet {
         self.rawValue = rawValue
     }
     
-    public static var VerticalTop :HCYLabelAlignment { return  HCYLabelAlignment(rawValue: 0) }
-    public static var VerticalMiddle: HCYLabelAlignment { return  HCYLabelAlignment(rawValue: 1<<0) }
+    public static var VerticalTop :HCYLabelAlignment { return  HCYLabelAlignment(rawValue: 1 << 0) }
+    
+    public static var VerticalMiddle: HCYLabelAlignment { return  HCYLabelAlignment(rawValue: 1 << 1) }
 
-    public static var VerticalBottom: HCYLabelAlignment { return  HCYLabelAlignment(rawValue: 1 << 1) }
+    public static var VerticalBottom: HCYLabelAlignment { return  HCYLabelAlignment(rawValue: 1 << 2) }
 
-    public static var HorizontalLeft: HCYLabelAlignment { return  HCYLabelAlignment(rawValue: 1 << 2) }
-    public static var HorizontalMiddle: HCYLabelAlignment { return  HCYLabelAlignment(rawValue: 1 << 3) }
-    public static var HorizontalRight: HCYLabelAlignment { return  HCYLabelAlignment(rawValue: 1 << 4) }
+    
+    
+    public static var HorizontalLeft: HCYLabelAlignment { return  HCYLabelAlignment(rawValue: 1 << 3) }
+    
+    public static var HorizontalMiddle: HCYLabelAlignment { return  HCYLabelAlignment(rawValue: 1 << 4) }
+    
+    public static var HorizontalRight: HCYLabelAlignment { return  HCYLabelAlignment(rawValue: 1 << 5) }
     
     
     public static var topleft:HCYLabelAlignment{return HCYLabelAlignment(rawValue: VerticalTop.rawValue | HorizontalLeft.rawValue)}

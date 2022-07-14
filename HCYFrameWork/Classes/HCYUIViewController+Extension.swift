@@ -131,3 +131,14 @@ extension UIViewController{
         return currentVC
     }
 }
+extension UIViewController{
+    public static func makeVCWithSB<T>(viewController:T.Type)->T{
+        
+        let viewControllerName = String(describing: viewController)
+        
+        let storyboard = UIStoryboard(name: viewControllerName, bundle: nil)
+        
+        guard let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerName) as? T else {  fatalError("Unable to create ViewController: \(viewControllerName) from storyboard: \(storyboard)") }
+        return viewController
+    }
+}

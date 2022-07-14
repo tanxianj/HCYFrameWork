@@ -11,7 +11,7 @@ fileprivate var VIEW_ACTION_KEY = ""
 
 extension UIView{
     typealias View_action = ()->()
-    var vaiewAction:View_action{
+    var viewAction:View_action{
         get{
             return objc_getAssociatedObject(self, &VIEW_ACTION_KEY) as! UIView.View_action
         }
@@ -19,14 +19,17 @@ extension UIView{
             objc_setAssociatedObject(self, &VIEW_ACTION_KEY, newValue, .OBJC_ASSOCIATION_COPY)
         }
     }
+    
+    /// any view add GestureRecognizer
+    /// - Parameter action: action
     public func addEventHandler(action:@escaping()->()) {
         UIViewController.getCurrentVC().view.endEditing(true)
         self.isUserInteractionEnabled = true
-        self.vaiewAction = action
+        self.viewAction = action
         self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(viewTap)))
     }
     @objc func viewTap() {
-        self.vaiewAction()
+        self.viewAction()
     }
     
     

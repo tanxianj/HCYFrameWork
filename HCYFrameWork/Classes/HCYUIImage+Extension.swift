@@ -257,3 +257,28 @@ extension UIImage{
         return image
     }
 }
+extension UIImage{
+    public class func imageWithView(view: UIView) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.isOpaque, 0.0)
+        view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return img ?? UIImage()
+    }
+    
+    /// This method creates an image of a view
+    public convenience init?(view: UIView) {
+        
+        // Based on https://stackoverflow.com/a/41288197/1118398
+        let renderer = UIGraphicsImageRenderer(bounds: view.bounds)
+        let image = renderer.image { rendererContext in
+            view.layer.render(in: rendererContext.cgContext)
+        }
+        
+        if let cgImage = image.cgImage {
+            self.init(cgImage: cgImage, scale: UIScreen.main.scale, orientation: .up)
+        } else {
+            return nil
+        }
+    }
+}

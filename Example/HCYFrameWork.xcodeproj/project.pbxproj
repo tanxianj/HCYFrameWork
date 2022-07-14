@@ -18,6 +18,8 @@
 		2F0E74692875822A00FA47E1 /* MeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0E74672875822A00FA47E1 /* MeViewController.storyboard */; };
 		2F0E746A2875822A00FA47E1 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E74682875822A00FA47E1 /* MeViewController.swift */; };
 		2F986B5D2873EBD500140514 /* HCYFrameWork.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2F986B5C2873EBD500140514 /* HCYFrameWork.podspec */; };
+		2FFB548B287EA04B00D4B972 /* HCYTipsPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5489287EA04B00D4B972 /* HCYTipsPopUpView.swift */; };
+		2FFB548C287EA04B00D4B972 /* HCYActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB548A287EA04B00D4B972 /* HCYActionSheet.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -37,6 +39,8 @@
 		2F0E74672875822A00FA47E1 /* MeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeViewController.storyboard; sourceTree = "<group>"; };
 		2F0E74682875822A00FA47E1 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		2F986B5C2873EBD500140514 /* HCYFrameWork.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HCYFrameWork.podspec; path = ../HCYFrameWork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2FFB5489287EA04B00D4B972 /* HCYTipsPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCYTipsPopUpView.swift; sourceTree = "<group>"; };
+		2FFB548A287EA04B00D4B972 /* HCYActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCYActionSheet.swift; sourceTree = "<group>"; };
 		478DB2C0E877F97F5D6920D9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		49FDAC754A98C8C816037983 /* HCYFrameWork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HCYFrameWork.podspec; path = ../HCYFrameWork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* HCYFrameWork_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCYFrameWork_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FFB54A2287EA6CF00D4B972 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				2FFB548A287EA04B00D4B972 /* HCYActionSheet.swift */,
+				2FFB5489287EA04B00D4B972 /* HCYTipsPopUpView.swift */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		4A59D054E729BB3392686269 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,10 +105,11 @@
 		607FACD21AFB9204008FA782 /* Example for HCYFrameWork */ = {
 			isa = PBXGroup;
 			children = (
-				2F0E74632875822100FA47E1 /* HomeViewController.storyboard */,
+				2FFB54A2287EA6CF00D4B972 /* New Group */,
 				2F0E74642875822100FA47E1 /* HomeViewController.swift */,
-				2F0E74672875822A00FA47E1 /* MeViewController.storyboard */,
+				2F0E74632875822100FA47E1 /* HomeViewController.storyboard */,
 				2F0E74682875822A00FA47E1 /* MeViewController.swift */,
+				2F0E74672875822A00FA47E1 /* MeViewController.storyboard */,
 				2F0E74612875821400FA47E1 /* APPTabbarViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				2F0B271A2877E611002333DF /* eye_off.svg */,
@@ -149,7 +163,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				D295E3014D0EA0F7E7FD5ACA /* [CP] Embed Pods Frameworks */,
+				5C71BC2CFFD63DD1E1A48081 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,7 +231,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D295E3014D0EA0F7E7FD5ACA /* [CP] Embed Pods Frameworks */ = {
+		5C71BC2CFFD63DD1E1A48081 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -296,6 +310,8 @@
 				2F0E74622875821400FA47E1 /* APPTabbarViewController.swift in Sources */,
 				2F0E746A2875822A00FA47E1 /* MeViewController.swift in Sources */,
 				2F0E74662875822100FA47E1 /* HomeViewController.swift in Sources */,
+				2FFB548C287EA04B00D4B972 /* HCYActionSheet.swift in Sources */,
+				2FFB548B287EA04B00D4B972 /* HCYTipsPopUpView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +387,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -416,6 +433,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -433,7 +451,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -450,7 +468,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

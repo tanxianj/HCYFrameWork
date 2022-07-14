@@ -12,13 +12,62 @@
         <!--Home View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="ProjectMould" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="HCYFrameWork_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="F9q-dG-MaJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HometableViewCell" id="Hkq-Gu-nya" customClass="HometableViewCell" customModule="HCYFrameWork_Example" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="41"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hkq-Gu-nya" id="Wqg-ec-oTu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2B-Uk-A1M">
+                                                    <rect key="frame" x="10" y="10" width="394" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="scale" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="p2B-Uk-A1M" secondAttribute="trailing" constant="10" id="QkR-lf-4g7"/>
+                                                <constraint firstItem="p2B-Uk-A1M" firstAttribute="centerY" secondItem="Wqg-ec-oTu" secondAttribute="centerY" id="duH-fT-OIo"/>
+                                                <constraint firstItem="p2B-Uk-A1M" firstAttribute="top" secondItem="Wqg-ec-oTu" secondAttribute="top" constant="10" id="szp-h1-qLH"/>
+                                                <constraint firstItem="p2B-Uk-A1M" firstAttribute="leading" secondItem="Wqg-ec-oTu" secondAttribute="leading" constant="10" id="uaO-pn-wkr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLab" destination="p2B-Uk-A1M" id="mOy-yc-bAu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="raY-QG-xkL"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="FTk-eu-fg4"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F9q-dG-MaJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="BX1-yo-JBG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="F9q-dG-MaJ" secondAttribute="trailing" id="NHO-fJ-qKy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="F9q-dG-MaJ" secondAttribute="bottom" id="RZy-ae-0y7"/>
+                            <constraint firstItem="F9q-dG-MaJ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="pti-dm-bcc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="F9q-dG-MaJ" id="v6D-oj-EL4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -50,21 +50,21 @@ open class HCYBaseNavigationController: UINavigationController {
     }
     
     /// override Status Bar Hidden
-    open override var childViewControllerForStatusBarHidden: UIViewController?{
-        return self.topViewController
-    }
+//    open override var childViewControllerForStatusBarHidden: UIViewController?{
+//        return self.topViewController
+//    }
     /// override Status Bar Hidden
-    //    open override var childForStatusBarHidden: UIViewController?{
-    //        return self.topViewController
-    //    }
+        open override var childForStatusBarHidden: UIViewController?{
+            return self.topViewController
+        }
     /// override Status Bar Style
-    open override var childViewControllerForStatusBarStyle: UIViewController?{
-        return self.topViewController
-    }
+//    open override var childViewControllerForStatusBarStyle: UIViewController?{
+//        return self.topViewController
+//    }
     /// override Status Bar Style
-    //    open override var childForStatusBarStyle: UIViewController?{
-    //        return topViewController
-    //    }
+        open override var childForStatusBarStyle: UIViewController?{
+            return topViewController
+        }
     
     
 }
