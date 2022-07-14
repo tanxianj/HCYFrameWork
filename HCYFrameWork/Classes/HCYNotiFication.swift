@@ -23,11 +23,11 @@ public class HCYNotiFication{
     
 }
 public class HCYNotiFicationCenter{
-    static let shared = HCYNotiFicationCenter()
+    public static let shared = HCYNotiFicationCenter()
     private init(){}
     public var observer = Dictionary<String,Array<AnyObject>>()
     public var callBacks = Dictionary<String,Array<(_ notiFication:HCYNotiFication)->Void>>()
-    func addObserver(name:String,object:AnyObject,callback:@escaping (_ notiFication:HCYNotiFication)->Void){
+    public func addObserver(name:String,object:AnyObject,callback:@escaping (_ notiFication:HCYNotiFication)->Void){
         if self.observer[name] != nil {
             self.observer[name]?.append(object)
             callBacks[name]?.append(callback)
@@ -43,11 +43,11 @@ public class HCYNotiFicationCenter{
         }
     }
     
-    func removeAllObServer(name:String){
+    public func removeAllObServer(name:String){
         self.observer.removeValue(forKey: name)
         self.callBacks.removeValue(forKey: name)
     }
-    func postNotiFication(notiFication:HCYNotiFication){
+    public func postNotiFication(notiFication:HCYNotiFication){
         let name = notiFication.name
         if  let arry = self.observer[name]{
             for i in 0..<arry.count {
