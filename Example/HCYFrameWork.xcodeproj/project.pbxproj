@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0852BF83300B0ABCACF64851 /* Pods_HCYFrameWork_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AAB3C6B8ACBD60C2907D53E /* Pods_HCYFrameWork_Example.framework */; };
+		0981790C6DA00BBD8065F7CC /* Pods_HCYFrameWork_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97ED90B68BD7AE9DFE0382E0 /* Pods_HCYFrameWork_Example.framework */; };
 		2F0B27192877E52C002333DF /* finger.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B27182877E52C002333DF /* finger.svg */; };
 		2F0B271B2877E611002333DF /* eye_off.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B271A2877E611002333DF /* eye_off.svg */; };
 		2F0B271D2877F039002333DF /* SVG.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B271C2877F039002333DF /* SVG.svg */; };
@@ -49,7 +49,7 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		7AAB3C6B8ACBD60C2907D53E /* Pods_HCYFrameWork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCYFrameWork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97ED90B68BD7AE9DFE0382E0 /* Pods_HCYFrameWork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCYFrameWork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B50AA891B01431E03E6DCFF1 /* Pods-HCYFrameWork_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCYFrameWork_Example.release.xcconfig"; path = "Target Support Files/Pods-HCYFrameWork_Example/Pods-HCYFrameWork_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0852BF83300B0ABCACF64851 /* Pods_HCYFrameWork_Example.framework in Frameworks */,
+				0981790C6DA00BBD8065F7CC /* Pods_HCYFrameWork_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,7 @@
 		4A59D054E729BB3392686269 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7AAB3C6B8ACBD60C2907D53E /* Pods_HCYFrameWork_Example.framework */,
+				97ED90B68BD7AE9DFE0382E0 /* Pods_HCYFrameWork_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -241,6 +241,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework",
 				"${BUILT_PRODUCTS_DIR}/HCYFrameWork/HCYFrameWork.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -259,6 +260,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLEX.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HCYFrameWork.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",

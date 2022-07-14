@@ -78,7 +78,7 @@ open class HCYDefaultView: UIView {
 
     private lazy var errorImage:UIImageView = {
         let errorImage = UIImageView()
-        errorImage.image = UIImage(named: "MyNotes_Landing")
+        errorImage.image = UIImage(named: "page_reminding_chucuo-1")
         errorImage.widthAnchor.constraint(greaterThanOrEqualToConstant: 70).isActive = true
         errorImage.widthAnchor.constraint(lessThanOrEqualToConstant: 200).isActive = true
         errorImage.addEventHandler {
@@ -339,14 +339,14 @@ extension HCYDefaultView{
 }
 fileprivate var hcyLoadingViewKey = "hcyLoadingViewKey"
 extension UIView{
-    var hb_loadingView:HCYDefaultView{
+   public  var hcy_loadingView:HCYDefaultView{
         get{
             return (objc_getAssociatedObject(self, &hcyLoadingViewKey) as? HCYDefaultView) ?? HCYDefaultView()
         }
         set{
-            if  self.hb_loadingView != newValue {
+            if  self.hcy_loadingView != newValue {
                 // 删除旧的，添加新的
-                self.hb_loadingView.removeFromSuperview()
+                self.hcy_loadingView.removeFromSuperview()
                 addSubview(newValue)
                 // 存储新的
                 objc_setAssociatedObject(self, &hcyLoadingViewKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)

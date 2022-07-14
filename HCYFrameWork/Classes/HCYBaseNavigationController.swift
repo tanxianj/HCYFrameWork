@@ -48,19 +48,10 @@ open class HCYBaseNavigationController: UINavigationController {
         viewController.hidesBottomBarWhenPushed = self.viewControllers.count > 0
         super.pushViewController(viewController, animated: animated)
     }
-    
-    /// override Status Bar Hidden
-//    open override var childViewControllerForStatusBarHidden: UIViewController?{
-//        return self.topViewController
-//    }
     /// override Status Bar Hidden
         open override var childForStatusBarHidden: UIViewController?{
             return self.topViewController
         }
-    /// override Status Bar Style
-//    open override var childViewControllerForStatusBarStyle: UIViewController?{
-//        return self.topViewController
-//    }
     /// override Status Bar Style
         open override var childForStatusBarStyle: UIViewController?{
             return topViewController

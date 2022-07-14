@@ -22,13 +22,25 @@ open class HCYBaseViewController: UIViewController {
     /// Rxswift disposeBag
     public let disposeBag = DisposeBag()
     //The line below the navigation bar
-    lazy var topLine: UIView = {
+    public lazy var topLine: UIView = {
         let lineView = UIView()
         lineView.backgroundColor = UIColor(red: 234.0/255.0, green: 235.0/255.0, blue: 238.0/255.0, alpha: 1)
         lineView.frame = CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 1.0/UIScreen.main.scale)
         return lineView
     }()
-    
+   /*
+    public lazy var tableView:UITableView = {
+        let tableView = UITableView(frame: .zero, style: .plain)
+        tableView.defaultConfig()
+        return tableView
+    }()
+    public lazy var collectionView:UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.defaultConfig()
+        return collectionView
+    }()
+    */
     /// Delete from the end . delete count
     public var deleteViewCount = 0
     
@@ -75,22 +87,15 @@ open class HCYBaseViewController: UIViewController {
         initializeSubViews()
         addSubViews()
         setupSubViewMargins()
-        
-        registerNotifaction()
-        
+        hcy_registerNotifaction()
         view.addSubview(topLine)
         view.bringSubviewToFront(topLine)
         guard self.hcy_hiddenNavigationBarHidden() else{return}
         topLine.isHidden = self.hcy_hiddenNavigationBarHidden()
-        
-        
-        
-        
-        // Do any additional setup after loading the view.
     }
     
     /// register Notifaction
-    func registerNotifaction(){
+    func hcy_registerNotifaction(){
         NotificationCenter.default.rx.notification(UIApplication.willResignActiveNotification).subscribe(onNext: { [weak self] notification in
             guard let weakSelf = self else {return}
             weakSelf.hcy_baseViewDelegate?.willResignActiveNotification()
@@ -236,6 +241,23 @@ extension HCYBaseViewController:HCYBaseViewControllerDelegate{
     @objc open func willEnterForegroundNotification(){}
     @objc open func didBecomeActiveNotification(){}
 }
-
+extension HCYBaseViewController{
+    public func hcy_addScrollToTopBtn(){
+        let view = UIView()
+        view.backgroundColor = .red
+        self.view.addSubview(view)
+        view.snp.makeConstraints { make in
+            make.width.height.equalTo(50.scale())
+            make.right.equalToSuperview().offset(-20)
+            make.bottom.equalToSuperview().offset(-20)
+        }
+        view.addEventHandler {
+            guard let scrollView = self.view.subviews.first(where: {$0 is UIScrollView}) as? UIScrollView else{return}
+            let contentInset = scrollView.contentInset
+            DebugLog("contentInset \(contentInset.top)")
+            scrollView.setContentOffset(CGPoint(x: 0, y: -contentInset.top), animated: true)
+        }
+    }
+}
 
 

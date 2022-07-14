@@ -4,7 +4,9 @@ PODS:
     - CocoaLumberjack/Core (= 3.7.4)
   - CocoaLumberjack/Core (3.7.4)
   - Differentiator (4.0.1)
-  - HCYFrameWork (0.1.6):
+  - FLEX (4.7.0)
+  - HCYFrameWork (0.1.7):
+    - FLEX
     - IQKeyboardManagerSwift
     - Kingfisher
     - MJRefresh
@@ -46,6 +48,7 @@ SPEC REPOS:
     - Alamofire
     - CocoaLumberjack
     - Differentiator
+    - FLEX
     - IQKeyboardManagerSwift
     - Kingfisher
     - MJRefresh
@@ -66,7 +69,8 @@ SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
   CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
-  HCYFrameWork: 12ba4e77899f6c53eaec290e45490ad3bcdf1d9f
+  FLEX: bdc9ac7d4a239e3d04c298c01221203257d63a80
+  HCYFrameWork: 6e9ef5592868ed95adc11b78cdffeca60413c987
   IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
   Kingfisher: cdb1189a9223b1bc028816bd47c8b8101a58831c
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961

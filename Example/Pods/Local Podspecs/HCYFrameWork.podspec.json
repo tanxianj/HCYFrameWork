@@ -1,6 +1,6 @@
 {
   "name": "HCYFrameWork",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "summary": "A short description of HCYFrameWork.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/tanxianj/HCYFrameWork",
@@ -13,12 +13,13 @@
   },
   "source": {
     "git": "https://github.com/tanxianj/HCYFrameWork.git",
-    "tag": "0.1.6"
+    "tag": "0.1.7"
   },
   "platforms": {
     "ios": "12.0"
   },
   "source_files": "HCYFrameWork/Classes/**/*",
+  "swift_versions": "5.0",
   "dependencies": {
     "SnapKit": [
       "~> 5.0.0"
@@ -49,6 +50,15 @@
     ],
     "IQKeyboardManagerSwift": [
 
+    ],
+    "FLEX": [
+
     ]
-  }
+  },
+  "configuration_pod_whitelist": {
+    "FLEX": [
+      "debug"
+    ]
+  },
+  "swift_version": "5.0"
 }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'HCYFrameWork'
-    s.version          = '0.1.7'
+    s.version          = '0.1.8'
     s.summary          = 'A short description of HCYFrameWork.'
     
     # This description is used to generate tags and improve search results.
@@ -49,4 +49,5 @@ Pod::Spec.new do |s|
     s.dependency 'Kingfisher'
     s.dependency 'SVProgressHUD'
     s.dependency 'IQKeyboardManagerSwift'
+    s.dependency 'FLEX',:configurations => ['Debug'] #为Debug 模式引入
 end
