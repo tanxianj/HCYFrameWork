@@ -12,11 +12,17 @@ open class HCYBaseNavigationController: UINavigationController {
     
     open override func viewDidLoad() {
         super.viewDidLoad()
+        hcy_ResetNavigationConfig()
+    }
+    open func hcy_ResetNavigationConfig(navTitleColor:UIColor = .black,
+                                  navTitleFont:UIFont = .systemFont(ofSize: 18.scale()),
+                                  navbackgroundColor:UIColor = .white,
+                                  navbackgroundImage:UIImage? = nil){
         //MARK: set Navigation bar parameter
         if #available(iOS 13.0, *) {
             let navBarAppearance = UINavigationBarAppearance()
-            navBarAppearance.backgroundColor = .white
-            
+            navBarAppearance.backgroundColor = navbackgroundColor
+            navBarAppearance.backgroundImage = navbackgroundImage
             /*
              navBarAppearance.backgroundImage = UIImage(colors: [RGBColor(r: 140, g: 228, b: 152),
              RGBColor(r:85,g:195,b:179),
@@ -25,14 +31,14 @@ open class HCYBaseNavigationController: UINavigationController {
              */
             navBarAppearance.backgroundEffect = nil
             navBarAppearance.shadowColor = .clear
-            navBarAppearance.titleTextAttributes = [.foregroundColor:UIColor.green ,.font:UIFont.systemFont(ofSize: 18.scale(), weight: .semibold)]
+            navBarAppearance.titleTextAttributes = [.foregroundColor:navTitleColor ,.font:navTitleFont]
             self.navigationBar.scrollEdgeAppearance = navBarAppearance
             self.navigationBar.standardAppearance = navBarAppearance
         }else{
             
             //        self.navigationBar.setBackgroundImage(UIImage(named: ""), for: .default)
             self.navigationBar.shadowImage = UIImage()
-            self.navigationBar.titleTextAttributes = [.foregroundColor:UIColor.black,.font:UIFont.systemFont(ofSize: 18.0.scale(), weight: .semibold)]
+            self.navigationBar.titleTextAttributes = [.foregroundColor:navTitleColor,.font:navTitleFont]
         }
         self.navigationBar.isTranslucent = false
         //        self.navigationBar.prefersLargeTitles = true

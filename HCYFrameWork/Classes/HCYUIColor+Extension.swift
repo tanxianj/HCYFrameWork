@@ -1,5 +1,5 @@
 //
-//  UIColor+Extension.swift
+//  HCYUIColor+Extension.swift
 //
 //
 //  Created by Jupiter_TSS on 8/3/22.

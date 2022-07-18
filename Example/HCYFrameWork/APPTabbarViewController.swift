@@ -12,7 +12,9 @@ class APPTabbarViewController: HCYBaseTabbarViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        hcy_ResetTabbarConfig(selectedColor: .green, normalColor: .gray, backGround: UIImage(named: "tab_back"))
         setupChildControllers()
+//        setTabbarConfig(selectedColor: .green, normalColor: .gray)
     }
     
     fileprivate func setupChildControllers(){
@@ -49,9 +51,9 @@ class APPTabbarViewController: HCYBaseTabbarViewController {
         vc.tabBarItem.title = title
         vc.tabBarItem.image = UIImage(named: normalImage)?.withRenderingMode(.alwaysOriginal)
         vc.tabBarItem.selectedImage = UIImage(named: selectImage)?.withRenderingMode(.alwaysOriginal)
-        vc.tabBarItem.setTitleTextAttributes([.font:UIFont.systemFont(ofSize: 12.scale())], for: .normal)
+        
         vc.navigationItem.title = title
-        let nav = HCYBaseNavigationController(rootViewController: vc)
+        let nav = APPNavigationViewController(rootViewController: vc)
         return nav
     }
    

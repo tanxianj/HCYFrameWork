@@ -7,32 +7,25 @@
 //
 
 import UIKit
-import RxSwift
-import RxRelay
 
 /// Base Tabbar
 open class HCYBaseTabbarViewController: UITabBarController {
     
-    /// Rxswift disposeBag
-    let disposeBag = DisposeBag()
-    
-    /// tabbar Background Image
-    fileprivate let imageName = PublishSubject<String>()
-    
-    /// init function
-    /// - Parameter withtabbarImage: tabbar Background Image Name
-    public convenience init(withtabbarImage:String){
-        self.init(nibName: nil, bundle: nil)
-        imageName.onNext(withtabbarImage)
-    }
-    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
-    public required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
     open override func viewDidLoad() {
         super.viewDidLoad()
+        hcy_ResetTabbarConfig()
+    }
+    
+    /// 设置 Tabbar 参数
+    /// - Parameters:
+    ///   - fontSize:文字大小 默认14
+    ///   - selectedColor: 选中颜色
+    ///   - normalColor: 默认颜色
+    ///   - backGround: 背景 可传入 1.图片 2.颜色 3.文字 文字将被视为图片Name
+    public func hcy_ResetTabbarConfig(fontSize:CGFloat = 12.0,
+                                selectedColor:UIColor = .red,
+                                normalColor:UIColor = .blue,
+                                backGround:Any? = nil){
         
         //MARK: init tabbar parameter
         if #available(iOS 15.0, *) {
@@ -41,16 +34,29 @@ open class HCYBaseTabbarViewController: UITabBarController {
             //            tabbar.backgroundImage = UIImage(named: "tab_back")
             tabbar.shadowColor = .clear
             tabbar.backgroundEffect = nil
-            tabbar.stackedLayoutAppearance.selected.titleTextAttributes = [.font:UIFont.systemFont(ofSize: 12.scale()),.foregroundColor:UIColor.red]
-            tabbar.stackedLayoutAppearance.selected.iconColor = .red
-            tabbar.stackedLayoutAppearance.normal.titleTextAttributes = [.font:UIFont.systemFont(ofSize: 12.scale()),.foregroundColor:UIColor.blue]
             
             
-            imageName.asObserver().observeOn(MainScheduler.instance).subscribe(onNext: { name in
-                tabbar.backgroundImage = UIImage(named: name)
-                self.tabBar.scrollEdgeAppearance = tabbar
-                self.tabBar.standardAppearance = tabbar
-            }).disposed(by: disposeBag)
+            tabbar.stackedLayoutAppearance.selected.iconColor = selectedColor
+            tabbar.stackedLayoutAppearance.selected.titleTextAttributes = [.font:UIFont.systemFont(ofSize: 12.scale()),.foregroundColor:selectedColor]
+            
+            
+            tabbar.stackedLayoutAppearance.normal.iconColor = normalColor
+            tabbar.stackedLayoutAppearance.normal.titleTextAttributes = [.font:UIFont.systemFont(ofSize: 12.scale()),.foregroundColor:normalColor]
+            if let backGround = backGround as? UIColor  {
+                tabbar.backgroundImage = UIColor.imageFromColor(color: backGround, viewSize: CGSize(width: KScreenW, height: KtabbarH))
+            }
+            if let backGround = backGround as? UIImage  {
+                tabbar.backgroundImage = backGround
+            }
+            if let backGround = backGround as? String  {
+                tabbar.backgroundImage = UIImage(named: backGround)
+            }
+            
+            if backGround == nil{
+                tabbar.backgroundImage = UIColor.imageFromColor(color: UIColor.white, viewSize: CGSize(width: KScreenW, height: KtabbarH))
+            }
+            self.tabBar.scrollEdgeAppearance = tabbar
+            self.tabBar.standardAppearance = tabbar
             
         } else {
             // Fallback on earlier versions
@@ -58,12 +64,22 @@ open class HCYBaseTabbarViewController: UITabBarController {
             UITabBar.appearance().shadowImage = UIImage()
             //        UITabBar.appearance().backgroundColor = UIColor.appBGColor()
             //            self.tabBar.backgroundImage = UIImage(named: "tab_back")
-            imageName.asObserver().observeOn(MainScheduler.instance).subscribe(onNext: { name in
-                self.tabBar.backgroundImage = UIImage(named: name)
-            }).disposed(by: disposeBag)
-            UITabBar.appearance().tintColor = .red
+            
+            if let backGround = backGround as? UIColor  {
+                self.tabBar.backgroundImage = UIColor.imageFromColor(color: backGround, viewSize: CGSize(width: KScreenW, height: KtabbarH))
+            }
+            if let backGround = backGround as? UIImage  {
+                self.tabBar.backgroundImage = backGround
+            }
+            if let backGround = backGround as? String  {
+                self.tabBar.backgroundImage = UIImage(named: backGround)
+            }
+            if backGround == nil{
+                self.tabBar.backgroundImage = UIColor.imageFromColor(color: UIColor.white, viewSize: CGSize(width: KScreenW, height: KtabbarH))
+            }
+            UITabBar.appearance().tintColor = selectedColor
             if #available(iOS 10.0, *) {
-                UITabBar.appearance().unselectedItemTintColor = UIColor.blue
+                UITabBar.appearance().unselectedItemTintColor = normalColor
             } else {
                 // Fallback on earlier versions
             }
@@ -72,7 +88,6 @@ open class HCYBaseTabbarViewController: UITabBarController {
         self.tabBar.isTranslucent = false
         //        UITabBar.appearance().backgroundColor = UIColor.white
         //        UITabBar.appearance().backgroundImage = UIImage()
-        
         
     }
 }

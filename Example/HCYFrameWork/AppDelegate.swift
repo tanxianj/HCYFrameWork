@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UITableViewCell.appearance().selectionStyle = .none
         initUI()
         registerNotification()
         return true
@@ -26,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window = UIWindow.init(frame: UIScreen.main.bounds)
         }
 
-        let vc = APPTabbarViewController(withtabbarImage: "tab_back")
+        let vc = APPTabbarViewController()
 
         self.window?.rootViewController = vc
         self.window?.makeKeyAndVisible()

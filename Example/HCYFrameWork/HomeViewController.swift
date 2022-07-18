@@ -8,7 +8,7 @@
 import UIKit
 import SVGKit
 import HCYFrameWork
-
+import Kingfisher
 class HomeViewController: HCYBaseViewController {
     @IBOutlet weak var tableView: UITableView!
     override var preferredStatusBarStyle: UIStatusBarStyle{
@@ -33,7 +33,8 @@ class HomeViewController: HCYBaseViewController {
         headerView.backgroundColor = .gray
         view.addSubview(headerView)
         
-        
+//        let image = UIImageView()
+//        image.hcySetImageWith(url: <#T##String#>, placeholder: <#T##String#>)
 //        view.hcy_loadingView = HCYDefaultView.loadingViewWithDefaultRefreshingBlock(mainAction: {
 //            
 //        })

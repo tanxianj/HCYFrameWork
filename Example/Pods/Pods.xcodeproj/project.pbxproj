@@ -255,6 +255,23 @@
 		2FB0807A5E732913FD1BBE8A34ED063A /* GroupedObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE630DDF8B9BED24E6F724E4355AA5CD /* GroupedObservable.swift */; };
 		2FDDAD626085A41BA01C358370ACDE5C /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 35AC03C82E921018D435E7473BD113ED /* MJRefreshAutoStateFooter.m */; };
 		2FFB54D02880110500D4B972 /* HCYUIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB54CF2880110500D4B972 /* HCYUIWindow+Extension.swift */; };
+		2FFB54D4288017D100D4B972 /* HCYUIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB54D3288017D100D4B972 /* HCYUIImageView+Extension.swift */; };
+		2FFB5629288541CD00D4B972 /* HCYSegmentedViewTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5619288541CC00D4B972 /* HCYSegmentedViewTool.swift */; };
+		2FFB562A288541CD00D4B972 /* HCYSegmentedAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB561A288541CC00D4B972 /* HCYSegmentedAnimator.swift */; };
+		2FFB562B288541CD00D4B972 /* HCYSegmentedIndicatorBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB561B288541CC00D4B972 /* HCYSegmentedIndicatorBaseView.swift */; };
+		2FFB562C288541CD00D4B972 /* HCYSegmentedTitleItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB561C288541CC00D4B972 /* HCYSegmentedTitleItemModel.swift */; };
+		2FFB562D288541CD00D4B972 /* HCYSegmentedBaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB561D288541CC00D4B972 /* HCYSegmentedBaseDataSource.swift */; };
+		2FFB562E288541CD00D4B972 /* HCYSegmentedCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB561E288541CC00D4B972 /* HCYSegmentedCollectionView.swift */; };
+		2FFB562F288541CD00D4B972 /* HCYSegmentedBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB561F288541CC00D4B972 /* HCYSegmentedBaseCell.swift */; };
+		2FFB5630288541CD00D4B972 /* HCYSegmentedIndicatorParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5620288541CC00D4B972 /* HCYSegmentedIndicatorParams.swift */; };
+		2FFB5631288541CD00D4B972 /* HCYSegmentedIndicatorLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5621288541CC00D4B972 /* HCYSegmentedIndicatorLineView.swift */; };
+		2FFB5632288541CD00D4B972 /* HCYSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5622288541CC00D4B972 /* HCYSegmentedView.swift */; };
+		2FFB5633288541CD00D4B972 /* HCYSegmentedTitleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5623288541CC00D4B972 /* HCYSegmentedTitleDataSource.swift */; };
+		2FFB5634288541CD00D4B972 /* HCYSegmentedListContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5624288541CC00D4B972 /* HCYSegmentedListContainerView.swift */; };
+		2FFB5635288541CD00D4B972 /* HCYSegmentedTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5625288541CC00D4B972 /* HCYSegmentedTitleCell.swift */; };
+		2FFB5636288541CD00D4B972 /* HCYSegmentedIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5626288541CC00D4B972 /* HCYSegmentedIndicatorProtocol.swift */; };
+		2FFB5637288541CD00D4B972 /* HCYSegmentedBaseItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5627288541CC00D4B972 /* HCYSegmentedBaseItemModel.swift */; };
+		2FFB5638288541CD00D4B972 /* HCYSegmentedRTLLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5628288541CD00D4B972 /* HCYSegmentedRTLLayout.swift */; };
 		3003F8EFB59DC80A2E44774DF015AD23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE1D7AC5105D579CAC1964FA66A08EE /* Foundation.framework */; };
 		300EAA1B4BFE872D560B3F7E59143391 /* FLEXTypeEncodingParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C1D58E207391FA4B20D652C126E3D872 /* FLEXTypeEncodingParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		301D20A266B3C5758B6E3BE8CA05DC26 /* RxTableViewReactiveArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71FFDF6E40EFD74B54139B5BBC08F27 /* RxTableViewReactiveArrayDataSource.swift */; };
@@ -1742,6 +1759,23 @@
 		2EB0E71741EBBDFB20D1BD154AC834C0 /* FLEXIvar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXIvar.m; path = Classes/Utility/Runtime/Objc/Reflection/FLEXIvar.m; sourceTree = "<group>"; };
 		2F96016F0F0F15F43687B221D79EE063 /* FLEXObjectListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXObjectListViewController.h; path = Classes/GlobalStateExplorers/FLEXObjectListViewController.h; sourceTree = "<group>"; };
 		2FFB54CF2880110500D4B972 /* HCYUIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HCYUIWindow+Extension.swift"; path = "HCYFrameWork/Classes/HCYUIWindow+Extension.swift"; sourceTree = "<group>"; };
+		2FFB54D3288017D100D4B972 /* HCYUIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HCYUIImageView+Extension.swift"; path = "HCYFrameWork/Classes/HCYUIImageView+Extension.swift"; sourceTree = "<group>"; };
+		2FFB5619288541CC00D4B972 /* HCYSegmentedViewTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCYSegmentedViewTool.swift; path = HCYFrameWork/Classes/HCYSegmentedViewTool.swift; sourceTree = "<group>"; };
+		2FFB561A288541CC00D4B972 /* HCYSegmentedAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCYSegmentedAnimator.swift; path = HCYFrameWork/Classes/HCYSegmentedAnimator.swift; sourceTree = "<group>"; };
+		2FFB561B288541CC00D4B972 /* HCYSegmentedIndicatorBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCYSegmentedIndicatorBaseView.swift; path = HCYFrameWork/Classes/HCYSegmentedIndicatorBaseView.swift; sourceTree = "<group>"; };
+		2FFB561C288541CC00D4B972 /* HCYSegmentedTitleItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCYSegmentedTitleItemModel.swift; path = HCYFrameWork/Classes/HCYSegmentedTitleItemModel.swift; sourceTree = "<group>"; };
+		2FFB561D288541CC00D4B972 /* HCYSegmentedBaseDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCYSegmentedBaseDataSource.swift; path = HCYFrameWork/Classes/HCYSegmentedBaseDataSource.swift; sourceTree = "<group>"; };
+		2FFB561E288541CC00D4B972 /* HCYSegmentedCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCYSegmentedCollectionView.swift; path = HCYFrameWork/Classes/HCYSegmentedCollectionView.swift; sourceTree = "<group>"; };
+		2FFB561F288541CC00D4B972 /* HCYSegmentedBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCYSegmentedBaseCell.swift; path = HCYFrameWork/Classes/HCYSegmentedBaseCell.swift; sourceTree = "<group>"; };
+		2FFB5620288541CC00D4B972 /* HCYSegmentedIndicatorParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCYSegmentedIndicatorParams.swift; path = HCYFrameWork/Classes/HCYSegmentedIndicatorParams.swift; sourceTree = "<group>"; };
+		2FFB5621288541CC00D4B972 /* HCYSegmentedIndicatorLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCYSegmentedIndicatorLineView.swift; path = HCYFrameWork/Classes/HCYSegmentedIndicatorLineView.swift; sourceTree = "<group>"; };
+		2FFB5622288541CC00D4B972 /* HCYSegmentedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCYSegmentedView.swift; path = HCYFrameWork/Classes/HCYSegmentedView.swift; sourceTree = "<group>"; };
+		2FFB5623288541CC00D4B972 /* HCYSegmentedTitleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCYSegmentedTitleDataSource.swift; path = HCYFrameWork/Classes/HCYSegmentedTitleDataSource.swift; sourceTree = "<group>"; };
+		2FFB5624288541CC00D4B972 /* HCYSegmentedListContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCYSegmentedListContainerView.swift; path = HCYFrameWork/Classes/HCYSegmentedListContainerView.swift; sourceTree = "<group>"; };
+		2FFB5625288541CC00D4B972 /* HCYSegmentedTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCYSegmentedTitleCell.swift; path = HCYFrameWork/Classes/HCYSegmentedTitleCell.swift; sourceTree = "<group>"; };
+		2FFB5626288541CC00D4B972 /* HCYSegmentedIndicatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCYSegmentedIndicatorProtocol.swift; path = HCYFrameWork/Classes/HCYSegmentedIndicatorProtocol.swift; sourceTree = "<group>"; };
+		2FFB5627288541CC00D4B972 /* HCYSegmentedBaseItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCYSegmentedBaseItemModel.swift; path = HCYFrameWork/Classes/HCYSegmentedBaseItemModel.swift; sourceTree = "<group>"; };
+		2FFB5628288541CD00D4B972 /* HCYSegmentedRTLLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCYSegmentedRTLLayout.swift; path = HCYFrameWork/Classes/HCYSegmentedRTLLayout.swift; sourceTree = "<group>"; };
 		30A7A4674FCE6AF6FE7065AFF189221D /* FLEXMethodBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXMethodBase.h; path = Classes/Utility/Runtime/Objc/Reflection/FLEXMethodBase.h; sourceTree = "<group>"; };
 		3120BC0E0474A55C80E7A118EA9AF8D6 /* SVGKParserDefsAndUse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKParserDefsAndUse.m; path = "Source/Parsers/Parser Extensions/SVGKParserDefsAndUse.m"; sourceTree = "<group>"; };
 		313A66B1F4698F5B036FADA20A9B8367 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
@@ -3987,6 +4021,22 @@
 		66D14B97FD47F0661264093F44FE5A43 /* HCYFrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				2FFB561A288541CC00D4B972 /* HCYSegmentedAnimator.swift */,
+				2FFB561F288541CC00D4B972 /* HCYSegmentedBaseCell.swift */,
+				2FFB561D288541CC00D4B972 /* HCYSegmentedBaseDataSource.swift */,
+				2FFB5627288541CC00D4B972 /* HCYSegmentedBaseItemModel.swift */,
+				2FFB561E288541CC00D4B972 /* HCYSegmentedCollectionView.swift */,
+				2FFB561B288541CC00D4B972 /* HCYSegmentedIndicatorBaseView.swift */,
+				2FFB5621288541CC00D4B972 /* HCYSegmentedIndicatorLineView.swift */,
+				2FFB5620288541CC00D4B972 /* HCYSegmentedIndicatorParams.swift */,
+				2FFB5626288541CC00D4B972 /* HCYSegmentedIndicatorProtocol.swift */,
+				2FFB5624288541CC00D4B972 /* HCYSegmentedListContainerView.swift */,
+				2FFB5628288541CD00D4B972 /* HCYSegmentedRTLLayout.swift */,
+				2FFB5625288541CC00D4B972 /* HCYSegmentedTitleCell.swift */,
+				2FFB5623288541CC00D4B972 /* HCYSegmentedTitleDataSource.swift */,
+				2FFB561C288541CC00D4B972 /* HCYSegmentedTitleItemModel.swift */,
+				2FFB5622288541CC00D4B972 /* HCYSegmentedView.swift */,
+				2FFB5619288541CC00D4B972 /* HCYSegmentedViewTool.swift */,
 				CA42777338A5E98B9B068A151BC95BDF /* HCYAPPScale+Extension.swift */,
 				60430D6D00A7B1EBF1C1FDC40CE20167 /* HCYBaseNavigationController.swift */,
 				DD33D761696E87ECD69CF5F779931757 /* HCYBasePopupConfig.swift */,
@@ -4011,6 +4061,7 @@
 				8D9D482EEE67E1380E6DBBB02A317A0F /* HCYUIDevice+Extension.swift */,
 				2FFB54CF2880110500D4B972 /* HCYUIWindow+Extension.swift */,
 				294B774B00FC88821BC04497DA1CAB1B /* HCYUIImage+Extension.swift */,
+				2FFB54D3288017D100D4B972 /* HCYUIImageView+Extension.swift */,
 				B43500B5EF82A54F4C8E433757E34571 /* HCYUITableViewCell+Extension.swift */,
 				8EE0071A154BC5AB0CDF91ECCEBAB391 /* HCYUITextField+Extension.swift */,
 				AF8AB090BF6ED40A45E960803F5C613F /* HCYUIVIew+Extension.swift */,
@@ -6259,11 +6310,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				295BFBD4D7882E21B11EA4A988952D2B /* HCYAPPScale+Extension.swift in Sources */,
+				2FFB54D4288017D100D4B972 /* HCYUIImageView+Extension.swift in Sources */,
 				C667E3F8241A5A42343D6F14138440A0 /* HCYBaseNavigationController.swift in Sources */,
 				909CA25E3BA446C733CE2619E468B01F /* HCYBasePopupConfig.swift in Sources */,
 				0C6FABC06C69BBBD6803968CEDC6A6EB /* HCYBasePopupEnum.swift in Sources */,
 				4B49C1AAE3827A4943093CA78A2BE172 /* HCYBasePopupViewManager.swift in Sources */,
 				435AD2AA9B7BDDAF96CDFE92204F447A /* HCYBaseTabbarViewController.swift in Sources */,
+				2FFB5636288541CD00D4B972 /* HCYSegmentedIndicatorProtocol.swift in Sources */,
 				2D8D7ADB89D3A840CFC6092F2120DE2F /* HCYBaseViewController.swift in Sources */,
 				8BE62D42BA488B89955A5C6F1FBD6427 /* HCYButton.swift in Sources */,
 				2FFB54D02880110500D4B972 /* HCYUIWindow+Extension.swift in Sources */,
@@ -6271,24 +6324,39 @@
 				60BF47E0FCEAADD2D57B041C0910D36A /* HCYDefaultView.swift in Sources */,
 				1687B9A6F6A763C754BB6C3CBCD33678 /* HCYFrameWork-dummy.m in Sources */,
 				60088B344DE555FCF9CFD304414621E0 /* HCYFullscreenPopGesture.swift in Sources */,
+				2FFB562A288541CD00D4B972 /* HCYSegmentedAnimator.swift in Sources */,
+				2FFB5629288541CD00D4B972 /* HCYSegmentedViewTool.swift in Sources */,
+				2FFB5635288541CD00D4B972 /* HCYSegmentedTitleCell.swift in Sources */,
+				2FFB5637288541CD00D4B972 /* HCYSegmentedBaseItemModel.swift in Sources */,
+				2FFB5634288541CD00D4B972 /* HCYSegmentedListContainerView.swift in Sources */,
 				E84C581E7D4B8F12A9C053760B0E99F9 /* HCYGCDTools.swift in Sources */,
 				9FC5F2228E0792D653EFAD56F0734EC4 /* HCYLabel.swift in Sources */,
 				284BA58B31A6FE3EF5798ECC3E97DD73 /* HCYLoadingCircle.swift in Sources */,
+				2FFB562F288541CD00D4B972 /* HCYSegmentedBaseCell.swift in Sources */,
+				2FFB5633288541CD00D4B972 /* HCYSegmentedTitleDataSource.swift in Sources */,
 				E6E0525759569D6E68F46D9DCD730562 /* HCYLoadingManager.swift in Sources */,
 				4D8DE035E6A38D4EAF38CA11A2D053CC /* HCYMJRefresh+Extension.swift in Sources */,
 				8A5844634AE12D6BEF7BD68095191473 /* HCYNotiFication.swift in Sources */,
+				2FFB562E288541CD00D4B972 /* HCYSegmentedCollectionView.swift in Sources */,
 				08C1A0E0028CF5174CF03E5E5E2A2282 /* HCYOperators.swift in Sources */,
 				EBE1298EF2C05AB7BA5E30950368DFB0 /* HCYString+Extension.swift in Sources */,
 				3EFDFA06E6807D2EE40A82A36E352D81 /* HCYString+TimeExtension.swift in Sources */,
 				0EF5D702970E2AEEE0EF49457D50C0FF /* HCYUIColor+Extension.swift in Sources */,
+				2FFB562D288541CD00D4B972 /* HCYSegmentedBaseDataSource.swift in Sources */,
 				43E117B39B3FED6D579D0A845C826800 /* HCYUIDevice+Extension.swift in Sources */,
 				E4201CD72217334E18B5F2787B9108C6 /* HCYUIImage+Extension.swift in Sources */,
 				C69771C797A921447D13EF0F6A050880 /* HCYUITableViewCell+Extension.swift in Sources */,
 				A503C669EED818D370760FAFE4FFDE06 /* HCYUITextField+Extension.swift in Sources */,
+				2FFB5638288541CD00D4B972 /* HCYSegmentedRTLLayout.swift in Sources */,
+				2FFB562C288541CD00D4B972 /* HCYSegmentedTitleItemModel.swift in Sources */,
 				7D578D46B7761971C0E7080928971CD1 /* HCYUIVIew+Extension.swift in Sources */,
+				2FFB562B288541CD00D4B972 /* HCYSegmentedIndicatorBaseView.swift in Sources */,
 				60B20F1F06AC8A744D8C26BD201F36A5 /* HCYUIViewController+Extension.swift in Sources */,
 				06545A1DC590DCB06A33C3D46903C72F /* HCYValidate+Extension.swift in Sources */,
 				70A61CE7743DCE859759EDFDD61D9971 /* HCYVIewProtocol.swift in Sources */,
+				2FFB5630288541CD00D4B972 /* HCYSegmentedIndicatorParams.swift in Sources */,
+				2FFB5632288541CD00D4B972 /* HCYSegmentedView.swift in Sources */,
+				2FFB5631288541CD00D4B972 /* HCYSegmentedIndicatorLineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

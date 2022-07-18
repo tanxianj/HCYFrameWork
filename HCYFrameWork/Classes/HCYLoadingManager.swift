@@ -1,6 +1,6 @@
 //
-//  SMPLoading.swift
-//  Smart1Pay.sit
+//  HCYLoading.swift
+//
 //
 //  Created by Jupiter_TSS on 22/4/22.
 //

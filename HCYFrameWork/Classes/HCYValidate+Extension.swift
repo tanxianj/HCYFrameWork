@@ -7,7 +7,7 @@
 
 import Foundation
 //MARK: - validate
-enum HCYValidate {
+public enum HCYValidate {
     case email(_: String)          //  email
     case phoneNumber(_: String)    //  mobileNumber
     case userName(_: String)       //  username
@@ -42,7 +42,8 @@ enum HCYValidate {
             predicateStr = "^([\\u4E00-\\u9FA5A-Za-z0-9_]{2,10}$)"
             currentObject = str
         case let .URL(str):
-            predicateStr = "^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$"
+//            predicateStr = "^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$"
+            predicateStr = "((http[s]{0,1}|ftp)://[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%^&*+?,:_/=<>]*)?)|(www.[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%^&*+?,:_/=<>]*)?)"
             currentObject = str
         case let .IP(str):
             predicateStr = "^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"

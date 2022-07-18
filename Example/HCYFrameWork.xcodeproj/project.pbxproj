@@ -20,6 +20,9 @@
 		2F986B5D2873EBD500140514 /* HCYFrameWork.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2F986B5C2873EBD500140514 /* HCYFrameWork.podspec */; };
 		2FFB548B287EA04B00D4B972 /* HCYTipsPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5489287EA04B00D4B972 /* HCYTipsPopUpView.swift */; };
 		2FFB548C287EA04B00D4B972 /* HCYActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB548A287EA04B00D4B972 /* HCYActionSheet.swift */; };
+		2FFB563D2885430E00D4B972 /* HCYSegmentedViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB563C2885430E00D4B972 /* HCYSegmentedViewDemo.swift */; };
+		2FFB563F288544FB00D4B972 /* ListBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB563E288544FB00D4B972 /* ListBaseViewController.swift */; };
+		2FFB564128854C7400D4B972 /* APPNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB564028854C7400D4B972 /* APPNavigationViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -41,6 +44,9 @@
 		2F986B5C2873EBD500140514 /* HCYFrameWork.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HCYFrameWork.podspec; path = ../HCYFrameWork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2FFB5489287EA04B00D4B972 /* HCYTipsPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCYTipsPopUpView.swift; sourceTree = "<group>"; };
 		2FFB548A287EA04B00D4B972 /* HCYActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCYActionSheet.swift; sourceTree = "<group>"; };
+		2FFB563C2885430E00D4B972 /* HCYSegmentedViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCYSegmentedViewDemo.swift; sourceTree = "<group>"; };
+		2FFB563E288544FB00D4B972 /* ListBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBaseViewController.swift; sourceTree = "<group>"; };
+		2FFB564028854C7400D4B972 /* APPNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPNavigationViewController.swift; sourceTree = "<group>"; };
 		478DB2C0E877F97F5D6920D9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		49FDAC754A98C8C816037983 /* HCYFrameWork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HCYFrameWork.podspec; path = ../HCYFrameWork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* HCYFrameWork_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCYFrameWork_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +78,15 @@
 				2FFB5489287EA04B00D4B972 /* HCYTipsPopUpView.swift */,
 			);
 			name = "New Group";
+			sourceTree = "<group>";
+		};
+		2FFB56392885425E00D4B972 /* HCYSegmentedViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2FFB563C2885430E00D4B972 /* HCYSegmentedViewDemo.swift */,
+				2FFB563E288544FB00D4B972 /* ListBaseViewController.swift */,
+			);
+			name = HCYSegmentedViewDemo;
 			sourceTree = "<group>";
 		};
 		4A59D054E729BB3392686269 /* Frameworks */ = {
@@ -110,7 +125,9 @@
 				2F0E74632875822100FA47E1 /* HomeViewController.storyboard */,
 				2F0E74682875822A00FA47E1 /* MeViewController.swift */,
 				2F0E74672875822A00FA47E1 /* MeViewController.storyboard */,
+				2FFB56392885425E00D4B972 /* HCYSegmentedViewDemo */,
 				2F0E74612875821400FA47E1 /* APPTabbarViewController.swift */,
+				2FFB564028854C7400D4B972 /* APPNavigationViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				2F0B271A2877E611002333DF /* eye_off.svg */,
 				2F0B27182877E52C002333DF /* finger.svg */,
@@ -313,6 +330,9 @@
 				2F0E746A2875822A00FA47E1 /* MeViewController.swift in Sources */,
 				2F0E74662875822100FA47E1 /* HomeViewController.swift in Sources */,
 				2FFB548C287EA04B00D4B972 /* HCYActionSheet.swift in Sources */,
+				2FFB563F288544FB00D4B972 /* ListBaseViewController.swift in Sources */,
+				2FFB563D2885430E00D4B972 /* HCYSegmentedViewDemo.swift in Sources */,
+				2FFB564128854C7400D4B972 /* APPNavigationViewController.swift in Sources */,
 				2FFB548B287EA04B00D4B972 /* HCYTipsPopUpView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

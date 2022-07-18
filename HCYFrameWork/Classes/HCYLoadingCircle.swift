@@ -1,6 +1,6 @@
 //
-//  SMPLoadingCircle.swift
-//  Smart1Pay.sit
+//  HCYLoadingCircle.swift
+//  
 //
 //  Created by Jupiter_TSS on 2022/4/24.
 //
@@ -141,15 +141,15 @@ class HCYLoadingCircle: UIView {
 /*
  
  //
-//  SMPLoadingCircle.swift
-//  Smart1Pay.sit
+//  HCYLoadingCircle.swift
+//  
 //
 //  Created by 冷禹彤 on 2022/2/8.
 //
 
 import UIKit
 
-class SMPLoadingCircle: UIView {
+class HCYLoadingCircle: UIView {
     
     lazy var colorImage: UIImageView = {
         let imageView = UIImageView(image: UIImage.init(named: "circle_bg"))
