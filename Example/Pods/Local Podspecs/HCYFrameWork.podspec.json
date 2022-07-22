@@ -1,6 +1,6 @@
 {
   "name": "HCYFrameWork",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "summary": "A short description of HCYFrameWork.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/tanxianj/HCYFrameWork",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/tanxianj/HCYFrameWork.git",
-    "tag": "0.1.7"
+    "tag": "0.1.9"
   },
   "platforms": {
     "ios": "12.0"
@@ -36,7 +36,7 @@
     "RxDataSources": [
 
     ],
-    "RxAlamofire": [
+    "Alamofire": [
 
     ],
     "MJRefresh": [

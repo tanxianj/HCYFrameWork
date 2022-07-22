@@ -2,7 +2,7 @@
 import UIKit
 import HCYFrameWork
 import RxSwift
-class MeViewController: HCYBaseViewController {
+class MeViewController: TSSBaseViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .default
     }
@@ -17,7 +17,9 @@ class MeViewController: HCYBaseViewController {
 //        }
 //        image.hcySetImageWith(url: "https://img1.baidu.com/it/u=1966616150,2146512490&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1657904400&t=a5420d6110e949d35855acdd28b6f6e4", placeholder: "网络错误")
         let items = Observable.just([
-            ["title":"HCYSegmentedView","vc":HCYSegmentedViewDemo()]
+            ["title":"HCYSegmentedView","vc":TSSSegmentedViewDemo()],
+            ["title":"HCYPopUp","vc":PopUpDemoViewController()],
+            
         ])
         items.bind(to: tableView.rx.items){ (tableView, row, element) in
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
@@ -27,13 +29,13 @@ class MeViewController: HCYBaseViewController {
         tableView.rx.modelSelected([String:Any].self).subscribe(onNext: { data in
             guard let vc = data["vc"] as? UIViewController ,let title = data["title"] as? String else { return  }
             vc.title =  title
-            self.hcy_currentVCpushTo(vc)
+            self.tss_currentVCpushTo(vc)
             
         }).disposed(by: disposeBag)
     }
     override func setupNavigationItems() {
         title = "我的"
-        hcy_addRightButton(title:"haha") {
+        tss_addRightButton(title:"haha") {
             
         }
     }

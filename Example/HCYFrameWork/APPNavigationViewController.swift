@@ -8,12 +8,12 @@
 
 import UIKit
 import HCYFrameWork
-class APPNavigationViewController: HCYBaseNavigationController {
+class APPNavigationViewController: TSSBaseNavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        hcy_ResetNavigationConfig(navTitleColor: .black, navTitleFont: .systemFont(ofSize: 18.scale()), navbackgroundColor: .white)
+        tss_ResetNavigationConfig(navTitleColor: .black, navTitleFont: .systemFont(ofSize: 18.scale()), navbackgroundColor: .white)
         // Do any additional setup after loading the view.
     }
     

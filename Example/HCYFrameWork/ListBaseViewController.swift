@@ -7,7 +7,7 @@
 
 import UIKit
 import HCYFrameWork
-class ListBaseViewController: HCYBaseViewController {
+class ListBaseViewController: TSSBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class ListBaseViewController: HCYBaseViewController {
     */
 
 }
-extension ListBaseViewController:HCYSegmentedListContainerViewListDelegate{
+extension ListBaseViewController:TSSSegmentedListContainerViewListDelegate{
     func listView() -> UIView {
         return view
     }

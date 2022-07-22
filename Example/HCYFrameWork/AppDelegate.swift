@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         UITableViewCell.appearance().selectionStyle = .none
+        let config = TSSNetworkingConfig(code: "code", data: "data", msg: "msg", header: ["Content-Type":"application/json"])
+        TSSNetworkingManager.sharedInstance().restConfig(config)
         initUI()
         registerNotification()
         return true
@@ -42,8 +44,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 //        DebugLog("将要进入后台")
         let name = "将要进入后台"
-        let not  = HCYNotiFication(name: name, data: "NotOne")
-        HCYNotiFicationCenter.shared.postNotiFication(notiFication: not)
+        let not  = TSSNotiFication(name: name, data: "NotOne")
+        TSSNotiFicationCenter.shared.postNotiFication(notiFication: not)
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {

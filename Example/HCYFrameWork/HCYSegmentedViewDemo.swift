@@ -1,6 +1,6 @@
 //
-//  HCYSegmentedViewDemo.swift
-//  HCYFrameWork_Example
+//  TSSSegmentedViewDemo.swift
+//  TSSFrameWork_Example
 //
 //  Created by Jupiter_TSS on 18/7/22.
 //  Copyright © 2022 CocoaPods. All rights reserved.
@@ -8,25 +8,25 @@
 
 import UIKit
 import HCYFrameWork
-class HCYSegmentedViewDemo: HCYBaseViewController {
+class TSSSegmentedViewDemo: TSSBaseViewController {
     let titles = ["猴哥", "青蛙王子", "旺财", "粉红猪", "喜羊羊", "黄焖鸡", "小马哥", "牛魔王", "大象先生", "神龙"]
 //    let titles = ["1", "2", "3"]
-    lazy var segmentedDataSource: HCYSegmentedBaseDataSource = {
-        let dataSource = HCYSegmentedTitleDataSource()
+    lazy var segmentedDataSource: TSSSegmentedBaseDataSource = {
+        let dataSource = TSSSegmentedTitleDataSource()
         dataSource.isTitleColorGradientEnabled = true
         dataSource.titles = titles
         dataSource.titleNormalColor = .blue
         return dataSource
     }()
-    lazy var segmentedView:HCYSegmentedView = {
-        let segmentedView = HCYSegmentedView()
+    lazy var segmentedView:TSSSegmentedView = {
+        let segmentedView = TSSSegmentedView()
         //segmentedViewDataSource一定要通过属性强持有！！！！！！！！！
         segmentedView.dataSource = segmentedDataSource
         segmentedView.delegate = self
 
         
         //配置指示器
-        let indicator = HCYSegmentedIndicatorLineView()
+        let indicator = TSSSegmentedIndicatorLineView()
 //        indicator.indicatorWidth = 20
         indicator.lineStyle = .lengthenOffset
         indicator.indicatorColor = .blue
@@ -36,8 +36,8 @@ class HCYSegmentedViewDemo: HCYBaseViewController {
 
         return segmentedView
     }()
-    lazy var listContainerView: HCYSegmentedListContainerView = {
-        return HCYSegmentedListContainerView(dataSource: self)
+    lazy var listContainerView: TSSSegmentedListContainerView = {
+        return TSSSegmentedListContainerView(dataSource: self)
     }()
 
     override func viewDidLoad() {
@@ -63,7 +63,7 @@ class HCYSegmentedViewDemo: HCYBaseViewController {
             make.top.equalTo(segmentedView.snp.bottom)
         }
         for indicaotr in segmentedView.indicators {
-            if (indicaotr as? HCYSegmentedIndicatorLineView) != nil {
+            if (indicaotr as? TSSSegmentedIndicatorLineView) != nil {
                 navigationItem.rightBarButtonItem = UIBarButtonItem(title: "指示器位置切换", style: UIBarButtonItem.Style.plain, target: self, action: #selector(didIndicatorPositionChanged))
                 break
             }
@@ -96,7 +96,7 @@ class HCYSegmentedViewDemo: HCYBaseViewController {
     
 
     @objc func didIndicatorPositionChanged() {
-        for indicaotr in (segmentedView.indicators as! [HCYSegmentedIndicatorBaseView]) {
+        for indicaotr in (segmentedView.indicators as! [TSSSegmentedIndicatorBaseView]) {
             if indicaotr.indicatorPosition == .bottom {
                 indicaotr.indicatorPosition = .top
             }else {
@@ -110,22 +110,22 @@ class HCYSegmentedViewDemo: HCYBaseViewController {
 }
 
 
-extension HCYSegmentedViewDemo: HCYSegmentedViewDelegate {
-    func segmentedView(_ segmentedView: HCYSegmentedView, didSelectedItemAt index: Int) {
+extension TSSSegmentedViewDemo: TSSSegmentedViewDelegate {
+    func segmentedView(_ segmentedView: TSSSegmentedView, didSelectedItemAt index: Int) {
 
         navigationController?.interactivePopGestureRecognizer?.isEnabled = (segmentedView.selectedIndex == 0)
     }
 }
 
-extension HCYSegmentedViewDemo: HCYSegmentedListContainerViewDataSource {
-    func numberOfLists(in listContainerView: HCYSegmentedListContainerView) -> Int {
-        if let titleDataSource = segmentedView.dataSource as? HCYSegmentedBaseDataSource {
+extension TSSSegmentedViewDemo: TSSSegmentedListContainerViewDataSource {
+    func numberOfLists(in listContainerView: TSSSegmentedListContainerView) -> Int {
+        if let titleDataSource = segmentedView.dataSource as? TSSSegmentedBaseDataSource {
             return titleDataSource.dataSource.count
         }
         return 0
     }
 
-    func listContainerView(_ listContainerView: HCYSegmentedListContainerView, initListAt index: Int) -> HCYSegmentedListContainerViewListDelegate {
+    func listContainerView(_ listContainerView: TSSSegmentedListContainerView, initListAt index: Int) -> TSSSegmentedListContainerViewListDelegate {
         return ListBaseViewController()
     }
 }

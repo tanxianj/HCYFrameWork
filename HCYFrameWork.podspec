@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'HCYFrameWork'
-    s.version          = '0.1.9'
+    s.version          = '0.1.10'
     s.summary          = 'A short description of HCYFrameWork.'
     
     # This description is used to generate tags and improve search results.
@@ -44,7 +44,9 @@ Pod::Spec.new do |s|
     s.dependency 'RxSwift','~> 5.0'
     s.dependency 'RxCocoa','~> 5.0'
     s.dependency 'RxDataSources'
-    s.dependency 'RxAlamofire'
+    s.dependency 'Alamofire'
+#    s.dependency 'RxAlamofire'
+#    s.dependency 'AlamofireObjectMapper', '~> 5.2.1'
     s.dependency 'MJRefresh'
     s.dependency 'Kingfisher'
     s.dependency 'SVProgressHUD'

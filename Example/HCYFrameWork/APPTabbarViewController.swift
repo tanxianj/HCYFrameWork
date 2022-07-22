@@ -7,12 +7,12 @@
 
 import UIKit
 import HCYFrameWork
-class APPTabbarViewController: HCYBaseTabbarViewController {
+class APPTabbarViewController: TSSBaseTabbarViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        hcy_ResetTabbarConfig(selectedColor: .green, normalColor: .gray, backGround: UIImage(named: "tab_back"))
+        tss_ResetTabbarConfig(selectedColor: .green, normalColor: .gray, backGround: UIImage(named: "tab_back"))
         setupChildControllers()
 //        setTabbarConfig(selectedColor: .green, normalColor: .gray)
     }
