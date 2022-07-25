@@ -8,24 +8,6 @@
 import Foundation
 import CommonCrypto
 extension String{
-    //MARK:String转字典
-    
-    /// string to Dictionary
-    /// - Returns: Dictionary
-    public func toDictionary() -> [String:Any] {
-        var result = [String:Any]()
-        guard !self.isEmpty else {
-            return result
-        }
-        guard let dataSelf = self.data(using: .utf8) else {
-            return result
-        }
-        if let dic = try? JSONSerialization.jsonObject(with: dataSelf, options: .mutableContainers) as? [String:Any]{
-            result = dic ?? [:]
-            
-        }
-        return result
-    }
     
     /// String to md5
     public var md5:String {
@@ -40,8 +22,8 @@ extension String{
     ///   - font: label font
     ///   - viewSize: label size
     /// - Returns: size
-   fileprivate func getStringSize(font: UIFont, viewSize: CGSize) -> CGSize {
-        let rect = self.boundingRect(with: viewSize, options: [.usesLineFragmentOrigin,.usesLineFragmentOrigin], attributes: [NSAttributedString.Key.font: font], context: nil)
+   fileprivate func getStringSize(font: UIFont, labelSize: CGSize) -> CGSize {
+       let rect = self.boundingRect(with: labelSize, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
         return rect.size
     }
     
@@ -51,7 +33,7 @@ extension String{
     ///   - height:  label height
     /// - Returns: Label width
     public func getLabelWidth(font:UIFont,height:CGFloat)->CGFloat{
-        return getStringSize(font: font, viewSize: CGSize(width: 0, height: height)).width + 10
+        return getStringSize(font: font, labelSize: CGSize(width: 0, height: height)).width
     }
     
     /// get Label height
@@ -60,7 +42,7 @@ extension String{
     ///   - width: label width
     /// - Returns: Label height
     public func getLabelHeight(font:UIFont,width:CGFloat)->CGFloat{
-        return getStringSize(font: font, viewSize: CGSize(width: width, height: 0)).width + 10
+        return getStringSize(font: font, labelSize: CGSize(width: width, height: 0)).height
     }
 }
 extension Dictionary{

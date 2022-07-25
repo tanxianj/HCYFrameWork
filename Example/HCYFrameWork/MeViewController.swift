@@ -19,6 +19,9 @@ class MeViewController: TSSBaseViewController {
         let items = Observable.just([
             ["title":"HCYSegmentedView","vc":TSSSegmentedViewDemo()],
             ["title":"HCYPopUp","vc":PopUpDemoViewController()],
+            ["title":"TimeHelper","vc":TimeHelperViewController()],
+            ["title":"GetLabelWidth","vc":GetLabelWidthHeightViewController()],
+            
             
         ])
         items.bind(to: tableView.rx.items){ (tableView, row, element) in

@@ -12,20 +12,12 @@ enum UserInterfaceStyle {
 }
 //MARK: UIColor extension
 extension UIColor{
-    
-    /// ex color
-    /// - Parameter hexString: hexString
-    /// - Returns: UIColor
-    public class func colorWithHexString(_ hexString:String) -> UIColor {
-        colorWithHexString(hexString, alpha: 1)
-    }
-    
     /// Hex color and alpha
     /// - Parameters:
     ///   - hexString: hexString
     ///   - alpha: alpha
     /// - Returns: UIColor
-    public class func colorWithHexString(_ hexString:String,alpha:CGFloat) -> UIColor {
+    public class func colorWithHexString(_ hexString:String,alpha:CGFloat = 1.0) -> UIColor {
         let hexString = hexString.trimmingCharacters(in: .whitespacesAndNewlines)
         let scanner = Scanner(string: hexString)
         
@@ -49,12 +41,12 @@ extension UIColor{
         
     }
     
-    /// Back Color with Current Mode
+    /// Back Color with Appearance Mode
     /// - Parameters:
     ///   - light: light Color
     ///   - dark: dark color
     /// - Returns: Back Color with Current Mode
-    public class func backCurrentMode(_ light:UIColor,_ dark:UIColor) -> UIColor {
+    public class func colorWithAppearanceMode(_ light:UIColor,_ dark:UIColor) -> UIColor {
         if #available(iOS 13.0, *) {
             let currentMode = UITraitCollection.current.userInterfaceStyle
             if currentMode == .light{
@@ -70,7 +62,7 @@ extension UIColor{
     /// sample
     /// - Returns: sample Color
     public class func APPColor_000000_1()->UIColor {
-        return backCurrentMode(.colorWithHexString("000000"), .colorWithHexString("000000"))
+        return colorWithAppearanceMode(.colorWithHexString("000000"), .colorWithHexString("000000"))
     }
     
     /// change Color alpha
@@ -88,7 +80,7 @@ extension UIColor{
     
     /// image From Color
     /// - Parameters:
-    ///   - color: color Array
+    ///   - color: color
     ///   - viewSize: view Size
     /// - Returns: UIImage
     public class func imageFromColor(color: UIColor, viewSize: CGSize) -> UIImage{
@@ -115,9 +107,9 @@ extension UIColor{
     
     /// random color
     /// - Returns: random color
-    public class func arc4Color()->UIColor {
+    public class func arc4Color(_ alpha:CGFloat = 1.0)->UIColor {
         
-        return UIColor.init(red: CGFloat(arc4random()%255)/255.0, green: CGFloat(arc4random()%255)/255.0, blue: CGFloat(arc4random()%255)/255.0, alpha: 1)
+        return UIColor.init(red: CGFloat(arc4random()%255)/255.0, green: CGFloat(arc4random()%255)/255.0, blue: CGFloat(arc4random()%255)/255.0, alpha: alpha)
     }
     
     /// back Color rgba

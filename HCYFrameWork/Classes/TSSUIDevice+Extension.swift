@@ -7,23 +7,20 @@
 
 import Foundation
 import UIKit
-fileprivate let KScreenWidth = UIScreen.main.bounds.size.width
-fileprivate let KScreenHeight = UIScreen.main.bounds.size.height
 fileprivate let inchtomm = 25.4
-fileprivate let pixels = sqrt(KScreenWidth*KScreenWidth + KScreenHeight * KScreenHeight )
-
-fileprivate let a = UIDevice().modelinch / pixels * inchtomm
+fileprivate let diagonalPixels = sqrt(KScreenW*KScreenW + KScreenH * KScreenH )
+fileprivate let actualPixelSize = UIDevice().modelSizeWithInch / diagonalPixels * inchtomm
 extension UIDevice {
     
     /// input need show mm
     /// - Parameter mm: show mm
     /// - Returns: back in Device pix
-    public func backPixels(mm:CGFloat)->CGFloat{
-        return mm / a
+    public func mmToPixels (mm:CGFloat)->CGFloat{
+        return mm / actualPixelSize
     }
     
     /// back Device inch
-    public var modelinch:CGFloat{
+    public var modelSizeWithInch:CGFloat{
         var systemInfo = utsname()
         uname(&systemInfo)
         let machineMirror = Mirror(reflecting: systemInfo.machine)

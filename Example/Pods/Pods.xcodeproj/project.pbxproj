@@ -905,7 +905,7 @@
 		B422E55FB1AB06AC3896F7085635A112 /* NSTimer+FLEX.h in Headers */ = {isa = PBXBuildFile; fileRef = 1032401FD802C9E675C8623A45365592 /* NSTimer+FLEX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B46FA40E140CB9C92D7AB93BC3B70C1C /* ProcessingInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = B7388F3959E0B03A36A3FAFEC7FFC194 /* ProcessingInstruction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B46FB55C14520AAEE136934EFFC543DE /* FLEXProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 669FB8E1A6ED068F8784910D1331DDC5 /* FLEXProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4FDCEC91674982162A6C5FA7A874A1B /* TSSString+TimeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C847CEAB9D93B06A04FDB44DFD9F8212 /* TSSString+TimeExtension.swift */; };
+		B4FDCEC91674982162A6C5FA7A874A1B /* TSSTimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C847CEAB9D93B06A04FDB44DFD9F8212 /* TSSTimeHelper.swift */; };
 		B5500FAF9A28326D095CFB41249E0A81 /* AVAssetImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B733186074B86443EEC8B9B1E8E3D0 /* AVAssetImageDataProvider.swift */; };
 		B57AAE5F60FD8603E47B21B020BB072A /* FLEXViewShortcuts.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E4FC7823E16F3F4AFFD0587B4B6593 /* FLEXViewShortcuts.m */; settings = {COMPILER_FLAGS = "-Wno-unsupported-availability-guard -Wno-deprecated-declarations"; }; };
 		B597ADEF23E35F7F13E21C4E8FC7228F /* ControlEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D5FF111C1E17617D3707FBA377CF5 /* ControlEvent.swift */; };
@@ -2555,7 +2555,7 @@
 		C7D8A3BF34D31777AF2D68DE7325EC0D /* SVGKParserStyles.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKParserStyles.h; path = "Source/Parsers/Parser Extensions/SVGKParserStyles.h"; sourceTree = "<group>"; };
 		C7EBA143D8D657B95F70703C676E1AEF /* RxCollectionViewSectionedReloadDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxCollectionViewSectionedReloadDataSource.swift; path = Sources/RxDataSources/RxCollectionViewSectionedReloadDataSource.swift; sourceTree = "<group>"; };
 		C8135F88CEEECD95A3C6DA1712641A25 /* RxTableViewSectionedReloadDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTableViewSectionedReloadDataSource.swift; path = Sources/RxDataSources/RxTableViewSectionedReloadDataSource.swift; sourceTree = "<group>"; };
-		C847CEAB9D93B06A04FDB44DFD9F8212 /* TSSString+TimeExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TSSString+TimeExtension.swift"; path = "HCYFrameWork/Classes/TSSString+TimeExtension.swift"; sourceTree = "<group>"; };
+		C847CEAB9D93B06A04FDB44DFD9F8212 /* TSSTimeHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSSTimeHelper.swift; path = HCYFrameWork/Classes/TSSTimeHelper.swift; sourceTree = "<group>"; };
 		C8583BB3818879E5D0C0C281AF782AD6 /* StyleSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StyleSheet.m; path = "Source/DOM classes/Core DOM/StyleSheet.m"; sourceTree = "<group>"; };
 		C8A98F06B4EE9DFDFBB6613F58A0A803 /* FLEXSearchToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXSearchToken.m; path = Classes/GlobalStateExplorers/RuntimeBrowser/FLEXSearchToken.m; sourceTree = "<group>"; };
 		C8E93A8BE56520C35778B093FF9F3AFE /* flex_fishhook.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = flex_fishhook.c; path = Classes/Utility/Runtime/flex_fishhook.c; sourceTree = "<group>"; };
@@ -4518,7 +4518,7 @@
 				D67024A8CA3D932A907029150247BF51 /* TSSSegmentedView.swift */,
 				D5CE5D5918E6314562876B6A9C3098A1 /* TSSSegmentedViewTool.swift */,
 				8CC28A29211D6C2377281597484696FB /* TSSString+Extension.swift */,
-				C847CEAB9D93B06A04FDB44DFD9F8212 /* TSSString+TimeExtension.swift */,
+				C847CEAB9D93B06A04FDB44DFD9F8212 /* TSSTimeHelper.swift */,
 				02B37FF4AA3558520AF6B91754164B60 /* TSSUIColor+Extension.swift */,
 				FD7EFE602096B4E2CB82976E75C4C02E /* TSSUIDevice+Extension.swift */,
 				36C4EDFB8C975487D146655EAA98937D /* TSSUIImage+Extension.swift */,
@@ -6403,7 +6403,7 @@
 				8EC5EFA6BA01D418F910F275EB3FE295 /* TSSSegmentedView.swift in Sources */,
 				3509DC0C4D7C67E0AB4036954C24D14F /* TSSSegmentedViewTool.swift in Sources */,
 				8BB1DEFFB6D126363D0B1233A33F7440 /* TSSString+Extension.swift in Sources */,
-				B4FDCEC91674982162A6C5FA7A874A1B /* TSSString+TimeExtension.swift in Sources */,
+				B4FDCEC91674982162A6C5FA7A874A1B /* TSSTimeHelper.swift in Sources */,
 				9413763FC1DDD58F0D4B6D06D797C166 /* TSSUIColor+Extension.swift in Sources */,
 				7594FAD7379778B4389ECC1B139B8474 /* TSSUIDevice+Extension.swift in Sources */,
 				6CDAFC0DF1F73C31577390F0AA88A8BC /* TSSUIImage+Extension.swift in Sources */,

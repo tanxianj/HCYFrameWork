@@ -14,6 +14,7 @@ class APPTabbarViewController: TSSBaseTabbarViewController {
         
         tss_ResetTabbarConfig(selectedColor: .green, normalColor: .gray, backGround: UIImage(named: "tab_back"))
         setupChildControllers()
+        self.selectedIndex = 1
 //        setTabbarConfig(selectedColor: .green, normalColor: .gray)
     }
     

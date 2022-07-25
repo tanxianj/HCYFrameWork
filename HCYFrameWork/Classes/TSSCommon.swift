@@ -1,5 +1,5 @@
 //
-//  Common.swift
+//  TSSCommon.swift
 //  
 //
 //  Created by Jupiter_TSS on 7/3/22.
@@ -72,9 +72,3 @@ public func DebugLog<T>(_ message: T, filePath: String = #file, function:String 
 public typealias KAppBlockToVoid<T> = (T)->()
 //MARK: Generic ancestor
 public typealias KAppYuanZu<T> = (T)
-
-let delay = {(time:Double,action:@escaping block) in
-    DispatchQueue.main.asyncAfter(deadline:.now() + time) {
-        action()
-    }
-}

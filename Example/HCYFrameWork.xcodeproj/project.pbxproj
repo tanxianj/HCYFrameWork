@@ -19,6 +19,9 @@
 		2F0E746A2875822A00FA47E1 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E74682875822A00FA47E1 /* MeViewController.swift */; };
 		2F4546AE288796DA0011B6CB /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4546AC288796DA0011B6CB /* LoginData.swift */; };
 		2F4546AF288796DA0011B6CB /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4546AD288796DA0011B6CB /* LoginModel.swift */; };
+		2F75641C288E432E007B69C3 /* TimeHelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F75641A288E432E007B69C3 /* TimeHelperViewController.swift */; };
+		2F75641D288E432E007B69C3 /* TimeHelperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F75641B288E432E007B69C3 /* TimeHelperViewController.xib */; };
+		2F949B34288E83F1001CB391 /* GetLabelWidthHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B33288E83F1001CB391 /* GetLabelWidthHeightViewController.swift */; };
 		2F986B5D2873EBD500140514 /* HCYFrameWork.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2F986B5C2873EBD500140514 /* HCYFrameWork.podspec */; };
 		2FFB548B287EA04B00D4B972 /* HCYTipsPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5489287EA04B00D4B972 /* HCYTipsPopUpView.swift */; };
 		2FFB548C287EA04B00D4B972 /* HCYActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB548A287EA04B00D4B972 /* HCYActionSheet.swift */; };
@@ -54,6 +57,9 @@
 		2F0E74682875822A00FA47E1 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		2F4546AC288796DA0011B6CB /* LoginData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
 		2F4546AD288796DA0011B6CB /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		2F75641A288E432E007B69C3 /* TimeHelperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHelperViewController.swift; sourceTree = "<group>"; };
+		2F75641B288E432E007B69C3 /* TimeHelperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeHelperViewController.xib; sourceTree = "<group>"; };
+		2F949B33288E83F1001CB391 /* GetLabelWidthHeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLabelWidthHeightViewController.swift; sourceTree = "<group>"; };
 		2F986B5C2873EBD500140514 /* HCYFrameWork.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HCYFrameWork.podspec; path = ../HCYFrameWork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2FFB5489287EA04B00D4B972 /* HCYTipsPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCYTipsPopUpView.swift; sourceTree = "<group>"; };
 		2FFB548A287EA04B00D4B972 /* HCYActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCYActionSheet.swift; sourceTree = "<group>"; };
@@ -100,6 +106,23 @@
 				2F4546AD288796DA0011B6CB /* LoginModel.swift */,
 			);
 			name = LoginModel;
+			sourceTree = "<group>";
+		};
+		2F756413288E4173007B69C3 /* TimeHelper */ = {
+			isa = PBXGroup;
+			children = (
+				2F75641A288E432E007B69C3 /* TimeHelperViewController.swift */,
+				2F75641B288E432E007B69C3 /* TimeHelperViewController.xib */,
+			);
+			name = TimeHelper;
+			sourceTree = "<group>";
+		};
+		2F949B32288E83C1001CB391 /* GetLabelWidthHeight */ = {
+			isa = PBXGroup;
+			children = (
+				2F949B33288E83F1001CB391 /* GetLabelWidthHeightViewController.swift */,
+			);
+			name = GetLabelWidthHeight;
 			sourceTree = "<group>";
 		};
 		2FFB54A2287EA6CF00D4B972 /* New Group */ = {
@@ -182,6 +205,8 @@
 				2F0E74672875822A00FA47E1 /* MeViewController.storyboard */,
 				2FFB56392885425E00D4B972 /* HCYSegmentedViewDemo */,
 				2FFB56472885628800D4B972 /* popUpDemo */,
+				2F756413288E4173007B69C3 /* TimeHelper */,
+				2F949B32288E83C1001CB391 /* GetLabelWidthHeight */,
 				2FFB564028854C7400D4B972 /* APPNavigationViewController.swift */,
 				2F0E74612875821400FA47E1 /* APPTabbarViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -290,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F0B271F2878187E002333DF /* fistBump.svg in Resources */,
+				2F75641D288E432E007B69C3 /* TimeHelperViewController.xib in Resources */,
 				2FFB56512885641800D4B972 /* PopupTestView.xib in Resources */,
 				2F0E74652875822100FA47E1 /* HomeViewController.storyboard in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
@@ -388,6 +414,7 @@
 				2FFB564F2885641100D4B972 /* PopupTestView.swift in Sources */,
 				2FFB56742886649100D4B972 /* WeatherModel.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				2F949B34288E83F1001CB391 /* GetLabelWidthHeightViewController.swift in Sources */,
 				2F0E74622875821400FA47E1 /* APPTabbarViewController.swift in Sources */,
 				2F0E746A2875822A00FA47E1 /* MeViewController.swift in Sources */,
 				2F0E74662875822100FA47E1 /* HomeViewController.swift in Sources */,
@@ -399,6 +426,7 @@
 				2F4546AE288796DA0011B6CB /* LoginData.swift in Sources */,
 				2FFB564128854C7400D4B972 /* APPNavigationViewController.swift in Sources */,
 				2FFB548B287EA04B00D4B972 /* HCYTipsPopUpView.swift in Sources */,
+				2F75641C288E432E007B69C3 /* TimeHelperViewController.swift in Sources */,
 				2FFB564D288562F400D4B972 /* importFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
