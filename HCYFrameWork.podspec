@@ -30,7 +30,10 @@ Pod::Spec.new do |s|
     
     s.ios.deployment_target = '12.0'
     
-    s.source_files = 'HCYFrameWork/Classes/**/*'
+    #    s.source_files = 'HCYFrameWork/Classes/**/*'
+    s.subspec 'Common' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/Common/*.swift'
+    end
     s.subspec 'Custom' do |ss|
         ss.source_files = 'HCYFrameWork/Classes/Custom/*.swift'
     end
@@ -75,8 +78,8 @@ Pod::Spec.new do |s|
     s.dependency 'RxCocoa','~> 5.0'
     s.dependency 'RxDataSources'
     s.dependency 'Alamofire'
-#    s.dependency 'RxAlamofire'
-#    s.dependency 'AlamofireObjectMapper', '~> 5.2.1'
+    #    s.dependency 'RxAlamofire'
+    #    s.dependency 'AlamofireObjectMapper', '~> 5.2.1'
     s.dependency 'MJRefresh'
     s.dependency 'Kingfisher'
     s.dependency 'SVProgressHUD'

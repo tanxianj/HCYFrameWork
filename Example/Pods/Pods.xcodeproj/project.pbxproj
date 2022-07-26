@@ -262,6 +262,7 @@
 		2F949B9D288E9A29001CB391 /* TSSSegmentedCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B6C288E9A29001CB391 /* TSSSegmentedCollectionView.swift */; };
 		2F949B9E288E9A29001CB391 /* TSSLoadingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B6E288E9A29001CB391 /* TSSLoadingCircle.swift */; };
 		2F949B9F288E9A29001CB391 /* TSSLoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B6F288E9A29001CB391 /* TSSLoadingManager.swift */; };
+		2F949BC2288F8B19001CB391 /* TSSCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949BC1288F8B19001CB391 /* TSSCommon.swift */; };
 		300EAA1B4BFE872D560B3F7E59143391 /* FLEXTypeEncodingParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 809DB0E457BFA4B14DE8D2A04A14EA82 /* FLEXTypeEncodingParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		306F685701CDE256F84ABDF882FD3A8B /* FLEXArgumentInputDateView.h in Headers */ = {isa = PBXBuildFile; fileRef = 76AB6DF7B3A7A6CD69C378B7EC5D0CC0 /* FLEXArgumentInputDateView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		309DC47F3DE56820FBC719AB5D57EDE4 /* FLEXClassShortcuts.h in Headers */ = {isa = PBXBuildFile; fileRef = 79B17A3F0C017CD71D10C9D41AF256D7 /* FLEXClassShortcuts.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -629,7 +630,6 @@
 		7B65F2D2F1009FBEDF5E2F916213BB08 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A803849CCFDDC6F8B6A71393660D2F5 /* MJRefreshGifHeader.m */; };
 		7BD719E0758858BA4025AFF43A8DAA98 /* FLEXSQLResult.h in Headers */ = {isa = PBXBuildFile; fileRef = BBDF4BD703D2A617C14121C72E74B512 /* FLEXSQLResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7BF5CA33F3C95679393D34662E7188F7 /* TableViewSectionedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E7BA89A19A979BBE2BC2CFA954464D /* TableViewSectionedDataSource.swift */; };
-		7D561B781989CA44742C73758984D019 /* TSSCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD16C1C0653940642CDE27E9EB0887 /* TSSCommon.swift */; };
 		7DD42ECA1AAA73C1DA7BAB17D3F0D92A /* RxCollectionViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574C3EF870D3D7AB082814241E99989 /* RxCollectionViewDelegateProxy.swift */; };
 		7E02F5B62BE00E97847DF549FFED2490 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362D680B88878BF97DE0E1276E9DA554 /* HTTPHeaders.swift */; };
 		7E4F723177C1E9C58E656FFF62579EC7 /* BehaviorRelay+Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4116C54BA4B276C8050FF1B98669F98F /* BehaviorRelay+Driver.swift */; };
@@ -1779,6 +1779,7 @@
 		2F949B6C288E9A29001CB391 /* TSSSegmentedCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSSegmentedCollectionView.swift; sourceTree = "<group>"; };
 		2F949B6E288E9A29001CB391 /* TSSLoadingCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSLoadingCircle.swift; sourceTree = "<group>"; };
 		2F949B6F288E9A29001CB391 /* TSSLoadingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSLoadingManager.swift; sourceTree = "<group>"; };
+		2F949BC1288F8B19001CB391 /* TSSCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSCommon.swift; sourceTree = "<group>"; };
 		2F99B0121D2F0A54D75272349CAC96E3 /* AsMaybe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsMaybe.swift; path = RxSwift/Observables/AsMaybe.swift; sourceTree = "<group>"; };
 		2FA132CF69AC026C185206D29CD51F0F /* URLSession+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSession+Rx.swift"; path = "RxCocoa/Foundation/URLSession+Rx.swift"; sourceTree = "<group>"; };
 		3032C5FA9DFE8F6121A0239DF26B8F45 /* SVGDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGDocument.m; path = "Source/DOM classes/SVG-DOM/SVGDocument.m"; sourceTree = "<group>"; };
@@ -1829,7 +1830,6 @@
 		3A42B90E06098022A80D5DBE5CBE4993 /* FLEXFieldEditorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXFieldEditorView.h; path = Classes/Editing/FLEXFieldEditorView.h; sourceTree = "<group>"; };
 		3A4DFF68FB8B75D48B7E90ABD5B4DDD0 /* TinySVGTextAreaElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TinySVGTextAreaElement.h; path = "Source/DOM classes/Unported or Partial DOM/TinySVGTextAreaElement.h"; sourceTree = "<group>"; };
 		3A51E38066F521858BD09D8F1A9F4953 /* FLEXObjectExplorerFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXObjectExplorerFactory.m; path = Classes/ObjectExplorers/FLEXObjectExplorerFactory.m; sourceTree = "<group>"; };
-		3ACD16C1C0653940642CDE27E9EB0887 /* TSSCommon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSSCommon.swift; path = HCYFrameWork/Classes/TSSCommon.swift; sourceTree = "<group>"; };
 		3BD3E69CB89909AEA53C25336F2EDD02 /* Completable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Completable.swift; path = RxSwift/Traits/Completable.swift; sourceTree = "<group>"; };
 		3BE06A74898F7E0E51D48E5CE8D226E5 /* RxCollectionViewSectionedAnimatedDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxCollectionViewSectionedAnimatedDataSource.swift; path = Sources/RxDataSources/RxCollectionViewSectionedAnimatedDataSource.swift; sourceTree = "<group>"; };
 		3BF7FA11DC86361BCEA759F102F4577E /* FLEXManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXManager.h; path = Classes/Manager/FLEXManager.h; sourceTree = "<group>"; };
@@ -3773,6 +3773,15 @@
 			path = HCYFrameWork/Classes/TSSLoading;
 			sourceTree = "<group>";
 		};
+		2F949BC0288F8B19001CB391 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2F949BC1288F8B19001CB391 /* TSSCommon.swift */,
+			);
+			name = Common;
+			path = HCYFrameWork/Classes/Common;
+			sourceTree = "<group>";
+		};
 		39AB116659A9850D69688F79DCC7C9D9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -4618,7 +4627,7 @@
 		E2983623ACC3DD0099BAF6A4B0D6C595 /* HCYFrameWork */ = {
 			isa = PBXGroup;
 			children = (
-				3ACD16C1C0653940642CDE27E9EB0887 /* TSSCommon.swift */,
+				2F949BC0288F8B19001CB391 /* Common */,
 				2F949B3B288E9A28001CB391 /* Custom */,
 				2F949B42288E9A29001CB391 /* Extension */,
 				2F949B5A288E9A29001CB391 /* GCD */,
@@ -6480,6 +6489,7 @@
 				2F949B90288E9A29001CB391 /* TSSSegmentedTitleItemModel.swift in Sources */,
 				2F949B7C288E9A29001CB391 /* TSSUIViewController+Extension.swift in Sources */,
 				2F949B9E288E9A29001CB391 /* TSSLoadingCircle.swift in Sources */,
+				2F949BC2288F8B19001CB391 /* TSSCommon.swift in Sources */,
 				2F949B91288E9A29001CB391 /* TSSSegmentedListContainerView.swift in Sources */,
 				2F949B8F288E9A29001CB391 /* TSSSegmentedBaseItemModel.swift in Sources */,
 				2F949B79288E9A29001CB391 /* TSSUIImageView+Extension.swift in Sources */,
@@ -6498,7 +6508,6 @@
 				2F949B8B288E9A29001CB391 /* TSSBaseViewController.swift in Sources */,
 				2F949B9C288E9A29001CB391 /* TSSSegmentedIndicatorLineView.swift in Sources */,
 				2F949B97288E9A29001CB391 /* TSSSegmentedTitleCell.swift in Sources */,
-				7D561B781989CA44742C73758984D019 /* TSSCommon.swift in Sources */,
 				2F949B9D288E9A29001CB391 /* TSSSegmentedCollectionView.swift in Sources */,
 				2F949B9B288E9A29001CB391 /* TSSSegmentedIndicatorParams.swift in Sources */,
 				C32F9A687772382D37E1066555CFDFF3 /* HCYFrameWork-dummy.m in Sources */,
