@@ -15,7 +15,7 @@ class TimeHelperViewController: TSSBaseViewController {
     let timeStr = "2022-07-25 11:20:30"
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad() 
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         // 初始化数据
