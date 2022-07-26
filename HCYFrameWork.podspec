@@ -32,35 +32,35 @@ Pod::Spec.new do |s|
     
     s.source_files = 'HCYFrameWork/Classes/**/*'
     s.subspec 'Custom' do |ss|
-        ss.source_files = 'HCYFrameWork/Classes/Custom/**/*.swift'
+        ss.source_files = 'HCYFrameWork/Classes/Custom/*.swift'
     end
     
     s.subspec 'Extension' do |ss|
-        ss.source_files = 'HCYFrameWork/Classes/Extension/**/*.swift'
+        ss.source_files = 'HCYFrameWork/Classes/Extension/*.swift'
     end
     s.subspec 'GCD' do |ss|
-        ss.source_files = 'HCYFrameWork/Classes/GCD/**/*.swift'
+        ss.source_files = 'HCYFrameWork/Classes/GCD/*.swift'
     end
     s.subspec 'RxOperators' do |ss|
-        ss.source_files = 'HCYFrameWork/Classes/RxOperators/**/*.swift'
+        ss.source_files = 'HCYFrameWork/Classes/RxOperators/*.swift'
     end
     s.subspec 'TSSDefaultView' do |ss|
-        ss.source_files = 'HCYFrameWork/Classes/TSSDefaultView/**/*.swift'
+        ss.source_files = 'HCYFrameWork/Classes/TSSDefaultView/*.swift'
     end
     s.subspec 'TSSLoading' do |ss|
-        ss.source_files = 'HCYFrameWork/Classes/TSSLoading/**/*.swift'
+        ss.source_files = 'HCYFrameWork/Classes/TSSLoading/*.swift'
     end
     s.subspec 'TSSNetworkingManager' do |ss|
-        ss.source_files = 'HCYFrameWork/Classes/TSSNetworkingManager/**/*.swift'
+        ss.source_files = 'HCYFrameWork/Classes/TSSNetworkingManager/*.swift'
     end
     s.subspec 'TSSNotiFication' do |ss|
-        ss.source_files = 'HCYFrameWork/Classes/TSSNotiFication/**/*.swift'
+        ss.source_files = 'HCYFrameWork/Classes/TSSNotiFication/*.swift'
     end
     s.subspec 'TSSPopUp' do |ss|
-        ss.source_files = 'HCYFrameWork/Classes/TSSPopUp/**/*.swift'
+        ss.source_files = 'HCYFrameWork/Classes/TSSPopUp/*.swift'
     end
     s.subspec 'TSSSegmented' do |ss|
-        ss.source_files = 'HCYFrameWork/Classes/TSSSegmented/**/*.swift'
+        ss.source_files = 'HCYFrameWork/Classes/TSSSegmented/*.swift'
     end
     # s.resource_bundles = {
     #   'HCYFrameWork' => ['HCYFrameWork/Assets/*.png']
