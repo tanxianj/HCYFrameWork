@@ -214,55 +214,55 @@
 		2F23190DC5166180F1C1DF14E5A4F671 /* UITabBarItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35E84E50B42C7C3815CFBE7BE4B20AB /* UITabBarItem+Rx.swift */; };
 		2F26E96FEB79CCC6E321B1FB24B94FB2 /* Node+Mutable.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C0D6761277D3FD6073844875081ECE /* Node+Mutable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F3CF919B819A9066E286D54C5EC9B9F /* FLEXMutableListSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2592A3D1FE1943E82F323A29DB9DBA4C /* FLEXMutableListSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F949B70288E9A29001CB391 /* TSSOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B36288E9A28001CB391 /* TSSOperators.swift */; };
-		2F949B71288E9A29001CB391 /* TSSNetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B38288E9A28001CB391 /* TSSNetworkingManager.swift */; };
-		2F949B72288E9A29001CB391 /* TSSNotiFication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B3A288E9A28001CB391 /* TSSNotiFication.swift */; };
-		2F949B73288E9A29001CB391 /* TSSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B3C288E9A28001CB391 /* TSSLabel.swift */; };
-		2F949B74288E9A29001CB391 /* TSSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B3D288E9A28001CB391 /* TSSButton.swift */; };
-		2F949B75288E9A29001CB391 /* TSSBasePopupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B3F288E9A28001CB391 /* TSSBasePopupConfig.swift */; };
-		2F949B76288E9A29001CB391 /* TSSBasePopupEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B40288E9A28001CB391 /* TSSBasePopupEnum.swift */; };
-		2F949B77288E9A29001CB391 /* TSSBasePopupViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B41288E9A28001CB391 /* TSSBasePopupViewManager.swift */; };
-		2F949B78288E9A29001CB391 /* TSSAPPScale+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B43288E9A29001CB391 /* TSSAPPScale+Extension.swift */; };
-		2F949B79288E9A29001CB391 /* TSSUIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B44288E9A29001CB391 /* TSSUIImageView+Extension.swift */; };
-		2F949B7A288E9A29001CB391 /* TSSValidate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B45288E9A29001CB391 /* TSSValidate+Extension.swift */; };
-		2F949B7B288E9A29001CB391 /* TSSUIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B46288E9A29001CB391 /* TSSUIVIew+Extension.swift */; };
-		2F949B7C288E9A29001CB391 /* TSSUIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B47288E9A29001CB391 /* TSSUIViewController+Extension.swift */; };
-		2F949B7D288E9A29001CB391 /* TSSUIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B48288E9A29001CB391 /* TSSUIDevice+Extension.swift */; };
-		2F949B7E288E9A29001CB391 /* TSSString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B49288E9A29001CB391 /* TSSString+Extension.swift */; };
-		2F949B7F288E9A29001CB391 /* TSSUIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B4A288E9A29001CB391 /* TSSUIWindow+Extension.swift */; };
-		2F949B80288E9A29001CB391 /* TSSUIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B4B288E9A29001CB391 /* TSSUIImage+Extension.swift */; };
-		2F949B81288E9A29001CB391 /* TSSTimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B4C288E9A29001CB391 /* TSSTimeHelper.swift */; };
-		2F949B82288E9A29001CB391 /* TSSUITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B4D288E9A29001CB391 /* TSSUITextField+Extension.swift */; };
-		2F949B83288E9A29001CB391 /* TSSUIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B4E288E9A29001CB391 /* TSSUIColor+Extension.swift */; };
-		2F949B84288E9A29001CB391 /* TSSMJRefresh+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B4F288E9A29001CB391 /* TSSMJRefresh+Extension.swift */; };
-		2F949B85288E9A29001CB391 /* TSSUITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B50288E9A29001CB391 /* TSSUITableViewCell+Extension.swift */; };
-		2F949B86288E9A29001CB391 /* TSSDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B52288E9A29001CB391 /* TSSDefaultView.swift */; };
-		2F949B87288E9A29001CB391 /* TSSFullscreenPopGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B54288E9A29001CB391 /* TSSFullscreenPopGesture.swift */; };
-		2F949B88288E9A29001CB391 /* TSSBaseViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B55288E9A29001CB391 /* TSSBaseViewModelType.swift */; };
-		2F949B89288E9A29001CB391 /* TSSBaseTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B56288E9A29001CB391 /* TSSBaseTabbarViewController.swift */; };
-		2F949B8A288E9A29001CB391 /* TSSBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B57288E9A29001CB391 /* TSSBaseNavigationController.swift */; };
-		2F949B8B288E9A29001CB391 /* TSSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B58288E9A29001CB391 /* TSSBaseViewController.swift */; };
-		2F949B8C288E9A29001CB391 /* TSSVIewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B59288E9A29001CB391 /* TSSVIewProtocol.swift */; };
-		2F949B8D288E9A29001CB391 /* TSSGCDTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B5B288E9A29001CB391 /* TSSGCDTools.swift */; };
-		2F949B8E288E9A29001CB391 /* TSSSegmentedIndicatorBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B5D288E9A29001CB391 /* TSSSegmentedIndicatorBaseView.swift */; };
-		2F949B8F288E9A29001CB391 /* TSSSegmentedBaseItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B5E288E9A29001CB391 /* TSSSegmentedBaseItemModel.swift */; };
-		2F949B90288E9A29001CB391 /* TSSSegmentedTitleItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B5F288E9A29001CB391 /* TSSSegmentedTitleItemModel.swift */; };
-		2F949B91288E9A29001CB391 /* TSSSegmentedListContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B60288E9A29001CB391 /* TSSSegmentedListContainerView.swift */; };
-		2F949B92288E9A29001CB391 /* TSSSegmentedViewTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B61288E9A29001CB391 /* TSSSegmentedViewTool.swift */; };
-		2F949B93288E9A29001CB391 /* TSSSegmentedBaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B62288E9A29001CB391 /* TSSSegmentedBaseDataSource.swift */; };
-		2F949B94288E9A29001CB391 /* TSSSegmentedTitleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B63288E9A29001CB391 /* TSSSegmentedTitleDataSource.swift */; };
-		2F949B95288E9A29001CB391 /* TSSSegmentedRTLLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B64288E9A29001CB391 /* TSSSegmentedRTLLayout.swift */; };
-		2F949B96288E9A29001CB391 /* TSSSegmentedBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B65288E9A29001CB391 /* TSSSegmentedBaseCell.swift */; };
-		2F949B97288E9A29001CB391 /* TSSSegmentedTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B66288E9A29001CB391 /* TSSSegmentedTitleCell.swift */; };
-		2F949B98288E9A29001CB391 /* TSSSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B67288E9A29001CB391 /* TSSSegmentedView.swift */; };
-		2F949B99288E9A29001CB391 /* TSSSegmentedAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B68288E9A29001CB391 /* TSSSegmentedAnimator.swift */; };
-		2F949B9A288E9A29001CB391 /* TSSSegmentedIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B69288E9A29001CB391 /* TSSSegmentedIndicatorProtocol.swift */; };
-		2F949B9B288E9A29001CB391 /* TSSSegmentedIndicatorParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B6A288E9A29001CB391 /* TSSSegmentedIndicatorParams.swift */; };
-		2F949B9C288E9A29001CB391 /* TSSSegmentedIndicatorLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B6B288E9A29001CB391 /* TSSSegmentedIndicatorLineView.swift */; };
-		2F949B9D288E9A29001CB391 /* TSSSegmentedCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B6C288E9A29001CB391 /* TSSSegmentedCollectionView.swift */; };
-		2F949B9E288E9A29001CB391 /* TSSLoadingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B6E288E9A29001CB391 /* TSSLoadingCircle.swift */; };
-		2F949B9F288E9A29001CB391 /* TSSLoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B6F288E9A29001CB391 /* TSSLoadingManager.swift */; };
-		2F949BC2288F8B19001CB391 /* TSSCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949BC1288F8B19001CB391 /* TSSCommon.swift */; };
+		2FD5F79B288FC30F005CDF87 /* TSSSegmentedIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F76A288FC30C005CDF87 /* TSSSegmentedIndicatorProtocol.swift */; };
+		2FD5F79C288FC30F005CDF87 /* TSSBasePopupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F76B288FC30C005CDF87 /* TSSBasePopupConfig.swift */; };
+		2FD5F79D288FC30F005CDF87 /* TSSBasePopupViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F76C288FC30D005CDF87 /* TSSBasePopupViewManager.swift */; };
+		2FD5F79E288FC30F005CDF87 /* TSSUITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F76D288FC30D005CDF87 /* TSSUITextField+Extension.swift */; };
+		2FD5F79F288FC30F005CDF87 /* TSSUITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F76E288FC30D005CDF87 /* TSSUITableViewCell+Extension.swift */; };
+		2FD5F7A0288FC30F005CDF87 /* TSSAPPScale+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F76F288FC30D005CDF87 /* TSSAPPScale+Extension.swift */; };
+		2FD5F7A1288FC30F005CDF87 /* TSSSegmentedIndicatorParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F770288FC30D005CDF87 /* TSSSegmentedIndicatorParams.swift */; };
+		2FD5F7A2288FC30F005CDF87 /* TSSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F771288FC30D005CDF87 /* TSSLabel.swift */; };
+		2FD5F7A3288FC30F005CDF87 /* TSSNetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F772288FC30D005CDF87 /* TSSNetworkingManager.swift */; };
+		2FD5F7A4288FC30F005CDF87 /* TSSCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F773288FC30D005CDF87 /* TSSCommon.swift */; };
+		2FD5F7A5288FC30F005CDF87 /* TSSBaseViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F774288FC30D005CDF87 /* TSSBaseViewModelType.swift */; };
+		2FD5F7A6288FC30F005CDF87 /* TSSSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F775288FC30D005CDF87 /* TSSSegmentedView.swift */; };
+		2FD5F7A7288FC30F005CDF87 /* TSSGCDTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F776288FC30D005CDF87 /* TSSGCDTools.swift */; };
+		2FD5F7A8288FC30F005CDF87 /* TSSSegmentedTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F777288FC30D005CDF87 /* TSSSegmentedTitleCell.swift */; };
+		2FD5F7A9288FC30F005CDF87 /* TSSSegmentedBaseItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F778288FC30D005CDF87 /* TSSSegmentedBaseItemModel.swift */; };
+		2FD5F7AA288FC30F005CDF87 /* TSSFullscreenPopGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F779288FC30D005CDF87 /* TSSFullscreenPopGesture.swift */; };
+		2FD5F7AB288FC30F005CDF87 /* TSSUIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F77A288FC30D005CDF87 /* TSSUIImage+Extension.swift */; };
+		2FD5F7AC288FC30F005CDF87 /* TSSMJRefresh+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F77B288FC30D005CDF87 /* TSSMJRefresh+Extension.swift */; };
+		2FD5F7AD288FC30F005CDF87 /* TSSTimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F77C288FC30D005CDF87 /* TSSTimeHelper.swift */; };
+		2FD5F7AE288FC30F005CDF87 /* TSSSegmentedAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F77D288FC30D005CDF87 /* TSSSegmentedAnimator.swift */; };
+		2FD5F7AF288FC30F005CDF87 /* TSSSegmentedRTLLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F77E288FC30D005CDF87 /* TSSSegmentedRTLLayout.swift */; };
+		2FD5F7B0288FC30F005CDF87 /* TSSBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F77F288FC30D005CDF87 /* TSSBaseNavigationController.swift */; };
+		2FD5F7B1288FC30F005CDF87 /* TSSUIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F780288FC30D005CDF87 /* TSSUIDevice+Extension.swift */; };
+		2FD5F7B2288FC30F005CDF87 /* TSSValidate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F781288FC30E005CDF87 /* TSSValidate+Extension.swift */; };
+		2FD5F7B3288FC30F005CDF87 /* TSSUIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F782288FC30E005CDF87 /* TSSUIVIew+Extension.swift */; };
+		2FD5F7B4288FC30F005CDF87 /* TSSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F783288FC30E005CDF87 /* TSSBaseViewController.swift */; };
+		2FD5F7B5288FC30F005CDF87 /* TSSSegmentedViewTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F784288FC30E005CDF87 /* TSSSegmentedViewTool.swift */; };
+		2FD5F7B6288FC30F005CDF87 /* TSSUIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F785288FC30E005CDF87 /* TSSUIViewController+Extension.swift */; };
+		2FD5F7B7288FC30F005CDF87 /* TSSSegmentedBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F786288FC30E005CDF87 /* TSSSegmentedBaseCell.swift */; };
+		2FD5F7B8288FC30F005CDF87 /* TSSSegmentedTitleItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F787288FC30E005CDF87 /* TSSSegmentedTitleItemModel.swift */; };
+		2FD5F7B9288FC30F005CDF87 /* TSSSegmentedBaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F788288FC30E005CDF87 /* TSSSegmentedBaseDataSource.swift */; };
+		2FD5F7BA288FC30F005CDF87 /* TSSBasePopupEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F789288FC30E005CDF87 /* TSSBasePopupEnum.swift */; };
+		2FD5F7BB288FC30F005CDF87 /* TSSVIewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F78A288FC30E005CDF87 /* TSSVIewProtocol.swift */; };
+		2FD5F7BC288FC30F005CDF87 /* TSSSegmentedIndicatorLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F78B288FC30E005CDF87 /* TSSSegmentedIndicatorLineView.swift */; };
+		2FD5F7BD288FC30F005CDF87 /* TSSOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F78C288FC30E005CDF87 /* TSSOperators.swift */; };
+		2FD5F7BE288FC30F005CDF87 /* TSSSegmentedCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F78D288FC30E005CDF87 /* TSSSegmentedCollectionView.swift */; };
+		2FD5F7BF288FC30F005CDF87 /* TSSSegmentedTitleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F78E288FC30E005CDF87 /* TSSSegmentedTitleDataSource.swift */; };
+		2FD5F7C0288FC30F005CDF87 /* TSSUIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F78F288FC30E005CDF87 /* TSSUIImageView+Extension.swift */; };
+		2FD5F7C1288FC30F005CDF87 /* TSSBaseTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F790288FC30E005CDF87 /* TSSBaseTabbarViewController.swift */; };
+		2FD5F7C2288FC30F005CDF87 /* TSSSegmentedIndicatorBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F791288FC30E005CDF87 /* TSSSegmentedIndicatorBaseView.swift */; };
+		2FD5F7C3288FC30F005CDF87 /* TSSNotiFication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F792288FC30E005CDF87 /* TSSNotiFication.swift */; };
+		2FD5F7C4288FC30F005CDF87 /* TSSSegmentedListContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F793288FC30E005CDF87 /* TSSSegmentedListContainerView.swift */; };
+		2FD5F7C5288FC30F005CDF87 /* TSSUIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F794288FC30E005CDF87 /* TSSUIWindow+Extension.swift */; };
+		2FD5F7C6288FC30F005CDF87 /* TSSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F795288FC30E005CDF87 /* TSSButton.swift */; };
+		2FD5F7C7288FC30F005CDF87 /* TSSDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F796288FC30E005CDF87 /* TSSDefaultView.swift */; };
+		2FD5F7C8288FC30F005CDF87 /* TSSLoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F797288FC30F005CDF87 /* TSSLoadingManager.swift */; };
+		2FD5F7C9288FC30F005CDF87 /* TSSLoadingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F798288FC30F005CDF87 /* TSSLoadingCircle.swift */; };
+		2FD5F7CA288FC30F005CDF87 /* TSSString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F799288FC30F005CDF87 /* TSSString+Extension.swift */; };
+		2FD5F7CB288FC30F005CDF87 /* TSSUIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F79A288FC30F005CDF87 /* TSSUIColor+Extension.swift */; };
 		300EAA1B4BFE872D560B3F7E59143391 /* FLEXTypeEncodingParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 809DB0E457BFA4B14DE8D2A04A14EA82 /* FLEXTypeEncodingParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		306F685701CDE256F84ABDF882FD3A8B /* FLEXArgumentInputDateView.h in Headers */ = {isa = PBXBuildFile; fileRef = 76AB6DF7B3A7A6CD69C378B7EC5D0CC0 /* FLEXArgumentInputDateView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		309DC47F3DE56820FBC719AB5D57EDE4 /* FLEXClassShortcuts.h in Headers */ = {isa = PBXBuildFile; fileRef = 79B17A3F0C017CD71D10C9D41AF256D7 /* FLEXClassShortcuts.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1731,57 +1731,57 @@
 		2F15B7A19008E85D64266D33418689FB /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		2F1E41FA1478FF63E394B0D381558862 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
 		2F72A4CF0D66D4AD17C3D1616ECD6F97 /* Differentiator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Differentiator.debug.xcconfig; sourceTree = "<group>"; };
-		2F949B36288E9A28001CB391 /* TSSOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSOperators.swift; sourceTree = "<group>"; };
-		2F949B38288E9A28001CB391 /* TSSNetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSNetworkingManager.swift; sourceTree = "<group>"; };
-		2F949B3A288E9A28001CB391 /* TSSNotiFication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSNotiFication.swift; sourceTree = "<group>"; };
-		2F949B3C288E9A28001CB391 /* TSSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSLabel.swift; sourceTree = "<group>"; };
-		2F949B3D288E9A28001CB391 /* TSSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSButton.swift; sourceTree = "<group>"; };
-		2F949B3F288E9A28001CB391 /* TSSBasePopupConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSBasePopupConfig.swift; sourceTree = "<group>"; };
-		2F949B40288E9A28001CB391 /* TSSBasePopupEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSBasePopupEnum.swift; sourceTree = "<group>"; };
-		2F949B41288E9A28001CB391 /* TSSBasePopupViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSBasePopupViewManager.swift; sourceTree = "<group>"; };
-		2F949B43288E9A29001CB391 /* TSSAPPScale+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSSAPPScale+Extension.swift"; sourceTree = "<group>"; };
-		2F949B44288E9A29001CB391 /* TSSUIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSSUIImageView+Extension.swift"; sourceTree = "<group>"; };
-		2F949B45288E9A29001CB391 /* TSSValidate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSSValidate+Extension.swift"; sourceTree = "<group>"; };
-		2F949B46288E9A29001CB391 /* TSSUIVIew+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSSUIVIew+Extension.swift"; sourceTree = "<group>"; };
-		2F949B47288E9A29001CB391 /* TSSUIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSSUIViewController+Extension.swift"; sourceTree = "<group>"; };
-		2F949B48288E9A29001CB391 /* TSSUIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSSUIDevice+Extension.swift"; sourceTree = "<group>"; };
-		2F949B49288E9A29001CB391 /* TSSString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSSString+Extension.swift"; sourceTree = "<group>"; };
-		2F949B4A288E9A29001CB391 /* TSSUIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSSUIWindow+Extension.swift"; sourceTree = "<group>"; };
-		2F949B4B288E9A29001CB391 /* TSSUIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSSUIImage+Extension.swift"; sourceTree = "<group>"; };
-		2F949B4C288E9A29001CB391 /* TSSTimeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSTimeHelper.swift; sourceTree = "<group>"; };
-		2F949B4D288E9A29001CB391 /* TSSUITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSSUITextField+Extension.swift"; sourceTree = "<group>"; };
-		2F949B4E288E9A29001CB391 /* TSSUIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSSUIColor+Extension.swift"; sourceTree = "<group>"; };
-		2F949B4F288E9A29001CB391 /* TSSMJRefresh+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSSMJRefresh+Extension.swift"; sourceTree = "<group>"; };
-		2F949B50288E9A29001CB391 /* TSSUITableViewCell+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSSUITableViewCell+Extension.swift"; sourceTree = "<group>"; };
-		2F949B52288E9A29001CB391 /* TSSDefaultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSDefaultView.swift; sourceTree = "<group>"; };
-		2F949B54288E9A29001CB391 /* TSSFullscreenPopGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSFullscreenPopGesture.swift; sourceTree = "<group>"; };
-		2F949B55288E9A29001CB391 /* TSSBaseViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSBaseViewModelType.swift; sourceTree = "<group>"; };
-		2F949B56288E9A29001CB391 /* TSSBaseTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSBaseTabbarViewController.swift; sourceTree = "<group>"; };
-		2F949B57288E9A29001CB391 /* TSSBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSBaseNavigationController.swift; sourceTree = "<group>"; };
-		2F949B58288E9A29001CB391 /* TSSBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSBaseViewController.swift; sourceTree = "<group>"; };
-		2F949B59288E9A29001CB391 /* TSSVIewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSVIewProtocol.swift; sourceTree = "<group>"; };
-		2F949B5B288E9A29001CB391 /* TSSGCDTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSGCDTools.swift; sourceTree = "<group>"; };
-		2F949B5D288E9A29001CB391 /* TSSSegmentedIndicatorBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSSegmentedIndicatorBaseView.swift; sourceTree = "<group>"; };
-		2F949B5E288E9A29001CB391 /* TSSSegmentedBaseItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSSegmentedBaseItemModel.swift; sourceTree = "<group>"; };
-		2F949B5F288E9A29001CB391 /* TSSSegmentedTitleItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSSegmentedTitleItemModel.swift; sourceTree = "<group>"; };
-		2F949B60288E9A29001CB391 /* TSSSegmentedListContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSSegmentedListContainerView.swift; sourceTree = "<group>"; };
-		2F949B61288E9A29001CB391 /* TSSSegmentedViewTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSSegmentedViewTool.swift; sourceTree = "<group>"; };
-		2F949B62288E9A29001CB391 /* TSSSegmentedBaseDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSSegmentedBaseDataSource.swift; sourceTree = "<group>"; };
-		2F949B63288E9A29001CB391 /* TSSSegmentedTitleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSSegmentedTitleDataSource.swift; sourceTree = "<group>"; };
-		2F949B64288E9A29001CB391 /* TSSSegmentedRTLLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSSegmentedRTLLayout.swift; sourceTree = "<group>"; };
-		2F949B65288E9A29001CB391 /* TSSSegmentedBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSSegmentedBaseCell.swift; sourceTree = "<group>"; };
-		2F949B66288E9A29001CB391 /* TSSSegmentedTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSSegmentedTitleCell.swift; sourceTree = "<group>"; };
-		2F949B67288E9A29001CB391 /* TSSSegmentedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSSegmentedView.swift; sourceTree = "<group>"; };
-		2F949B68288E9A29001CB391 /* TSSSegmentedAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSSegmentedAnimator.swift; sourceTree = "<group>"; };
-		2F949B69288E9A29001CB391 /* TSSSegmentedIndicatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSSegmentedIndicatorProtocol.swift; sourceTree = "<group>"; };
-		2F949B6A288E9A29001CB391 /* TSSSegmentedIndicatorParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSSegmentedIndicatorParams.swift; sourceTree = "<group>"; };
-		2F949B6B288E9A29001CB391 /* TSSSegmentedIndicatorLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSSegmentedIndicatorLineView.swift; sourceTree = "<group>"; };
-		2F949B6C288E9A29001CB391 /* TSSSegmentedCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSSegmentedCollectionView.swift; sourceTree = "<group>"; };
-		2F949B6E288E9A29001CB391 /* TSSLoadingCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSLoadingCircle.swift; sourceTree = "<group>"; };
-		2F949B6F288E9A29001CB391 /* TSSLoadingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSLoadingManager.swift; sourceTree = "<group>"; };
-		2F949BC1288F8B19001CB391 /* TSSCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSCommon.swift; sourceTree = "<group>"; };
 		2F99B0121D2F0A54D75272349CAC96E3 /* AsMaybe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsMaybe.swift; path = RxSwift/Observables/AsMaybe.swift; sourceTree = "<group>"; };
 		2FA132CF69AC026C185206D29CD51F0F /* URLSession+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSession+Rx.swift"; path = "RxCocoa/Foundation/URLSession+Rx.swift"; sourceTree = "<group>"; };
+		2FD5F76A288FC30C005CDF87 /* TSSSegmentedIndicatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedIndicatorProtocol.swift; path = HCYFrameWork/Classes/TSSSegmentedIndicatorProtocol.swift; sourceTree = "<group>"; };
+		2FD5F76B288FC30C005CDF87 /* TSSBasePopupConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSBasePopupConfig.swift; path = HCYFrameWork/Classes/TSSBasePopupConfig.swift; sourceTree = "<group>"; };
+		2FD5F76C288FC30D005CDF87 /* TSSBasePopupViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSBasePopupViewManager.swift; path = HCYFrameWork/Classes/TSSBasePopupViewManager.swift; sourceTree = "<group>"; };
+		2FD5F76D288FC30D005CDF87 /* TSSUITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUITextField+Extension.swift"; path = "HCYFrameWork/Classes/TSSUITextField+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F76E288FC30D005CDF87 /* TSSUITableViewCell+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUITableViewCell+Extension.swift"; path = "HCYFrameWork/Classes/TSSUITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F76F288FC30D005CDF87 /* TSSAPPScale+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSAPPScale+Extension.swift"; path = "HCYFrameWork/Classes/TSSAPPScale+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F770288FC30D005CDF87 /* TSSSegmentedIndicatorParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedIndicatorParams.swift; path = HCYFrameWork/Classes/TSSSegmentedIndicatorParams.swift; sourceTree = "<group>"; };
+		2FD5F771288FC30D005CDF87 /* TSSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSLabel.swift; path = HCYFrameWork/Classes/TSSLabel.swift; sourceTree = "<group>"; };
+		2FD5F772288FC30D005CDF87 /* TSSNetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSNetworkingManager.swift; path = HCYFrameWork/Classes/TSSNetworkingManager.swift; sourceTree = "<group>"; };
+		2FD5F773288FC30D005CDF87 /* TSSCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSCommon.swift; path = HCYFrameWork/Classes/TSSCommon.swift; sourceTree = "<group>"; };
+		2FD5F774288FC30D005CDF87 /* TSSBaseViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSBaseViewModelType.swift; path = HCYFrameWork/Classes/TSSBaseViewModelType.swift; sourceTree = "<group>"; };
+		2FD5F775288FC30D005CDF87 /* TSSSegmentedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedView.swift; path = HCYFrameWork/Classes/TSSSegmentedView.swift; sourceTree = "<group>"; };
+		2FD5F776288FC30D005CDF87 /* TSSGCDTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSGCDTools.swift; path = HCYFrameWork/Classes/TSSGCDTools.swift; sourceTree = "<group>"; };
+		2FD5F777288FC30D005CDF87 /* TSSSegmentedTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedTitleCell.swift; path = HCYFrameWork/Classes/TSSSegmentedTitleCell.swift; sourceTree = "<group>"; };
+		2FD5F778288FC30D005CDF87 /* TSSSegmentedBaseItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedBaseItemModel.swift; path = HCYFrameWork/Classes/TSSSegmentedBaseItemModel.swift; sourceTree = "<group>"; };
+		2FD5F779288FC30D005CDF87 /* TSSFullscreenPopGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSFullscreenPopGesture.swift; path = HCYFrameWork/Classes/TSSFullscreenPopGesture.swift; sourceTree = "<group>"; };
+		2FD5F77A288FC30D005CDF87 /* TSSUIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUIImage+Extension.swift"; path = "HCYFrameWork/Classes/TSSUIImage+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F77B288FC30D005CDF87 /* TSSMJRefresh+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSMJRefresh+Extension.swift"; path = "HCYFrameWork/Classes/TSSMJRefresh+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F77C288FC30D005CDF87 /* TSSTimeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSTimeHelper.swift; path = HCYFrameWork/Classes/TSSTimeHelper.swift; sourceTree = "<group>"; };
+		2FD5F77D288FC30D005CDF87 /* TSSSegmentedAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedAnimator.swift; path = HCYFrameWork/Classes/TSSSegmentedAnimator.swift; sourceTree = "<group>"; };
+		2FD5F77E288FC30D005CDF87 /* TSSSegmentedRTLLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedRTLLayout.swift; path = HCYFrameWork/Classes/TSSSegmentedRTLLayout.swift; sourceTree = "<group>"; };
+		2FD5F77F288FC30D005CDF87 /* TSSBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSBaseNavigationController.swift; path = HCYFrameWork/Classes/TSSBaseNavigationController.swift; sourceTree = "<group>"; };
+		2FD5F780288FC30D005CDF87 /* TSSUIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUIDevice+Extension.swift"; path = "HCYFrameWork/Classes/TSSUIDevice+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F781288FC30E005CDF87 /* TSSValidate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSValidate+Extension.swift"; path = "HCYFrameWork/Classes/TSSValidate+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F782288FC30E005CDF87 /* TSSUIVIew+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUIVIew+Extension.swift"; path = "HCYFrameWork/Classes/TSSUIVIew+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F783288FC30E005CDF87 /* TSSBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSBaseViewController.swift; path = HCYFrameWork/Classes/TSSBaseViewController.swift; sourceTree = "<group>"; };
+		2FD5F784288FC30E005CDF87 /* TSSSegmentedViewTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedViewTool.swift; path = HCYFrameWork/Classes/TSSSegmentedViewTool.swift; sourceTree = "<group>"; };
+		2FD5F785288FC30E005CDF87 /* TSSUIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUIViewController+Extension.swift"; path = "HCYFrameWork/Classes/TSSUIViewController+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F786288FC30E005CDF87 /* TSSSegmentedBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedBaseCell.swift; path = HCYFrameWork/Classes/TSSSegmentedBaseCell.swift; sourceTree = "<group>"; };
+		2FD5F787288FC30E005CDF87 /* TSSSegmentedTitleItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedTitleItemModel.swift; path = HCYFrameWork/Classes/TSSSegmentedTitleItemModel.swift; sourceTree = "<group>"; };
+		2FD5F788288FC30E005CDF87 /* TSSSegmentedBaseDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedBaseDataSource.swift; path = HCYFrameWork/Classes/TSSSegmentedBaseDataSource.swift; sourceTree = "<group>"; };
+		2FD5F789288FC30E005CDF87 /* TSSBasePopupEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSBasePopupEnum.swift; path = HCYFrameWork/Classes/TSSBasePopupEnum.swift; sourceTree = "<group>"; };
+		2FD5F78A288FC30E005CDF87 /* TSSVIewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSVIewProtocol.swift; path = HCYFrameWork/Classes/TSSVIewProtocol.swift; sourceTree = "<group>"; };
+		2FD5F78B288FC30E005CDF87 /* TSSSegmentedIndicatorLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedIndicatorLineView.swift; path = HCYFrameWork/Classes/TSSSegmentedIndicatorLineView.swift; sourceTree = "<group>"; };
+		2FD5F78C288FC30E005CDF87 /* TSSOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSOperators.swift; path = HCYFrameWork/Classes/TSSOperators.swift; sourceTree = "<group>"; };
+		2FD5F78D288FC30E005CDF87 /* TSSSegmentedCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedCollectionView.swift; path = HCYFrameWork/Classes/TSSSegmentedCollectionView.swift; sourceTree = "<group>"; };
+		2FD5F78E288FC30E005CDF87 /* TSSSegmentedTitleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedTitleDataSource.swift; path = HCYFrameWork/Classes/TSSSegmentedTitleDataSource.swift; sourceTree = "<group>"; };
+		2FD5F78F288FC30E005CDF87 /* TSSUIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUIImageView+Extension.swift"; path = "HCYFrameWork/Classes/TSSUIImageView+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F790288FC30E005CDF87 /* TSSBaseTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSBaseTabbarViewController.swift; path = HCYFrameWork/Classes/TSSBaseTabbarViewController.swift; sourceTree = "<group>"; };
+		2FD5F791288FC30E005CDF87 /* TSSSegmentedIndicatorBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedIndicatorBaseView.swift; path = HCYFrameWork/Classes/TSSSegmentedIndicatorBaseView.swift; sourceTree = "<group>"; };
+		2FD5F792288FC30E005CDF87 /* TSSNotiFication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSNotiFication.swift; path = HCYFrameWork/Classes/TSSNotiFication.swift; sourceTree = "<group>"; };
+		2FD5F793288FC30E005CDF87 /* TSSSegmentedListContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedListContainerView.swift; path = HCYFrameWork/Classes/TSSSegmentedListContainerView.swift; sourceTree = "<group>"; };
+		2FD5F794288FC30E005CDF87 /* TSSUIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUIWindow+Extension.swift"; path = "HCYFrameWork/Classes/TSSUIWindow+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F795288FC30E005CDF87 /* TSSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSButton.swift; path = HCYFrameWork/Classes/TSSButton.swift; sourceTree = "<group>"; };
+		2FD5F796288FC30E005CDF87 /* TSSDefaultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSDefaultView.swift; path = HCYFrameWork/Classes/TSSDefaultView.swift; sourceTree = "<group>"; };
+		2FD5F797288FC30F005CDF87 /* TSSLoadingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSLoadingManager.swift; path = HCYFrameWork/Classes/TSSLoadingManager.swift; sourceTree = "<group>"; };
+		2FD5F798288FC30F005CDF87 /* TSSLoadingCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSLoadingCircle.swift; path = HCYFrameWork/Classes/TSSLoadingCircle.swift; sourceTree = "<group>"; };
+		2FD5F799288FC30F005CDF87 /* TSSString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSString+Extension.swift"; path = "HCYFrameWork/Classes/TSSString+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F79A288FC30F005CDF87 /* TSSUIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUIColor+Extension.swift"; path = "HCYFrameWork/Classes/TSSUIColor+Extension.swift"; sourceTree = "<group>"; };
 		3032C5FA9DFE8F6121A0239DF26B8F45 /* SVGDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGDocument.m; path = "Source/DOM classes/SVG-DOM/SVGDocument.m"; sourceTree = "<group>"; };
 		3065A61A6DABF4A25A836BCD48508AD8 /* SVGHelperUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGHelperUtilities.m; path = "Source/DOM classes/SVG-DOM/SVGHelperUtilities.m"; sourceTree = "<group>"; };
 		31087025EEAFB36EFC4820003934CF86 /* FLEXKeyValueTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXKeyValueTableViewCell.h; path = Classes/Core/Views/Cells/FLEXKeyValueTableViewCell.h; sourceTree = "<group>"; };
@@ -2367,7 +2367,7 @@
 		A4162DDBBDB1DD89C04D224B6DB9D83D /* KFImageRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KFImageRenderer.swift; path = Sources/SwiftUI/KFImageRenderer.swift; sourceTree = "<group>"; };
 		A422D414BAA9D827BA0045DE509F4827 /* FHSRangeSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FHSRangeSlider.m; path = Classes/ViewHierarchy/SnapshotExplorer/FHSRangeSlider.m; sourceTree = "<group>"; };
 		A427BE8D21DCB5647AA3BC29753A3D99 /* FloatingPointType+IdentifiableType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FloatingPointType+IdentifiableType.swift"; path = "Sources/RxDataSources/FloatingPointType+IdentifiableType.swift"; sourceTree = "<group>"; };
-		A45FCBDC188670565FAFF86B7A88550B /* HCYFrameWork */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HCYFrameWork; path = HCYFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A45FCBDC188670565FAFF86B7A88550B /* HCYFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HCYFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4699D99CFF65680CF8BFA044DC713B1 /* SVGAnimatedPreserveAspectRatio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGAnimatedPreserveAspectRatio.h; path = "Source/DOM classes/SVG-DOM/SVGAnimatedPreserveAspectRatio.h"; sourceTree = "<group>"; };
 		A47BF8CCEFD59B701842BC18C15A3B1A /* NSButton+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSButton+Rx.swift"; path = "RxCocoa/macOS/NSButton+Rx.swift"; sourceTree = "<group>"; };
 		A47F21A52A4B0AE37CCA4D0C83734E33 /* FLEXObjectInfoSection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXObjectInfoSection.h; path = Classes/ObjectExplorers/Sections/FLEXObjectInfoSection.h; sourceTree = "<group>"; };
@@ -3637,151 +3637,6 @@
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
-		2F949B35288E9A28001CB391 /* RxOperators */ = {
-			isa = PBXGroup;
-			children = (
-				2F949B36288E9A28001CB391 /* TSSOperators.swift */,
-			);
-			name = RxOperators;
-			path = HCYFrameWork/Classes/RxOperators;
-			sourceTree = "<group>";
-		};
-		2F949B37288E9A28001CB391 /* TSSNetworkingManager */ = {
-			isa = PBXGroup;
-			children = (
-				2F949B38288E9A28001CB391 /* TSSNetworkingManager.swift */,
-			);
-			name = TSSNetworkingManager;
-			path = HCYFrameWork/Classes/TSSNetworkingManager;
-			sourceTree = "<group>";
-		};
-		2F949B39288E9A28001CB391 /* TSSNotiFication */ = {
-			isa = PBXGroup;
-			children = (
-				2F949B3A288E9A28001CB391 /* TSSNotiFication.swift */,
-			);
-			name = TSSNotiFication;
-			path = HCYFrameWork/Classes/TSSNotiFication;
-			sourceTree = "<group>";
-		};
-		2F949B3B288E9A28001CB391 /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-				2F949B3C288E9A28001CB391 /* TSSLabel.swift */,
-				2F949B3D288E9A28001CB391 /* TSSButton.swift */,
-			);
-			name = Custom;
-			path = HCYFrameWork/Classes/Custom;
-			sourceTree = "<group>";
-		};
-		2F949B3E288E9A28001CB391 /* TSSPopUp */ = {
-			isa = PBXGroup;
-			children = (
-				2F949B3F288E9A28001CB391 /* TSSBasePopupConfig.swift */,
-				2F949B40288E9A28001CB391 /* TSSBasePopupEnum.swift */,
-				2F949B41288E9A28001CB391 /* TSSBasePopupViewManager.swift */,
-			);
-			name = TSSPopUp;
-			path = HCYFrameWork/Classes/TSSPopUp;
-			sourceTree = "<group>";
-		};
-		2F949B42288E9A29001CB391 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				2F949B43288E9A29001CB391 /* TSSAPPScale+Extension.swift */,
-				2F949B44288E9A29001CB391 /* TSSUIImageView+Extension.swift */,
-				2F949B45288E9A29001CB391 /* TSSValidate+Extension.swift */,
-				2F949B46288E9A29001CB391 /* TSSUIVIew+Extension.swift */,
-				2F949B47288E9A29001CB391 /* TSSUIViewController+Extension.swift */,
-				2F949B48288E9A29001CB391 /* TSSUIDevice+Extension.swift */,
-				2F949B49288E9A29001CB391 /* TSSString+Extension.swift */,
-				2F949B4A288E9A29001CB391 /* TSSUIWindow+Extension.swift */,
-				2F949B4B288E9A29001CB391 /* TSSUIImage+Extension.swift */,
-				2F949B4C288E9A29001CB391 /* TSSTimeHelper.swift */,
-				2F949B4D288E9A29001CB391 /* TSSUITextField+Extension.swift */,
-				2F949B4E288E9A29001CB391 /* TSSUIColor+Extension.swift */,
-				2F949B4F288E9A29001CB391 /* TSSMJRefresh+Extension.swift */,
-				2F949B50288E9A29001CB391 /* TSSUITableViewCell+Extension.swift */,
-			);
-			name = Extension;
-			path = HCYFrameWork/Classes/Extension;
-			sourceTree = "<group>";
-		};
-		2F949B51288E9A29001CB391 /* TSSDefaultView */ = {
-			isa = PBXGroup;
-			children = (
-				2F949B52288E9A29001CB391 /* TSSDefaultView.swift */,
-			);
-			name = TSSDefaultView;
-			path = HCYFrameWork/Classes/TSSDefaultView;
-			sourceTree = "<group>";
-		};
-		2F949B53288E9A29001CB391 /* TSSBase */ = {
-			isa = PBXGroup;
-			children = (
-				2F949B54288E9A29001CB391 /* TSSFullscreenPopGesture.swift */,
-				2F949B55288E9A29001CB391 /* TSSBaseViewModelType.swift */,
-				2F949B56288E9A29001CB391 /* TSSBaseTabbarViewController.swift */,
-				2F949B57288E9A29001CB391 /* TSSBaseNavigationController.swift */,
-				2F949B58288E9A29001CB391 /* TSSBaseViewController.swift */,
-				2F949B59288E9A29001CB391 /* TSSVIewProtocol.swift */,
-			);
-			name = TSSBase;
-			path = HCYFrameWork/Classes/TSSBase;
-			sourceTree = "<group>";
-		};
-		2F949B5A288E9A29001CB391 /* GCD */ = {
-			isa = PBXGroup;
-			children = (
-				2F949B5B288E9A29001CB391 /* TSSGCDTools.swift */,
-			);
-			name = GCD;
-			path = HCYFrameWork/Classes/GCD;
-			sourceTree = "<group>";
-		};
-		2F949B5C288E9A29001CB391 /* TSSSegmented */ = {
-			isa = PBXGroup;
-			children = (
-				2F949B5D288E9A29001CB391 /* TSSSegmentedIndicatorBaseView.swift */,
-				2F949B5E288E9A29001CB391 /* TSSSegmentedBaseItemModel.swift */,
-				2F949B5F288E9A29001CB391 /* TSSSegmentedTitleItemModel.swift */,
-				2F949B60288E9A29001CB391 /* TSSSegmentedListContainerView.swift */,
-				2F949B61288E9A29001CB391 /* TSSSegmentedViewTool.swift */,
-				2F949B62288E9A29001CB391 /* TSSSegmentedBaseDataSource.swift */,
-				2F949B63288E9A29001CB391 /* TSSSegmentedTitleDataSource.swift */,
-				2F949B64288E9A29001CB391 /* TSSSegmentedRTLLayout.swift */,
-				2F949B65288E9A29001CB391 /* TSSSegmentedBaseCell.swift */,
-				2F949B66288E9A29001CB391 /* TSSSegmentedTitleCell.swift */,
-				2F949B67288E9A29001CB391 /* TSSSegmentedView.swift */,
-				2F949B68288E9A29001CB391 /* TSSSegmentedAnimator.swift */,
-				2F949B69288E9A29001CB391 /* TSSSegmentedIndicatorProtocol.swift */,
-				2F949B6A288E9A29001CB391 /* TSSSegmentedIndicatorParams.swift */,
-				2F949B6B288E9A29001CB391 /* TSSSegmentedIndicatorLineView.swift */,
-				2F949B6C288E9A29001CB391 /* TSSSegmentedCollectionView.swift */,
-			);
-			name = TSSSegmented;
-			path = HCYFrameWork/Classes/TSSSegmented;
-			sourceTree = "<group>";
-		};
-		2F949B6D288E9A29001CB391 /* TSSLoading */ = {
-			isa = PBXGroup;
-			children = (
-				2F949B6E288E9A29001CB391 /* TSSLoadingCircle.swift */,
-				2F949B6F288E9A29001CB391 /* TSSLoadingManager.swift */,
-			);
-			name = TSSLoading;
-			path = HCYFrameWork/Classes/TSSLoading;
-			sourceTree = "<group>";
-		};
-		2F949BC0288F8B19001CB391 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				2F949BC1288F8B19001CB391 /* TSSCommon.swift */,
-			);
-			name = Common;
-			path = HCYFrameWork/Classes/Common;
-			sourceTree = "<group>";
-		};
 		39AB116659A9850D69688F79DCC7C9D9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -4627,18 +4482,55 @@
 		E2983623ACC3DD0099BAF6A4B0D6C595 /* HCYFrameWork */ = {
 			isa = PBXGroup;
 			children = (
-				2F949BC0288F8B19001CB391 /* Common */,
-				2F949B3B288E9A28001CB391 /* Custom */,
-				2F949B42288E9A29001CB391 /* Extension */,
-				2F949B5A288E9A29001CB391 /* GCD */,
-				2F949B35288E9A28001CB391 /* RxOperators */,
-				2F949B53288E9A29001CB391 /* TSSBase */,
-				2F949B51288E9A29001CB391 /* TSSDefaultView */,
-				2F949B6D288E9A29001CB391 /* TSSLoading */,
-				2F949B37288E9A28001CB391 /* TSSNetworkingManager */,
-				2F949B39288E9A28001CB391 /* TSSNotiFication */,
-				2F949B3E288E9A28001CB391 /* TSSPopUp */,
-				2F949B5C288E9A29001CB391 /* TSSSegmented */,
+				2FD5F76F288FC30D005CDF87 /* TSSAPPScale+Extension.swift */,
+				2FD5F77F288FC30D005CDF87 /* TSSBaseNavigationController.swift */,
+				2FD5F76B288FC30C005CDF87 /* TSSBasePopupConfig.swift */,
+				2FD5F789288FC30E005CDF87 /* TSSBasePopupEnum.swift */,
+				2FD5F76C288FC30D005CDF87 /* TSSBasePopupViewManager.swift */,
+				2FD5F790288FC30E005CDF87 /* TSSBaseTabbarViewController.swift */,
+				2FD5F783288FC30E005CDF87 /* TSSBaseViewController.swift */,
+				2FD5F774288FC30D005CDF87 /* TSSBaseViewModelType.swift */,
+				2FD5F795288FC30E005CDF87 /* TSSButton.swift */,
+				2FD5F773288FC30D005CDF87 /* TSSCommon.swift */,
+				2FD5F796288FC30E005CDF87 /* TSSDefaultView.swift */,
+				2FD5F779288FC30D005CDF87 /* TSSFullscreenPopGesture.swift */,
+				2FD5F776288FC30D005CDF87 /* TSSGCDTools.swift */,
+				2FD5F771288FC30D005CDF87 /* TSSLabel.swift */,
+				2FD5F798288FC30F005CDF87 /* TSSLoadingCircle.swift */,
+				2FD5F797288FC30F005CDF87 /* TSSLoadingManager.swift */,
+				2FD5F77B288FC30D005CDF87 /* TSSMJRefresh+Extension.swift */,
+				2FD5F772288FC30D005CDF87 /* TSSNetworkingManager.swift */,
+				2FD5F792288FC30E005CDF87 /* TSSNotiFication.swift */,
+				2FD5F78C288FC30E005CDF87 /* TSSOperators.swift */,
+				2FD5F77D288FC30D005CDF87 /* TSSSegmentedAnimator.swift */,
+				2FD5F786288FC30E005CDF87 /* TSSSegmentedBaseCell.swift */,
+				2FD5F788288FC30E005CDF87 /* TSSSegmentedBaseDataSource.swift */,
+				2FD5F778288FC30D005CDF87 /* TSSSegmentedBaseItemModel.swift */,
+				2FD5F78D288FC30E005CDF87 /* TSSSegmentedCollectionView.swift */,
+				2FD5F791288FC30E005CDF87 /* TSSSegmentedIndicatorBaseView.swift */,
+				2FD5F78B288FC30E005CDF87 /* TSSSegmentedIndicatorLineView.swift */,
+				2FD5F770288FC30D005CDF87 /* TSSSegmentedIndicatorParams.swift */,
+				2FD5F76A288FC30C005CDF87 /* TSSSegmentedIndicatorProtocol.swift */,
+				2FD5F793288FC30E005CDF87 /* TSSSegmentedListContainerView.swift */,
+				2FD5F77E288FC30D005CDF87 /* TSSSegmentedRTLLayout.swift */,
+				2FD5F777288FC30D005CDF87 /* TSSSegmentedTitleCell.swift */,
+				2FD5F78E288FC30E005CDF87 /* TSSSegmentedTitleDataSource.swift */,
+				2FD5F787288FC30E005CDF87 /* TSSSegmentedTitleItemModel.swift */,
+				2FD5F775288FC30D005CDF87 /* TSSSegmentedView.swift */,
+				2FD5F784288FC30E005CDF87 /* TSSSegmentedViewTool.swift */,
+				2FD5F799288FC30F005CDF87 /* TSSString+Extension.swift */,
+				2FD5F77C288FC30D005CDF87 /* TSSTimeHelper.swift */,
+				2FD5F79A288FC30F005CDF87 /* TSSUIColor+Extension.swift */,
+				2FD5F780288FC30D005CDF87 /* TSSUIDevice+Extension.swift */,
+				2FD5F77A288FC30D005CDF87 /* TSSUIImage+Extension.swift */,
+				2FD5F78F288FC30E005CDF87 /* TSSUIImageView+Extension.swift */,
+				2FD5F76E288FC30D005CDF87 /* TSSUITableViewCell+Extension.swift */,
+				2FD5F76D288FC30D005CDF87 /* TSSUITextField+Extension.swift */,
+				2FD5F782288FC30E005CDF87 /* TSSUIVIew+Extension.swift */,
+				2FD5F785288FC30E005CDF87 /* TSSUIViewController+Extension.swift */,
+				2FD5F794288FC30E005CDF87 /* TSSUIWindow+Extension.swift */,
+				2FD5F781288FC30E005CDF87 /* TSSValidate+Extension.swift */,
+				2FD5F78A288FC30E005CDF87 /* TSSVIewProtocol.swift */,
 				7E8A5AFDACA268D692D86EBD40904DC1 /* Pod */,
 				5DE02635178B42B73137B8BDC257DEAB /* Support Files */,
 			);
@@ -4767,7 +4659,7 @@
 				C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack */,
 				D51C3D0C53D23B97B032E3BDD4F82C82 /* Differentiator */,
 				4AC7180564FE35A293CD0DD977EE56A8 /* FLEX */,
-				A45FCBDC188670565FAFF86B7A88550B /* HCYFrameWork */,
+				A45FCBDC188670565FAFF86B7A88550B /* HCYFrameWork.framework */,
 				A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift */,
 				C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher */,
 				E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh */,
@@ -5605,7 +5497,7 @@
 			);
 			name = HCYFrameWork;
 			productName = HCYFrameWork;
-			productReference = A45FCBDC188670565FAFF86B7A88550B /* HCYFrameWork */;
+			productReference = A45FCBDC188670565FAFF86B7A88550B /* HCYFrameWork.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -5616,6 +5508,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F2C5F2C94E5275E294CDC76FA357A448 = {
+						LastSwiftMigration = 1340;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -6474,56 +6371,56 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F949B93288E9A29001CB391 /* TSSSegmentedBaseDataSource.swift in Sources */,
-				2F949B76288E9A29001CB391 /* TSSBasePopupEnum.swift in Sources */,
-				2F949B9A288E9A29001CB391 /* TSSSegmentedIndicatorProtocol.swift in Sources */,
-				2F949B7A288E9A29001CB391 /* TSSValidate+Extension.swift in Sources */,
-				2F949B8E288E9A29001CB391 /* TSSSegmentedIndicatorBaseView.swift in Sources */,
-				2F949B95288E9A29001CB391 /* TSSSegmentedRTLLayout.swift in Sources */,
-				2F949B7F288E9A29001CB391 /* TSSUIWindow+Extension.swift in Sources */,
-				2F949B99288E9A29001CB391 /* TSSSegmentedAnimator.swift in Sources */,
-				2F949B8A288E9A29001CB391 /* TSSBaseNavigationController.swift in Sources */,
-				2F949B72288E9A29001CB391 /* TSSNotiFication.swift in Sources */,
-				2F949B8D288E9A29001CB391 /* TSSGCDTools.swift in Sources */,
-				2F949B74288E9A29001CB391 /* TSSButton.swift in Sources */,
-				2F949B90288E9A29001CB391 /* TSSSegmentedTitleItemModel.swift in Sources */,
-				2F949B7C288E9A29001CB391 /* TSSUIViewController+Extension.swift in Sources */,
-				2F949B9E288E9A29001CB391 /* TSSLoadingCircle.swift in Sources */,
-				2F949BC2288F8B19001CB391 /* TSSCommon.swift in Sources */,
-				2F949B91288E9A29001CB391 /* TSSSegmentedListContainerView.swift in Sources */,
-				2F949B8F288E9A29001CB391 /* TSSSegmentedBaseItemModel.swift in Sources */,
-				2F949B79288E9A29001CB391 /* TSSUIImageView+Extension.swift in Sources */,
-				2F949B87288E9A29001CB391 /* TSSFullscreenPopGesture.swift in Sources */,
-				2F949B7D288E9A29001CB391 /* TSSUIDevice+Extension.swift in Sources */,
-				2F949B85288E9A29001CB391 /* TSSUITableViewCell+Extension.swift in Sources */,
-				2F949B7B288E9A29001CB391 /* TSSUIVIew+Extension.swift in Sources */,
-				2F949B77288E9A29001CB391 /* TSSBasePopupViewManager.swift in Sources */,
-				2F949B96288E9A29001CB391 /* TSSSegmentedBaseCell.swift in Sources */,
-				2F949B8C288E9A29001CB391 /* TSSVIewProtocol.swift in Sources */,
-				2F949B86288E9A29001CB391 /* TSSDefaultView.swift in Sources */,
-				2F949B83288E9A29001CB391 /* TSSUIColor+Extension.swift in Sources */,
-				2F949B9F288E9A29001CB391 /* TSSLoadingManager.swift in Sources */,
-				2F949B75288E9A29001CB391 /* TSSBasePopupConfig.swift in Sources */,
-				2F949B98288E9A29001CB391 /* TSSSegmentedView.swift in Sources */,
-				2F949B8B288E9A29001CB391 /* TSSBaseViewController.swift in Sources */,
-				2F949B9C288E9A29001CB391 /* TSSSegmentedIndicatorLineView.swift in Sources */,
-				2F949B97288E9A29001CB391 /* TSSSegmentedTitleCell.swift in Sources */,
-				2F949B9D288E9A29001CB391 /* TSSSegmentedCollectionView.swift in Sources */,
-				2F949B9B288E9A29001CB391 /* TSSSegmentedIndicatorParams.swift in Sources */,
+				2FD5F7C0288FC30F005CDF87 /* TSSUIImageView+Extension.swift in Sources */,
+				2FD5F7C7288FC30F005CDF87 /* TSSDefaultView.swift in Sources */,
+				2FD5F79E288FC30F005CDF87 /* TSSUITextField+Extension.swift in Sources */,
+				2FD5F7A1288FC30F005CDF87 /* TSSSegmentedIndicatorParams.swift in Sources */,
+				2FD5F7A2288FC30F005CDF87 /* TSSLabel.swift in Sources */,
+				2FD5F7AC288FC30F005CDF87 /* TSSMJRefresh+Extension.swift in Sources */,
 				C32F9A687772382D37E1066555CFDFF3 /* HCYFrameWork-dummy.m in Sources */,
-				2F949B78288E9A29001CB391 /* TSSAPPScale+Extension.swift in Sources */,
-				2F949B80288E9A29001CB391 /* TSSUIImage+Extension.swift in Sources */,
-				2F949B71288E9A29001CB391 /* TSSNetworkingManager.swift in Sources */,
-				2F949B7E288E9A29001CB391 /* TSSString+Extension.swift in Sources */,
-				2F949B82288E9A29001CB391 /* TSSUITextField+Extension.swift in Sources */,
-				2F949B84288E9A29001CB391 /* TSSMJRefresh+Extension.swift in Sources */,
-				2F949B88288E9A29001CB391 /* TSSBaseViewModelType.swift in Sources */,
-				2F949B89288E9A29001CB391 /* TSSBaseTabbarViewController.swift in Sources */,
-				2F949B94288E9A29001CB391 /* TSSSegmentedTitleDataSource.swift in Sources */,
-				2F949B70288E9A29001CB391 /* TSSOperators.swift in Sources */,
-				2F949B92288E9A29001CB391 /* TSSSegmentedViewTool.swift in Sources */,
-				2F949B73288E9A29001CB391 /* TSSLabel.swift in Sources */,
-				2F949B81288E9A29001CB391 /* TSSTimeHelper.swift in Sources */,
+				2FD5F7BB288FC30F005CDF87 /* TSSVIewProtocol.swift in Sources */,
+				2FD5F7CB288FC30F005CDF87 /* TSSUIColor+Extension.swift in Sources */,
+				2FD5F7B3288FC30F005CDF87 /* TSSUIVIew+Extension.swift in Sources */,
+				2FD5F7A6288FC30F005CDF87 /* TSSSegmentedView.swift in Sources */,
+				2FD5F7B2288FC30F005CDF87 /* TSSValidate+Extension.swift in Sources */,
+				2FD5F7C9288FC30F005CDF87 /* TSSLoadingCircle.swift in Sources */,
+				2FD5F7B5288FC30F005CDF87 /* TSSSegmentedViewTool.swift in Sources */,
+				2FD5F7A8288FC30F005CDF87 /* TSSSegmentedTitleCell.swift in Sources */,
+				2FD5F79F288FC30F005CDF87 /* TSSUITableViewCell+Extension.swift in Sources */,
+				2FD5F79B288FC30F005CDF87 /* TSSSegmentedIndicatorProtocol.swift in Sources */,
+				2FD5F7BC288FC30F005CDF87 /* TSSSegmentedIndicatorLineView.swift in Sources */,
+				2FD5F7AA288FC30F005CDF87 /* TSSFullscreenPopGesture.swift in Sources */,
+				2FD5F7C2288FC30F005CDF87 /* TSSSegmentedIndicatorBaseView.swift in Sources */,
+				2FD5F7C4288FC30F005CDF87 /* TSSSegmentedListContainerView.swift in Sources */,
+				2FD5F7C6288FC30F005CDF87 /* TSSButton.swift in Sources */,
+				2FD5F7B0288FC30F005CDF87 /* TSSBaseNavigationController.swift in Sources */,
+				2FD5F7B9288FC30F005CDF87 /* TSSSegmentedBaseDataSource.swift in Sources */,
+				2FD5F79C288FC30F005CDF87 /* TSSBasePopupConfig.swift in Sources */,
+				2FD5F7CA288FC30F005CDF87 /* TSSString+Extension.swift in Sources */,
+				2FD5F7AE288FC30F005CDF87 /* TSSSegmentedAnimator.swift in Sources */,
+				2FD5F7AF288FC30F005CDF87 /* TSSSegmentedRTLLayout.swift in Sources */,
+				2FD5F7A0288FC30F005CDF87 /* TSSAPPScale+Extension.swift in Sources */,
+				2FD5F7C3288FC30F005CDF87 /* TSSNotiFication.swift in Sources */,
+				2FD5F7A7288FC30F005CDF87 /* TSSGCDTools.swift in Sources */,
+				2FD5F7C5288FC30F005CDF87 /* TSSUIWindow+Extension.swift in Sources */,
+				2FD5F7AB288FC30F005CDF87 /* TSSUIImage+Extension.swift in Sources */,
+				2FD5F7B7288FC30F005CDF87 /* TSSSegmentedBaseCell.swift in Sources */,
+				2FD5F7B4288FC30F005CDF87 /* TSSBaseViewController.swift in Sources */,
+				2FD5F7A9288FC30F005CDF87 /* TSSSegmentedBaseItemModel.swift in Sources */,
+				2FD5F7BD288FC30F005CDF87 /* TSSOperators.swift in Sources */,
+				2FD5F7C1288FC30F005CDF87 /* TSSBaseTabbarViewController.swift in Sources */,
+				2FD5F7A5288FC30F005CDF87 /* TSSBaseViewModelType.swift in Sources */,
+				2FD5F7A4288FC30F005CDF87 /* TSSCommon.swift in Sources */,
+				2FD5F7A3288FC30F005CDF87 /* TSSNetworkingManager.swift in Sources */,
+				2FD5F7B8288FC30F005CDF87 /* TSSSegmentedTitleItemModel.swift in Sources */,
+				2FD5F7C8288FC30F005CDF87 /* TSSLoadingManager.swift in Sources */,
+				2FD5F79D288FC30F005CDF87 /* TSSBasePopupViewManager.swift in Sources */,
+				2FD5F7B1288FC30F005CDF87 /* TSSUIDevice+Extension.swift in Sources */,
+				2FD5F7BA288FC30F005CDF87 /* TSSBasePopupEnum.swift in Sources */,
+				2FD5F7B6288FC30F005CDF87 /* TSSUIViewController+Extension.swift in Sources */,
+				2FD5F7BF288FC30F005CDF87 /* TSSSegmentedTitleDataSource.swift in Sources */,
+				2FD5F7AD288FC30F005CDF87 /* TSSTimeHelper.swift in Sources */,
+				2FD5F7BE288FC30F005CDF87 /* TSSSegmentedCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7339,6 +7236,7 @@
 			baseConfigurationReference = DC563F549CBDE9946F714D0C3D09E2FC /* HCYFrameWork.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -7690,6 +7588,7 @@
 			baseConfigurationReference = BCF849B27E01B4F37448B480A371DDAE /* HCYFrameWork.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -7710,6 +7609,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
