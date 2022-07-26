@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'HCYFrameWork'
-    s.version          = '0.1.11'
+    s.version          = '0.1.12'
     s.summary          = 'A short description of HCYFrameWork.'
     
     # This description is used to generate tags and improve search results.
@@ -31,7 +31,37 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '12.0'
     
     s.source_files = 'HCYFrameWork/Classes/**/*'
+    s.subspec 'Custom' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/Custom/**/*'
+    end
     
+    s.subspec 'Extension' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/Extension/**/*'
+    end
+    s.subspec 'GCD' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/GCD/**/*'
+    end
+    s.subspec 'RxOperators' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/RxOperators/**/*'
+    end
+    s.subspec 'TSSDefaultView' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/TSSDefaultView/**/*'
+    end
+    s.subspec 'TSSLoading' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/TSSLoading/**/*'
+    end
+    s.subspec 'TSSNetworkingManager' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/TSSNetworkingManager/**/*'
+    end
+    s.subspec 'TSSNotiFication' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/TSSNotiFication/**/*'
+    end
+    s.subspec 'TSSPopUp' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/TSSPopUp/**/*'
+    end
+    s.subspec 'TSSSegmented' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/TSSSegmented/**/*'
+    end
     # s.resource_bundles = {
     #   'HCYFrameWork' => ['HCYFrameWork/Assets/*.png']
     # }
