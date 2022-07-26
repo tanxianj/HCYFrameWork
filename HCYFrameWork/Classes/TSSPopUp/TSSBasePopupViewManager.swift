@@ -251,7 +251,6 @@ open class TSSBasePoputEvents{
     var events = PublishSubject<Int>()
     private init() {
         events.asObserver().subscribe(onNext:{ index in
-            //            DebugLog("点击自定义视图 \(index)")
             self.sendToPoputView(index: index)
             
         }).disposed(by: disposeBag)

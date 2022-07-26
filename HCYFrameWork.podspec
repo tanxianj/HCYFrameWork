@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'HCYFrameWork'
-    s.version          = '0.1.10'
+    s.version          = '0.1.12'
     s.summary          = 'A short description of HCYFrameWork.'
     
     # This description is used to generate tags and improve search results.
@@ -30,7 +30,62 @@ Pod::Spec.new do |s|
     
     s.ios.deployment_target = '12.0'
     
-    s.source_files = 'HCYFrameWork/Classes/**/*'
+    #    s.source_files = 'HCYFrameWork/Classes/**/*'
+    s.subspec 'Common' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/Common/*.swift'
+    end
+    s.subspec 'Custom' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/Custom/*.swift'
+        ss.dependency = 'HCYFrameWork/Classes/TSSBase'
+        ss.dependency = 'HCYFrameWork/Classes/Extension'
+        ss.dependency = "HCYFrameWork/Classes/Common"
+    end
+    
+    s.subspec 'Extension' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/Extension/*.swift'
+        ss.dependency = "HCYFrameWork/Classes/Common"
+        ss.dependency = "HCYFrameWork/Classes/Custom"
+    end
+    s.subspec 'GCD' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/GCD/*.swift'
+        ss.dependency = "HCYFrameWork/Classes/Extension"
+        ss.dependency = "HCYFrameWork/Classes/Common"
+    end
+    s.subspec 'RxOperators' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/RxOperators/*.swift'
+    end
+    s.subspec 'TSSDefaultView' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/TSSDefaultView/*.swift'
+        ss.dependency = "HCYFrameWork/Classes/Extension"
+    end
+    s.subspec 'TSSLoading' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/TSSLoading/*.swift'
+        ss.dependency = "HCYFrameWork/Classes/Extension"
+        ss.dependency = "HCYFrameWork/Classes/Common"
+    end
+    s.subspec 'TSSNetworkingManager' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/TSSNetworkingManager/*.swift'
+        ss.dependency = "HCYFrameWork/Classes/Common"
+    end
+    s.subspec 'TSSNotiFication' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/TSSNotiFication/*.swift'
+        ss.dependency = "HCYFrameWork/Classes/Common"
+    end
+    s.subspec 'TSSPopUp' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/TSSPopUp/*.swift'
+        ss.dependency = "HCYFrameWork/Classes/Extension"
+        ss.dependency = "HCYFrameWork/Classes/Common"
+    end
+    s.subspec 'TSSSegmented' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/TSSSegmented/*.swift'
+        ss.dependency = "HCYFrameWork/Classes/Common"
+    end
+    s.subspec 'TSSBase' do |ss|
+        ss.source_files = 'HCYFrameWork/Classes/TSSBase/*.swift'
+        ss.dependency = "HCYFrameWork/Classes/Common"
+        ss.dependency = "HCYFrameWork/Classes/Custom"
+    end
+    
     
     # s.resource_bundles = {
     #   'HCYFrameWork' => ['HCYFrameWork/Assets/*.png']
@@ -45,8 +100,8 @@ Pod::Spec.new do |s|
     s.dependency 'RxCocoa','~> 5.0'
     s.dependency 'RxDataSources'
     s.dependency 'Alamofire'
-#    s.dependency 'RxAlamofire'
-#    s.dependency 'AlamofireObjectMapper', '~> 5.2.1'
+    #    s.dependency 'RxAlamofire'
+    #    s.dependency 'AlamofireObjectMapper', '~> 5.2.1'
     s.dependency 'MJRefresh'
     s.dependency 'Kingfisher'
     s.dependency 'SVProgressHUD'
