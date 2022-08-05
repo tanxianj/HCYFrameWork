@@ -1,6 +1,6 @@
 import Foundation
 import UIKit
-
+//获取颜色域
 public extension UIColor {
     var jx_red: CGFloat {
         var r: CGFloat = 0

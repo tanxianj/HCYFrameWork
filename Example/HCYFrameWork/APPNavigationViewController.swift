@@ -13,7 +13,7 @@ class APPNavigationViewController: TSSBaseNavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tss_ResetNavigationConfig(navTitleColor: .black, navTitleFont: .systemFont(ofSize: 18.scale()), navbackgroundColor: .white)
+        tss_ResetNavigationConfig(navTitleColor: UIColor.colorWithAppearanceMode(.black, .white), navTitleFont: .systemFont(ofSize: 18.scale()), navbackgroundColor: .colorWithAppearanceMode(.white, .black))
         // Do any additional setup after loading the view.
     }
     

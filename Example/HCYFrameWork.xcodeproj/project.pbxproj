@@ -17,15 +17,63 @@
 		2F0E74662875822100FA47E1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E74642875822100FA47E1 /* HomeViewController.swift */; };
 		2F0E74692875822A00FA47E1 /* MeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0E74672875822A00FA47E1 /* MeViewController.storyboard */; };
 		2F0E746A2875822A00FA47E1 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E74682875822A00FA47E1 /* MeViewController.swift */; };
+		2F40032E28976F8100C72B7F /* NetWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F40032C28976F8100C72B7F /* NetWorkViewController.swift */; };
+		2F40032F28976F8100C72B7F /* NetWorkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F40032D28976F8100C72B7F /* NetWorkViewController.xib */; };
+		2F400333289770D700C72B7F /* codeAutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F400331289770D700C72B7F /* codeAutoLayoutViewController.swift */; };
+		2F400334289770D700C72B7F /* codeAutoLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F400332289770D700C72B7F /* codeAutoLayoutViewController.xib */; };
+		2F4003392897710400C72B7F /* XibAutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003372897710400C72B7F /* XibAutoLayoutViewController.swift */; };
+		2F40033A2897710400C72B7F /* XibAutoLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4003382897710400C72B7F /* XibAutoLayoutViewController.xib */; };
+		2F40033C2897711200C72B7F /* SbAutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F40033B2897711200C72B7F /* SbAutoLayoutViewController.swift */; };
+		2F40033E2897711800C72B7F /* SbAutoLayoutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F40033D2897711800C72B7F /* SbAutoLayoutViewController.storyboard */; };
+		2F4003432897714C00C72B7F /* AutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003412897714C00C72B7F /* AutoLayoutViewController.swift */; };
+		2F4003442897714C00C72B7F /* AutoLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4003422897714C00C72B7F /* AutoLayoutViewController.xib */; };
+		2F40034E2897815C00C72B7F /* TSSLabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F40034C2897815C00C72B7F /* TSSLabViewController.swift */; };
+		2F4003522897870400C72B7F /* TSSDefaultViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003512897870400C72B7F /* TSSDefaultViewViewController.swift */; };
+		2F4003582897894300C72B7F /* TSSColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003562897894300C72B7F /* TSSColorViewController.swift */; };
+		2F4003592897894300C72B7F /* TSSColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4003572897894300C72B7F /* TSSColorViewController.xib */; };
+		2F40035B28978AE400C72B7F /* TSSColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F40035A28978AE400C72B7F /* TSSColorViewModel.swift */; };
+		2F40035F2898F9FE00C72B7F /* UIDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F40035D2898F9FE00C72B7F /* UIDeviceViewController.swift */; };
+		2F4003602898F9FE00C72B7F /* UIDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F40035E2898F9FE00C72B7F /* UIDeviceViewController.xib */; };
+		2F4003622898FAD600C72B7F /* UIDeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003612898FAD600C72B7F /* UIDeviceModel.swift */; };
+		2F4003662898FEE400C72B7F /* UIimageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003642898FEE400C72B7F /* UIimageViewController.swift */; };
+		2F4003672898FEE400C72B7F /* UIimageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4003652898FEE400C72B7F /* UIimageViewController.xib */; };
+		2F4003732899002500C72B7F /* UIIimage_CreateImageWithColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003712899002500C72B7F /* UIIimage_CreateImageWithColorViewController.swift */; };
+		2F4003742899002500C72B7F /* UIIimage_CreateImageWithColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4003722899002500C72B7F /* UIIimage_CreateImageWithColorViewController.xib */; };
+		2F4003772899002D00C72B7F /* UIimage_CreateImageWithGradViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003752899002D00C72B7F /* UIimage_CreateImageWithGradViewController.swift */; };
+		2F4003782899002D00C72B7F /* UIimage_CreateImageWithGradViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4003762899002D00C72B7F /* UIimage_CreateImageWithGradViewController.xib */; };
+		2F40037B2899003500C72B7F /* UIImage_convenienceInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003792899003500C72B7F /* UIImage_convenienceInitViewController.swift */; };
+		2F40037C2899003500C72B7F /* UIImage_convenienceInitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F40037A2899003500C72B7F /* UIImage_convenienceInitViewController.xib */; };
+		2F40037F2899003C00C72B7F /* UIImage_ScaleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F40037D2899003C00C72B7F /* UIImage_ScaleImageViewController.swift */; };
+		2F4003802899003C00C72B7F /* UIImage_ScaleImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F40037E2899003C00C72B7F /* UIImage_ScaleImageViewController.xib */; };
+		2F4003832899076500C72B7F /* UIImgae_svgImgWithViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003812899076500C72B7F /* UIImgae_svgImgWithViewController.swift */; };
+		2F4003842899076500C72B7F /* UIImgae_svgImgWithViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4003822899076500C72B7F /* UIImgae_svgImgWithViewController.xib */; };
+		2F40038828990C4500C72B7F /* UIImage_changeColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F40038628990C4500C72B7F /* UIImage_changeColorViewController.swift */; };
+		2F40038928990C4500C72B7F /* UIImage_changeColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F40038728990C4500C72B7F /* UIImage_changeColorViewController.xib */; };
+		2F40038D28990E5700C72B7F /* ChangeTextFieldColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F40038B28990E5700C72B7F /* ChangeTextFieldColorViewController.swift */; };
+		2F40038E28990E5700C72B7F /* ChangeTextFieldColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F40038C28990E5700C72B7F /* ChangeTextFieldColorViewController.xib */; };
+		2F4003912899132C00C72B7F /* ContentBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003902899132C00C72B7F /* ContentBaseViewController.swift */; };
+		2F400395289A0D4300C72B7F /* TSSValidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F400393289A0D4300C72B7F /* TSSValidateViewController.swift */; };
+		2F400396289A0D4300C72B7F /* TSSValidateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F400394289A0D4300C72B7F /* TSSValidateViewController.xib */; };
+		2F400399289A0F1200C72B7F /* TSSValidateTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F400397289A0F1200C72B7F /* TSSValidateTestVC.swift */; };
+		2F40039A289A0F1200C72B7F /* TSSValidateTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F400398289A0F1200C72B7F /* TSSValidateTestVC.xib */; };
+		2F40039E289A10C300C72B7F /* TSSValidateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F40039D289A10C300C72B7F /* TSSValidateViewModel.swift */; };
+		2F4003AA289BA3F800C72B7F /* TSSNotiFicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003A8289BA3F800C72B7F /* TSSNotiFicationViewController.swift */; };
+		2F4003AB289BA3F800C72B7F /* TSSNotiFicationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4003A9289BA3F800C72B7F /* TSSNotiFicationViewController.xib */; };
 		2F4546AE288796DA0011B6CB /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4546AC288796DA0011B6CB /* LoginData.swift */; };
 		2F4546AF288796DA0011B6CB /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4546AD288796DA0011B6CB /* LoginModel.swift */; };
 		2F75641C288E432E007B69C3 /* TimeHelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F75641A288E432E007B69C3 /* TimeHelperViewController.swift */; };
 		2F75641D288E432E007B69C3 /* TimeHelperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F75641B288E432E007B69C3 /* TimeHelperViewController.xib */; };
 		2F949B34288E83F1001CB391 /* GetLabelWidthHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B33288E83F1001CB391 /* GetLabelWidthHeightViewController.swift */; };
 		2F986B5D2873EBD500140514 /* HCYFrameWork.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2F986B5C2873EBD500140514 /* HCYFrameWork.podspec */; };
+		2FD5F7DF289222DC005CDF87 /* ActionSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F7DD289222DC005CDF87 /* ActionSheetViewController.swift */; };
+		2FD5F7E0289222DC005CDF87 /* ActionSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FD5F7DE289222DC005CDF87 /* ActionSheetViewController.xib */; };
+		2FD5F7E2289223CE005CDF87 /* TSSActionSheetConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F7E1289223CE005CDF87 /* TSSActionSheetConfig.swift */; };
+		2FD5F7E5289260C6005CDF87 /* TSSActionSheetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F7E4289260C6005CDF87 /* TSSActionSheetTableViewCell.swift */; };
+		2FD5F7E928926620005CDF87 /* ActionSheetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F7E728926620005CDF87 /* ActionSheetCell.swift */; };
+		2FD5F7EA28926620005CDF87 /* ActionSheetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FD5F7E828926620005CDF87 /* ActionSheetCell.xib */; };
 		2FFB548B287EA04B00D4B972 /* HCYTipsPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5489287EA04B00D4B972 /* HCYTipsPopUpView.swift */; };
-		2FFB548C287EA04B00D4B972 /* HCYActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB548A287EA04B00D4B972 /* HCYActionSheet.swift */; };
-		2FFB563D2885430E00D4B972 /* HCYSegmentedViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB563C2885430E00D4B972 /* HCYSegmentedViewDemo.swift */; };
+		2FFB548C287EA04B00D4B972 /* TSSActionSheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB548A287EA04B00D4B972 /* TSSActionSheetManager.swift */; };
+		2FFB563D2885430E00D4B972 /* TSSSegmentedViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB563C2885430E00D4B972 /* TSSSegmentedViewDemo.swift */; };
 		2FFB563F288544FB00D4B972 /* ListBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB563E288544FB00D4B972 /* ListBaseViewController.swift */; };
 		2FFB564128854C7400D4B972 /* APPNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB564028854C7400D4B972 /* APPNavigationViewController.swift */; };
 		2FFB564A288562A700D4B972 /* PopUpDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5648288562A700D4B972 /* PopUpDemoViewController.swift */; };
@@ -55,15 +103,63 @@
 		2F0E74642875822100FA47E1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2F0E74672875822A00FA47E1 /* MeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeViewController.storyboard; sourceTree = "<group>"; };
 		2F0E74682875822A00FA47E1 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		2F40032C28976F8100C72B7F /* NetWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkViewController.swift; sourceTree = "<group>"; };
+		2F40032D28976F8100C72B7F /* NetWorkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetWorkViewController.xib; sourceTree = "<group>"; };
+		2F400331289770D700C72B7F /* codeAutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codeAutoLayoutViewController.swift; sourceTree = "<group>"; };
+		2F400332289770D700C72B7F /* codeAutoLayoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = codeAutoLayoutViewController.xib; sourceTree = "<group>"; };
+		2F4003372897710400C72B7F /* XibAutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibAutoLayoutViewController.swift; sourceTree = "<group>"; };
+		2F4003382897710400C72B7F /* XibAutoLayoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibAutoLayoutViewController.xib; sourceTree = "<group>"; };
+		2F40033B2897711200C72B7F /* SbAutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbAutoLayoutViewController.swift; sourceTree = "<group>"; };
+		2F40033D2897711800C72B7F /* SbAutoLayoutViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SbAutoLayoutViewController.storyboard; sourceTree = "<group>"; };
+		2F4003412897714C00C72B7F /* AutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewController.swift; sourceTree = "<group>"; };
+		2F4003422897714C00C72B7F /* AutoLayoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoLayoutViewController.xib; sourceTree = "<group>"; };
+		2F40034C2897815C00C72B7F /* TSSLabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSLabViewController.swift; sourceTree = "<group>"; };
+		2F4003512897870400C72B7F /* TSSDefaultViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSDefaultViewViewController.swift; sourceTree = "<group>"; };
+		2F4003562897894300C72B7F /* TSSColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSColorViewController.swift; sourceTree = "<group>"; };
+		2F4003572897894300C72B7F /* TSSColorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSSColorViewController.xib; sourceTree = "<group>"; };
+		2F40035A28978AE400C72B7F /* TSSColorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSColorViewModel.swift; sourceTree = "<group>"; };
+		2F40035D2898F9FE00C72B7F /* UIDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceViewController.swift; sourceTree = "<group>"; };
+		2F40035E2898F9FE00C72B7F /* UIDeviceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIDeviceViewController.xib; sourceTree = "<group>"; };
+		2F4003612898FAD600C72B7F /* UIDeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceModel.swift; sourceTree = "<group>"; };
+		2F4003642898FEE400C72B7F /* UIimageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIimageViewController.swift; sourceTree = "<group>"; };
+		2F4003652898FEE400C72B7F /* UIimageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIimageViewController.xib; sourceTree = "<group>"; };
+		2F4003712899002500C72B7F /* UIIimage_CreateImageWithColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIIimage_CreateImageWithColorViewController.swift; sourceTree = "<group>"; };
+		2F4003722899002500C72B7F /* UIIimage_CreateImageWithColorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIIimage_CreateImageWithColorViewController.xib; sourceTree = "<group>"; };
+		2F4003752899002D00C72B7F /* UIimage_CreateImageWithGradViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIimage_CreateImageWithGradViewController.swift; sourceTree = "<group>"; };
+		2F4003762899002D00C72B7F /* UIimage_CreateImageWithGradViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIimage_CreateImageWithGradViewController.xib; sourceTree = "<group>"; };
+		2F4003792899003500C72B7F /* UIImage_convenienceInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage_convenienceInitViewController.swift; sourceTree = "<group>"; };
+		2F40037A2899003500C72B7F /* UIImage_convenienceInitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIImage_convenienceInitViewController.xib; sourceTree = "<group>"; };
+		2F40037D2899003C00C72B7F /* UIImage_ScaleImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage_ScaleImageViewController.swift; sourceTree = "<group>"; };
+		2F40037E2899003C00C72B7F /* UIImage_ScaleImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIImage_ScaleImageViewController.xib; sourceTree = "<group>"; };
+		2F4003812899076500C72B7F /* UIImgae_svgImgWithViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImgae_svgImgWithViewController.swift; sourceTree = "<group>"; };
+		2F4003822899076500C72B7F /* UIImgae_svgImgWithViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIImgae_svgImgWithViewController.xib; sourceTree = "<group>"; };
+		2F40038628990C4500C72B7F /* UIImage_changeColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage_changeColorViewController.swift; sourceTree = "<group>"; };
+		2F40038728990C4500C72B7F /* UIImage_changeColorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIImage_changeColorViewController.xib; sourceTree = "<group>"; };
+		2F40038B28990E5700C72B7F /* ChangeTextFieldColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeTextFieldColorViewController.swift; sourceTree = "<group>"; };
+		2F40038C28990E5700C72B7F /* ChangeTextFieldColorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeTextFieldColorViewController.xib; sourceTree = "<group>"; };
+		2F4003902899132C00C72B7F /* ContentBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBaseViewController.swift; sourceTree = "<group>"; };
+		2F400393289A0D4300C72B7F /* TSSValidateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSValidateViewController.swift; sourceTree = "<group>"; };
+		2F400394289A0D4300C72B7F /* TSSValidateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSSValidateViewController.xib; sourceTree = "<group>"; };
+		2F400397289A0F1200C72B7F /* TSSValidateTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSValidateTestVC.swift; sourceTree = "<group>"; };
+		2F400398289A0F1200C72B7F /* TSSValidateTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSSValidateTestVC.xib; sourceTree = "<group>"; };
+		2F40039D289A10C300C72B7F /* TSSValidateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSValidateViewModel.swift; sourceTree = "<group>"; };
+		2F4003A8289BA3F800C72B7F /* TSSNotiFicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSNotiFicationViewController.swift; sourceTree = "<group>"; };
+		2F4003A9289BA3F800C72B7F /* TSSNotiFicationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSSNotiFicationViewController.xib; sourceTree = "<group>"; };
 		2F4546AC288796DA0011B6CB /* LoginData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
 		2F4546AD288796DA0011B6CB /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		2F75641A288E432E007B69C3 /* TimeHelperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHelperViewController.swift; sourceTree = "<group>"; };
 		2F75641B288E432E007B69C3 /* TimeHelperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeHelperViewController.xib; sourceTree = "<group>"; };
 		2F949B33288E83F1001CB391 /* GetLabelWidthHeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLabelWidthHeightViewController.swift; sourceTree = "<group>"; };
 		2F986B5C2873EBD500140514 /* HCYFrameWork.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HCYFrameWork.podspec; path = ../HCYFrameWork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2FD5F7DD289222DC005CDF87 /* ActionSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetViewController.swift; sourceTree = "<group>"; };
+		2FD5F7DE289222DC005CDF87 /* ActionSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionSheetViewController.xib; sourceTree = "<group>"; };
+		2FD5F7E1289223CE005CDF87 /* TSSActionSheetConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSActionSheetConfig.swift; sourceTree = "<group>"; };
+		2FD5F7E4289260C6005CDF87 /* TSSActionSheetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSActionSheetTableViewCell.swift; sourceTree = "<group>"; };
+		2FD5F7E728926620005CDF87 /* ActionSheetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetCell.swift; sourceTree = "<group>"; };
+		2FD5F7E828926620005CDF87 /* ActionSheetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionSheetCell.xib; sourceTree = "<group>"; };
 		2FFB5489287EA04B00D4B972 /* HCYTipsPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCYTipsPopUpView.swift; sourceTree = "<group>"; };
-		2FFB548A287EA04B00D4B972 /* HCYActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCYActionSheet.swift; sourceTree = "<group>"; };
-		2FFB563C2885430E00D4B972 /* HCYSegmentedViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCYSegmentedViewDemo.swift; sourceTree = "<group>"; };
+		2FFB548A287EA04B00D4B972 /* TSSActionSheetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSActionSheetManager.swift; sourceTree = "<group>"; };
+		2FFB563C2885430E00D4B972 /* TSSSegmentedViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSSegmentedViewDemo.swift; sourceTree = "<group>"; };
 		2FFB563E288544FB00D4B972 /* ListBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBaseViewController.swift; sourceTree = "<group>"; };
 		2FFB564028854C7400D4B972 /* APPNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPNavigationViewController.swift; sourceTree = "<group>"; };
 		2FFB5648288562A700D4B972 /* PopUpDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpDemoViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +195,250 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F40032B28976F5F00C72B7F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2F40032C28976F8100C72B7F /* NetWorkViewController.swift */,
+				2F40032D28976F8100C72B7F /* NetWorkViewController.xib */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		2F400330289770BD00C72B7F /* codeAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2F400331289770D700C72B7F /* codeAutoLayoutViewController.swift */,
+				2F400332289770D700C72B7F /* codeAutoLayoutViewController.xib */,
+			);
+			name = codeAutoLayout;
+			sourceTree = "<group>";
+		};
+		2F400335289770D900C72B7F /* XibAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2F4003372897710400C72B7F /* XibAutoLayoutViewController.swift */,
+				2F4003382897710400C72B7F /* XibAutoLayoutViewController.xib */,
+			);
+			name = XibAutoLayout;
+			sourceTree = "<group>";
+		};
+		2F400336289770E700C72B7F /* SbAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2F40033B2897711200C72B7F /* SbAutoLayoutViewController.swift */,
+				2F40033D2897711800C72B7F /* SbAutoLayoutViewController.storyboard */,
+			);
+			name = SbAutoLayout;
+			sourceTree = "<group>";
+		};
+		2F40033F2897713000C72B7F /* AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2F4003402897714200C72B7F /* vc */,
+				2F400330289770BD00C72B7F /* codeAutoLayout */,
+				2F400335289770D900C72B7F /* XibAutoLayout */,
+				2F400336289770E700C72B7F /* SbAutoLayout */,
+			);
+			name = AutoLayout;
+			sourceTree = "<group>";
+		};
+		2F4003402897714200C72B7F /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				2F4003412897714C00C72B7F /* AutoLayoutViewController.swift */,
+				2F4003422897714C00C72B7F /* AutoLayoutViewController.xib */,
+			);
+			name = vc;
+			sourceTree = "<group>";
+		};
+		2F400345289777D300C72B7F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2F400346289777D800C72B7F /* Home */,
+				2F400347289777DC00C72B7F /* Me */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		2F400346289777D800C72B7F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2F0E74642875822100FA47E1 /* HomeViewController.swift */,
+				2F0E74632875822100FA47E1 /* HomeViewController.storyboard */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		2F400347289777DC00C72B7F /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				2F0E74682875822A00FA47E1 /* MeViewController.swift */,
+				2F0E74672875822A00FA47E1 /* MeViewController.storyboard */,
+			);
+			name = Me;
+			sourceTree = "<group>";
+		};
+		2F400348289777F100C72B7F /* ActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				2FD5F7E3289260A9005CDF87 /* cell */,
+				2FFB548A287EA04B00D4B972 /* TSSActionSheetManager.swift */,
+				2FD5F7E1289223CE005CDF87 /* TSSActionSheetConfig.swift */,
+			);
+			name = ActionSheet;
+			sourceTree = "<group>";
+		};
+		2F40034928977DFF00C72B7F /* TSSLab */ = {
+			isa = PBXGroup;
+			children = (
+				2F40034C2897815C00C72B7F /* TSSLabViewController.swift */,
+			);
+			name = TSSLab;
+			sourceTree = "<group>";
+		};
+		2F400350289786EE00C72B7F /* TSSDefaultView */ = {
+			isa = PBXGroup;
+			children = (
+				2F4003512897870400C72B7F /* TSSDefaultViewViewController.swift */,
+			);
+			name = TSSDefaultView;
+			sourceTree = "<group>";
+		};
+		2F4003532897891A00C72B7F /* TSSColor+Extenstion */ = {
+			isa = PBXGroup;
+			children = (
+				2F4003562897894300C72B7F /* TSSColorViewController.swift */,
+				2F4003572897894300C72B7F /* TSSColorViewController.xib */,
+				2F40035A28978AE400C72B7F /* TSSColorViewModel.swift */,
+			);
+			name = "TSSColor+Extenstion";
+			sourceTree = "<group>";
+		};
+		2F40035C2898F9E800C72B7F /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				2F40035D2898F9FE00C72B7F /* UIDeviceViewController.swift */,
+				2F40035E2898F9FE00C72B7F /* UIDeviceViewController.xib */,
+				2F4003612898FAD600C72B7F /* UIDeviceModel.swift */,
+			);
+			name = UIDevice;
+			sourceTree = "<group>";
+		};
+		2F4003632898FED200C72B7F /* UIimage */ = {
+			isa = PBXGroup;
+			children = (
+				2F40038528990C3900C72B7F /* UIImage_changeColor */,
+				2F40036B2898FFE800C72B7F /* UIImage_ScaleImage */,
+				2F40036C2898FFF400C72B7F /* UIImage_convenienceInit */,
+				2F40036A2898FFCE00C72B7F /* UIimage_CreateImageWithGrad */,
+				2F4003692898FFBF00C72B7F /* UIIimage_CreateImageWithColor */,
+				2F4003682898FF8C00C72B7F /* UIImgae_svgImgWith */,
+				2F4003642898FEE400C72B7F /* UIimageViewController.swift */,
+				2F4003652898FEE400C72B7F /* UIimageViewController.xib */,
+			);
+			name = UIimage;
+			sourceTree = "<group>";
+		};
+		2F4003682898FF8C00C72B7F /* UIImgae_svgImgWith */ = {
+			isa = PBXGroup;
+			children = (
+				2F4003812899076500C72B7F /* UIImgae_svgImgWithViewController.swift */,
+				2F4003822899076500C72B7F /* UIImgae_svgImgWithViewController.xib */,
+			);
+			name = UIImgae_svgImgWith;
+			sourceTree = "<group>";
+		};
+		2F4003692898FFBF00C72B7F /* UIIimage_CreateImageWithColor */ = {
+			isa = PBXGroup;
+			children = (
+				2F4003712899002500C72B7F /* UIIimage_CreateImageWithColorViewController.swift */,
+				2F4003722899002500C72B7F /* UIIimage_CreateImageWithColorViewController.xib */,
+			);
+			name = UIIimage_CreateImageWithColor;
+			sourceTree = "<group>";
+		};
+		2F40036A2898FFCE00C72B7F /* UIimage_CreateImageWithGrad */ = {
+			isa = PBXGroup;
+			children = (
+				2F4003752899002D00C72B7F /* UIimage_CreateImageWithGradViewController.swift */,
+				2F4003762899002D00C72B7F /* UIimage_CreateImageWithGradViewController.xib */,
+			);
+			name = UIimage_CreateImageWithGrad;
+			sourceTree = "<group>";
+		};
+		2F40036B2898FFE800C72B7F /* UIImage_ScaleImage */ = {
+			isa = PBXGroup;
+			children = (
+				2F40037D2899003C00C72B7F /* UIImage_ScaleImageViewController.swift */,
+				2F40037E2899003C00C72B7F /* UIImage_ScaleImageViewController.xib */,
+			);
+			name = UIImage_ScaleImage;
+			sourceTree = "<group>";
+		};
+		2F40036C2898FFF400C72B7F /* UIImage_convenienceInit */ = {
+			isa = PBXGroup;
+			children = (
+				2F4003792899003500C72B7F /* UIImage_convenienceInitViewController.swift */,
+				2F40037A2899003500C72B7F /* UIImage_convenienceInitViewController.xib */,
+			);
+			name = UIImage_convenienceInit;
+			sourceTree = "<group>";
+		};
+		2F40038528990C3900C72B7F /* UIImage_changeColor */ = {
+			isa = PBXGroup;
+			children = (
+				2F40038628990C4500C72B7F /* UIImage_changeColorViewController.swift */,
+				2F40038728990C4500C72B7F /* UIImage_changeColorViewController.xib */,
+			);
+			name = UIImage_changeColor;
+			sourceTree = "<group>";
+		};
+		2F40038A28990E4500C72B7F /* ChangeTextFieldColor */ = {
+			isa = PBXGroup;
+			children = (
+				2F40038B28990E5700C72B7F /* ChangeTextFieldColorViewController.swift */,
+				2F40038C28990E5700C72B7F /* ChangeTextFieldColorViewController.xib */,
+			);
+			name = ChangeTextFieldColor;
+			sourceTree = "<group>";
+		};
+		2F400392289A0D3400C72B7F /* TSSValidate */ = {
+			isa = PBXGroup;
+			children = (
+				2F40039C289A10AF00C72B7F /* ViewModel */,
+				2F40039B289A10A600C72B7F /* vc */,
+				2F400393289A0D4300C72B7F /* TSSValidateViewController.swift */,
+				2F400394289A0D4300C72B7F /* TSSValidateViewController.xib */,
+			);
+			name = TSSValidate;
+			sourceTree = "<group>";
+		};
+		2F40039B289A10A600C72B7F /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				2F400397289A0F1200C72B7F /* TSSValidateTestVC.swift */,
+				2F400398289A0F1200C72B7F /* TSSValidateTestVC.xib */,
+			);
+			name = vc;
+			sourceTree = "<group>";
+		};
+		2F40039C289A10AF00C72B7F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2F40039D289A10C300C72B7F /* TSSValidateViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		2F4003A7289BA3E900C72B7F /* TSSNotiFication */ = {
+			isa = PBXGroup;
+			children = (
+				2F4003A8289BA3F800C72B7F /* TSSNotiFicationViewController.swift */,
+				2F4003A9289BA3F800C72B7F /* TSSNotiFicationViewController.xib */,
+			);
+			name = TSSNotiFication;
+			sourceTree = "<group>";
+		};
 		2F4546AB2887969B0011B6CB /* LoginModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,11 +465,38 @@
 			name = GetLabelWidthHeight;
 			sourceTree = "<group>";
 		};
+		2FD5F7DC289222C5005CDF87 /* ActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				2FD5F7E628926612005CDF87 /* cell */,
+				2FD5F7DD289222DC005CDF87 /* ActionSheetViewController.swift */,
+				2FD5F7DE289222DC005CDF87 /* ActionSheetViewController.xib */,
+			);
+			name = ActionSheet;
+			sourceTree = "<group>";
+		};
+		2FD5F7E3289260A9005CDF87 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				2FD5F7E4289260C6005CDF87 /* TSSActionSheetTableViewCell.swift */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		2FD5F7E628926612005CDF87 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				2FD5F7E728926620005CDF87 /* ActionSheetCell.swift */,
+				2FD5F7E828926620005CDF87 /* ActionSheetCell.xib */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
 		2FFB54A2287EA6CF00D4B972 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				2FFB548A287EA04B00D4B972 /* HCYActionSheet.swift */,
 				2FFB5489287EA04B00D4B972 /* HCYTipsPopUpView.swift */,
+				2F400348289777F100C72B7F /* ActionSheet */,
 			);
 			name = "New Group";
 			sourceTree = "<group>";
@@ -137,8 +504,9 @@
 		2FFB56392885425E00D4B972 /* HCYSegmentedViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2FFB563C2885430E00D4B972 /* HCYSegmentedViewDemo.swift */,
+				2FFB563C2885430E00D4B972 /* TSSSegmentedViewDemo.swift */,
 				2FFB563E288544FB00D4B972 /* ListBaseViewController.swift */,
+				2F4003902899132C00C72B7F /* ContentBaseViewController.swift */,
 			);
 			name = HCYSegmentedViewDemo;
 			sourceTree = "<group>";
@@ -196,21 +564,29 @@
 		607FACD21AFB9204008FA782 /* Example for HCYFrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				2F400345289777D300C72B7F /* Main */,
 				2F4546AB2887969B0011B6CB /* LoginModel */,
 				2FFB565428865EEB00D4B972 /* weatherModel */,
 				2FFB54A2287EA6CF00D4B972 /* New Group */,
-				2F0E74642875822100FA47E1 /* HomeViewController.swift */,
-				2F0E74632875822100FA47E1 /* HomeViewController.storyboard */,
-				2F0E74682875822A00FA47E1 /* MeViewController.swift */,
-				2F0E74672875822A00FA47E1 /* MeViewController.storyboard */,
 				2FFB56392885425E00D4B972 /* HCYSegmentedViewDemo */,
 				2FFB56472885628800D4B972 /* popUpDemo */,
 				2F756413288E4173007B69C3 /* TimeHelper */,
 				2F949B32288E83C1001CB391 /* GetLabelWidthHeight */,
+				2FD5F7DC289222C5005CDF87 /* ActionSheet */,
+				2F40032B28976F5F00C72B7F /* Network */,
+				2F40033F2897713000C72B7F /* AutoLayout */,
+				2F40034928977DFF00C72B7F /* TSSLab */,
+				2F400350289786EE00C72B7F /* TSSDefaultView */,
+				2F4003532897891A00C72B7F /* TSSColor+Extenstion */,
+				2F40035C2898F9E800C72B7F /* UIDevice */,
+				2F4003632898FED200C72B7F /* UIimage */,
+				2F40038A28990E4500C72B7F /* ChangeTextFieldColor */,
+				2F400392289A0D3400C72B7F /* TSSValidate */,
+				2FFB564C288562F400D4B972 /* importFile.swift */,
+				2F4003A7289BA3E900C72B7F /* TSSNotiFication */,
 				2FFB564028854C7400D4B972 /* APPNavigationViewController.swift */,
 				2F0E74612875821400FA47E1 /* APPTabbarViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				2FFB564C288562F400D4B972 /* importFile.swift */,
 				2F0B271A2877E611002333DF /* eye_off.svg */,
 				2F0B27182877E52C002333DF /* finger.svg */,
 				2F0B271E2878187E002333DF /* fistBump.svg */,
@@ -314,18 +690,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F4003742899002500C72B7F /* UIIimage_CreateImageWithColorViewController.xib in Resources */,
 				2F0B271F2878187E002333DF /* fistBump.svg in Resources */,
 				2F75641D288E432E007B69C3 /* TimeHelperViewController.xib in Resources */,
+				2F40039A289A0F1200C72B7F /* TSSValidateTestVC.xib in Resources */,
 				2FFB56512885641800D4B972 /* PopupTestView.xib in Resources */,
+				2F40032F28976F8100C72B7F /* NetWorkViewController.xib in Resources */,
+				2F400396289A0D4300C72B7F /* TSSValidateViewController.xib in Resources */,
 				2F0E74652875822100FA47E1 /* HomeViewController.storyboard in Resources */,
+				2F4003782899002D00C72B7F /* UIimage_CreateImageWithGradViewController.xib in Resources */,
+				2F40038928990C4500C72B7F /* UIImage_changeColorViewController.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				2FD5F7E0289222DC005CDF87 /* ActionSheetViewController.xib in Resources */,
+				2F40037C2899003500C72B7F /* UIImage_convenienceInitViewController.xib in Resources */,
+				2F4003AB289BA3F800C72B7F /* TSSNotiFicationViewController.xib in Resources */,
 				2F986B5D2873EBD500140514 /* HCYFrameWork.podspec in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				2F4003602898F9FE00C72B7F /* UIDeviceViewController.xib in Resources */,
+				2F4003672898FEE400C72B7F /* UIimageViewController.xib in Resources */,
+				2F4003802899003C00C72B7F /* UIImage_ScaleImageViewController.xib in Resources */,
 				2F0E74692875822A00FA47E1 /* MeViewController.storyboard in Resources */,
+				2F40038E28990E5700C72B7F /* ChangeTextFieldColorViewController.xib in Resources */,
+				2F4003842899076500C72B7F /* UIImgae_svgImgWithViewController.xib in Resources */,
 				2FFB564B288562A700D4B972 /* PopUpDemoViewController.xib in Resources */,
+				2F400334289770D700C72B7F /* codeAutoLayoutViewController.xib in Resources */,
+				2F40033A2897710400C72B7F /* XibAutoLayoutViewController.xib in Resources */,
 				2F0B271D2877F039002333DF /* SVG.svg in Resources */,
+				2F4003592897894300C72B7F /* TSSColorViewController.xib in Resources */,
+				2F4003442897714C00C72B7F /* AutoLayoutViewController.xib in Resources */,
 				2F0B271B2877E611002333DF /* eye_off.svg in Resources */,
+				2FD5F7EA28926620005CDF87 /* ActionSheetCell.xib in Resources */,
+				2F40033E2897711800C72B7F /* SbAutoLayoutViewController.storyboard in Resources */,
 				2F0B27192877E52C002333DF /* finger.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,26 +804,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F40038828990C4500C72B7F /* UIImage_changeColorViewController.swift in Sources */,
+				2F4003732899002500C72B7F /* UIIimage_CreateImageWithColorViewController.swift in Sources */,
+				2F40033C2897711200C72B7F /* SbAutoLayoutViewController.swift in Sources */,
+				2F4003832899076500C72B7F /* UIImgae_svgImgWithViewController.swift in Sources */,
+				2F40038D28990E5700C72B7F /* ChangeTextFieldColorViewController.swift in Sources */,
 				2FFB566A288660C700D4B972 /* MoreData.swift in Sources */,
+				2F4003662898FEE400C72B7F /* UIimageViewController.swift in Sources */,
 				2FFB566B288660C700D4B972 /* List.swift in Sources */,
 				2FFB564A288562A700D4B972 /* PopUpDemoViewController.swift in Sources */,
+				2F40037B2899003500C72B7F /* UIImage_convenienceInitViewController.swift in Sources */,
 				2FFB564F2885641100D4B972 /* PopupTestView.swift in Sources */,
+				2F40034E2897815C00C72B7F /* TSSLabViewController.swift in Sources */,
 				2FFB56742886649100D4B972 /* WeatherModel.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				2F4003AA289BA3F800C72B7F /* TSSNotiFicationViewController.swift in Sources */,
+				2F40035B28978AE400C72B7F /* TSSColorViewModel.swift in Sources */,
 				2F949B34288E83F1001CB391 /* GetLabelWidthHeightViewController.swift in Sources */,
+				2FD5F7E928926620005CDF87 /* ActionSheetCell.swift in Sources */,
+				2F40032E28976F8100C72B7F /* NetWorkViewController.swift in Sources */,
+				2F400395289A0D4300C72B7F /* TSSValidateViewController.swift in Sources */,
 				2F0E74622875821400FA47E1 /* APPTabbarViewController.swift in Sources */,
+				2F400333289770D700C72B7F /* codeAutoLayoutViewController.swift in Sources */,
+				2F4003522897870400C72B7F /* TSSDefaultViewViewController.swift in Sources */,
 				2F0E746A2875822A00FA47E1 /* MeViewController.swift in Sources */,
+				2F4003582897894300C72B7F /* TSSColorViewController.swift in Sources */,
 				2F0E74662875822100FA47E1 /* HomeViewController.swift in Sources */,
-				2FFB548C287EA04B00D4B972 /* HCYActionSheet.swift in Sources */,
+				2F400399289A0F1200C72B7F /* TSSValidateTestVC.swift in Sources */,
+				2FFB548C287EA04B00D4B972 /* TSSActionSheetManager.swift in Sources */,
 				2FFB563F288544FB00D4B972 /* ListBaseViewController.swift in Sources */,
-				2FFB563D2885430E00D4B972 /* HCYSegmentedViewDemo.swift in Sources */,
+				2F40039E289A10C300C72B7F /* TSSValidateViewModel.swift in Sources */,
+				2FFB563D2885430E00D4B972 /* TSSSegmentedViewDemo.swift in Sources */,
+				2F4003912899132C00C72B7F /* ContentBaseViewController.swift in Sources */,
+				2F40037F2899003C00C72B7F /* UIImage_ScaleImageViewController.swift in Sources */,
+				2F4003432897714C00C72B7F /* AutoLayoutViewController.swift in Sources */,
+				2F4003622898FAD600C72B7F /* UIDeviceModel.swift in Sources */,
 				2FFB566C288660C700D4B972 /* WeatherData.swift in Sources */,
+				2F4003392897710400C72B7F /* XibAutoLayoutViewController.swift in Sources */,
+				2F40035F2898F9FE00C72B7F /* UIDeviceViewController.swift in Sources */,
 				2F4546AF288796DA0011B6CB /* LoginModel.swift in Sources */,
 				2F4546AE288796DA0011B6CB /* LoginData.swift in Sources */,
+				2F4003772899002D00C72B7F /* UIimage_CreateImageWithGradViewController.swift in Sources */,
 				2FFB564128854C7400D4B972 /* APPNavigationViewController.swift in Sources */,
 				2FFB548B287EA04B00D4B972 /* HCYTipsPopUpView.swift in Sources */,
+				2FD5F7E2289223CE005CDF87 /* TSSActionSheetConfig.swift in Sources */,
+				2FD5F7DF289222DC005CDF87 /* ActionSheetViewController.swift in Sources */,
 				2F75641C288E432E007B69C3 /* TimeHelperViewController.swift in Sources */,
 				2FFB564D288562F400D4B972 /* importFile.swift in Sources */,
+				2FD5F7E5289260C6005CDF87 /* TSSActionSheetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

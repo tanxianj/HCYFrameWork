@@ -20,8 +20,7 @@ class PopUpDemoViewController: TSSBaseViewController {
         let config = TSSBasePopupConfig()
         config.withDuration  = 0.2
         let view =  PopupTestView.viewForXib() as! PopupTestView
-        
-        TSSBasePopupViewManager.sharedInstance().showPoputWith( contentView: view ,popupType: TSSBasePopupType(rawValue: sender.tag)!,config: config) { index in
+        TSSBasePopupViewManager.sharedInstance().showPoputWith(in:.viewIsWindow, contentView: view ,popupType: TSSBasePopupType(rawValue: sender.tag)!,config: config) { index in
             print("点击视图按钮 \(index)")
         }
         

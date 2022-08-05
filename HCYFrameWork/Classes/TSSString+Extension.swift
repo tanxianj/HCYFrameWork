@@ -17,13 +17,39 @@ extension String{
         return digest.reduce("") { $0 + String(format:"%02X", $1) }
     }
     
+    
+    /// string to double
+    public var doubleValue: Double {
+        guard let double = Double(self) else {
+            return Double.infinity
+        }
+        return double
+    }
+    
+    /// String to Dictionary
+    /// - Returns: Dictionary
+    public func toDictionary() -> [String:Any] {
+        var result = [String:Any]()
+        guard !self.isEmpty else {
+            return result
+        }
+        guard let dataSelf = self.data(using: .utf8) else {
+            return result
+        }
+        if let dic = try? JSONSerialization.jsonObject(with: dataSelf, options: .mutableContainers) as? [String:Any]{
+            result = dic
+            
+        }
+        return result
+    }
+    
     /// get Label Size
     /// - Parameters:
     ///   - font: label font
     ///   - viewSize: label size
     /// - Returns: size
-   fileprivate func getStringSize(font: UIFont, labelSize: CGSize) -> CGSize {
-       let rect = self.boundingRect(with: labelSize, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
+    fileprivate func getStringSize(font: UIFont, labelSize: CGSize) -> CGSize {
+        let rect = self.boundingRect(with: labelSize, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
         return rect.size
     }
     

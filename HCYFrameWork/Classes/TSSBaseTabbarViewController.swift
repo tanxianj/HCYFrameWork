@@ -51,7 +51,9 @@ open class TSSBaseTabbarViewController: UITabBarController {
             if let backGround = backGround as? String  {
                 tabbar.backgroundImage = UIImage(named: backGround)
             }
-            
+            if let backGround = backGround as? UIColor{
+                tabbar.backgroundImage = UIColor.imageFromColor(color: backGround, viewSize: CGSize(width: KScreenW, height: KtabbarH))
+            }
             if backGround == nil{
                 tabbar.backgroundImage = UIColor.imageFromColor(color: UIColor.white, viewSize: CGSize(width: KScreenW, height: KtabbarH))
             }

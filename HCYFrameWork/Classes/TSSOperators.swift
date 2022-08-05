@@ -148,7 +148,43 @@ public func => <Base>(textInput: TextInput<Base>, relay: Binder<String?>) -> Dis
 }
 //=> 单向绑定
 @discardableResult
+public func => <Base>(textInput: TextInput<Base>, relay: AnyObserver<String>) -> Disposable {
+    let bindToUIDisposable = textInput.text.orEmpty.bind(to: relay)
+    return Disposables.create([bindToUIDisposable])
+}
+//=> 单向绑定
+@discardableResult
+public func => <Base>(Input: ControlEvent<Base>, relay: AnyObserver<Base>) -> Disposable {
+    let bindToUIDisposable = Input.bind(to: relay)
+    return Disposables.create([bindToUIDisposable])
+}
+//=> 单向绑定
+@discardableResult
+public func => <Base>(Input: Observable<Base>, relay: AnyObserver<Base>) -> Disposable {
+    let bindToUIDisposable = Input.bind(to: relay)
+    return Disposables.create([bindToUIDisposable])
+}
+//=> 单向绑定
+@discardableResult
+public func => <Base>(Input: Driver<Base>, relay: Binder<Base>) -> Disposable {
+    let bindToUIDisposable = Input.drive(relay)
+    return Disposables.create([bindToUIDisposable])
+}
+//=> 单向绑定
+@discardableResult
+public func => <Base>(Input: Driver<Base>, relay: Binder<Base?>) -> Disposable {
+    let bindToUIDisposable = Input.drive(relay)
+    return Disposables.create([bindToUIDisposable])
+}
+//=> 单向绑定
+@discardableResult
 public func => <Base>(Input: ControlProperty<Base>, relay: Binder<Base?>) -> Disposable {
+    let bindToUIDisposable = Input.bind(to: relay)
+    return Disposables.create([bindToUIDisposable])
+}
+//=> 单向绑定
+@discardableResult
+public func => <Base>(Input: ControlProperty<Base>, relay: AnyObserver<Base>) -> Disposable {
     let bindToUIDisposable = Input.bind(to: relay)
     return Disposables.create([bindToUIDisposable])
 }

@@ -28,17 +28,17 @@ extension UIViewController{
         var tmpImgName = imageName
         if imageName != nil {
             if imageName == "return" {
+//                switch UITraitCollection.current.userInterfaceStyle{
+//
+//                }
                 switch self.preferredStatusBarStyle {
                 case .default:
                     tmpImgName = "icon_nav_back"
                     //                    tmpImgName = "icon_nav_back_white"
-                    break
                 case .lightContent:
                     tmpImgName = "icon_nav_back_white"
-                    break
                 default:
-                    tmpImgName = "icon_nav_back_white"
-                    break
+                    tmpImgName = "icon_nav_back"
                 }
             }
             btn.setImage(UIImage.init(named: tmpImgName!), for: .normal)

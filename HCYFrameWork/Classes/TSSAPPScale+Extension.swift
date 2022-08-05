@@ -38,7 +38,7 @@ fileprivate class ScaleClass{
     /// display Proportion
     /// - Returns: Proportion
     static func scale(_ value:CGFloat)-> CGFloat{
-        if IsIpad{
+        if KIsIpad{
             return (KScreenW / IsIpadW) * value
         }else{
             return (KScreenW / IsPhoneW) * value
@@ -125,15 +125,5 @@ extension UIStackView{
         }
     }
 }
-import RxSwift
-import RxCocoa
-extension Reactive where Base:UILabel{
-    public var fontsize:Binder<CGFloat>{
-        return Binder(self.base){ label ,fontsize in
-            let ff = label.font.withSize(fontsize.scale())
-            label.font = ff
-            
-        }
-    }
-}
+
 

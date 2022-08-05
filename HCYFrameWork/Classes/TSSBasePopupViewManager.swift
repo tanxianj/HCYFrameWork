@@ -61,9 +61,7 @@ public class TSSBasePopupViewManager{
         
         return view
     }()
-    private init() {
-        
-    }
+    private init() {}
     
     
     
@@ -183,22 +181,23 @@ extension TSSBasePopupViewManager{
     //===>>>>> animate start
     public func doanimateWith_bottomtotop(_ withDuration:CGFloat){
         UIView.animate(withDuration: withDuration) {
-            var bottomOfSet = 0.0
-            if let superView = self.superView.superview, superView.mj_h == Keywindow!.mj_h{
-                bottomOfSet = Keywindow!.safeAreaInsets.bottom
-            }
-            if self.superView == Keywindow{
-                bottomOfSet = Keywindow!.safeAreaInsets.bottom
-            }
-            self.contenView.transform = CGAffineTransform.init(translationX: 0, y: -self.contenView.mj_h - bottomOfSet + self.offset)
+            
+            self.contenView.transform = CGAffineTransform.init(translationX: 0, y: -self.contenView.mj_h  + self.offset)
             self.grayView.alpha = 1.0
             self.contenView.alpha = 1.0
         }
     }
     public func doanimateWith_bottomToCenter(_ withDuration:CGFloat){
         UIView.animate(withDuration: withDuration) {
+            var bottomOfSet = 0.0
+            if let superView = self.superView.superview, superView.mj_h == Keywindow!.mj_h{
+                bottomOfSet = Keywindow!.safeAreaInsets.top
+            }
+            if self.superView == Keywindow{
+                bottomOfSet = Keywindow!.safeAreaInsets.top
+            }
             
-            self.contenView.transform = CGAffineTransform.init(translationX: 0, y: -self.contenView.mj_h - (self.superView.mj_h - self.contenView.mj_h) / 2.0 + self.offset)
+            self.contenView.transform = CGAffineTransform.init(translationX: 0, y: -self.contenView.mj_h - (self.superView.mj_h - self.contenView.mj_h) / 2.0 + bottomOfSet + self.offset)
             self.grayView.alpha = 1.0
             self.contenView.alpha = 1.0
         }

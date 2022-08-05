@@ -111,9 +111,17 @@ extension UIColor{
         
         return UIColor.init(red: CGFloat(arc4random()%255)/255.0, green: CGFloat(arc4random()%255)/255.0, blue: CGFloat(arc4random()%255)/255.0, alpha: alpha)
     }
-    
+    public class func colorWith(r:CGFloat,
+                                g:CGFloat,
+                                b:CGFloat,
+                                a:CGFloat = 1) -> UIColor {
+            return UIColor.init(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
+    }
     /// back Color rgba
-    fileprivate var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
+    fileprivate var rgba: (red: CGFloat,
+                           green: CGFloat,
+                           blue: CGFloat,
+                           alpha: CGFloat) {
         var red: CGFloat = 0
         var green: CGFloat = 0
         var blue: CGFloat = 0

@@ -12,7 +12,7 @@ open class TSSSegmentedTitleDataSource: TSSSegmentedBaseDataSource{
     /// title选中状态的textColor
     open var titleSelectedColor: UIColor = .red
     /// title普通状态时的字体
-    open var titleNormalFont: UIFont = UIFont.systemFont(ofSize: 15)
+    open var titleNormalFont: UIFont = UIFont.systemFont(ofSize: 15.scale())
     /// title选中时的字体。如果不赋值，就默认与titleNormalFont一样
     open var titleSelectedFont: UIFont?
     /// title的颜色是否渐变过渡
@@ -20,11 +20,11 @@ open class TSSSegmentedTitleDataSource: TSSSegmentedBaseDataSource{
     /// title是否缩放。使用该效果时，务必保证titleNormalFont和titleSelectedFont值相同。
     open var isTitleZoomEnabled: Bool = false
     /// isTitleZoomEnabled为true才生效。是对字号的缩放，比如titleNormalFont的pointSize为10，放大之后字号就是10*1.2=12。
-    open var titleSelectedZoomScale: CGFloat = 1.2
+    open var titleSelectedZoomScale: CGFloat = 1.2.scale()
     /// title的线宽是否允许粗细。使用该效果时，务必保证titleNormalFont和titleSelectedFont值相同。
     open var isTitleStrokeWidthEnabled: Bool = false
     /// 用于控制字体的粗细（底层通过NSStrokeWidthAttributeName实现），负数越小字体越粗。
-    open var titleSelectedStrokeWidth: CGFloat = -2
+    open var titleSelectedStrokeWidth: CGFloat = -2.scale()
     /// title是否使用遮罩过渡
     open var isTitleMaskEnabled: Bool = false
 

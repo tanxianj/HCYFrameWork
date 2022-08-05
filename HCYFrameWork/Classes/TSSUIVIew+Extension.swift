@@ -42,9 +42,9 @@ extension UIView{
     }
     /// Parameter subviews: array of subviews to add to self.
     /// - Parameter subviews: Parameter subviews: array of subviews to add to self.
-    public  func addSubviews(_ subviews: [UIView]) {
-        subviews.forEach { addSubview($0) }
-    }
+//    public  func addSubviews(_ subviews: [UIView]) {
+//        subviews.forEach { addSubview($0) }
+//    }
     /// set self corner Radius
     @IBInspectable public var cornerRadius: CGFloat {
         get {

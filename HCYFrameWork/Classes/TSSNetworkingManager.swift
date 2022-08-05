@@ -8,10 +8,11 @@
 import Alamofire
 import RxSwift
 open class TSSNetworkingManager{
-    
+    //MARK: success block
     public typealias success<T:TSSBaseModelProtocol> = (_ statusCode:Int,_ model:T,_ responseData:Any)->Void
+    //MARK: failure block
     public typealias failure = (_ error:Error)->Void
-    /// -
+    /// -单列
     private static var _sharedInstance:TSSNetworkingManager?
     
     /// 禁止调用 init

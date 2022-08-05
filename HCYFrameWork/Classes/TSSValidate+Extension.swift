@@ -19,7 +19,7 @@ public enum TSSValidate {
     case money(_: String)          // money
     case onlyNumber(_:String,_:Int)// onlyNumber  limit Length
     case numberSpace(_:String,_:Int)//
-    var isRight: Bool {
+  public  var isRight: Bool {
         var predicateStr:String!
         var currentObject:String!
         switch self {
@@ -27,7 +27,7 @@ public enum TSSValidate {
             predicateStr = "^([A-Za-z0-9*_\\.-]+)@([\\da-z\\.-]+)\\.([a-z\\.]{2,6})$"
             currentObject = str
         case let .phoneNumber(str):
-            predicateStr = "^((1[34578][0-9]{9})|((0\\d{2}-\\d{8})|(0\\d{3}-\\d{7,8})|(0\\d{10,11}))$"
+            predicateStr = "^(1[34578][0-9]{9})|((0\\d{2}-\\d{8})|(0\\d{3}-\\d{7,8})|(0\\d{10,11}))$"
             currentObject = str
         case let .userName(str):
             predicateStr = "^([\\u4E00-\\u9FA5A-Za-z0-9_]{2,10}$)"
@@ -59,7 +59,7 @@ public enum TSSValidate {
              "^[A-Za-z0-9]+$"
              
              */
-            predicateStr = "^[0-9]*((\\.)[0-9]{0,2})?$"
+            predicateStr =  "(^[1-9](\\d+)?(\\.\\d{1,2})?$)|(^(0){1}$)|(^\\d\\.\\d{1,2}?$)"
             currentObject = str
         case let .onlyNumber(str, count):
             predicateStr = "^[0-9]{0,\(count)}?$"

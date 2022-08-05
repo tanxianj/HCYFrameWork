@@ -25,6 +25,23 @@ class GetLabelWidthHeightViewController: TSSBaseViewController {
     
         label2.frame = CGRect(origin: CGPoint(x: 0, y: 100), size: CGSize(width: 100, height: word2.getLabelHeight(font: .systemFont(ofSize: 17.0), width: 100)))
         self.view.addSubview(label2)
+        let str = "12345"
+        let md5str = str.md5
+        
+        let md5lab = UILabel()
+        md5lab.numberOfLines = 0
+        md5lab.text = "\(str) 的Md5 is\n \(md5str)"
+        md5lab.font = .systemFont(ofSize: 17.scale())
+        view.addSubview(md5lab)
+        md5lab.snp.makeConstraints { make in
+            make.left.equalTo(label2)
+            make.top.equalTo(label2.snp.bottom).offset(20.scale())
+            make.centerX.equalToSuperview()
+        }
+        let dic = ["a":"a","b":"b"]
+        let dicString = dic.toJsonString()
+        print("\(dic) toJsonString is \(dicString)  ")
+        
         
         // Do any additional setup after loading the view.
     }

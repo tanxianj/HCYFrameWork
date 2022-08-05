@@ -24,7 +24,7 @@ extension UIImage{
     /// - Parameters:
     ///   - name: svg Name
     ///   - size: change  size
-    ///   - color: change size
+    ///   - color: change color
     ///   - orientation: orientation
     /// - Returns: UIimage
     public class func svgImgWith(name:String, size:CGSize, color:UIColor,orientation:Orientation = .up) -> UIImage{
@@ -218,8 +218,8 @@ extension UIImage{
     ///   - image:  Image before
     ///   - newSize: newSize
     /// - Returns: UIimage
-    public func ScaleImage(image:UIImage, newSize:CGSize)->UIImage{
-        let imageSize  = image.size
+    public func ScaleImage(newSize:CGSize)->UIImage{
+        let imageSize  = self.size
         let w = imageSize.width
         let h = imageSize.height
         let wfactor = newSize.width / w
@@ -231,7 +231,7 @@ extension UIImage{
         let scaleHeight = h * scaleFactor
         let targetSize = CGSize(width: scaleWidth, height: scaleHeight)
         UIGraphicsBeginImageContext(targetSize)
-        image.draw(in: CGRect(origin: .zero, size: targetSize))
+        self.draw(in: CGRect(origin: .zero, size: targetSize))
         let newimage = UIGraphicsGetImageFromCurrentImageContext()
         return newimage!
     }

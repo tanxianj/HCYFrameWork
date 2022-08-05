@@ -24,7 +24,7 @@ open class TSSBaseViewController: UIViewController {
     //The line below the navigation bar
     public lazy var topLine: UIView = {
         let lineView = UIView()
-        lineView.backgroundColor = UIColor(red: 234.0/255.0, green: 235.0/255.0, blue: 238.0/255.0, alpha: 1)
+        lineView.backgroundColor = UIColor.colorWithAppearanceMode(.colorWithHexString("EAEBEE"), .clear)
         lineView.frame = CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 1.0/UIScreen.main.scale)
         return lineView
     }()
@@ -96,21 +96,29 @@ open class TSSBaseViewController: UIViewController {
     
     /// register Notifaction
     func tss_registerNotifaction(){
-        NotificationCenter.default.rx.notification(UIApplication.willResignActiveNotification).subscribe(onNext: { [weak self] notification in
+        NotificationCenter.default.rx.notification(UIApplication.willResignActiveNotification)
+            .takeUntil(self.rx.deallocated)
+            .subscribe(onNext: { [weak self] notification in
             guard let weakSelf = self else {return}
             weakSelf.tss_baseViewDelegate?.willResignActiveNotification()
         }).disposed(by: disposeBag)
         
-        NotificationCenter.default.rx.notification(UIApplication.didEnterBackgroundNotification).subscribe(onNext: {  [weak self] notification in
+        NotificationCenter.default.rx.notification(UIApplication.didEnterBackgroundNotification)
+            .takeUntil(self.rx.deallocated)
+            .subscribe(onNext: {  [weak self] notification in
             guard let weakSelf = self else {return}
             weakSelf.tss_baseViewDelegate?.didEnterBackgroundNotification()
         }).disposed(by: disposeBag)
         
-        NotificationCenter.default.rx.notification(UIApplication.willEnterForegroundNotification).subscribe(onNext: { [weak self] notification in
+        NotificationCenter.default.rx.notification(UIApplication.willEnterForegroundNotification)
+            .takeUntil(self.rx.deallocated)
+            .subscribe(onNext: { [weak self] notification in
             guard let weakSelf = self else {return}
             weakSelf.tss_baseViewDelegate?.willEnterForegroundNotification()
         }).disposed(by: disposeBag)
-        NotificationCenter.default.rx.notification(UIApplication.didBecomeActiveNotification).subscribe(onNext: { [weak self] notification in
+        NotificationCenter.default.rx.notification(UIApplication.didBecomeActiveNotification)
+            .takeUntil(self.rx.deallocated)
+            .subscribe(onNext: { [weak self] notification in
             guard let weakSelf = self else {return}
             weakSelf.tss_baseViewDelegate?.didBecomeActiveNotification()
         }).disposed(by: disposeBag)
@@ -183,9 +191,9 @@ open class TSSBaseViewController: UIViewController {
             DebugLog("lightContent")
             if #available(iOS 13.0, *) {
                 let navBarAppearance = UINavigationBarAppearance()
-                navBarAppearance.backgroundImage = UIImage(colors: [RGBColor(r: 140, g: 228, b: 152),
-                                                                    RGBColor(r:85,g:195,b:179),
-                                                                    RGBColor(r:78,g:178,b:184)],
+                navBarAppearance.backgroundImage = UIImage(colors: [UIColor.colorWith(r: 140, g: 228, b: 152),
+                                                                    UIColor.colorWith(r:85,g:195,b:179),
+                                                                    UIColor.colorWith(r:78,g:178,b:184)],
                                                            size: CGSize(width: KScreenW, height: KNavigationH))
                 navBarAppearance.backgroundEffect = nil
                 navBarAppearance.shadowColor = .clear
@@ -194,9 +202,9 @@ open class TSSBaseViewController: UIViewController {
                 self.navigationController!.navigationBar.standardAppearance = navBarAppearance
             }else{
                 
-                self.navigationController!.navigationBar.setBackgroundImage(UIImage(colors: [RGBColor(r: 140, g: 228, b: 152),
-                                                                                             RGBColor(r:85,g:195,b:179),
-                                                                                             RGBColor(r:78,g:178,b:184)],
+                self.navigationController!.navigationBar.setBackgroundImage(UIImage(colors: [UIColor.colorWith(r: 140, g: 228, b: 152),
+                                                                                             UIColor.colorWith(r:85,g:195,b:179),
+                                                                                             UIColor.colorWith(r:78,g:178,b:184)],
                                                                                     size: CGSize(width: KScreenW, height: KNavigationH)), for: .default)
                 self.navigationController!.navigationBar.shadowImage = UIImage()
                 self.navigationController!.navigationBar.titleTextAttributes = [.foregroundColor:UIColor.white,.font:UIFont.systemFont(ofSize: 18.0.scale(), weight: .semibold)]
@@ -242,9 +250,7 @@ extension TSSBaseViewController:TSSBaseViewControllerDelegate{
     @objc open func didBecomeActiveNotification(){}
 }
 extension TSSBaseViewController{
-    public func tss_addScrollToTopBtn(){
-        let view = UIView()
-        view.backgroundColor = .red
+    public func tss_addScrollToTopBtn(_ view:UIView){
         self.view.addSubview(view)
         view.snp.makeConstraints { make in
             make.width.height.equalTo(50.scale())

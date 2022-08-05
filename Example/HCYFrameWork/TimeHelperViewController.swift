@@ -14,8 +14,13 @@ class TimeHelperViewController: TSSBaseViewController {
     let timeStamp = "1658719230"
     let timeStr = "2022-07-25 11:20:30"
     @IBOutlet weak var tableView: UITableView!
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.backgroundColor = .red
+    }
     override func viewDidLoad() {
-        super.viewDidLoad() 
+        super.viewDidLoad()
+        view.backgroundColor = .colorWithAppearanceMode(.white, .black)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         // 初始化数据

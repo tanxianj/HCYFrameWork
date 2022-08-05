@@ -12,7 +12,7 @@ class APPTabbarViewController: TSSBaseTabbarViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tss_ResetTabbarConfig(selectedColor: .green, normalColor: .gray, backGround: UIImage(named: "tab_back"))
+        tss_ResetTabbarConfig(selectedColor: .colorWithAppearanceMode(.red, .red), normalColor: .gray, backGround: UIImage(named: "tab_back"))
         setupChildControllers()
         self.selectedIndex = 1
 //        setTabbarConfig(selectedColor: .green, normalColor: .gray)
@@ -20,14 +20,16 @@ class APPTabbarViewController: TSSBaseTabbarViewController {
     
     fileprivate func setupChildControllers(){
         let array = [
-            ["className":"HomeViewController",
-             "title":"首页",
-             "normalImage":"Tab_Notes",
-             "selectImage":"Tab_Notes_Selected"],
+            /*
+             ["className":"HomeViewController",
+              "title":"Home",
+              "normalImage":"Tab_Notes",
+              "selectImage":"Tab_Notes_Selected"],
+             */
             
             
             ["className":"MeViewController",
-             "title":"我的",
+             "title":"Me",
              "normalImage":"Tab_Downloads",
              "selectImage":"Tab_Downloads_Selected"],
         ]

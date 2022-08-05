@@ -214,6 +214,7 @@
 		2F23190DC5166180F1C1DF14E5A4F671 /* UITabBarItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35E84E50B42C7C3815CFBE7BE4B20AB /* UITabBarItem+Rx.swift */; };
 		2F26E96FEB79CCC6E321B1FB24B94FB2 /* Node+Mutable.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C0D6761277D3FD6073844875081ECE /* Node+Mutable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F3CF919B819A9066E286D54C5EC9B9F /* FLEXMutableListSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2592A3D1FE1943E82F323A29DB9DBA4C /* FLEXMutableListSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F4003A2289A2D0F00C72B7F /* TSSUILabel+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003A1289A2D0F00C72B7F /* TSSUILabel+Rx.swift */; };
 		2FD5F79B288FC30F005CDF87 /* TSSSegmentedIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F76A288FC30C005CDF87 /* TSSSegmentedIndicatorProtocol.swift */; };
 		2FD5F79C288FC30F005CDF87 /* TSSBasePopupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F76B288FC30C005CDF87 /* TSSBasePopupConfig.swift */; };
 		2FD5F79D288FC30F005CDF87 /* TSSBasePopupViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F76C288FC30D005CDF87 /* TSSBasePopupViewManager.swift */; };
@@ -254,7 +255,6 @@
 		2FD5F7C0288FC30F005CDF87 /* TSSUIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F78F288FC30E005CDF87 /* TSSUIImageView+Extension.swift */; };
 		2FD5F7C1288FC30F005CDF87 /* TSSBaseTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F790288FC30E005CDF87 /* TSSBaseTabbarViewController.swift */; };
 		2FD5F7C2288FC30F005CDF87 /* TSSSegmentedIndicatorBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F791288FC30E005CDF87 /* TSSSegmentedIndicatorBaseView.swift */; };
-		2FD5F7C3288FC30F005CDF87 /* TSSNotiFication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F792288FC30E005CDF87 /* TSSNotiFication.swift */; };
 		2FD5F7C4288FC30F005CDF87 /* TSSSegmentedListContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F793288FC30E005CDF87 /* TSSSegmentedListContainerView.swift */; };
 		2FD5F7C5288FC30F005CDF87 /* TSSUIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F794288FC30E005CDF87 /* TSSUIWindow+Extension.swift */; };
 		2FD5F7C6288FC30F005CDF87 /* TSSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F795288FC30E005CDF87 /* TSSButton.swift */; };
@@ -1730,6 +1730,7 @@
 		2EF736CFABA80CD072E0B5598EB9A01D /* ObserverBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObserverBase.swift; path = RxSwift/Observers/ObserverBase.swift; sourceTree = "<group>"; };
 		2F15B7A19008E85D64266D33418689FB /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		2F1E41FA1478FF63E394B0D381558862 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
+		2F4003A1289A2D0F00C72B7F /* TSSUILabel+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUILabel+Rx.swift"; path = "HCYFrameWork/Classes/TSSUILabel+Rx.swift"; sourceTree = "<group>"; };
 		2F72A4CF0D66D4AD17C3D1616ECD6F97 /* Differentiator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Differentiator.debug.xcconfig; sourceTree = "<group>"; };
 		2F99B0121D2F0A54D75272349CAC96E3 /* AsMaybe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsMaybe.swift; path = RxSwift/Observables/AsMaybe.swift; sourceTree = "<group>"; };
 		2FA132CF69AC026C185206D29CD51F0F /* URLSession+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSession+Rx.swift"; path = "RxCocoa/Foundation/URLSession+Rx.swift"; sourceTree = "<group>"; };
@@ -1773,7 +1774,6 @@
 		2FD5F78F288FC30E005CDF87 /* TSSUIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUIImageView+Extension.swift"; path = "HCYFrameWork/Classes/TSSUIImageView+Extension.swift"; sourceTree = "<group>"; };
 		2FD5F790288FC30E005CDF87 /* TSSBaseTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSBaseTabbarViewController.swift; path = HCYFrameWork/Classes/TSSBaseTabbarViewController.swift; sourceTree = "<group>"; };
 		2FD5F791288FC30E005CDF87 /* TSSSegmentedIndicatorBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedIndicatorBaseView.swift; path = HCYFrameWork/Classes/TSSSegmentedIndicatorBaseView.swift; sourceTree = "<group>"; };
-		2FD5F792288FC30E005CDF87 /* TSSNotiFication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSNotiFication.swift; path = HCYFrameWork/Classes/TSSNotiFication.swift; sourceTree = "<group>"; };
 		2FD5F793288FC30E005CDF87 /* TSSSegmentedListContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedListContainerView.swift; path = HCYFrameWork/Classes/TSSSegmentedListContainerView.swift; sourceTree = "<group>"; };
 		2FD5F794288FC30E005CDF87 /* TSSUIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUIWindow+Extension.swift"; path = "HCYFrameWork/Classes/TSSUIWindow+Extension.swift"; sourceTree = "<group>"; };
 		2FD5F795288FC30E005CDF87 /* TSSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSButton.swift; path = HCYFrameWork/Classes/TSSButton.swift; sourceTree = "<group>"; };
@@ -4500,7 +4500,6 @@
 				2FD5F797288FC30F005CDF87 /* TSSLoadingManager.swift */,
 				2FD5F77B288FC30D005CDF87 /* TSSMJRefresh+Extension.swift */,
 				2FD5F772288FC30D005CDF87 /* TSSNetworkingManager.swift */,
-				2FD5F792288FC30E005CDF87 /* TSSNotiFication.swift */,
 				2FD5F78C288FC30E005CDF87 /* TSSOperators.swift */,
 				2FD5F77D288FC30D005CDF87 /* TSSSegmentedAnimator.swift */,
 				2FD5F786288FC30E005CDF87 /* TSSSegmentedBaseCell.swift */,
@@ -4531,6 +4530,7 @@
 				2FD5F794288FC30E005CDF87 /* TSSUIWindow+Extension.swift */,
 				2FD5F781288FC30E005CDF87 /* TSSValidate+Extension.swift */,
 				2FD5F78A288FC30E005CDF87 /* TSSVIewProtocol.swift */,
+				2F4003A1289A2D0F00C72B7F /* TSSUILabel+Rx.swift */,
 				7E8A5AFDACA268D692D86EBD40904DC1 /* Pod */,
 				5DE02635178B42B73137B8BDC257DEAB /* Support Files */,
 			);
@@ -6400,7 +6400,6 @@
 				2FD5F7AE288FC30F005CDF87 /* TSSSegmentedAnimator.swift in Sources */,
 				2FD5F7AF288FC30F005CDF87 /* TSSSegmentedRTLLayout.swift in Sources */,
 				2FD5F7A0288FC30F005CDF87 /* TSSAPPScale+Extension.swift in Sources */,
-				2FD5F7C3288FC30F005CDF87 /* TSSNotiFication.swift in Sources */,
 				2FD5F7A7288FC30F005CDF87 /* TSSGCDTools.swift in Sources */,
 				2FD5F7C5288FC30F005CDF87 /* TSSUIWindow+Extension.swift in Sources */,
 				2FD5F7AB288FC30F005CDF87 /* TSSUIImage+Extension.swift in Sources */,
@@ -6408,6 +6407,7 @@
 				2FD5F7B4288FC30F005CDF87 /* TSSBaseViewController.swift in Sources */,
 				2FD5F7A9288FC30F005CDF87 /* TSSSegmentedBaseItemModel.swift in Sources */,
 				2FD5F7BD288FC30F005CDF87 /* TSSOperators.swift in Sources */,
+				2F4003A2289A2D0F00C72B7F /* TSSUILabel+Rx.swift in Sources */,
 				2FD5F7C1288FC30F005CDF87 /* TSSBaseTabbarViewController.swift in Sources */,
 				2FD5F7A5288FC30F005CDF87 /* TSSBaseViewModelType.swift in Sources */,
 				2FD5F7A4288FC30F005CDF87 /* TSSCommon.swift in Sources */,

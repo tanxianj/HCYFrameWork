@@ -32,32 +32,9 @@ public let KtabbarH:CGFloat = KisIphoneX ? (49.0+34.0) : 49.0
 /// One pixel
 public let KonePx:CGFloat = 1.0/UIScreen.main.scale
 
-public let IsIpad = UIDevice.current.model.contains("iPad")
-//Custom RGB color
-
-public func RGBColor(r:CGFloat,g:CGFloat,b:CGFloat,a:CGFloat = 1) -> UIColor {
-    return UIColor.init(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
-}
-
-
-//Font size is based on iphpnex
-
-//func customFont(fontSize:CGFloat) -> UIFont {
-//    // IphoneX
-//    guard KScreenH <= 736 else {
-//        return UIFont.systemFont(ofSize: fontSize)
-//    }
-//    // 5.5
-//    guard KScreenH == 736 else {
-//        return UIFont.systemFont(ofSize: fontSize - 2)
-//    }
-//    // 4.7
-//    guard KScreenH >= 736 else {
-//        return UIFont.systemFont(ofSize: fontSize - 4)
-//    }
-//    
-//    return UIFont.systemFont(ofSize: fontSize)
-//}
+public let KIsIpad = UIDevice.current.model.contains("iPad")
+/// Work Name
+public let KWorkName = Bundle.main.infoDictionary?["CFBundleExecutable"]
 
 /// Debugging method printout
 

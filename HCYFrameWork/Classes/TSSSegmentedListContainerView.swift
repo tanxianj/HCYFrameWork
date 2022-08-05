@@ -42,7 +42,7 @@ public protocol TSSSegmentedListContainerViewDataSource {
     @objc optional func listContainerView(_ listContainerView: TSSSegmentedListContainerView, canInitListAt index: Int) -> Bool
 
     /// 返回自定义UIScrollView或UICollectionView的Class
-    /// 某些特殊情况需要自己处理UIScrollView内部逻辑。比如项目用了FDFullscreenPopGesture，需要处理手势相关代理。
+    /// 某些特殊情况需要自己处理UIScrollView内部逻辑。比如项目用了TSSFDFullscreenPopGesture，需要处理手势相关代理。
     ///
     /// - Parameter listContainerView: TSSSegmentedListContainerView
     /// - Returns: 自定义UIScrollView实例
