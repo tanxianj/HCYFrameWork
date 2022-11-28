@@ -1,5 +1,5 @@
 //
-//  TSSUIColor+Extension.swift
+//  UIColor+TSSExtension.swift
 //
 //
 //  Created by Jupiter_TSS on 8/3/22.

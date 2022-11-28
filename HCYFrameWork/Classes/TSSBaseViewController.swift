@@ -16,8 +16,10 @@ public protocol TSSBaseViewControllerDelegate:UIViewController{
     func willEnterForegroundNotification()
     func didBecomeActiveNotification()
 }
+
 //MARK: Base ViewController
 open class TSSBaseViewController: UIViewController {
+    
     weak var tss_baseViewDelegate:TSSBaseViewControllerDelegate?
     /// Rxswift disposeBag
     public let disposeBag = DisposeBag()
@@ -28,19 +30,6 @@ open class TSSBaseViewController: UIViewController {
         lineView.frame = CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 1.0/UIScreen.main.scale)
         return lineView
     }()
-   /*
-    public lazy var tableView:UITableView = {
-        let tableView = UITableView(frame: .zero, style: .plain)
-        tableView.defaultConfig()
-        return tableView
-    }()
-    public lazy var collectionView:UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.defaultConfig()
-        return collectionView
-    }()
-    */
     /// Delete from the end . delete count
     public var deleteViewCount = 0
     
@@ -51,10 +40,10 @@ open class TSSBaseViewController: UIViewController {
     public var deleteViewCountFirst = 0
     
     open override class func setValue(_ value: Any?, forUndefinedKey key: String) {
-        DebugLog("Error setting routing parameters. No key exists: \(key)")
+        TSSLog("Error setting routing parameters. No key exists: \(key)")
     }
     open override class func setNilValueForKey(_ key: String) {
-        DebugLog("Error setting routing parameters. The key is nil: \(key)")
+        TSSLog("Error setting routing parameters. The key is nil: \(key)")
     }
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -74,7 +63,7 @@ open class TSSBaseViewController: UIViewController {
         super.viewDidLoad()
         //MARK: auto add back btn
         if let vcs = self.navigationController?.viewControllers, vcs.count > 1{
-            DebugLog("vcs.count \(vcs.count)")
+            TSSLog("vcs.count \(vcs.count)")
             tss_addleftbutton()
         }
         
@@ -92,10 +81,11 @@ open class TSSBaseViewController: UIViewController {
         view.bringSubviewToFront(topLine)
         guard self.tss_hiddenNavigationBarHidden() else{return}
         topLine.isHidden = self.tss_hiddenNavigationBarHidden()
+
     }
-    
     /// register Notifaction
     func tss_registerNotifaction(){
+        
         NotificationCenter.default.rx.notification(UIApplication.willResignActiveNotification)
             .takeUntil(self.rx.deallocated)
             .subscribe(onNext: { [weak self] notification in
@@ -116,6 +106,7 @@ open class TSSBaseViewController: UIViewController {
             guard let weakSelf = self else {return}
             weakSelf.tss_baseViewDelegate?.willEnterForegroundNotification()
         }).disposed(by: disposeBag)
+        
         NotificationCenter.default.rx.notification(UIApplication.didBecomeActiveNotification)
             .takeUntil(self.rx.deallocated)
             .subscribe(onNext: { [weak self] notification in
@@ -172,11 +163,11 @@ open class TSSBaseViewController: UIViewController {
     
     /// Add navigation left  back Item
     open func tss_addleftbutton()  {
-        self.navigationItem.leftBarButtonItem = self.CreateNavigationItem(type: .left, imageName: "return", titleColor: .red, itemAction: nil)
+        self.navigationItem.leftBarButtonItem = self.tss_createNavigationItem(type: .left, imageName: "return", titleColor: .red, itemAction: nil)
     }
     /// Add navigation right Item
     open func tss_addRightButton(title:String? = nil,imageName:String? = nil,action:@escaping ()->()){
-        self.navigationItem.rightBarButtonItem = self.CreateNavigationItem(type: .right, title: title, imageName: imageName, titleColor: .black, itemAction: action)
+        self.navigationItem.rightBarButtonItem = self.tss_createNavigationItem(type: .right, title: title, imageName: imageName, titleColor: .black, itemAction: action)
     }
     //MARK:Quick jump
     open func tss_currentVCpushTo(_ vc:UIViewController) {
@@ -188,13 +179,13 @@ open class TSSBaseViewController: UIViewController {
         guard let _ = self.navigationController else { return }
         switch self.preferredStatusBarStyle{
         case .lightContent:
-            DebugLog("lightContent")
+            TSSLog("lightContent")
             if #available(iOS 13.0, *) {
                 let navBarAppearance = UINavigationBarAppearance()
                 navBarAppearance.backgroundImage = UIImage(colors: [UIColor.colorWith(r: 140, g: 228, b: 152),
                                                                     UIColor.colorWith(r:85,g:195,b:179),
                                                                     UIColor.colorWith(r:78,g:178,b:184)],
-                                                           size: CGSize(width: KScreenW, height: KNavigationH))
+                                                           size: CGSize(width: TSSScreenW, height: TSSNavigationH))
                 navBarAppearance.backgroundEffect = nil
                 navBarAppearance.shadowColor = .clear
                 navBarAppearance.titleTextAttributes = [.foregroundColor:UIColor.white ,.font:UIFont.systemFont(ofSize: 18.scale(), weight: .semibold)]
@@ -205,13 +196,13 @@ open class TSSBaseViewController: UIViewController {
                 self.navigationController!.navigationBar.setBackgroundImage(UIImage(colors: [UIColor.colorWith(r: 140, g: 228, b: 152),
                                                                                              UIColor.colorWith(r:85,g:195,b:179),
                                                                                              UIColor.colorWith(r:78,g:178,b:184)],
-                                                                                    size: CGSize(width: KScreenW, height: KNavigationH)), for: .default)
+                                                                                    size: CGSize(width: TSSScreenW, height: TSSNavigationH)), for: .default)
                 self.navigationController!.navigationBar.shadowImage = UIImage()
                 self.navigationController!.navigationBar.titleTextAttributes = [.foregroundColor:UIColor.white,.font:UIFont.systemFont(ofSize: 18.0.scale(), weight: .semibold)]
             }
             self.topLine.isHidden = true
         default:
-            DebugLog("default")
+            TSSLog("default")
             if #available(iOS 13.0, *) {
                 let navBarAppearance = UINavigationBarAppearance()
                 navBarAppearance.backgroundColor = .white
@@ -229,7 +220,7 @@ open class TSSBaseViewController: UIViewController {
         }
     }
     deinit {
-        DebugLog("deinit")
+        TSSLog("deinit")
     }
 }
 
@@ -244,10 +235,13 @@ extension TSSBaseViewController:Initialization{
     @objc open func setupNavigationItems() {}
 }
 extension TSSBaseViewController:TSSBaseViewControllerDelegate{
+    
     @objc open func willResignActiveNotification(){}
     @objc open func didEnterBackgroundNotification(){}
     @objc open func willEnterForegroundNotification(){}
     @objc open func didBecomeActiveNotification(){}
+    @objc open  func willRotatedNotification() {}
+    @objc open  func didRotatedNotification() {}
 }
 extension TSSBaseViewController{
     public func tss_addScrollToTopBtn(_ view:UIView){
@@ -260,7 +254,7 @@ extension TSSBaseViewController{
         view.addEventHandler {
             guard let scrollView = self.view.subviews.first(where: {$0 is UIScrollView}) as? UIScrollView else{return}
             let contentInset = scrollView.contentInset
-            DebugLog("contentInset \(contentInset.top)")
+            TSSLog("contentInset \(contentInset.top)")
             scrollView.setContentOffset(CGPoint(x: 0, y: -contentInset.top), animated: true)
         }
     }

@@ -40,7 +40,7 @@ class ActionSheetViewController: TSSBaseViewController {
             config.rowHeight =  70.scale()
             config.cornerRadius = 20.scale()
             
-            
+            config.allowsMultipleSelection = true
             
             
             TSSActionSheetManager.sharedInstance().showActionSheetWith(actionSheet:["1111","2222","3333"],
@@ -60,16 +60,20 @@ class ActionSheetViewController: TSSBaseViewController {
     }
 }
 extension ActionSheetViewController:TSSActionSheetManagerDelegate{
-    func tableView(_ tableView: UITableView, _ dataSource: Any, cellForRowAt indexPath: IndexPath) -> UITableViewCell? {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ActionSheetCell", for: indexPath) as! ActionSheetCell
-        cell.tltleLab.text = "\(dataSource as! String)12333"
-        cell.descLab.text = "\(indexPath.row)"
-        return cell
-    }
-    func registerTableViewforCellReuseIdentifier() -> String? {
-        return "ActionSheetCell"
-    }
-    func registerTableViewWithNib() -> UINib? {
-        return UINib.init(nibName: "ActionSheetCell", bundle: nil)
-    }
+//    func tableView(_ tableView: UITableView, _ dataSource: Any, cellForRowAt indexPath: IndexPath) -> UITableViewCell? {
+//
+//        let cell = tableView.dequeueReusableCell(withIdentifier: ActionSheetTwoCell.tss_Identifier(), for: indexPath) as! ActionSheetTwoCell
+////        cell.tltleLab.text = "\(dataSource as! String)12333"
+////        cell.descLab.text = "\(indexPath.row)"
+//        return cell
+//    }
+//    func tss_ActionSheetRegisterTableViewforCellReuseIdentifier() -> String? {
+//        return ActionSheetTwoCell.tss_Identifier()
+//    }
+//    func tss_ActionSheetregisterTableViewWithClass() -> AnyClass? {
+//        return ActionSheetTwoCell.self
+//    }
+//    func tss_ActionSheetregisterTableViewWithNib() -> UINib? {
+//        return UINib.init(nibName: "ActionSheetTwoCell", bundle: nil)
+//    }
 }

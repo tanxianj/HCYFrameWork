@@ -104,9 +104,15 @@ class TSSLabViewController: TSSBaseViewController {
     }
 
     func backTSSLabel(_ alignment:TSSLabelAlignment)->TSSLabel{
-        let tsslab = TSSLabel(frame: .zero, alignment: alignment)
+        let attributedText = NSAttributedString(string: "attributedText")
+        let tsslab = TSSLabel(frame: .zero,
+                              alignment: alignment,
+                              text: "TestText",
+                              textColor: .blue,
+                              font: .systemFont(ofSize: 20.scale()),
+                              numberOfLines: 0,
+                              attributedText: attributedText)
         tsslab.backgroundColor = .gray
-        tsslab.fontSize = 17.scale()
         return tsslab
     }
     /*

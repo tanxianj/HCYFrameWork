@@ -1,52 +1,41 @@
-
-
 import UIKit
-
-protocol TSSXPageControlDelegate: NSObjectProtocol {
-    func TSSPageControl(_ pageControl: TSSPageControl, didSelectPageAt index: Int)
-}
-
-extension TSSXPageControlDelegate {
-    func TSSPageControl(_ pageControl: TSSPageControl, didSelectPageAt index: Int) { }
-}
-
-class TSSPageControl: UIControl {
-    var pageControlCornerRadius:CGFloat = 0.0
-    var dotViewClass: UIView? {
+public class TSSCycleScrollViewPageControl: UIControl {
+    public var pageControlCornerRadius:CGFloat = 0.0
+    public var dotViewClass: UIView? {
         didSet {
             resetDotViews()
         }
     }
-    var normalPageImage: UIImage? {
+    public var normalPageImage: UIImage? {
         didSet {
             resetDotViews()
         }
     }
-    var currentPageImage: UIImage? {
+    public var currentPageImage: UIImage? {
         didSet {
             resetDotViews()
         }
     }
-    var currentDotColor: UIColor = .white
-    var dotColor: UIColor = .clear
-    var dotSize: CGSize {
+    public var currentDotColor: UIColor = .white
+    public var dotColor: UIColor = .clear
+    public var dotSize: CGSize {
         if let image = normalPageImage {
             return image.size
         }
         return CGSize(width: 8, height: 8)
     }
-    var spacingBetweenDots: CGFloat = 8 {
+    public var spacingBetweenDots: CGFloat = 8 {
         didSet {
             resetDotViews()
         }
     }
-    weak var delegate: TSSXPageControlDelegate?
-    var numberOfPages: Int = 0 {
+    public weak var delegate: TSSXPageControlDelegate?
+    public var numberOfPages: Int = 0 {
         didSet {
             resetDotViews()
         }
     }
-    var currentPage: Int = 0 {
+    public var currentPage: Int = 0 {
         willSet {
             changeActivity(activity: false, at: currentPage)
         }
@@ -54,8 +43,8 @@ class TSSPageControl: UIControl {
             changeActivity(activity: true, at: currentPage)
         }
     }
-    var hidesForSinglePage: Bool = false
-    var shouldResizeFromCenter: Bool = true
+    public var hidesForSinglePage: Bool = false
+    public var shouldResizeFromCenter: Bool = true
     
     func sizeForNumber(of pages: Int) -> CGSize {
         return CGSize(width: (dotSize.width + spacingBetweenDots) * CGFloat(pages) - spacingBetweenDots, height: dotSize.height)
@@ -63,14 +52,14 @@ class TSSPageControl: UIControl {
     
     private var dots: [UIView] = [UIView]()
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first
         if touch?.view != self {
             
         }
     }
     
-    override func sizeToFit() {
+    public override func sizeToFit() {
         updateFrame(true)
     }
     
@@ -135,7 +124,7 @@ class TSSPageControl: UIControl {
         dot.frame = CGRect(x: x, y: 0, width: dotSize.width, height: dotSize.height)
     }
     
-    func changeActivity(activity: Bool, at index: Int) {
+    public  func changeActivity(activity: Bool, at index: Int) {
         guard dots.count > 0 && index < dots.count else{return}
         if let d = dots[index] as? TSSAnimateDotView {
             d.changeActivityState(active: activity)
@@ -144,7 +133,7 @@ class TSSPageControl: UIControl {
         }
     }
     
-    func hideForSinglePage() {
+    public  func hideForSinglePage() {
         isHidden = (dots.count == 1 && hidesForSinglePage)
     }
 }

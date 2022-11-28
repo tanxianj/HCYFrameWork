@@ -81,7 +81,7 @@ public class TSSActionSheetManager:NSObject,UITableViewDelegate,UITableViewDataS
     
     private lazy var tableView:UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
-        tableView.register(TSSActionSheetTableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(TSSActionSheetTableViewCell.self, forCellReuseIdentifier: TSSActionSheetTableViewCell.tss_Identifier())
         tableView.delegate = self
         tableView.dataSource = self
         tableView.showsVerticalScrollIndicator = false
@@ -141,15 +141,15 @@ public class TSSActionSheetManager:NSObject,UITableViewDelegate,UITableViewDataS
 }
 public protocol TSSActionSheetManagerDelegate:NSObjectProtocol{
     func tableView(_ tableView: UITableView,_ dataSource:Any, cellForRowAt indexPath: IndexPath) -> UITableViewCell?
-    func registerTableViewforCellReuseIdentifier()->String?
-    func registerTableViewWithClass() -> AnyClass?
-    func registerTableViewWithNib() -> UINib?
+    func tss_ActionSheetRegisterTableViewforCellReuseIdentifier()->String?
+    func tss_ActionSheetregisterTableViewWithClass() -> AnyClass?
+    func tss_ActionSheetregisterTableViewWithNib() -> UINib?
 }
 extension TSSActionSheetManagerDelegate{
     func tableView(_ tableView: UITableView,_ dataSource:Any, cellForRowAt indexPath: IndexPath) -> UITableViewCell?{return nil}
-    func registerTableViewforCellReuseIdentifier()->String?{return nil}
-    func registerTableViewWithClass() -> AnyClass?{return nil}
-    func registerTableViewWithNib() ->  UINib?{return nil}
+    func tss_ActionSheetRegisterTableViewforCellReuseIdentifier()->String?{return nil}
+    func tss_ActionSheetregisterTableViewWithClass() -> AnyClass?{return nil}
+    func tss_ActionSheetregisterTableViewWithNib() ->  UINib?{return nil}
 }
 extension  TSSActionSheetManager{
     public func showActionSheetWith(actionSheet:[Any],
@@ -159,7 +159,7 @@ extension  TSSActionSheetManager{
                                     singleSelectionTap:singleSelectionBlock = nil,
                                     cancelTap:cancelBlock = nil,
                                     sureTap:multiSelectBlock = nil){
-        guard Keywindow?.viewWithTag(identifiTag) == nil else {return}
+        guard TSSKeywindow?.viewWithTag(identifiTag) == nil else {return}
         self.singleSelection = singleSelectionTap
         self.config = config
         self.type = type
@@ -168,10 +168,10 @@ extension  TSSActionSheetManager{
         self.actionSheet = actionSheet
         grayView.tag = identifiTag
         
-        clearView.frame = Keywindow!.bounds
+        clearView.frame = TSSKeywindow!.bounds
         grayView.frame  = clearView.bounds
         
-        Keywindow!.addSubview(clearView)
+        TSSKeywindow!.addSubview(clearView)
         clearView.addSubview(grayView)
         
         clearView.addSubview(contentView)
@@ -179,7 +179,7 @@ extension  TSSActionSheetManager{
         self.contentView.centerXAnchor.constraint(equalTo: self.grayView.centerXAnchor).isActive = true
         self.contentView.leftAnchor.constraint(equalTo: self.grayView.leftAnchor, constant: config.offset).isActive = true
         self.contentView.topAnchor.constraint(equalTo: self.grayView.bottomAnchor).isActive = true
-        self.contentView.heightAnchor.constraint(lessThanOrEqualToConstant: KScreenH * 0.8).isActive = true
+        self.contentView.heightAnchor.constraint(lessThanOrEqualToConstant: TSSScreenH * 0.8).isActive = true
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
         
         
@@ -225,6 +225,7 @@ extension  TSSActionSheetManager{
                 
             }
         }
+        tableView.allowsMultipleSelection = config.allowsMultipleSelection
         contentView.addSubview(tableView)
         tableView.snp.makeConstraints { make in
             make.left.equalToSuperview()
@@ -294,7 +295,7 @@ extension  TSSActionSheetManager{
         self.contentView.setNeedsLayout()
         self.contentView.layoutIfNeeded()
         UIView.animate(withDuration: 0.2) {
-            self.contentView.transform = CGAffineTransform.init(translationX: 0, y: -self.contentView.mj_h)
+            self.contentView.transform = CGAffineTransform.init(translationX: 0, y: -self.contentView.tss_h)
             self.grayView.alpha = 1.0
             self.contentView.alpha = 1.0
         }
@@ -322,14 +323,14 @@ extension TSSActionSheetManager{
         self.actionSheet.count
     }
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cellClass = delegete?.registerTableViewWithClass(),let Identifier = delegete?.registerTableViewforCellReuseIdentifier(){
+        if let cellClass = delegete?.tss_ActionSheetregisterTableViewWithClass(),let Identifier = delegete?.tss_ActionSheetRegisterTableViewforCellReuseIdentifier(){
             tableView.register(cellClass.self, forCellReuseIdentifier: Identifier)
         }
-        if let cellNib = delegete?.registerTableViewWithNib(),let Identifier = delegete?.registerTableViewforCellReuseIdentifier(){
+        if let cellNib = delegete?.tss_ActionSheetregisterTableViewWithNib(),let Identifier = delegete?.tss_ActionSheetRegisterTableViewforCellReuseIdentifier(){
             tableView.register(cellNib, forCellReuseIdentifier: Identifier)
         }
         guard let cell = delegete?.tableView(tableView, self.actionSheet[indexPath.row], cellForRowAt: indexPath) else{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TSSActionSheetTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: TSSActionSheetTableViewCell.tss_Identifier(), for: indexPath) as! TSSActionSheetTableViewCell
             if let title = self.actionSheet[indexPath.row] as? String {
                 cell.titleLab.text = title
             }

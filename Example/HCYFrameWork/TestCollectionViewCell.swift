@@ -10,9 +10,17 @@ import UIKit
 
 class TestCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var descLab: UILabel!
+    @IBOutlet weak var titleLab: UILabel!
+    @IBOutlet weak var image: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
+        self.layoutIfNeeded()
+       return super.preferredLayoutAttributesFitting(layoutAttributes)
+    }
+    
 
 }

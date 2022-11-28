@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'HCYFrameWork'
-    s.version          = '0.1.13'
+    s.version          = '0.1.14'
     s.summary          = 'A short description of HCYFrameWork.'
     
     # This description is used to generate tags and improve search results.
@@ -96,17 +96,17 @@ Pod::Spec.new do |s|
     # s.public_header_files = 'Pod/Classes/**/*.h'
     # s.frameworks = 'UIKit', 'MapKit'
     # s.dependency 'AFNetworking', '~> 2.3'
-    s.dependency 'SnapKit' ,'~> 5.0.0'
-    s.dependency 'SVGKit'  #  SVGLength.m 232 line if( [platform hasPrefix:@"x86_64"] || [platform hasPrefix:@"arm64"])
-    s.dependency 'RxSwift','~> 5.0'
-    s.dependency 'RxCocoa','~> 5.0'
-    s.dependency 'RxDataSources'
-    s.dependency 'Alamofire'
+    s.dependency 'SnapKit' ,'~> 5.6.0'
+    s.dependency 'SVGKit' ,'~> 3.0.0' # 3.0.0 SVGLength.m 232 line if( [platform hasPrefix:@"x86_64"] || [platform hasPrefix:@"arm64"])
+    s.dependency 'RxSwift','~> 6.5.0'
+    s.dependency 'RxCocoa','~> 6.5.0'
+    s.dependency 'RxDataSources','~> 5.0.0'
+    s.dependency 'Alamofire','~> 5.6.2'
     #    s.dependency 'RxAlamofire'
     #    s.dependency 'AlamofireObjectMapper', '~> 5.2.1'
-    s.dependency 'MJRefresh'
-    s.dependency 'Kingfisher'
-    s.dependency 'SVProgressHUD'
-    s.dependency 'IQKeyboardManagerSwift'
+    s.dependency 'MJRefresh','~> 3.7.5'
+    s.dependency 'Kingfisher','~> 7.3.2'
+    s.dependency 'SVProgressHUD','~> 2.2.5'
+    s.dependency 'IQKeyboardManagerSwift','~> 6.5.10'
     s.dependency 'FLEX',:configurations => ['Debug'] #为Debug 模式引入
 end

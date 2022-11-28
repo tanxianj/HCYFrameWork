@@ -9,7 +9,7 @@
 
 import UIKit
 extension UITableViewCell{
-    public class func Identifier()->String{
+    public class func tss_Identifier()->String{
         var cellid = ""
         cellid = String(cString: object_getClassName(self)).components(separatedBy: ".").last!
         return cellid
@@ -17,7 +17,7 @@ extension UITableViewCell{
 }
 
 extension UICollectionViewCell{
-    public class  func Identifier() -> String {
+    public class  func tss_Identifier() -> String {
         var cellid = ""
         cellid = String(cString: object_getClassName(self)).components(separatedBy: ".").last!
         return cellid
@@ -25,7 +25,7 @@ extension UICollectionViewCell{
 }
 
 extension UITableView{
-    func defaultConfig(){
+   public func tss_defaultConfig(){
         backgroundColor = .white
         separatorColor = .clear
         estimatedRowHeight = 100
@@ -44,7 +44,7 @@ extension UITableView{
     }
 }
 extension UICollectionView{
-    func defaultConfig(){
+    public func tss_defaultConfig(){
         backgroundColor = .white
         showsVerticalScrollIndicator = false
         showsHorizontalScrollIndicator = false

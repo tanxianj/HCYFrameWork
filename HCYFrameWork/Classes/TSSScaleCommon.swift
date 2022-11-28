@@ -1,5 +1,5 @@
 //
-//  Number+Extension.swift
+//  TSSScaleCommon.swift
 //  
 //
 //  Created by Jupiter_TSS on 13/7/22.
@@ -7,8 +7,8 @@
 
 import Foundation
 import UIKit
-fileprivate let IsIpadW:CGFloat = 810.0
-fileprivate let IsPhoneW:CGFloat = 428.0
+fileprivate var IsIpadW:CGFloat = 810.0
+fileprivate var IsPhoneW:CGFloat = 428.0
 extension Int{
     
     /// display Proportion
@@ -38,10 +38,19 @@ fileprivate class ScaleClass{
     /// display Proportion
     /// - Returns: Proportion
     static func scale(_ value:CGFloat)-> CGFloat{
-        if KIsIpad{
-            return (KScreenW / IsIpadW) * value
+        if let path = Bundle.main.path(forResource: "TSSFrameWork-info", ofType: "plist"),
+           let data = NSDictionary(contentsOfFile: path),
+           let isIpadWidth = data["TSS_DESIGN_PAD_WIDTH"] as? NSNumber,
+           let iphoneWidth = data["TSS_DESIGN_PHONE_WIDTH"] as? NSNumber{
+            IsIpadW = CGFloat(truncating: isIpadWidth)
+            IsPhoneW = CGFloat(truncating: iphoneWidth)
+            
+        }
+            
+        if TSSIsIpad{
+            return (TSSScreenW / IsIpadW) * value
         }else{
-            return (KScreenW / IsPhoneW) * value
+            return (TSSScreenW / IsPhoneW) * value
         }
     }
 }

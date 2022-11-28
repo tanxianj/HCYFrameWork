@@ -10,8 +10,10 @@ import UIKit
 
 class TestBannerCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var titleLab: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.contentView.backgroundColor = .arc4Color()
         // Initialization code
     }
 

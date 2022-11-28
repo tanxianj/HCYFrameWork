@@ -14,7 +14,7 @@ class UIImage_convenienceInitViewController: TSSBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        image.image = UIImage(colors: [.blue,.red], direction: .leftToRight, size: CGSize(width: KScreenW, height: 100))
+        image.image = UIImage(colors: [.blue,.red], direction: .leftToRight, size: CGSize(width: TSSScreenW, height: 100))
         // Do any additional setup after loading the view.
     }
 

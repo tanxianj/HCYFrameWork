@@ -91,7 +91,7 @@ extension TSSBasePopupViewManager{
         
         
         //        guard self.continuePopup == false else{return}
-        guard Keywindow?.viewWithTag(identifiTag) == nil else {return}
+        guard TSSKeywindow?.viewWithTag(identifiTag) == nil else {return}
         self.superView = showinView.view
         self.superView.clipsToBounds = true
         self.offset  = config.offset
@@ -100,11 +100,11 @@ extension TSSBasePopupViewManager{
         
         
         
-        clearView.frame = Keywindow!.bounds
-        Keywindow!.addSubview(clearView)
+        clearView.frame = TSSKeywindow!.bounds
+        TSSKeywindow!.addSubview(clearView)
         
         grayView.backgroundColor = config.bgcolor
-        grayView.frame = Keywindow!.bounds
+        grayView.frame = TSSKeywindow!.bounds
         clearView.addSubview(grayView)
         
         self.contentViewAction = action
@@ -142,7 +142,7 @@ extension TSSBasePopupViewManager{
         self.contenView.centerXAnchor.constraint(equalTo: self.superView.centerXAnchor).isActive = true
         self.contenView.leftAnchor.constraint(equalTo: self.superView.leftAnchor, constant: left).isActive = true
         self.contenView.topAnchor.constraint(equalTo: self.superView.bottomAnchor).isActive = true
-        self.contenView.heightAnchor.constraint(lessThanOrEqualToConstant: self.superView.mj_h * 0.8).isActive = true
+        self.contenView.heightAnchor.constraint(lessThanOrEqualToConstant: self.superView.tss_h * 0.8).isActive = true
         self.contenView.translatesAutoresizingMaskIntoConstraints = false
         
         
@@ -162,7 +162,7 @@ extension TSSBasePopupViewManager{
         self.contenView.centerXAnchor.constraint(equalTo: self.superView.centerXAnchor).isActive = true
         self.contenView.leftAnchor.constraint(equalTo: self.superView.leftAnchor, constant: left).isActive = true
         self.contenView.bottomAnchor.constraint(equalTo: self.superView.topAnchor).isActive = true
-        self.contenView.heightAnchor.constraint(lessThanOrEqualToConstant: self.superView.mj_h * 0.8).isActive = true
+        self.contenView.heightAnchor.constraint(lessThanOrEqualToConstant: self.superView.tss_h * 0.8).isActive = true
         self.contenView.translatesAutoresizingMaskIntoConstraints = false
         
         
@@ -182,7 +182,7 @@ extension TSSBasePopupViewManager{
     public func doanimateWith_bottomtotop(_ withDuration:CGFloat){
         UIView.animate(withDuration: withDuration) {
             
-            self.contenView.transform = CGAffineTransform.init(translationX: 0, y: -self.contenView.mj_h  + self.offset)
+            self.contenView.transform = CGAffineTransform.init(translationX: 0, y: -self.contenView.tss_h  + self.offset)
             self.grayView.alpha = 1.0
             self.contenView.alpha = 1.0
         }
@@ -190,14 +190,14 @@ extension TSSBasePopupViewManager{
     public func doanimateWith_bottomToCenter(_ withDuration:CGFloat){
         UIView.animate(withDuration: withDuration) {
             var bottomOfSet = 0.0
-            if let superView = self.superView.superview, superView.mj_h == Keywindow!.mj_h{
-                bottomOfSet = Keywindow!.safeAreaInsets.top
+            if let superView = self.superView.superview, superView.tss_h == TSSKeywindow!.tss_h{
+                bottomOfSet = TSSKeywindow!.safeAreaInsets.top
             }
-            if self.superView == Keywindow{
-                bottomOfSet = Keywindow!.safeAreaInsets.top
+            if self.superView == TSSKeywindow{
+                bottomOfSet = TSSKeywindow!.safeAreaInsets.top
             }
             
-            self.contenView.transform = CGAffineTransform.init(translationX: 0, y: -self.contenView.mj_h - (self.superView.mj_h - self.contenView.mj_h) / 2.0 + bottomOfSet + self.offset)
+            self.contenView.transform = CGAffineTransform.init(translationX: 0, y: -self.contenView.tss_h - (self.superView.tss_h - self.contenView.tss_h) / 2.0 + bottomOfSet + self.offset)
             self.grayView.alpha = 1.0
             self.contenView.alpha = 1.0
         }
@@ -205,7 +205,7 @@ extension TSSBasePopupViewManager{
     public func doanimateWith_topToCenter(_ withDuration:CGFloat){
         UIView.animate(withDuration: withDuration) {
             
-            self.contenView.transform = CGAffineTransform.init(translationX: 0, y: self.contenView.mj_h + (self.superView.mj_h - self.contenView.mj_h) / 2.0 + self.offset)
+            self.contenView.transform = CGAffineTransform.init(translationX: 0, y: self.contenView.tss_h + (self.superView.tss_h - self.contenView.tss_h) / 2.0 + self.offset)
             self.grayView.alpha = 1.0
             self.contenView.alpha = 1.0
         }
@@ -214,13 +214,13 @@ extension TSSBasePopupViewManager{
         UIView.animate(withDuration: withDuration) {
             //            self.contenView.mj_y = 0.0
             var bottomOfSet = 0.0
-            if let superView = self.superView.superview, superView.mj_h == Keywindow!.mj_h{
-                bottomOfSet = Keywindow!.safeAreaInsets.top
+            if let superView = self.superView.superview, superView.tss_h == TSSKeywindow!.tss_h{
+                bottomOfSet = TSSKeywindow!.safeAreaInsets.top
             }
-            if self.superView == Keywindow{
-                bottomOfSet = Keywindow!.safeAreaInsets.top
+            if self.superView == TSSKeywindow{
+                bottomOfSet = TSSKeywindow!.safeAreaInsets.top
             }
-            self.contenView.transform = CGAffineTransform.init(translationX: 0, y: self.contenView.mj_h + self.offset + bottomOfSet )
+            self.contenView.transform = CGAffineTransform.init(translationX: 0, y: self.contenView.tss_h + self.offset + bottomOfSet )
             self.grayView.alpha = 1.0
             self.contenView.alpha = 1.0
         }
@@ -247,7 +247,7 @@ extension TSSBasePopupViewManager{
 open class TSSBasePoputEvents{
     public static let shared = TSSBasePoputEvents()
     private let  disposeBag = DisposeBag()
-    var events = PublishSubject<Int>()
+    private var events = PublishSubject<Int>()
     private init() {
         events.asObserver().subscribe(onNext:{ index in
             self.sendToPoputView(index: index)

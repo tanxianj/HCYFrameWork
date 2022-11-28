@@ -15,6 +15,7 @@ class APPTabbarViewController: TSSBaseTabbarViewController {
         tss_ResetTabbarConfig(selectedColor: .colorWithAppearanceMode(.red, .red), normalColor: .gray, backGround: UIImage(named: "tab_back"))
         setupChildControllers()
         self.selectedIndex = 1
+        self.tabBar.showBadgeOnItem(index: 0,badgeValue: "10")
 //        setTabbarConfig(selectedColor: .green, normalColor: .gray)
     }
     

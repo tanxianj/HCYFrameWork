@@ -13,6 +13,7 @@ class ActionSheetTwoCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        contentView.backgroundColor = .arc4Color()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

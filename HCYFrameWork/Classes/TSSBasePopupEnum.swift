@@ -30,7 +30,7 @@ extension TSSBasePopupShowInType{
         case .viewIsWindow:
             return KWindow!
         case .viewIs(let view):
-            if let superView = view.superview ,superView.mj_h == KWindow!.mj_h{
+            if let superView = view.superview ,superView.tss_h == KWindow!.tss_h{
                 return KWindow!
             }else{
                 return view

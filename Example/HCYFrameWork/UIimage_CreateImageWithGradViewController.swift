@@ -14,7 +14,7 @@ class UIimage_CreateImageWithGradViewController: TSSBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        image.image = UIImage.CreateImageWithGrad(colors: [.red,.green,.blue], size: CGSize(width: KScreenW, height: 100),direction: .leftToRight)
+        image.image = UIImage.CreateImageWithGrad(colors: [.red,.green,.blue], size: CGSize(width: TSSScreenW, height: 100),direction: .leftToRight)
         // Do any additional setup after loading the view.
     }
 

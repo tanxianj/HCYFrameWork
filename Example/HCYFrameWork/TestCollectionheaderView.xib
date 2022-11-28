@@ -1,17 +1,70 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TestCollectionheaderView" id="U6b-Vx-4bR" customClass="TestCollectionheaderView" customModule="HCYFrameWork_Example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="420"/>
             <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xza-vj-kc4">
+                    <rect key="frame" x="10" y="54" width="413" height="262"/>
+                    <color key="backgroundColor" systemColor="systemGrayColor"/>
+                    <mutableString key="text">Warning once only: UITableView was told to layout its visible cells and other contents without being in the view hierarchy (the table view or one of its superviews has not been added to a window). This may cause bugs by forcing views inside the table view to load and perform layout without accurate information (e.g. table view bounds, trait collection, layout margins, safe area insets, etc), and will also cause unnecessary performance overhead due to extra layout passes. Make a symbolic breakpoint at UITableViewAlertForLayoutOutsideViewHierarchy to catch this in the debugger and see what caused this to occur, so you can avoid this action altogether if possible, or defer it until the table view has been added to a window. Table view: &lt;UITableView: 0x12900ec00; frame = (-7 -10; 428 926); clipsToBounds = YES; autoresize = RM+BM; gestureRecognizers = &lt;NSArray: 0x60000376a6d0&gt;; layer = &lt;CALayer: 0x600003951660&gt;; contentOffset: {0, 0}; contentSize: {428, 0}; adjustedContentInset: {0, 0, 0, 0}; dataSource: &lt;RxCocoa.RxTableViewDataSourceProxy: 0x600001d732a0&gt;&gt;
+</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="scale" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2t-em-wIC">
+                    <rect key="frame" x="169.5" y="326" width="94" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="euM-a8-lTe"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Read More"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="scale" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="readMoreBtnAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="6MR-2E-0Vh"/>
+                    </connections>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <color key="backgroundColor" systemColor="systemMintColor"/>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="R2t-em-wIC" secondAttribute="bottom" constant="10" id="AmX-G9-5rc"/>
+                <constraint firstItem="R2t-em-wIC" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="F6d-he-0NG"/>
+                <constraint firstItem="xza-vj-kc4" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="10" id="Qek-KJ-IDq"/>
+                <constraint firstItem="xza-vj-kc4" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="10" id="iFh-US-JSZ"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="xza-vj-kc4" secondAttribute="trailing" constant="10" id="qMr-aa-2Ad"/>
+                <constraint firstItem="R2t-em-wIC" firstAttribute="top" secondItem="xza-vj-kc4" secondAttribute="bottom" constant="10" id="v0Q-3z-run"/>
+            </constraints>
+            <connections>
+                <outlet property="readMoreBtn" destination="R2t-em-wIC" id="kxC-Xv-Y8G"/>
+                <outlet property="testLab" destination="xza-vj-kc4" id="dPA-gs-4yo"/>
+            </connections>
+            <point key="canvasLocation" x="219.56521739130437" y="210.9375"/>
         </collectionReusableView>
     </objects>
+    <resources>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

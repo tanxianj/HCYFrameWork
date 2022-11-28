@@ -17,6 +17,11 @@ class HomeViewController: TSSBaseViewController {
     let getUrl = "http://172.16.80.107:9527/api/user/getVerify"
     let postUrl = "http://172.16.80.107:9527/api/user/login"
     var captchaKey : String = ""
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+//        self.tabBarController?.tabBar.showBadgeOnItem(index: 2,badgeValue: "8888")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

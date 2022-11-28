@@ -7,16 +7,16 @@ class MeViewController: TSSBaseViewController {
         return .default
     }
     @IBOutlet weak var tableView: UITableView!
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+//        self.tabBarController?.tabBar.hideBadgeOnItem(index: 2)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        print("KScreenW is \(KScreenW) KScreenH is  \(KScreenH)")
-        print("KisIphoneX is \(KisIphoneX)")
-//        let name = "将要进入后台"
-//        HCYNotiFicationCenter.shared.addObserver(name: name, object: self) { notiFication in
-////            notiFication.info()
-//            DebugLog("\(notiFication.name) \(notiFication.data) B")
-//        }
+        print("KScreenW is \(TSSScreenW) KScreenH is  \(TSSScreenH)")
+        print("KisIphoneX is \(TSSisIphoneX)")
+        
 //        image.hcySetImageWith(url: "https://img1.baidu.com/it/u=1966616150,2146512490&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1657904400&t=a5420d6110e949d35855acdd28b6f6e4", placeholder: "网络错误")
         /*
          let workName = Bundle.main.infoDictionary?["CFBundleExecutable"]
@@ -43,6 +43,11 @@ class MeViewController: TSSBaseViewController {
             ["title":"ChangeTextFieldColor","vc":"ChangeTextFieldColorViewController"],
             ["title":"TSSValidate","vc":"TSSValidateViewController"],
             ["title":"TSSNotiFication","vc":"TSSNotiFicationViewController"],
+            ["title":"TSSBaseTab","vc":"TestBaseTableViewController"],
+            ["title":"TSSBaseCollection","vc":"TeseBaseCollectionViewController"],
+            ["title":"CollectionAutoSize","vc":"CollectionViewAutoSize"],
+            ["title":"Banner","vc":"TesrBannerViewController"],
+            ["title":"testHeader","vc":"CollectionHeaderAutoLayoutViewController"],
             
             
         ])
@@ -54,25 +59,15 @@ class MeViewController: TSSBaseViewController {
         }.disposed(by: disposeBag)
         tableView.rx.modelSelected([String:Any].self).subscribe(onNext: { data in
             guard let vcName = data["vc"] as? String,
-                  let cls = NSClassFromString("\(KWorkName!).\(vcName)") as? UIViewController.Type,
+                  let cls = NSClassFromString("\(TSSWorkName!).\(vcName)") as? UIViewController.Type,
                     let title = data["title"] as? String else { return  }
             let vc = cls.init()
             vc.title =  title
             self.tss_currentVCpushTo(vc)
             
         }).disposed(by: disposeBag)
+        
     }
-//    override func setupNavigationItems() {
-//        title = "Me"
-//        tss_addRightButton(title:"right btn") {
-//            
-//        }
-//    }
-}
-
-extension MeViewController{
-//    override func willResignActiveNotification() {
-//        DebugLog("将要进入后台 B")
-//    }
+    
 }
 

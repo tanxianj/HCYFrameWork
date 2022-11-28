@@ -1,5 +1,5 @@
 //
-//  UIViewController+Extension.swift
+//  UIViewController+TSSExtension.swift
 //  
 //
 //  Created by Jupiter_TSS on 7/3/22.
@@ -22,19 +22,15 @@ extension UIViewController{
     ///   - titleColor: btn color
     ///   - itemAction: btn tap
     /// - Returns: UIBarButtonItem
-    public func CreateNavigationItem(type:itemType,title:String? = nil,imageName:String? = nil, titleColor:UIColor? = nil,itemAction: itemAction?) -> UIBarButtonItem {
+    public func tss_createNavigationItem(type:itemType,title:String? = nil,imageName:String? = nil, titleColor:UIColor? = nil,itemAction: itemAction?) -> UIBarButtonItem {
         let btn = TSSButton.init(type: .custom)
         btn.frame = CGRect(x: 0, y: 0, width: 64, height: 44)
         var tmpImgName = imageName
         if imageName != nil {
             if imageName == "return" {
-//                switch UITraitCollection.current.userInterfaceStyle{
-//
-//                }
                 switch self.preferredStatusBarStyle {
                 case .default:
                     tmpImgName = "icon_nav_back"
-                    //                    tmpImgName = "icon_nav_back_white"
                 case .lightContent:
                     tmpImgName = "icon_nav_back_white"
                 default:
@@ -45,10 +41,10 @@ extension UIViewController{
             switch type {
             case .left:
                 btn.contentHorizontalAlignment = .left
-                //                btn.contentEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
+                btn.contentEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
             case .right:
                 btn.contentHorizontalAlignment = .right
-                //                btn.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
+                btn.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
             }
         }
         
@@ -63,10 +59,10 @@ extension UIViewController{
             switch type {
             case .left:
                 btn.contentHorizontalAlignment = .left
-                //                btn.contentEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
+                btn.contentEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
             case .right:
                 btn.contentHorizontalAlignment = .right
-                //                btn.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
+                btn.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
             }
         }
         if let action = itemAction {
@@ -76,9 +72,9 @@ extension UIViewController{
         }
         
         btn.addTarget(self, action: #selector(btnAction(btn:)), for: .touchUpInside)
-        
         return UIBarButtonItem(customView: btn)
     }
+    
     @objc func BarButtonItemAction(btn:TSSButton){
         if let action = btn.buttonAction  {
             action()

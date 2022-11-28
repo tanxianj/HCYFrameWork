@@ -122,17 +122,17 @@ extension TSSNetworkingManager{
         .responseJSON { response in
             switch response.result{
             case .success(let value):
-                DebugLog("✅URL ===>>> \(url) ")
-                DebugLog("✅parameters ===>>> \(parameters ?? [String:Any]())")
-                DebugLog("✅statusCode ===>>> \(response.response!.statusCode)")
-                DebugLog("✅json ===>>> \n\(value)")
+                TSSLog("✅URL ===>>> \(url) ")
+                TSSLog("✅parameters ===>>> \(parameters ?? [String:Any]())")
+                TSSLog("✅statusCode ===>>> \(response.response!.statusCode)")
+                TSSLog("✅json ===>>> \n\(value)")
                 if let datasource = value as? [String:Any] {
                     let model = dataModel.init(fromDictionary: datasource)
                     success(response.response!.statusCode,model,value)
                 }
                 
             case .failure(let error):
-                DebugLog("URL:\(url) ❌error===>>>\(error)")
+                TSSLog("URL:\(url) ❌error===>>>\(error)")
                 failure(error)
             }
         }

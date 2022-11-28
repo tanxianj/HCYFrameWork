@@ -41,6 +41,9 @@ public class TSSActionSheetConfig{
     
     /// backView cornerRadius
     public var cornerRadius:CGFloat
+    
+    /// TableView allowsMultipleSelection? Default false
+    public var allowsMultipleSelection:Bool
     public init(title:String = "",
                 titleFont:UIFont = .systemFont(ofSize: 17.0.scale()),
                 titleTextColor:UIColor = .black,
@@ -55,7 +58,8 @@ public class TSSActionSheetConfig{
                 cancelBtn:UIButton = UIButton(),
                 sureBtn:UIButton = UIButton(),
                 rowHeight:CGFloat = 50.scale(),
-                cornerRadius:CGFloat = 0.0
+                cornerRadius:CGFloat = 0.0,
+                allowsMultipleSelection:Bool = false
     ){
         self.title = title
         self.titleFont = titleFont
@@ -77,5 +81,6 @@ public class TSSActionSheetConfig{
         
         self.rowHeight = rowHeight
         self.cornerRadius = cornerRadius
+        self.allowsMultipleSelection = allowsMultipleSelection
     }
 }

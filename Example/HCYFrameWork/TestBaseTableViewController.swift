@@ -7,24 +7,39 @@
 //
 
 import UIKit
+import HCYFrameWork
 
 class TestBaseTableViewController: TSSBaseTableViewController {
-
+    var viewModel = TestBaseTableViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "tssCell")
+        
+        let testView = UIView()
+        testView.backgroundColor = .purple
+        self.topView.addSubview(testView)
+        testView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+            make.height.equalTo(100.scale())
+        }
+        self.viewModel.bind(self.tableView)
+        
+        
+        
     }
     
+    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+extension TestBaseTableViewController:UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        30
     }
-    */
-
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tssCell", for: indexPath)
+        cell.contentView.backgroundColor = .arc4Color().alpha(0.2)
+        return cell
+    }
 }

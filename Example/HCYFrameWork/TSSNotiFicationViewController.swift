@@ -11,22 +11,23 @@ import HCYFrameWork
 import RxCocoa
 import RxSwift
 class TSSNotiFicationViewController: TSSBaseViewController {
+
     let name = "已经进入前台"
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+     
         NotificationCenter.default
             .rx
             .notification(Notification.Name(rawValue: name))
             .takeUntil(self.rx.deallocated)
             .subscribe(onNext: { userInfo in
-                DebugLog("userInfo is \(userInfo.userInfo as! [String:Any])")
+                TSSLog("userInfo is \(userInfo.userInfo as! [String:Any])")
             
         }).disposed(by: disposeBag)
     }
 
     deinit{
-        DebugLog("TSSNotiFication deinit")
+        TSSLog("TSSNotiFication deinit")
     }
     /*
     // MARK: - Navigation

@@ -1,6 +1,6 @@
 //
 //  Operators.swift
-//  
+//
 //
 //  Created by Jupiter_TSS on 6/4/22.
 //
@@ -12,6 +12,7 @@ import RxCocoa
 import UIKit
 #elseif os(macOS)
 import AppKit
+import MJRefresh
 #endif
 
 infix operator <=> : DefaultPrecedence
@@ -215,5 +216,31 @@ public func => <T>(property: ControlProperty<T>, relay: BehaviorRelay<T>) -> Dis
 
     let bindToUIDisposable = relay.bind(to: property)
 
+    return Disposables.create([bindToUIDisposable])
+}
+//=> 单向绑定
+@discardableResult
+public func => <Base>(Input: BehaviorRelay<Base>, relay: Binder<Base?>) -> Disposable {
+    let bindToUIDisposable = Input.bind(to: relay)
+    return Disposables.create([bindToUIDisposable])
+}
+//=> 单向绑定
+@discardableResult
+public func => <Base>(Input: BehaviorRelay<Base>, relay: Binder<Base>) -> Disposable {
+    let bindToUIDisposable = Input.bind(to: relay)
+    return Disposables.create([bindToUIDisposable])
+}
+
+//=> 单向绑定
+@discardableResult
+public func => <Base>(Input: Observable<Base>, relay: BehaviorRelay<Base>) -> Disposable {
+    let bindToUIDisposable = Input.bind(to: relay)
+    return Disposables.create([bindToUIDisposable])
+}
+
+//=> 单向绑定
+@discardableResult
+public func => <Base>(Input: ControlEvent<Base>, relay: PublishSubject<Base>) -> Disposable {
+    let bindToUIDisposable = Input.bind(to: relay)
     return Disposables.create([bindToUIDisposable])
 }

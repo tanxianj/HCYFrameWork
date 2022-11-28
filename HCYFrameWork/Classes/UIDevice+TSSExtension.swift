@@ -1,5 +1,5 @@
 //
-//  UIDeveic+Ext.swift
+//  UIDevice+TSSExtension
 //  
 //
 //  Created by Jupiter_TSS on 20/5/22.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 fileprivate let inchtomm = 25.4
-fileprivate let diagonalPixels = sqrt(TSSScreenW*TSSScreenW + TSSScreenH * TSSScreenH )
+fileprivate let diagonalPixels = sqrt(TSSScreenW * TSSScreenW + TSSScreenH * TSSScreenH )
 fileprivate let actualPixelSize = UIDevice().modelSizeWithInch / diagonalPixels * inchtomm
 extension UIDevice {
     
@@ -234,5 +234,10 @@ extension UIDevice {
             
         default:  return identifier
         }
+    }
+}
+extension UIDevice{
+    static func tss_isLandscape()->Bool{
+            return UIDevice.current.orientation == .landscapeRight || UIDevice.current.orientation == .landscapeLeft
     }
 }

@@ -2,7 +2,7 @@
 
 import UIKit
 
-class TSSDotView: UIView {
+public class TSSDotView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configUI()
@@ -21,15 +21,15 @@ class TSSDotView: UIView {
     }
 }
 
-extension TSSDotView: DotViewDelegate {
-    func changeActivityState(active: Bool) {
+extension TSSDotView: TSSCycleScrollViewDotViewDelegate {
+    public func changeActivityState(active: Bool) {
         backgroundColor = active ? .white : .clear
     }
 }
 
-class TSSAnimateDotView: UIView {
-    var currentDotColor: UIColor = .white
-    var dotColor: UIColor = .white
+public class TSSAnimateDotView: UIView {
+    public var currentDotColor: UIColor = .white
+    public var dotColor: UIColor = .white
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -49,19 +49,19 @@ class TSSAnimateDotView: UIView {
     }
 }
 
-extension TSSAnimateDotView: DotViewDelegate {
-    func changeActivityState(active: Bool) {
+extension TSSAnimateDotView: TSSCycleScrollViewDotViewDelegate {
+    public func changeActivityState(active: Bool) {
         active ? animateToActiveState() : animateToDeactiveState()
     }
     
-    func animateToActiveState() {
+    public func animateToActiveState() {
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: -20, options: .curveLinear, animations: {
             self.backgroundColor = self.currentDotColor
             self.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
         }, completion: nil)
     }
     
-    func animateToDeactiveState() {
+    public func animateToDeactiveState() {
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: .curveLinear, animations: {
             self.backgroundColor = self.dotColor
             self.transform = CGAffineTransform.identity

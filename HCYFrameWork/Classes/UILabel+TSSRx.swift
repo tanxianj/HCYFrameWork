@@ -1,5 +1,5 @@
 //
-//  TSSUILabel+Rx.swift
+//  UILabel+TSSRx.swift
 //  TSSFrameWork
 //
 //  Created by Jupiter_TSS on 3/8/22.

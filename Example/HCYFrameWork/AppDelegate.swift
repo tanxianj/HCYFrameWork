@@ -15,12 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        TSSFullscreenPopGesture.configure()
         // Override point for customization after application launch.
         UITableViewCell.appearance().selectionStyle = .none
         let config = TSSNetworkingConfig(code: "code", data: "data", msg: "msg", header: ["Content-Type":"application/json"])
         TSSNetworkingManager.sharedInstance().restConfig(config)
         initUI()
         registerNotification()
+        
         return true
     }
     func initUI() {
@@ -29,9 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window = UIWindow.init(frame: UIScreen.main.bounds)
         }
 
-        let vc = APPTabbarViewController()
+        rootViewController = APPTabbarViewController()
 
-        self.window?.rootViewController = vc
+        self.window?.rootViewController = rootViewController
         self.window?.makeKeyAndVisible()
         
     }

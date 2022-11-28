@@ -35,7 +35,7 @@ class TSSValidateViewController: TSSBaseViewController {
             .notification(Notification.Name(rawValue: name))
             .takeUntil(self.rx.deallocated)
             .subscribe(onNext: { userInfo in
-                DebugLog("userInfo is \(userInfo.userInfo as! [String:Any])")
+                TSSLog("userInfo is \(userInfo.userInfo as! [String:Any])")
             
         }).disposed(by: disposeBag)
         
@@ -79,7 +79,7 @@ class TSSValidateViewController: TSSBaseViewController {
     }
 
     deinit{
-        DebugLog("TSSValidate deinit")
+        TSSLog("TSSValidate deinit")
         
     }
     /*

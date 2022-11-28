@@ -38,10 +38,16 @@ class AutoLayoutViewController: TSSBaseViewController {
         }).disposed(by: disposeBag)
     }
     override func setupNavigationItems() {
-        title = "我的"
-        tss_addRightButton(title:"haha") {
+        
+        title = "AutoLayout"
+        
+        self.navigationItem.rightBarButtonItem =  self.tss_createNavigationItem(type: .right,
+                                                                                title: "Right Btn",
+                                                                                titleColor: .red) {
             
+            TSSLog("Right btn tap")
         }
+        
     }
 
     /*

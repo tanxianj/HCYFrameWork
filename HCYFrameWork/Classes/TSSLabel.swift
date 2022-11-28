@@ -59,7 +59,11 @@ public struct TSSLabelAlignment : OptionSet {
 /// TSSLabel
 open class TSSLabel:UIView{
     
-    private let textLab = UILabel()
+//    private let textLab = UILabel()
+    private lazy var textLab:UILabel = {
+        let textLab = UILabel()
+        return textLab
+    }()
     public var text:String!{
         didSet{
             textLab.text = text
@@ -91,19 +95,21 @@ open class TSSLabel:UIView{
             textLab.font = font
         }
     }
-
-
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-        
+    private override init(frame: CGRect) {
+        super.init(frame: frame)   
         self.addSubview(textLab)
-        textLab.text = "TSSLabel"
-        textLab.textColor = self.textColor
-        textLab.font = self.font
-        textLab.numberOfLines = self.numberOfLines
     }
-    public convenience init(frame: CGRect ,alignment:TSSLabelAlignment) {
+    public convenience init(frame: CGRect,
+                            alignment:TSSLabelAlignment,
+                            text:String? = "TSSLabel",
+                            textColor:UIColor = .black,
+                            font:UIFont = UIFont.systemFont(ofSize: 17.scale()),
+                            numberOfLines:Int = 1,
+                            attributedText:NSAttributedString? = nil) {
+        
         self.init(frame: frame)
+        
+        
         
         if alignment.contains(.VerticalTop){
             textLab.snp.remakeConstraints { make in
@@ -156,6 +162,18 @@ open class TSSLabel:UIView{
         if alignment.contains(.HorizontalRight) && alignment.contains(.HorizontalMiddle){
             fatalError("textAlignment mutex")
         }
+        
+        
+        
+        
+        self.textLab.text = text
+        self.textLab.textColor = textColor
+        self.textLab.font = font
+        self.textLab.numberOfLines = numberOfLines
+        if let _ = attributedText{
+            self.textLab.attributedText = attributedText
+        }
+        
     }
     
     required public init?(coder: NSCoder) {

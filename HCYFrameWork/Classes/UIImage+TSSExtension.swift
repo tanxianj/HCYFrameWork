@@ -1,5 +1,5 @@
 //
-//  UIImage+Extension.swift
+//  UIImage+TSSExtension.swift
 //  
 //
 //  Created by on 2022/1/10.
@@ -96,7 +96,7 @@ extension UIImage{
             var tmplocations:[NSNumber] = []
             if colors.count > 0 {
                 for i in 0..<colors.count{
-                    tmplocations.append( CGFloat(i) * CGFloat(a) as NSNumber)    
+                    tmplocations.append( CGFloat(i) * CGFloat(truncating: a) as NSNumber)    
                 }
                 gradientLayer.locations = tmplocations
                 print("tmplocations is \(tmplocations)")

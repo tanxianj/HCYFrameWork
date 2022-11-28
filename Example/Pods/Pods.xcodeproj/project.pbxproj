@@ -211,16 +211,27 @@
 		2E9B78FF79B22FD3486F09B435C85E5B /* FLEX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A20670AC8FE602D245748C63BD1BA288 /* FLEX-dummy.m */; };
 		2EC2BEDC87F661072A60C6D16FD33BD1 /* NamedNodeMap.h in Headers */ = {isa = PBXBuildFile; fileRef = A1905E2803242FEA6639F623873254EA /* NamedNodeMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EF7B94664880357FAF088DFF7A5280F /* HCYFrameWork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98B1B69D442469A80D599D79AD4B59D7 /* HCYFrameWork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F0CEB7428B4770500518AFC /* UITabbar+TSSExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CEB7328B4770500518AFC /* UITabbar+TSSExtenstion.swift */; };
 		2F23190DC5166180F1C1DF14E5A4F671 /* UITabBarItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35E84E50B42C7C3815CFBE7BE4B20AB /* UITabBarItem+Rx.swift */; };
 		2F26E96FEB79CCC6E321B1FB24B94FB2 /* Node+Mutable.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C0D6761277D3FD6073844875081ECE /* Node+Mutable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F3CF919B819A9066E286D54C5EC9B9F /* FLEXMutableListSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2592A3D1FE1943E82F323A29DB9DBA4C /* FLEXMutableListSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F4003A2289A2D0F00C72B7F /* TSSUILabel+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003A1289A2D0F00C72B7F /* TSSUILabel+Rx.swift */; };
+		2F4003A2289A2D0F00C72B7F /* UILabel+TSSRx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003A1289A2D0F00C72B7F /* UILabel+TSSRx.swift */; };
+		2F4003B428A2583A00C72B7F /* TSSBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003B328A2583A00C72B7F /* TSSBaseTableViewController.swift */; };
+		2F4003BB28A3426E00C72B7F /* TSSBaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003BA28A3426E00C72B7F /* TSSBaseCollectionViewController.swift */; };
+		2F4003D028A4DAAC00C72B7F /* TSSWaterCollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003CF28A4DAAC00C72B7F /* TSSWaterCollectionFlowLayout.swift */; };
+		2F4003E928A5EC7200C72B7F /* TSSCycleScrollViewDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003E428A5EC7200C72B7F /* TSSCycleScrollViewDotView.swift */; };
+		2F4003EA28A5EC7200C72B7F /* TSSCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003E528A5EC7200C72B7F /* TSSCycleScrollView.swift */; };
+		2F4003EB28A5EC7200C72B7F /* TSSCycleScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003E628A5EC7200C72B7F /* TSSCycleScrollViewDelegate.swift */; };
+		2F4003EC28A5EC7200C72B7F /* TSSCycleScrollViewEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003E728A5EC7200C72B7F /* TSSCycleScrollViewEnum.swift */; };
+		2F4003ED28A5EC7200C72B7F /* TSSCycleScrollViewPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003E828A5EC7200C72B7F /* TSSCycleScrollViewPageControl.swift */; };
+		2F4003EF28A5EFC800C72B7F /* TSSCycleScrollViewDefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003EE28A5EFC800C72B7F /* TSSCycleScrollViewDefaultCell.swift */; };
+		2F7977D229247E4B006DB9A7 /* Encodable+TSSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7977D129247E4B006DB9A7 /* Encodable+TSSExtension.swift */; };
 		2FD5F79B288FC30F005CDF87 /* TSSSegmentedIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F76A288FC30C005CDF87 /* TSSSegmentedIndicatorProtocol.swift */; };
 		2FD5F79C288FC30F005CDF87 /* TSSBasePopupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F76B288FC30C005CDF87 /* TSSBasePopupConfig.swift */; };
 		2FD5F79D288FC30F005CDF87 /* TSSBasePopupViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F76C288FC30D005CDF87 /* TSSBasePopupViewManager.swift */; };
-		2FD5F79E288FC30F005CDF87 /* TSSUITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F76D288FC30D005CDF87 /* TSSUITextField+Extension.swift */; };
-		2FD5F79F288FC30F005CDF87 /* TSSUITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F76E288FC30D005CDF87 /* TSSUITableViewCell+Extension.swift */; };
-		2FD5F7A0288FC30F005CDF87 /* TSSAPPScale+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F76F288FC30D005CDF87 /* TSSAPPScale+Extension.swift */; };
+		2FD5F79E288FC30F005CDF87 /* UITextField+TSSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F76D288FC30D005CDF87 /* UITextField+TSSExtension.swift */; };
+		2FD5F79F288FC30F005CDF87 /* UITableViewCell+TSSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F76E288FC30D005CDF87 /* UITableViewCell+TSSExtension.swift */; };
+		2FD5F7A0288FC30F005CDF87 /* TSSScaleCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F76F288FC30D005CDF87 /* TSSScaleCommon.swift */; };
 		2FD5F7A1288FC30F005CDF87 /* TSSSegmentedIndicatorParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F770288FC30D005CDF87 /* TSSSegmentedIndicatorParams.swift */; };
 		2FD5F7A2288FC30F005CDF87 /* TSSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F771288FC30D005CDF87 /* TSSLabel.swift */; };
 		2FD5F7A3288FC30F005CDF87 /* TSSNetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F772288FC30D005CDF87 /* TSSNetworkingManager.swift */; };
@@ -231,18 +242,18 @@
 		2FD5F7A8288FC30F005CDF87 /* TSSSegmentedTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F777288FC30D005CDF87 /* TSSSegmentedTitleCell.swift */; };
 		2FD5F7A9288FC30F005CDF87 /* TSSSegmentedBaseItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F778288FC30D005CDF87 /* TSSSegmentedBaseItemModel.swift */; };
 		2FD5F7AA288FC30F005CDF87 /* TSSFullscreenPopGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F779288FC30D005CDF87 /* TSSFullscreenPopGesture.swift */; };
-		2FD5F7AB288FC30F005CDF87 /* TSSUIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F77A288FC30D005CDF87 /* TSSUIImage+Extension.swift */; };
-		2FD5F7AC288FC30F005CDF87 /* TSSMJRefresh+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F77B288FC30D005CDF87 /* TSSMJRefresh+Extension.swift */; };
+		2FD5F7AB288FC30F005CDF87 /* UIImage+TSSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F77A288FC30D005CDF87 /* UIImage+TSSExtension.swift */; };
+		2FD5F7AC288FC30F005CDF87 /* MJRefresh+TSSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F77B288FC30D005CDF87 /* MJRefresh+TSSExtension.swift */; };
 		2FD5F7AD288FC30F005CDF87 /* TSSTimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F77C288FC30D005CDF87 /* TSSTimeHelper.swift */; };
 		2FD5F7AE288FC30F005CDF87 /* TSSSegmentedAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F77D288FC30D005CDF87 /* TSSSegmentedAnimator.swift */; };
 		2FD5F7AF288FC30F005CDF87 /* TSSSegmentedRTLLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F77E288FC30D005CDF87 /* TSSSegmentedRTLLayout.swift */; };
 		2FD5F7B0288FC30F005CDF87 /* TSSBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F77F288FC30D005CDF87 /* TSSBaseNavigationController.swift */; };
-		2FD5F7B1288FC30F005CDF87 /* TSSUIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F780288FC30D005CDF87 /* TSSUIDevice+Extension.swift */; };
-		2FD5F7B2288FC30F005CDF87 /* TSSValidate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F781288FC30E005CDF87 /* TSSValidate+Extension.swift */; };
-		2FD5F7B3288FC30F005CDF87 /* TSSUIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F782288FC30E005CDF87 /* TSSUIVIew+Extension.swift */; };
+		2FD5F7B1288FC30F005CDF87 /* UIDevice+TSSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F780288FC30D005CDF87 /* UIDevice+TSSExtension.swift */; };
+		2FD5F7B2288FC30F005CDF87 /* TSSValidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F781288FC30E005CDF87 /* TSSValidate.swift */; };
+		2FD5F7B3288FC30F005CDF87 /* UIView+TSSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F782288FC30E005CDF87 /* UIView+TSSExtension.swift */; };
 		2FD5F7B4288FC30F005CDF87 /* TSSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F783288FC30E005CDF87 /* TSSBaseViewController.swift */; };
 		2FD5F7B5288FC30F005CDF87 /* TSSSegmentedViewTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F784288FC30E005CDF87 /* TSSSegmentedViewTool.swift */; };
-		2FD5F7B6288FC30F005CDF87 /* TSSUIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F785288FC30E005CDF87 /* TSSUIViewController+Extension.swift */; };
+		2FD5F7B6288FC30F005CDF87 /* UIViewController+TSSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F785288FC30E005CDF87 /* UIViewController+TSSExtension.swift */; };
 		2FD5F7B7288FC30F005CDF87 /* TSSSegmentedBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F786288FC30E005CDF87 /* TSSSegmentedBaseCell.swift */; };
 		2FD5F7B8288FC30F005CDF87 /* TSSSegmentedTitleItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F787288FC30E005CDF87 /* TSSSegmentedTitleItemModel.swift */; };
 		2FD5F7B9288FC30F005CDF87 /* TSSSegmentedBaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F788288FC30E005CDF87 /* TSSSegmentedBaseDataSource.swift */; };
@@ -252,17 +263,54 @@
 		2FD5F7BD288FC30F005CDF87 /* TSSOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F78C288FC30E005CDF87 /* TSSOperators.swift */; };
 		2FD5F7BE288FC30F005CDF87 /* TSSSegmentedCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F78D288FC30E005CDF87 /* TSSSegmentedCollectionView.swift */; };
 		2FD5F7BF288FC30F005CDF87 /* TSSSegmentedTitleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F78E288FC30E005CDF87 /* TSSSegmentedTitleDataSource.swift */; };
-		2FD5F7C0288FC30F005CDF87 /* TSSUIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F78F288FC30E005CDF87 /* TSSUIImageView+Extension.swift */; };
+		2FD5F7C0288FC30F005CDF87 /* UIImageView+TSSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F78F288FC30E005CDF87 /* UIImageView+TSSExtension.swift */; };
 		2FD5F7C1288FC30F005CDF87 /* TSSBaseTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F790288FC30E005CDF87 /* TSSBaseTabbarViewController.swift */; };
 		2FD5F7C2288FC30F005CDF87 /* TSSSegmentedIndicatorBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F791288FC30E005CDF87 /* TSSSegmentedIndicatorBaseView.swift */; };
 		2FD5F7C4288FC30F005CDF87 /* TSSSegmentedListContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F793288FC30E005CDF87 /* TSSSegmentedListContainerView.swift */; };
-		2FD5F7C5288FC30F005CDF87 /* TSSUIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F794288FC30E005CDF87 /* TSSUIWindow+Extension.swift */; };
+		2FD5F7C5288FC30F005CDF87 /* UIWindow+TSSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F794288FC30E005CDF87 /* UIWindow+TSSExtension.swift */; };
 		2FD5F7C6288FC30F005CDF87 /* TSSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F795288FC30E005CDF87 /* TSSButton.swift */; };
 		2FD5F7C7288FC30F005CDF87 /* TSSDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F796288FC30E005CDF87 /* TSSDefaultView.swift */; };
 		2FD5F7C8288FC30F005CDF87 /* TSSLoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F797288FC30F005CDF87 /* TSSLoadingManager.swift */; };
 		2FD5F7C9288FC30F005CDF87 /* TSSLoadingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F798288FC30F005CDF87 /* TSSLoadingCircle.swift */; };
-		2FD5F7CA288FC30F005CDF87 /* TSSString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F799288FC30F005CDF87 /* TSSString+Extension.swift */; };
-		2FD5F7CB288FC30F005CDF87 /* TSSUIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F79A288FC30F005CDF87 /* TSSUIColor+Extension.swift */; };
+		2FD5F7CA288FC30F005CDF87 /* String+TSSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F799288FC30F005CDF87 /* String+TSSExtension.swift */; };
+		2FD5F7CB288FC30F005CDF87 /* UIColor+TSSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F79A288FC30F005CDF87 /* UIColor+TSSExtension.swift */; };
+		2FE239312934B7C000BE43AA /* TSSSwiftDate+Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2390D2934B7BD00BE43AA /* TSSSwiftDate+Region.swift */; };
+		2FE239322934B7C000BE43AA /* TSSSwiftDate+ISOFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2390E2934B7BD00BE43AA /* TSSSwiftDate+ISOFormatter.swift */; };
+		2FE239332934B7C000BE43AA /* TSSSwiftDate+RelativeFormatter+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2390F2934B7BD00BE43AA /* TSSSwiftDate+RelativeFormatter+Style.swift */; };
+		2FE239342934B7C000BE43AA /* TSSSwiftDate+Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239102934B7BD00BE43AA /* TSSSwiftDate+Date+Components.swift */; };
+		2FE239352934B7C000BE43AA /* TSSSwiftDate+RelativeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239112934B7BD00BE43AA /* TSSSwiftDate+RelativeFormatter.swift */; };
+		2FE239362934B7C000BE43AA /* TSSSwiftDate+Locales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239122934B7BD00BE43AA /* TSSSwiftDate+Locales.swift */; };
+		2FE239372934B7C000BE43AA /* TSSSwiftDate+DateInRegion+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239132934B7BD00BE43AA /* TSSSwiftDate+DateInRegion+Components.swift */; };
+		2FE239382934B7C000BE43AA /* TSSSwiftDate+TimePeriod+Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239142934B7BD00BE43AA /* TSSSwiftDate+TimePeriod+Support.swift */; };
+		2FE239392934B7C000BE43AA /* TSSSwiftDate+DateInRegion+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239152934B7BD00BE43AA /* TSSSwiftDate+DateInRegion+Compare.swift */; };
+		2FE2393A2934B7C000BE43AA /* TSSSwiftDate+TimeStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239162934B7BD00BE43AA /* TSSSwiftDate+TimeStructures.swift */; };
+		2FE2393B2934B7C000BE43AA /* TSSSwiftDate+TimePeriodCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239172934B7BD00BE43AA /* TSSSwiftDate+TimePeriodCollection.swift */; };
+		2FE2393C2934B7C000BE43AA /* TSSSwiftDate+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239182934B7BE00BE43AA /* TSSSwiftDate+Date.swift */; };
+		2FE2393D2934B7C000BE43AA /* TSSSwiftDate+DateRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239192934B7BE00BE43AA /* TSSSwiftDate+DateRepresentable.swift */; };
+		2FE2393E2934B7C000BE43AA /* TSSSwiftDate+DateInRegion+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2391A2934B7BE00BE43AA /* TSSSwiftDate+DateInRegion+Math.swift */; };
+		2FE2393F2934B7C000BE43AA /* TSSSwiftDate+ISOParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2391B2934B7BE00BE43AA /* TSSSwiftDate+ISOParser.swift */; };
+		2FE239402934B7C000BE43AA /* TSSSwiftDate+Int+DateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2391C2934B7BE00BE43AA /* TSSSwiftDate+Int+DateComponents.swift */; };
+		2FE239412934B7C000BE43AA /* TSSSwiftDate+TimePeriodGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2391D2934B7BE00BE43AA /* TSSSwiftDate+TimePeriodGroup.swift */; };
+		2FE239422934B7C000BE43AA /* TSSSwiftDate+Zones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2391E2934B7BE00BE43AA /* TSSSwiftDate+Zones.swift */; };
+		2FE239432934B7C000BE43AA /* TSSSwiftDate+Calendars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2391F2934B7BE00BE43AA /* TSSSwiftDate+Calendars.swift */; };
+		2FE239442934B7C000BE43AA /* TSSSwiftDate+String+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239202934B7BE00BE43AA /* TSSSwiftDate+String+Parser.swift */; };
+		2FE239452934B7C000BE43AA /* TSSSwiftDate+TimePeriodProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239212934B7BE00BE43AA /* TSSSwiftDate+TimePeriodProtocol.swift */; };
+		2FE239462934B7C000BE43AA /* TSSSwiftDate+DateInRegion+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239222934B7BE00BE43AA /* TSSSwiftDate+DateInRegion+Create.swift */; };
+		2FE239472934B7C000BE43AA /* TSSSwiftDate+Date+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239232934B7BE00BE43AA /* TSSSwiftDate+Date+Compare.swift */; };
+		2FE239482934B7C000BE43AA /* TSSSwiftDate+Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239242934B7BF00BE43AA /* TSSSwiftDate+Commons.swift */; };
+		2FE239492934B7C000BE43AA /* TSSSwiftDate+TimePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239252934B7BF00BE43AA /* TSSSwiftDate+TimePeriod.swift */; };
+		2FE2394A2934B7C000BE43AA /* TSSSwiftDate+RelativeFormatterLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239262934B7BF00BE43AA /* TSSSwiftDate+RelativeFormatterLanguage.swift */; };
+		2FE2394B2934B7C000BE43AA /* TSSSwiftDate+Date+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239272934B7BF00BE43AA /* TSSSwiftDate+Date+Create.swift */; };
+		2FE2394C2934B7C000BE43AA /* TSSSwiftDate+Formatter+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239282934B7BF00BE43AA /* TSSSwiftDate+Formatter+Protocols.swift */; };
+		2FE2394D2934B7C000BE43AA /* TSSSwiftDate+TimeInterval+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239292934B7BF00BE43AA /* TSSSwiftDate+TimeInterval+Formatter.swift */; };
+		2FE2394E2934B7C000BE43AA /* TSSSwiftDate+DotNetParserFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2392A2934B7BF00BE43AA /* TSSSwiftDate+DotNetParserFormatter.swift */; };
+		2FE2394F2934B7C000BE43AA /* TSSSwiftDate+Date+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2392B2934B7BF00BE43AA /* TSSSwiftDate+Date+Math.swift */; };
+		2FE239502934B7C000BE43AA /* TSSSwiftDate+TimePeriodChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2392C2934B7BF00BE43AA /* TSSSwiftDate+TimePeriodChain.swift */; };
+		2FE239512934B7C000BE43AA /* TSSSwiftDate+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2392D2934B7BF00BE43AA /* TSSSwiftDate+SwiftDate.swift */; };
+		2FE239522934B7C000BE43AA /* TSSSwiftDate+AssociatedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2392E2934B7BF00BE43AA /* TSSSwiftDate+AssociatedValues.swift */; };
+		2FE239532934B7C000BE43AA /* TSSSwiftDate+DateInRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2392F2934B7BF00BE43AA /* TSSSwiftDate+DateInRegion.swift */; };
+		2FE239542934B7C000BE43AA /* TSSSwiftDate+DateComponents+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239302934B7BF00BE43AA /* TSSSwiftDate+DateComponents+Extras.swift */; };
+		2FE239582934B96A00BE43AA /* Date+TSSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239572934B96A00BE43AA /* Date+TSSExtension.swift */; };
 		300EAA1B4BFE872D560B3F7E59143391 /* FLEXTypeEncodingParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 809DB0E457BFA4B14DE8D2A04A14EA82 /* FLEXTypeEncodingParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		306F685701CDE256F84ABDF882FD3A8B /* FLEXArgumentInputDateView.h in Headers */ = {isa = PBXBuildFile; fileRef = 76AB6DF7B3A7A6CD69C378B7EC5D0CC0 /* FLEXArgumentInputDateView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		309DC47F3DE56820FBC719AB5D57EDE4 /* FLEXClassShortcuts.h in Headers */ = {isa = PBXBuildFile; fileRef = 79B17A3F0C017CD71D10C9D41AF256D7 /* FLEXClassShortcuts.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1728,18 +1776,29 @@
 		2E75800C8394EB6977E483FFEBA57172 /* AsyncSubject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncSubject.swift; path = RxSwift/Subjects/AsyncSubject.swift; sourceTree = "<group>"; };
 		2E967B58E24A893C46B08550A4DEA907 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
 		2EF736CFABA80CD072E0B5598EB9A01D /* ObserverBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObserverBase.swift; path = RxSwift/Observers/ObserverBase.swift; sourceTree = "<group>"; };
+		2F0CEB7328B4770500518AFC /* UITabbar+TSSExtenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITabbar+TSSExtenstion.swift"; path = "HCYFrameWork/Classes/UITabbar+TSSExtenstion.swift"; sourceTree = "<group>"; };
 		2F15B7A19008E85D64266D33418689FB /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		2F1E41FA1478FF63E394B0D381558862 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
-		2F4003A1289A2D0F00C72B7F /* TSSUILabel+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUILabel+Rx.swift"; path = "HCYFrameWork/Classes/TSSUILabel+Rx.swift"; sourceTree = "<group>"; };
+		2F4003A1289A2D0F00C72B7F /* UILabel+TSSRx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UILabel+TSSRx.swift"; path = "HCYFrameWork/Classes/UILabel+TSSRx.swift"; sourceTree = "<group>"; };
+		2F4003B328A2583A00C72B7F /* TSSBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSBaseTableViewController.swift; path = HCYFrameWork/Classes/TSSBaseTableViewController.swift; sourceTree = "<group>"; };
+		2F4003BA28A3426E00C72B7F /* TSSBaseCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSBaseCollectionViewController.swift; path = HCYFrameWork/Classes/TSSBaseCollectionViewController.swift; sourceTree = "<group>"; };
+		2F4003CF28A4DAAC00C72B7F /* TSSWaterCollectionFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSWaterCollectionFlowLayout.swift; path = HCYFrameWork/Classes/TSSWaterCollectionFlowLayout.swift; sourceTree = "<group>"; };
+		2F4003E428A5EC7200C72B7F /* TSSCycleScrollViewDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSCycleScrollViewDotView.swift; path = HCYFrameWork/Classes/TSSCycleScrollViewDotView.swift; sourceTree = "<group>"; };
+		2F4003E528A5EC7200C72B7F /* TSSCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSCycleScrollView.swift; path = HCYFrameWork/Classes/TSSCycleScrollView.swift; sourceTree = "<group>"; };
+		2F4003E628A5EC7200C72B7F /* TSSCycleScrollViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSCycleScrollViewDelegate.swift; path = HCYFrameWork/Classes/TSSCycleScrollViewDelegate.swift; sourceTree = "<group>"; };
+		2F4003E728A5EC7200C72B7F /* TSSCycleScrollViewEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSCycleScrollViewEnum.swift; path = HCYFrameWork/Classes/TSSCycleScrollViewEnum.swift; sourceTree = "<group>"; };
+		2F4003E828A5EC7200C72B7F /* TSSCycleScrollViewPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSCycleScrollViewPageControl.swift; path = HCYFrameWork/Classes/TSSCycleScrollViewPageControl.swift; sourceTree = "<group>"; };
+		2F4003EE28A5EFC800C72B7F /* TSSCycleScrollViewDefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSCycleScrollViewDefaultCell.swift; sourceTree = "<group>"; };
 		2F72A4CF0D66D4AD17C3D1616ECD6F97 /* Differentiator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Differentiator.debug.xcconfig; sourceTree = "<group>"; };
+		2F7977D129247E4B006DB9A7 /* Encodable+TSSExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Encodable+TSSExtension.swift"; path = "HCYFrameWork/Classes/Encodable+TSSExtension.swift"; sourceTree = "<group>"; };
 		2F99B0121D2F0A54D75272349CAC96E3 /* AsMaybe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsMaybe.swift; path = RxSwift/Observables/AsMaybe.swift; sourceTree = "<group>"; };
 		2FA132CF69AC026C185206D29CD51F0F /* URLSession+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSession+Rx.swift"; path = "RxCocoa/Foundation/URLSession+Rx.swift"; sourceTree = "<group>"; };
 		2FD5F76A288FC30C005CDF87 /* TSSSegmentedIndicatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedIndicatorProtocol.swift; path = HCYFrameWork/Classes/TSSSegmentedIndicatorProtocol.swift; sourceTree = "<group>"; };
 		2FD5F76B288FC30C005CDF87 /* TSSBasePopupConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSBasePopupConfig.swift; path = HCYFrameWork/Classes/TSSBasePopupConfig.swift; sourceTree = "<group>"; };
 		2FD5F76C288FC30D005CDF87 /* TSSBasePopupViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSBasePopupViewManager.swift; path = HCYFrameWork/Classes/TSSBasePopupViewManager.swift; sourceTree = "<group>"; };
-		2FD5F76D288FC30D005CDF87 /* TSSUITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUITextField+Extension.swift"; path = "HCYFrameWork/Classes/TSSUITextField+Extension.swift"; sourceTree = "<group>"; };
-		2FD5F76E288FC30D005CDF87 /* TSSUITableViewCell+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUITableViewCell+Extension.swift"; path = "HCYFrameWork/Classes/TSSUITableViewCell+Extension.swift"; sourceTree = "<group>"; };
-		2FD5F76F288FC30D005CDF87 /* TSSAPPScale+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSAPPScale+Extension.swift"; path = "HCYFrameWork/Classes/TSSAPPScale+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F76D288FC30D005CDF87 /* UITextField+TSSExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITextField+TSSExtension.swift"; path = "HCYFrameWork/Classes/UITextField+TSSExtension.swift"; sourceTree = "<group>"; };
+		2FD5F76E288FC30D005CDF87 /* UITableViewCell+TSSExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableViewCell+TSSExtension.swift"; path = "HCYFrameWork/Classes/UITableViewCell+TSSExtension.swift"; sourceTree = "<group>"; };
+		2FD5F76F288FC30D005CDF87 /* TSSScaleCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSScaleCommon.swift; path = HCYFrameWork/Classes/TSSScaleCommon.swift; sourceTree = "<group>"; };
 		2FD5F770288FC30D005CDF87 /* TSSSegmentedIndicatorParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedIndicatorParams.swift; path = HCYFrameWork/Classes/TSSSegmentedIndicatorParams.swift; sourceTree = "<group>"; };
 		2FD5F771288FC30D005CDF87 /* TSSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSLabel.swift; path = HCYFrameWork/Classes/TSSLabel.swift; sourceTree = "<group>"; };
 		2FD5F772288FC30D005CDF87 /* TSSNetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSNetworkingManager.swift; path = HCYFrameWork/Classes/TSSNetworkingManager.swift; sourceTree = "<group>"; };
@@ -1750,18 +1809,18 @@
 		2FD5F777288FC30D005CDF87 /* TSSSegmentedTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedTitleCell.swift; path = HCYFrameWork/Classes/TSSSegmentedTitleCell.swift; sourceTree = "<group>"; };
 		2FD5F778288FC30D005CDF87 /* TSSSegmentedBaseItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedBaseItemModel.swift; path = HCYFrameWork/Classes/TSSSegmentedBaseItemModel.swift; sourceTree = "<group>"; };
 		2FD5F779288FC30D005CDF87 /* TSSFullscreenPopGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSFullscreenPopGesture.swift; path = HCYFrameWork/Classes/TSSFullscreenPopGesture.swift; sourceTree = "<group>"; };
-		2FD5F77A288FC30D005CDF87 /* TSSUIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUIImage+Extension.swift"; path = "HCYFrameWork/Classes/TSSUIImage+Extension.swift"; sourceTree = "<group>"; };
-		2FD5F77B288FC30D005CDF87 /* TSSMJRefresh+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSMJRefresh+Extension.swift"; path = "HCYFrameWork/Classes/TSSMJRefresh+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F77A288FC30D005CDF87 /* UIImage+TSSExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+TSSExtension.swift"; path = "HCYFrameWork/Classes/UIImage+TSSExtension.swift"; sourceTree = "<group>"; };
+		2FD5F77B288FC30D005CDF87 /* MJRefresh+TSSExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MJRefresh+TSSExtension.swift"; path = "HCYFrameWork/Classes/MJRefresh+TSSExtension.swift"; sourceTree = "<group>"; };
 		2FD5F77C288FC30D005CDF87 /* TSSTimeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSTimeHelper.swift; path = HCYFrameWork/Classes/TSSTimeHelper.swift; sourceTree = "<group>"; };
 		2FD5F77D288FC30D005CDF87 /* TSSSegmentedAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedAnimator.swift; path = HCYFrameWork/Classes/TSSSegmentedAnimator.swift; sourceTree = "<group>"; };
 		2FD5F77E288FC30D005CDF87 /* TSSSegmentedRTLLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedRTLLayout.swift; path = HCYFrameWork/Classes/TSSSegmentedRTLLayout.swift; sourceTree = "<group>"; };
 		2FD5F77F288FC30D005CDF87 /* TSSBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSBaseNavigationController.swift; path = HCYFrameWork/Classes/TSSBaseNavigationController.swift; sourceTree = "<group>"; };
-		2FD5F780288FC30D005CDF87 /* TSSUIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUIDevice+Extension.swift"; path = "HCYFrameWork/Classes/TSSUIDevice+Extension.swift"; sourceTree = "<group>"; };
-		2FD5F781288FC30E005CDF87 /* TSSValidate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSValidate+Extension.swift"; path = "HCYFrameWork/Classes/TSSValidate+Extension.swift"; sourceTree = "<group>"; };
-		2FD5F782288FC30E005CDF87 /* TSSUIVIew+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUIVIew+Extension.swift"; path = "HCYFrameWork/Classes/TSSUIVIew+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F780288FC30D005CDF87 /* UIDevice+TSSExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIDevice+TSSExtension.swift"; path = "HCYFrameWork/Classes/UIDevice+TSSExtension.swift"; sourceTree = "<group>"; };
+		2FD5F781288FC30E005CDF87 /* TSSValidate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSValidate.swift; path = HCYFrameWork/Classes/TSSValidate.swift; sourceTree = "<group>"; };
+		2FD5F782288FC30E005CDF87 /* UIView+TSSExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+TSSExtension.swift"; path = "HCYFrameWork/Classes/UIView+TSSExtension.swift"; sourceTree = "<group>"; };
 		2FD5F783288FC30E005CDF87 /* TSSBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSBaseViewController.swift; path = HCYFrameWork/Classes/TSSBaseViewController.swift; sourceTree = "<group>"; };
 		2FD5F784288FC30E005CDF87 /* TSSSegmentedViewTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedViewTool.swift; path = HCYFrameWork/Classes/TSSSegmentedViewTool.swift; sourceTree = "<group>"; };
-		2FD5F785288FC30E005CDF87 /* TSSUIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUIViewController+Extension.swift"; path = "HCYFrameWork/Classes/TSSUIViewController+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F785288FC30E005CDF87 /* UIViewController+TSSExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+TSSExtension.swift"; path = "HCYFrameWork/Classes/UIViewController+TSSExtension.swift"; sourceTree = "<group>"; };
 		2FD5F786288FC30E005CDF87 /* TSSSegmentedBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedBaseCell.swift; path = HCYFrameWork/Classes/TSSSegmentedBaseCell.swift; sourceTree = "<group>"; };
 		2FD5F787288FC30E005CDF87 /* TSSSegmentedTitleItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedTitleItemModel.swift; path = HCYFrameWork/Classes/TSSSegmentedTitleItemModel.swift; sourceTree = "<group>"; };
 		2FD5F788288FC30E005CDF87 /* TSSSegmentedBaseDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedBaseDataSource.swift; path = HCYFrameWork/Classes/TSSSegmentedBaseDataSource.swift; sourceTree = "<group>"; };
@@ -1771,17 +1830,54 @@
 		2FD5F78C288FC30E005CDF87 /* TSSOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSOperators.swift; path = HCYFrameWork/Classes/TSSOperators.swift; sourceTree = "<group>"; };
 		2FD5F78D288FC30E005CDF87 /* TSSSegmentedCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedCollectionView.swift; path = HCYFrameWork/Classes/TSSSegmentedCollectionView.swift; sourceTree = "<group>"; };
 		2FD5F78E288FC30E005CDF87 /* TSSSegmentedTitleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedTitleDataSource.swift; path = HCYFrameWork/Classes/TSSSegmentedTitleDataSource.swift; sourceTree = "<group>"; };
-		2FD5F78F288FC30E005CDF87 /* TSSUIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUIImageView+Extension.swift"; path = "HCYFrameWork/Classes/TSSUIImageView+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F78F288FC30E005CDF87 /* UIImageView+TSSExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImageView+TSSExtension.swift"; path = "HCYFrameWork/Classes/UIImageView+TSSExtension.swift"; sourceTree = "<group>"; };
 		2FD5F790288FC30E005CDF87 /* TSSBaseTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSBaseTabbarViewController.swift; path = HCYFrameWork/Classes/TSSBaseTabbarViewController.swift; sourceTree = "<group>"; };
 		2FD5F791288FC30E005CDF87 /* TSSSegmentedIndicatorBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedIndicatorBaseView.swift; path = HCYFrameWork/Classes/TSSSegmentedIndicatorBaseView.swift; sourceTree = "<group>"; };
 		2FD5F793288FC30E005CDF87 /* TSSSegmentedListContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSSegmentedListContainerView.swift; path = HCYFrameWork/Classes/TSSSegmentedListContainerView.swift; sourceTree = "<group>"; };
-		2FD5F794288FC30E005CDF87 /* TSSUIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUIWindow+Extension.swift"; path = "HCYFrameWork/Classes/TSSUIWindow+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F794288FC30E005CDF87 /* UIWindow+TSSExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIWindow+TSSExtension.swift"; path = "HCYFrameWork/Classes/UIWindow+TSSExtension.swift"; sourceTree = "<group>"; };
 		2FD5F795288FC30E005CDF87 /* TSSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSButton.swift; path = HCYFrameWork/Classes/TSSButton.swift; sourceTree = "<group>"; };
 		2FD5F796288FC30E005CDF87 /* TSSDefaultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSDefaultView.swift; path = HCYFrameWork/Classes/TSSDefaultView.swift; sourceTree = "<group>"; };
 		2FD5F797288FC30F005CDF87 /* TSSLoadingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSLoadingManager.swift; path = HCYFrameWork/Classes/TSSLoadingManager.swift; sourceTree = "<group>"; };
 		2FD5F798288FC30F005CDF87 /* TSSLoadingCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSSLoadingCircle.swift; path = HCYFrameWork/Classes/TSSLoadingCircle.swift; sourceTree = "<group>"; };
-		2FD5F799288FC30F005CDF87 /* TSSString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSString+Extension.swift"; path = "HCYFrameWork/Classes/TSSString+Extension.swift"; sourceTree = "<group>"; };
-		2FD5F79A288FC30F005CDF87 /* TSSUIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSUIColor+Extension.swift"; path = "HCYFrameWork/Classes/TSSUIColor+Extension.swift"; sourceTree = "<group>"; };
+		2FD5F799288FC30F005CDF87 /* String+TSSExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+TSSExtension.swift"; path = "HCYFrameWork/Classes/String+TSSExtension.swift"; sourceTree = "<group>"; };
+		2FD5F79A288FC30F005CDF87 /* UIColor+TSSExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+TSSExtension.swift"; path = "HCYFrameWork/Classes/UIColor+TSSExtension.swift"; sourceTree = "<group>"; };
+		2FE2390D2934B7BD00BE43AA /* TSSSwiftDate+Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+Region.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+Region.swift"; sourceTree = "<group>"; };
+		2FE2390E2934B7BD00BE43AA /* TSSSwiftDate+ISOFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+ISOFormatter.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+ISOFormatter.swift"; sourceTree = "<group>"; };
+		2FE2390F2934B7BD00BE43AA /* TSSSwiftDate+RelativeFormatter+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+RelativeFormatter+Style.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+RelativeFormatter+Style.swift"; sourceTree = "<group>"; };
+		2FE239102934B7BD00BE43AA /* TSSSwiftDate+Date+Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+Date+Components.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+Date+Components.swift"; sourceTree = "<group>"; };
+		2FE239112934B7BD00BE43AA /* TSSSwiftDate+RelativeFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+RelativeFormatter.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+RelativeFormatter.swift"; sourceTree = "<group>"; };
+		2FE239122934B7BD00BE43AA /* TSSSwiftDate+Locales.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+Locales.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+Locales.swift"; sourceTree = "<group>"; };
+		2FE239132934B7BD00BE43AA /* TSSSwiftDate+DateInRegion+Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+DateInRegion+Components.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+DateInRegion+Components.swift"; sourceTree = "<group>"; };
+		2FE239142934B7BD00BE43AA /* TSSSwiftDate+TimePeriod+Support.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+TimePeriod+Support.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+TimePeriod+Support.swift"; sourceTree = "<group>"; };
+		2FE239152934B7BD00BE43AA /* TSSSwiftDate+DateInRegion+Compare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+DateInRegion+Compare.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+DateInRegion+Compare.swift"; sourceTree = "<group>"; };
+		2FE239162934B7BD00BE43AA /* TSSSwiftDate+TimeStructures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+TimeStructures.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+TimeStructures.swift"; sourceTree = "<group>"; };
+		2FE239172934B7BD00BE43AA /* TSSSwiftDate+TimePeriodCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+TimePeriodCollection.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+TimePeriodCollection.swift"; sourceTree = "<group>"; };
+		2FE239182934B7BE00BE43AA /* TSSSwiftDate+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+Date.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+Date.swift"; sourceTree = "<group>"; };
+		2FE239192934B7BE00BE43AA /* TSSSwiftDate+DateRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+DateRepresentable.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+DateRepresentable.swift"; sourceTree = "<group>"; };
+		2FE2391A2934B7BE00BE43AA /* TSSSwiftDate+DateInRegion+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+DateInRegion+Math.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+DateInRegion+Math.swift"; sourceTree = "<group>"; };
+		2FE2391B2934B7BE00BE43AA /* TSSSwiftDate+ISOParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+ISOParser.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+ISOParser.swift"; sourceTree = "<group>"; };
+		2FE2391C2934B7BE00BE43AA /* TSSSwiftDate+Int+DateComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+Int+DateComponents.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+Int+DateComponents.swift"; sourceTree = "<group>"; };
+		2FE2391D2934B7BE00BE43AA /* TSSSwiftDate+TimePeriodGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+TimePeriodGroup.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+TimePeriodGroup.swift"; sourceTree = "<group>"; };
+		2FE2391E2934B7BE00BE43AA /* TSSSwiftDate+Zones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+Zones.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+Zones.swift"; sourceTree = "<group>"; };
+		2FE2391F2934B7BE00BE43AA /* TSSSwiftDate+Calendars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+Calendars.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+Calendars.swift"; sourceTree = "<group>"; };
+		2FE239202934B7BE00BE43AA /* TSSSwiftDate+String+Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+String+Parser.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+String+Parser.swift"; sourceTree = "<group>"; };
+		2FE239212934B7BE00BE43AA /* TSSSwiftDate+TimePeriodProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+TimePeriodProtocol.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+TimePeriodProtocol.swift"; sourceTree = "<group>"; };
+		2FE239222934B7BE00BE43AA /* TSSSwiftDate+DateInRegion+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+DateInRegion+Create.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+DateInRegion+Create.swift"; sourceTree = "<group>"; };
+		2FE239232934B7BE00BE43AA /* TSSSwiftDate+Date+Compare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+Date+Compare.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+Date+Compare.swift"; sourceTree = "<group>"; };
+		2FE239242934B7BF00BE43AA /* TSSSwiftDate+Commons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+Commons.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+Commons.swift"; sourceTree = "<group>"; };
+		2FE239252934B7BF00BE43AA /* TSSSwiftDate+TimePeriod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+TimePeriod.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+TimePeriod.swift"; sourceTree = "<group>"; };
+		2FE239262934B7BF00BE43AA /* TSSSwiftDate+RelativeFormatterLanguage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+RelativeFormatterLanguage.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+RelativeFormatterLanguage.swift"; sourceTree = "<group>"; };
+		2FE239272934B7BF00BE43AA /* TSSSwiftDate+Date+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+Date+Create.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+Date+Create.swift"; sourceTree = "<group>"; };
+		2FE239282934B7BF00BE43AA /* TSSSwiftDate+Formatter+Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+Formatter+Protocols.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+Formatter+Protocols.swift"; sourceTree = "<group>"; };
+		2FE239292934B7BF00BE43AA /* TSSSwiftDate+TimeInterval+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+TimeInterval+Formatter.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+TimeInterval+Formatter.swift"; sourceTree = "<group>"; };
+		2FE2392A2934B7BF00BE43AA /* TSSSwiftDate+DotNetParserFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+DotNetParserFormatter.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+DotNetParserFormatter.swift"; sourceTree = "<group>"; };
+		2FE2392B2934B7BF00BE43AA /* TSSSwiftDate+Date+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+Date+Math.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+Date+Math.swift"; sourceTree = "<group>"; };
+		2FE2392C2934B7BF00BE43AA /* TSSSwiftDate+TimePeriodChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+TimePeriodChain.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+TimePeriodChain.swift"; sourceTree = "<group>"; };
+		2FE2392D2934B7BF00BE43AA /* TSSSwiftDate+SwiftDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+SwiftDate.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+SwiftDate.swift"; sourceTree = "<group>"; };
+		2FE2392E2934B7BF00BE43AA /* TSSSwiftDate+AssociatedValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+AssociatedValues.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+AssociatedValues.swift"; sourceTree = "<group>"; };
+		2FE2392F2934B7BF00BE43AA /* TSSSwiftDate+DateInRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+DateInRegion.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+DateInRegion.swift"; sourceTree = "<group>"; };
+		2FE239302934B7BF00BE43AA /* TSSSwiftDate+DateComponents+Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+DateComponents+Extras.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+DateComponents+Extras.swift"; sourceTree = "<group>"; };
+		2FE239572934B96A00BE43AA /* Date+TSSExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+TSSExtension.swift"; path = "HCYFrameWork/Classes/Date+TSSExtension.swift"; sourceTree = "<group>"; };
 		3032C5FA9DFE8F6121A0239DF26B8F45 /* SVGDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGDocument.m; path = "Source/DOM classes/SVG-DOM/SVGDocument.m"; sourceTree = "<group>"; };
 		3065A61A6DABF4A25A836BCD48508AD8 /* SVGHelperUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGHelperUtilities.m; path = "Source/DOM classes/SVG-DOM/SVGHelperUtilities.m"; sourceTree = "<group>"; };
 		31087025EEAFB36EFC4820003934CF86 /* FLEXKeyValueTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXKeyValueTableViewCell.h; path = Classes/Core/Views/Cells/FLEXKeyValueTableViewCell.h; sourceTree = "<group>"; };
@@ -4482,13 +4578,61 @@
 		E2983623ACC3DD0099BAF6A4B0D6C595 /* HCYFrameWork */ = {
 			isa = PBXGroup;
 			children = (
-				2FD5F76F288FC30D005CDF87 /* TSSAPPScale+Extension.swift */,
+				2FE239572934B96A00BE43AA /* Date+TSSExtension.swift */,
+				2FE2392E2934B7BF00BE43AA /* TSSSwiftDate+AssociatedValues.swift */,
+				2FE2391F2934B7BE00BE43AA /* TSSSwiftDate+Calendars.swift */,
+				2FE239242934B7BF00BE43AA /* TSSSwiftDate+Commons.swift */,
+				2FE239182934B7BE00BE43AA /* TSSSwiftDate+Date.swift */,
+				2FE239232934B7BE00BE43AA /* TSSSwiftDate+Date+Compare.swift */,
+				2FE239102934B7BD00BE43AA /* TSSSwiftDate+Date+Components.swift */,
+				2FE239272934B7BF00BE43AA /* TSSSwiftDate+Date+Create.swift */,
+				2FE2392B2934B7BF00BE43AA /* TSSSwiftDate+Date+Math.swift */,
+				2FE239302934B7BF00BE43AA /* TSSSwiftDate+DateComponents+Extras.swift */,
+				2FE2392F2934B7BF00BE43AA /* TSSSwiftDate+DateInRegion.swift */,
+				2FE239152934B7BD00BE43AA /* TSSSwiftDate+DateInRegion+Compare.swift */,
+				2FE239132934B7BD00BE43AA /* TSSSwiftDate+DateInRegion+Components.swift */,
+				2FE239222934B7BE00BE43AA /* TSSSwiftDate+DateInRegion+Create.swift */,
+				2FE2391A2934B7BE00BE43AA /* TSSSwiftDate+DateInRegion+Math.swift */,
+				2FE239192934B7BE00BE43AA /* TSSSwiftDate+DateRepresentable.swift */,
+				2FE2392A2934B7BF00BE43AA /* TSSSwiftDate+DotNetParserFormatter.swift */,
+				2FE239282934B7BF00BE43AA /* TSSSwiftDate+Formatter+Protocols.swift */,
+				2FE2391C2934B7BE00BE43AA /* TSSSwiftDate+Int+DateComponents.swift */,
+				2FE2390E2934B7BD00BE43AA /* TSSSwiftDate+ISOFormatter.swift */,
+				2FE2391B2934B7BE00BE43AA /* TSSSwiftDate+ISOParser.swift */,
+				2FE239122934B7BD00BE43AA /* TSSSwiftDate+Locales.swift */,
+				2FE2390D2934B7BD00BE43AA /* TSSSwiftDate+Region.swift */,
+				2FE239112934B7BD00BE43AA /* TSSSwiftDate+RelativeFormatter.swift */,
+				2FE2390F2934B7BD00BE43AA /* TSSSwiftDate+RelativeFormatter+Style.swift */,
+				2FE239262934B7BF00BE43AA /* TSSSwiftDate+RelativeFormatterLanguage.swift */,
+				2FE239202934B7BE00BE43AA /* TSSSwiftDate+String+Parser.swift */,
+				2FE2392D2934B7BF00BE43AA /* TSSSwiftDate+SwiftDate.swift */,
+				2FE239292934B7BF00BE43AA /* TSSSwiftDate+TimeInterval+Formatter.swift */,
+				2FE239252934B7BF00BE43AA /* TSSSwiftDate+TimePeriod.swift */,
+				2FE239142934B7BD00BE43AA /* TSSSwiftDate+TimePeriod+Support.swift */,
+				2FE2392C2934B7BF00BE43AA /* TSSSwiftDate+TimePeriodChain.swift */,
+				2FE239172934B7BD00BE43AA /* TSSSwiftDate+TimePeriodCollection.swift */,
+				2FE2391D2934B7BE00BE43AA /* TSSSwiftDate+TimePeriodGroup.swift */,
+				2FE239212934B7BE00BE43AA /* TSSSwiftDate+TimePeriodProtocol.swift */,
+				2FE239162934B7BD00BE43AA /* TSSSwiftDate+TimeStructures.swift */,
+				2FE2391E2934B7BE00BE43AA /* TSSSwiftDate+Zones.swift */,
+				2F7977D129247E4B006DB9A7 /* Encodable+TSSExtension.swift */,
+				2F0CEB7328B4770500518AFC /* UITabbar+TSSExtenstion.swift */,
+				2F4003E528A5EC7200C72B7F /* TSSCycleScrollView.swift */,
+				2F4003EE28A5EFC800C72B7F /* TSSCycleScrollViewDefaultCell.swift */,
+				2F4003E628A5EC7200C72B7F /* TSSCycleScrollViewDelegate.swift */,
+				2F4003E428A5EC7200C72B7F /* TSSCycleScrollViewDotView.swift */,
+				2F4003E728A5EC7200C72B7F /* TSSCycleScrollViewEnum.swift */,
+				2F4003E828A5EC7200C72B7F /* TSSCycleScrollViewPageControl.swift */,
+				2FD5F76F288FC30D005CDF87 /* TSSScaleCommon.swift */,
 				2FD5F77F288FC30D005CDF87 /* TSSBaseNavigationController.swift */,
 				2FD5F76B288FC30C005CDF87 /* TSSBasePopupConfig.swift */,
 				2FD5F789288FC30E005CDF87 /* TSSBasePopupEnum.swift */,
 				2FD5F76C288FC30D005CDF87 /* TSSBasePopupViewManager.swift */,
 				2FD5F790288FC30E005CDF87 /* TSSBaseTabbarViewController.swift */,
 				2FD5F783288FC30E005CDF87 /* TSSBaseViewController.swift */,
+				2F4003B328A2583A00C72B7F /* TSSBaseTableViewController.swift */,
+				2F4003BA28A3426E00C72B7F /* TSSBaseCollectionViewController.swift */,
+				2F4003CF28A4DAAC00C72B7F /* TSSWaterCollectionFlowLayout.swift */,
 				2FD5F774288FC30D005CDF87 /* TSSBaseViewModelType.swift */,
 				2FD5F795288FC30E005CDF87 /* TSSButton.swift */,
 				2FD5F773288FC30D005CDF87 /* TSSCommon.swift */,
@@ -4498,7 +4642,7 @@
 				2FD5F771288FC30D005CDF87 /* TSSLabel.swift */,
 				2FD5F798288FC30F005CDF87 /* TSSLoadingCircle.swift */,
 				2FD5F797288FC30F005CDF87 /* TSSLoadingManager.swift */,
-				2FD5F77B288FC30D005CDF87 /* TSSMJRefresh+Extension.swift */,
+				2FD5F77B288FC30D005CDF87 /* MJRefresh+TSSExtension.swift */,
 				2FD5F772288FC30D005CDF87 /* TSSNetworkingManager.swift */,
 				2FD5F78C288FC30E005CDF87 /* TSSOperators.swift */,
 				2FD5F77D288FC30D005CDF87 /* TSSSegmentedAnimator.swift */,
@@ -4517,20 +4661,20 @@
 				2FD5F787288FC30E005CDF87 /* TSSSegmentedTitleItemModel.swift */,
 				2FD5F775288FC30D005CDF87 /* TSSSegmentedView.swift */,
 				2FD5F784288FC30E005CDF87 /* TSSSegmentedViewTool.swift */,
-				2FD5F799288FC30F005CDF87 /* TSSString+Extension.swift */,
+				2FD5F799288FC30F005CDF87 /* String+TSSExtension.swift */,
 				2FD5F77C288FC30D005CDF87 /* TSSTimeHelper.swift */,
-				2FD5F79A288FC30F005CDF87 /* TSSUIColor+Extension.swift */,
-				2FD5F780288FC30D005CDF87 /* TSSUIDevice+Extension.swift */,
-				2FD5F77A288FC30D005CDF87 /* TSSUIImage+Extension.swift */,
-				2FD5F78F288FC30E005CDF87 /* TSSUIImageView+Extension.swift */,
-				2FD5F76E288FC30D005CDF87 /* TSSUITableViewCell+Extension.swift */,
-				2FD5F76D288FC30D005CDF87 /* TSSUITextField+Extension.swift */,
-				2FD5F782288FC30E005CDF87 /* TSSUIVIew+Extension.swift */,
-				2FD5F785288FC30E005CDF87 /* TSSUIViewController+Extension.swift */,
-				2FD5F794288FC30E005CDF87 /* TSSUIWindow+Extension.swift */,
-				2FD5F781288FC30E005CDF87 /* TSSValidate+Extension.swift */,
+				2FD5F79A288FC30F005CDF87 /* UIColor+TSSExtension.swift */,
+				2FD5F780288FC30D005CDF87 /* UIDevice+TSSExtension.swift */,
+				2FD5F77A288FC30D005CDF87 /* UIImage+TSSExtension.swift */,
+				2FD5F78F288FC30E005CDF87 /* UIImageView+TSSExtension.swift */,
+				2FD5F76E288FC30D005CDF87 /* UITableViewCell+TSSExtension.swift */,
+				2FD5F76D288FC30D005CDF87 /* UITextField+TSSExtension.swift */,
+				2FD5F782288FC30E005CDF87 /* UIView+TSSExtension.swift */,
+				2FD5F785288FC30E005CDF87 /* UIViewController+TSSExtension.swift */,
+				2FD5F794288FC30E005CDF87 /* UIWindow+TSSExtension.swift */,
+				2FD5F781288FC30E005CDF87 /* TSSValidate.swift */,
 				2FD5F78A288FC30E005CDF87 /* TSSVIewProtocol.swift */,
-				2F4003A1289A2D0F00C72B7F /* TSSUILabel+Rx.swift */,
+				2F4003A1289A2D0F00C72B7F /* UILabel+TSSRx.swift */,
 				7E8A5AFDACA268D692D86EBD40904DC1 /* Pod */,
 				5DE02635178B42B73137B8BDC257DEAB /* Support Files */,
 			);
@@ -6371,55 +6515,103 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FD5F7C0288FC30F005CDF87 /* TSSUIImageView+Extension.swift in Sources */,
+				2FD5F7C0288FC30F005CDF87 /* UIImageView+TSSExtension.swift in Sources */,
 				2FD5F7C7288FC30F005CDF87 /* TSSDefaultView.swift in Sources */,
-				2FD5F79E288FC30F005CDF87 /* TSSUITextField+Extension.swift in Sources */,
+				2F4003E928A5EC7200C72B7F /* TSSCycleScrollViewDotView.swift in Sources */,
+				2F0CEB7428B4770500518AFC /* UITabbar+TSSExtenstion.swift in Sources */,
+				2FE239452934B7C000BE43AA /* TSSSwiftDate+TimePeriodProtocol.swift in Sources */,
+				2FE239362934B7C000BE43AA /* TSSSwiftDate+Locales.swift in Sources */,
+				2FD5F79E288FC30F005CDF87 /* UITextField+TSSExtension.swift in Sources */,
 				2FD5F7A1288FC30F005CDF87 /* TSSSegmentedIndicatorParams.swift in Sources */,
+				2FE239372934B7C000BE43AA /* TSSSwiftDate+DateInRegion+Components.swift in Sources */,
+				2FE239342934B7C000BE43AA /* TSSSwiftDate+Date+Components.swift in Sources */,
 				2FD5F7A2288FC30F005CDF87 /* TSSLabel.swift in Sources */,
-				2FD5F7AC288FC30F005CDF87 /* TSSMJRefresh+Extension.swift in Sources */,
+				2FD5F7AC288FC30F005CDF87 /* MJRefresh+TSSExtension.swift in Sources */,
 				C32F9A687772382D37E1066555CFDFF3 /* HCYFrameWork-dummy.m in Sources */,
 				2FD5F7BB288FC30F005CDF87 /* TSSVIewProtocol.swift in Sources */,
-				2FD5F7CB288FC30F005CDF87 /* TSSUIColor+Extension.swift in Sources */,
-				2FD5F7B3288FC30F005CDF87 /* TSSUIVIew+Extension.swift in Sources */,
+				2F4003EA28A5EC7200C72B7F /* TSSCycleScrollView.swift in Sources */,
+				2FE2393C2934B7C000BE43AA /* TSSSwiftDate+Date.swift in Sources */,
+				2F4003BB28A3426E00C72B7F /* TSSBaseCollectionViewController.swift in Sources */,
+				2FD5F7CB288FC30F005CDF87 /* UIColor+TSSExtension.swift in Sources */,
+				2FE2394F2934B7C000BE43AA /* TSSSwiftDate+Date+Math.swift in Sources */,
+				2FE239382934B7C000BE43AA /* TSSSwiftDate+TimePeriod+Support.swift in Sources */,
+				2FD5F7B3288FC30F005CDF87 /* UIView+TSSExtension.swift in Sources */,
 				2FD5F7A6288FC30F005CDF87 /* TSSSegmentedView.swift in Sources */,
-				2FD5F7B2288FC30F005CDF87 /* TSSValidate+Extension.swift in Sources */,
+				2FE2394D2934B7C000BE43AA /* TSSSwiftDate+TimeInterval+Formatter.swift in Sources */,
+				2FE239432934B7C000BE43AA /* TSSSwiftDate+Calendars.swift in Sources */,
+				2FE239322934B7C000BE43AA /* TSSSwiftDate+ISOFormatter.swift in Sources */,
+				2FD5F7B2288FC30F005CDF87 /* TSSValidate.swift in Sources */,
 				2FD5F7C9288FC30F005CDF87 /* TSSLoadingCircle.swift in Sources */,
+				2F4003ED28A5EC7200C72B7F /* TSSCycleScrollViewPageControl.swift in Sources */,
+				2FE239412934B7C000BE43AA /* TSSSwiftDate+TimePeriodGroup.swift in Sources */,
 				2FD5F7B5288FC30F005CDF87 /* TSSSegmentedViewTool.swift in Sources */,
 				2FD5F7A8288FC30F005CDF87 /* TSSSegmentedTitleCell.swift in Sources */,
-				2FD5F79F288FC30F005CDF87 /* TSSUITableViewCell+Extension.swift in Sources */,
+				2FE2394E2934B7C000BE43AA /* TSSSwiftDate+DotNetParserFormatter.swift in Sources */,
+				2FE239392934B7C000BE43AA /* TSSSwiftDate+DateInRegion+Compare.swift in Sources */,
+				2FE239522934B7C000BE43AA /* TSSSwiftDate+AssociatedValues.swift in Sources */,
+				2FE239582934B96A00BE43AA /* Date+TSSExtension.swift in Sources */,
+				2FE239442934B7C000BE43AA /* TSSSwiftDate+String+Parser.swift in Sources */,
+				2FE239532934B7C000BE43AA /* TSSSwiftDate+DateInRegion.swift in Sources */,
+				2FE2393F2934B7C000BE43AA /* TSSSwiftDate+ISOParser.swift in Sources */,
+				2FD5F79F288FC30F005CDF87 /* UITableViewCell+TSSExtension.swift in Sources */,
 				2FD5F79B288FC30F005CDF87 /* TSSSegmentedIndicatorProtocol.swift in Sources */,
 				2FD5F7BC288FC30F005CDF87 /* TSSSegmentedIndicatorLineView.swift in Sources */,
 				2FD5F7AA288FC30F005CDF87 /* TSSFullscreenPopGesture.swift in Sources */,
 				2FD5F7C2288FC30F005CDF87 /* TSSSegmentedIndicatorBaseView.swift in Sources */,
+				2FE239512934B7C000BE43AA /* TSSSwiftDate+SwiftDate.swift in Sources */,
+				2FE239352934B7C000BE43AA /* TSSSwiftDate+RelativeFormatter.swift in Sources */,
+				2FE2393B2934B7C000BE43AA /* TSSSwiftDate+TimePeriodCollection.swift in Sources */,
 				2FD5F7C4288FC30F005CDF87 /* TSSSegmentedListContainerView.swift in Sources */,
+				2FE239312934B7C000BE43AA /* TSSSwiftDate+Region.swift in Sources */,
 				2FD5F7C6288FC30F005CDF87 /* TSSButton.swift in Sources */,
+				2F7977D229247E4B006DB9A7 /* Encodable+TSSExtension.swift in Sources */,
+				2FE2393E2934B7C000BE43AA /* TSSSwiftDate+DateInRegion+Math.swift in Sources */,
 				2FD5F7B0288FC30F005CDF87 /* TSSBaseNavigationController.swift in Sources */,
 				2FD5F7B9288FC30F005CDF87 /* TSSSegmentedBaseDataSource.swift in Sources */,
+				2F4003B428A2583A00C72B7F /* TSSBaseTableViewController.swift in Sources */,
+				2FE239332934B7C000BE43AA /* TSSSwiftDate+RelativeFormatter+Style.swift in Sources */,
 				2FD5F79C288FC30F005CDF87 /* TSSBasePopupConfig.swift in Sources */,
-				2FD5F7CA288FC30F005CDF87 /* TSSString+Extension.swift in Sources */,
+				2FD5F7CA288FC30F005CDF87 /* String+TSSExtension.swift in Sources */,
+				2FE239472934B7C000BE43AA /* TSSSwiftDate+Date+Compare.swift in Sources */,
 				2FD5F7AE288FC30F005CDF87 /* TSSSegmentedAnimator.swift in Sources */,
+				2F4003D028A4DAAC00C72B7F /* TSSWaterCollectionFlowLayout.swift in Sources */,
 				2FD5F7AF288FC30F005CDF87 /* TSSSegmentedRTLLayout.swift in Sources */,
-				2FD5F7A0288FC30F005CDF87 /* TSSAPPScale+Extension.swift in Sources */,
+				2FD5F7A0288FC30F005CDF87 /* TSSScaleCommon.swift in Sources */,
 				2FD5F7A7288FC30F005CDF87 /* TSSGCDTools.swift in Sources */,
-				2FD5F7C5288FC30F005CDF87 /* TSSUIWindow+Extension.swift in Sources */,
-				2FD5F7AB288FC30F005CDF87 /* TSSUIImage+Extension.swift in Sources */,
+				2FD5F7C5288FC30F005CDF87 /* UIWindow+TSSExtension.swift in Sources */,
+				2FD5F7AB288FC30F005CDF87 /* UIImage+TSSExtension.swift in Sources */,
+				2FE239422934B7C000BE43AA /* TSSSwiftDate+Zones.swift in Sources */,
 				2FD5F7B7288FC30F005CDF87 /* TSSSegmentedBaseCell.swift in Sources */,
 				2FD5F7B4288FC30F005CDF87 /* TSSBaseViewController.swift in Sources */,
+				2FE2393D2934B7C000BE43AA /* TSSSwiftDate+DateRepresentable.swift in Sources */,
 				2FD5F7A9288FC30F005CDF87 /* TSSSegmentedBaseItemModel.swift in Sources */,
+				2FE239542934B7C000BE43AA /* TSSSwiftDate+DateComponents+Extras.swift in Sources */,
 				2FD5F7BD288FC30F005CDF87 /* TSSOperators.swift in Sources */,
-				2F4003A2289A2D0F00C72B7F /* TSSUILabel+Rx.swift in Sources */,
+				2F4003A2289A2D0F00C72B7F /* UILabel+TSSRx.swift in Sources */,
 				2FD5F7C1288FC30F005CDF87 /* TSSBaseTabbarViewController.swift in Sources */,
+				2FE2394A2934B7C000BE43AA /* TSSSwiftDate+RelativeFormatterLanguage.swift in Sources */,
+				2FE239502934B7C000BE43AA /* TSSSwiftDate+TimePeriodChain.swift in Sources */,
+				2FE2394C2934B7C000BE43AA /* TSSSwiftDate+Formatter+Protocols.swift in Sources */,
+				2FE239492934B7C000BE43AA /* TSSSwiftDate+TimePeriod.swift in Sources */,
 				2FD5F7A5288FC30F005CDF87 /* TSSBaseViewModelType.swift in Sources */,
+				2F4003EB28A5EC7200C72B7F /* TSSCycleScrollViewDelegate.swift in Sources */,
 				2FD5F7A4288FC30F005CDF87 /* TSSCommon.swift in Sources */,
 				2FD5F7A3288FC30F005CDF87 /* TSSNetworkingManager.swift in Sources */,
+				2FE239462934B7C000BE43AA /* TSSSwiftDate+DateInRegion+Create.swift in Sources */,
 				2FD5F7B8288FC30F005CDF87 /* TSSSegmentedTitleItemModel.swift in Sources */,
 				2FD5F7C8288FC30F005CDF87 /* TSSLoadingManager.swift in Sources */,
 				2FD5F79D288FC30F005CDF87 /* TSSBasePopupViewManager.swift in Sources */,
-				2FD5F7B1288FC30F005CDF87 /* TSSUIDevice+Extension.swift in Sources */,
+				2FE2393A2934B7C000BE43AA /* TSSSwiftDate+TimeStructures.swift in Sources */,
+				2F4003EF28A5EFC800C72B7F /* TSSCycleScrollViewDefaultCell.swift in Sources */,
+				2FD5F7B1288FC30F005CDF87 /* UIDevice+TSSExtension.swift in Sources */,
+				2F4003EC28A5EC7200C72B7F /* TSSCycleScrollViewEnum.swift in Sources */,
 				2FD5F7BA288FC30F005CDF87 /* TSSBasePopupEnum.swift in Sources */,
-				2FD5F7B6288FC30F005CDF87 /* TSSUIViewController+Extension.swift in Sources */,
+				2FD5F7B6288FC30F005CDF87 /* UIViewController+TSSExtension.swift in Sources */,
 				2FD5F7BF288FC30F005CDF87 /* TSSSegmentedTitleDataSource.swift in Sources */,
 				2FD5F7AD288FC30F005CDF87 /* TSSTimeHelper.swift in Sources */,
+				2FE239482934B7C000BE43AA /* TSSSwiftDate+Commons.swift in Sources */,
+				2FE239402934B7C000BE43AA /* TSSSwiftDate+Int+DateComponents.swift in Sources */,
+				2FE2394B2934B7C000BE43AA /* TSSSwiftDate+Date+Create.swift in Sources */,
 				2FD5F7BE288FC30F005CDF87 /* TSSSegmentedCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

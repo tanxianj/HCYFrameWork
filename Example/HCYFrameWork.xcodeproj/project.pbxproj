@@ -12,6 +12,11 @@
 		2F0B271B2877E611002333DF /* eye_off.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B271A2877E611002333DF /* eye_off.svg */; };
 		2F0B271D2877F039002333DF /* SVG.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B271C2877F039002333DF /* SVG.svg */; };
 		2F0B271F2878187E002333DF /* fistBump.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B271E2878187E002333DF /* fistBump.svg */; };
+		2F0CEB7628B47A2900518AFC /* ActionSheetTwoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CEB7528B47A2900518AFC /* ActionSheetTwoCell.swift */; };
+		2F0CEB7F28B4886100518AFC /* TestCollectionheaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CEB7D28B4886100518AFC /* TestCollectionheaderView.swift */; };
+		2F0CEB8028B4886100518AFC /* TestCollectionheaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0CEB7E28B4886100518AFC /* TestCollectionheaderView.xib */; };
+		2F0CEB8C28B4DA0B00518AFC /* CollectionHeaderAutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CEB8A28B4DA0B00518AFC /* CollectionHeaderAutoLayoutViewController.swift */; };
+		2F0CEB8D28B4DA0B00518AFC /* CollectionHeaderAutoLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0CEB8B28B4DA0B00518AFC /* CollectionHeaderAutoLayoutViewController.xib */; };
 		2F0E74622875821400FA47E1 /* APPTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E74612875821400FA47E1 /* APPTabbarViewController.swift */; };
 		2F0E74652875822100FA47E1 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0E74632875822100FA47E1 /* HomeViewController.storyboard */; };
 		2F0E74662875822100FA47E1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E74642875822100FA47E1 /* HomeViewController.swift */; };
@@ -59,6 +64,18 @@
 		2F40039E289A10C300C72B7F /* TSSValidateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F40039D289A10C300C72B7F /* TSSValidateViewModel.swift */; };
 		2F4003AA289BA3F800C72B7F /* TSSNotiFicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003A8289BA3F800C72B7F /* TSSNotiFicationViewController.swift */; };
 		2F4003AB289BA3F800C72B7F /* TSSNotiFicationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4003A9289BA3F800C72B7F /* TSSNotiFicationViewController.xib */; };
+		2F4003AF28A237AD00C72B7F /* TSSFrameWork-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F4003AE28A237AD00C72B7F /* TSSFrameWork-info.plist */; };
+		2F4003B628A2585E00C72B7F /* TestBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003B528A2585E00C72B7F /* TestBaseTableViewController.swift */; };
+		2F4003BD28A3428300C72B7F /* TeseBaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003BC28A3428300C72B7F /* TeseBaseCollectionViewController.swift */; };
+		2F4003C228A3B45000C72B7F /* CollectionViewAutoSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003C128A3B45000C72B7F /* CollectionViewAutoSize.swift */; };
+		2F4003C628A4920D00C72B7F /* AutoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003C428A4920D00C72B7F /* AutoCollectionViewCell.swift */; };
+		2F4003C728A4920D00C72B7F /* AutoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4003C528A4920D00C72B7F /* AutoCollectionViewCell.xib */; };
+		2F4003C928A494CD00C72B7F /* AutoTwoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003C828A494CD00C72B7F /* AutoTwoCollectionViewCell.swift */; };
+		2F4003CD28A4998A00C72B7F /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003CB28A4998A00C72B7F /* TestCollectionViewCell.swift */; };
+		2F4003CE28A4998A00C72B7F /* TestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4003CC28A4998A00C72B7F /* TestCollectionViewCell.xib */; };
+		2F4003D328A4E28700C72B7F /* TesrBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003D228A4E28700C72B7F /* TesrBannerViewController.swift */; };
+		2F4003E228A4E41600C72B7F /* TestBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4003E028A4E41600C72B7F /* TestBannerCollectionViewCell.swift */; };
+		2F4003E328A4E41600C72B7F /* TestBannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4003E128A4E41600C72B7F /* TestBannerCollectionViewCell.xib */; };
 		2F4546AE288796DA0011B6CB /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4546AC288796DA0011B6CB /* LoginData.swift */; };
 		2F4546AF288796DA0011B6CB /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4546AD288796DA0011B6CB /* LoginModel.swift */; };
 		2F75641C288E432E007B69C3 /* TimeHelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F75641A288E432E007B69C3 /* TimeHelperViewController.swift */; };
@@ -71,6 +88,8 @@
 		2FD5F7E5289260C6005CDF87 /* TSSActionSheetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F7E4289260C6005CDF87 /* TSSActionSheetTableViewCell.swift */; };
 		2FD5F7E928926620005CDF87 /* ActionSheetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F7E728926620005CDF87 /* ActionSheetCell.swift */; };
 		2FD5F7EA28926620005CDF87 /* ActionSheetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FD5F7E828926620005CDF87 /* ActionSheetCell.xib */; };
+		2FE2390A2934B3F900BE43AA /* TestBaseTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE239092934B3F900BE43AA /* TestBaseTableViewModel.swift */; };
+		2FE2390C2934B5B600BE43AA /* TeseBaseCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2390B2934B5B600BE43AA /* TeseBaseCollectionViewModel.swift */; };
 		2FFB548B287EA04B00D4B972 /* HCYTipsPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5489287EA04B00D4B972 /* HCYTipsPopUpView.swift */; };
 		2FFB548C287EA04B00D4B972 /* TSSActionSheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB548A287EA04B00D4B972 /* TSSActionSheetManager.swift */; };
 		2FFB563D2885430E00D4B972 /* TSSSegmentedViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB563C2885430E00D4B972 /* TSSSegmentedViewDemo.swift */; };
@@ -98,6 +117,11 @@
 		2F0B271A2877E611002333DF /* eye_off.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = eye_off.svg; sourceTree = "<group>"; };
 		2F0B271C2877F039002333DF /* SVG.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SVG.svg; sourceTree = "<group>"; };
 		2F0B271E2878187E002333DF /* fistBump.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = fistBump.svg; sourceTree = "<group>"; };
+		2F0CEB7528B47A2900518AFC /* ActionSheetTwoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetTwoCell.swift; sourceTree = "<group>"; };
+		2F0CEB7D28B4886100518AFC /* TestCollectionheaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionheaderView.swift; sourceTree = "<group>"; };
+		2F0CEB7E28B4886100518AFC /* TestCollectionheaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCollectionheaderView.xib; sourceTree = "<group>"; };
+		2F0CEB8A28B4DA0B00518AFC /* CollectionHeaderAutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderAutoLayoutViewController.swift; sourceTree = "<group>"; };
+		2F0CEB8B28B4DA0B00518AFC /* CollectionHeaderAutoLayoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderAutoLayoutViewController.xib; sourceTree = "<group>"; };
 		2F0E74612875821400FA47E1 /* APPTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APPTabbarViewController.swift; sourceTree = "<group>"; };
 		2F0E74632875822100FA47E1 /* HomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		2F0E74642875822100FA47E1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +169,18 @@
 		2F40039D289A10C300C72B7F /* TSSValidateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSValidateViewModel.swift; sourceTree = "<group>"; };
 		2F4003A8289BA3F800C72B7F /* TSSNotiFicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSNotiFicationViewController.swift; sourceTree = "<group>"; };
 		2F4003A9289BA3F800C72B7F /* TSSNotiFicationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSSNotiFicationViewController.xib; sourceTree = "<group>"; };
+		2F4003AE28A237AD00C72B7F /* TSSFrameWork-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TSSFrameWork-info.plist"; sourceTree = "<group>"; };
+		2F4003B528A2585E00C72B7F /* TestBaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBaseTableViewController.swift; sourceTree = "<group>"; };
+		2F4003BC28A3428300C72B7F /* TeseBaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeseBaseCollectionViewController.swift; sourceTree = "<group>"; };
+		2F4003C128A3B45000C72B7F /* CollectionViewAutoSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewAutoSize.swift; sourceTree = "<group>"; };
+		2F4003C428A4920D00C72B7F /* AutoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F4003C528A4920D00C72B7F /* AutoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoCollectionViewCell.xib; sourceTree = "<group>"; };
+		2F4003C828A494CD00C72B7F /* AutoTwoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoTwoCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F4003CB28A4998A00C72B7F /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F4003CC28A4998A00C72B7F /* TestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCollectionViewCell.xib; sourceTree = "<group>"; };
+		2F4003D228A4E28700C72B7F /* TesrBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesrBannerViewController.swift; sourceTree = "<group>"; };
+		2F4003E028A4E41600C72B7F /* TestBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F4003E128A4E41600C72B7F /* TestBannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestBannerCollectionViewCell.xib; sourceTree = "<group>"; };
 		2F4546AC288796DA0011B6CB /* LoginData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
 		2F4546AD288796DA0011B6CB /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		2F75641A288E432E007B69C3 /* TimeHelperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHelperViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +193,8 @@
 		2FD5F7E4289260C6005CDF87 /* TSSActionSheetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSActionSheetTableViewCell.swift; sourceTree = "<group>"; };
 		2FD5F7E728926620005CDF87 /* ActionSheetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetCell.swift; sourceTree = "<group>"; };
 		2FD5F7E828926620005CDF87 /* ActionSheetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionSheetCell.xib; sourceTree = "<group>"; };
+		2FE239092934B3F900BE43AA /* TestBaseTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBaseTableViewModel.swift; sourceTree = "<group>"; };
+		2FE2390B2934B5B600BE43AA /* TeseBaseCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeseBaseCollectionViewModel.swift; sourceTree = "<group>"; };
 		2FFB5489287EA04B00D4B972 /* HCYTipsPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCYTipsPopUpView.swift; sourceTree = "<group>"; };
 		2FFB548A287EA04B00D4B972 /* TSSActionSheetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSActionSheetManager.swift; sourceTree = "<group>"; };
 		2FFB563C2885430E00D4B972 /* TSSSegmentedViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSSegmentedViewDemo.swift; sourceTree = "<group>"; };
@@ -195,6 +233,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F0CEB7028B3714C00518AFC /* UITabbar+Badge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "UITabbar+Badge";
+			sourceTree = "<group>";
+		};
+		2F0CEB7728B4864000518AFC /* CollectionVIewHeaderTest */ = {
+			isa = PBXGroup;
+			children = (
+				2F0CEB7C28B4882600518AFC /* header */,
+				2F0CEB8A28B4DA0B00518AFC /* CollectionHeaderAutoLayoutViewController.swift */,
+				2F0CEB8B28B4DA0B00518AFC /* CollectionHeaderAutoLayoutViewController.xib */,
+			);
+			name = CollectionVIewHeaderTest;
+			sourceTree = "<group>";
+		};
+		2F0CEB7C28B4882600518AFC /* header */ = {
+			isa = PBXGroup;
+			children = (
+				2F0CEB7D28B4886100518AFC /* TestCollectionheaderView.swift */,
+				2F0CEB7E28B4886100518AFC /* TestCollectionheaderView.xib */,
+			);
+			name = header;
+			sourceTree = "<group>";
+		};
 		2F40032B28976F5F00C72B7F /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +503,71 @@
 			name = TSSNotiFication;
 			sourceTree = "<group>";
 		};
+		2F4003B028A24E5100C72B7F /* TSSBaseTableView */ = {
+			isa = PBXGroup;
+			children = (
+				2F4003B528A2585E00C72B7F /* TestBaseTableViewController.swift */,
+				2FE239092934B3F900BE43AA /* TestBaseTableViewModel.swift */,
+			);
+			name = TSSBaseTableView;
+			sourceTree = "<group>";
+		};
+		2F4003B728A3415600C72B7F /* TSSBaseCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				2F4003CA28A4997F00C72B7F /* cell */,
+				2F4003BC28A3428300C72B7F /* TeseBaseCollectionViewController.swift */,
+				2FE2390B2934B5B600BE43AA /* TeseBaseCollectionViewModel.swift */,
+			);
+			name = TSSBaseCollectionView;
+			sourceTree = "<group>";
+		};
+		2F4003C028A3B42A00C72B7F /* CollectionVIewAutoSize */ = {
+			isa = PBXGroup;
+			children = (
+				2F4003C328A491FC00C72B7F /* cell */,
+				2F4003C128A3B45000C72B7F /* CollectionViewAutoSize.swift */,
+			);
+			name = CollectionVIewAutoSize;
+			sourceTree = "<group>";
+		};
+		2F4003C328A491FC00C72B7F /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				2F4003C428A4920D00C72B7F /* AutoCollectionViewCell.swift */,
+				2F4003C528A4920D00C72B7F /* AutoCollectionViewCell.xib */,
+				2F4003C828A494CD00C72B7F /* AutoTwoCollectionViewCell.swift */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		2F4003CA28A4997F00C72B7F /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				2F4003CB28A4998A00C72B7F /* TestCollectionViewCell.swift */,
+				2F4003CC28A4998A00C72B7F /* TestCollectionViewCell.xib */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		2F4003D128A4E26500C72B7F /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				2F4003DF28A4E40200C72B7F /* cell */,
+				2F4003D228A4E28700C72B7F /* TesrBannerViewController.swift */,
+			);
+			name = Banner;
+			sourceTree = "<group>";
+		};
+		2F4003DF28A4E40200C72B7F /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				2F4003E028A4E41600C72B7F /* TestBannerCollectionViewCell.swift */,
+				2F4003E128A4E41600C72B7F /* TestBannerCollectionViewCell.xib */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
 		2F4546AB2887969B0011B6CB /* LoginModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -488,6 +617,7 @@
 			children = (
 				2FD5F7E728926620005CDF87 /* ActionSheetCell.swift */,
 				2FD5F7E828926620005CDF87 /* ActionSheetCell.xib */,
+				2F0CEB7528B47A2900518AFC /* ActionSheetTwoCell.swift */,
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -564,6 +694,7 @@
 		607FACD21AFB9204008FA782 /* Example for HCYFrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				2F0CEB7028B3714C00518AFC /* UITabbar+Badge */,
 				2F400345289777D300C72B7F /* Main */,
 				2F4546AB2887969B0011B6CB /* LoginModel */,
 				2FFB565428865EEB00D4B972 /* weatherModel */,
@@ -582,11 +713,16 @@
 				2F4003632898FED200C72B7F /* UIimage */,
 				2F40038A28990E4500C72B7F /* ChangeTextFieldColor */,
 				2F400392289A0D3400C72B7F /* TSSValidate */,
-				2FFB564C288562F400D4B972 /* importFile.swift */,
 				2F4003A7289BA3E900C72B7F /* TSSNotiFication */,
-				2FFB564028854C7400D4B972 /* APPNavigationViewController.swift */,
-				2F0E74612875821400FA47E1 /* APPTabbarViewController.swift */,
+				2F4003B028A24E5100C72B7F /* TSSBaseTableView */,
+				2F4003B728A3415600C72B7F /* TSSBaseCollectionView */,
+				2F4003C028A3B42A00C72B7F /* CollectionVIewAutoSize */,
+				2F4003D128A4E26500C72B7F /* Banner */,
+				2F0CEB7728B4864000518AFC /* CollectionVIewHeaderTest */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				2FFB564028854C7400D4B972 /* APPNavigationViewController.swift */,
+				2FFB564C288562F400D4B972 /* importFile.swift */,
+				2F0E74612875821400FA47E1 /* APPTabbarViewController.swift */,
 				2F0B271A2877E611002333DF /* eye_off.svg */,
 				2F0B27182877E52C002333DF /* finger.svg */,
 				2F0B271E2878187E002333DF /* fistBump.svg */,
@@ -604,6 +740,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
+				2F4003AE28A237AD00C72B7F /* TSSFrameWork-info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -656,7 +793,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -668,10 +805,9 @@
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "HCYFrameWork" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -692,6 +828,8 @@
 			files = (
 				2F4003742899002500C72B7F /* UIIimage_CreateImageWithColorViewController.xib in Resources */,
 				2F0B271F2878187E002333DF /* fistBump.svg in Resources */,
+				2F4003CE28A4998A00C72B7F /* TestCollectionViewCell.xib in Resources */,
+				2F4003E328A4E41600C72B7F /* TestBannerCollectionViewCell.xib in Resources */,
 				2F75641D288E432E007B69C3 /* TimeHelperViewController.xib in Resources */,
 				2F40039A289A0F1200C72B7F /* TSSValidateTestVC.xib in Resources */,
 				2FFB56512885641800D4B972 /* PopupTestView.xib in Resources */,
@@ -701,6 +839,7 @@
 				2F4003782899002D00C72B7F /* UIimage_CreateImageWithGradViewController.xib in Resources */,
 				2F40038928990C4500C72B7F /* UIImage_changeColorViewController.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				2F0CEB8028B4886100518AFC /* TestCollectionheaderView.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				2FD5F7E0289222DC005CDF87 /* ActionSheetViewController.xib in Resources */,
 				2F40037C2899003500C72B7F /* UIImage_convenienceInitViewController.xib in Resources */,
@@ -708,6 +847,7 @@
 				2F986B5D2873EBD500140514 /* HCYFrameWork.podspec in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				2F4003602898F9FE00C72B7F /* UIDeviceViewController.xib in Resources */,
+				2F4003AF28A237AD00C72B7F /* TSSFrameWork-info.plist in Resources */,
 				2F4003672898FEE400C72B7F /* UIimageViewController.xib in Resources */,
 				2F4003802899003C00C72B7F /* UIImage_ScaleImageViewController.xib in Resources */,
 				2F0E74692875822A00FA47E1 /* MeViewController.storyboard in Resources */,
@@ -715,6 +855,8 @@
 				2F4003842899076500C72B7F /* UIImgae_svgImgWithViewController.xib in Resources */,
 				2FFB564B288562A700D4B972 /* PopUpDemoViewController.xib in Resources */,
 				2F400334289770D700C72B7F /* codeAutoLayoutViewController.xib in Resources */,
+				2F4003C728A4920D00C72B7F /* AutoCollectionViewCell.xib in Resources */,
+				2F0CEB8D28B4DA0B00518AFC /* CollectionHeaderAutoLayoutViewController.xib in Resources */,
 				2F40033A2897710400C72B7F /* XibAutoLayoutViewController.xib in Resources */,
 				2F0B271D2877F039002333DF /* SVG.svg in Resources */,
 				2F4003592897894300C72B7F /* TSSColorViewController.xib in Resources */,
@@ -806,7 +948,10 @@
 			files = (
 				2F40038828990C4500C72B7F /* UIImage_changeColorViewController.swift in Sources */,
 				2F4003732899002500C72B7F /* UIIimage_CreateImageWithColorViewController.swift in Sources */,
+				2FE2390A2934B3F900BE43AA /* TestBaseTableViewModel.swift in Sources */,
+				2F0CEB8C28B4DA0B00518AFC /* CollectionHeaderAutoLayoutViewController.swift in Sources */,
 				2F40033C2897711200C72B7F /* SbAutoLayoutViewController.swift in Sources */,
+				2F4003C928A494CD00C72B7F /* AutoTwoCollectionViewCell.swift in Sources */,
 				2F4003832899076500C72B7F /* UIImgae_svgImgWithViewController.swift in Sources */,
 				2F40038D28990E5700C72B7F /* ChangeTextFieldColorViewController.swift in Sources */,
 				2FFB566A288660C700D4B972 /* MoreData.swift in Sources */,
@@ -817,15 +962,18 @@
 				2FFB564F2885641100D4B972 /* PopupTestView.swift in Sources */,
 				2F40034E2897815C00C72B7F /* TSSLabViewController.swift in Sources */,
 				2FFB56742886649100D4B972 /* WeatherModel.swift in Sources */,
+				2F4003CD28A4998A00C72B7F /* TestCollectionViewCell.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				2F4003AA289BA3F800C72B7F /* TSSNotiFicationViewController.swift in Sources */,
 				2F40035B28978AE400C72B7F /* TSSColorViewModel.swift in Sources */,
 				2F949B34288E83F1001CB391 /* GetLabelWidthHeightViewController.swift in Sources */,
+				2F4003C228A3B45000C72B7F /* CollectionViewAutoSize.swift in Sources */,
 				2FD5F7E928926620005CDF87 /* ActionSheetCell.swift in Sources */,
 				2F40032E28976F8100C72B7F /* NetWorkViewController.swift in Sources */,
 				2F400395289A0D4300C72B7F /* TSSValidateViewController.swift in Sources */,
 				2F0E74622875821400FA47E1 /* APPTabbarViewController.swift in Sources */,
 				2F400333289770D700C72B7F /* codeAutoLayoutViewController.swift in Sources */,
+				2F4003D328A4E28700C72B7F /* TesrBannerViewController.swift in Sources */,
 				2F4003522897870400C72B7F /* TSSDefaultViewViewController.swift in Sources */,
 				2F0E746A2875822A00FA47E1 /* MeViewController.swift in Sources */,
 				2F4003582897894300C72B7F /* TSSColorViewController.swift in Sources */,
@@ -833,24 +981,31 @@
 				2F400399289A0F1200C72B7F /* TSSValidateTestVC.swift in Sources */,
 				2FFB548C287EA04B00D4B972 /* TSSActionSheetManager.swift in Sources */,
 				2FFB563F288544FB00D4B972 /* ListBaseViewController.swift in Sources */,
+				2F0CEB7F28B4886100518AFC /* TestCollectionheaderView.swift in Sources */,
 				2F40039E289A10C300C72B7F /* TSSValidateViewModel.swift in Sources */,
 				2FFB563D2885430E00D4B972 /* TSSSegmentedViewDemo.swift in Sources */,
+				2F4003E228A4E41600C72B7F /* TestBannerCollectionViewCell.swift in Sources */,
 				2F4003912899132C00C72B7F /* ContentBaseViewController.swift in Sources */,
+				2F0CEB7628B47A2900518AFC /* ActionSheetTwoCell.swift in Sources */,
 				2F40037F2899003C00C72B7F /* UIImage_ScaleImageViewController.swift in Sources */,
 				2F4003432897714C00C72B7F /* AutoLayoutViewController.swift in Sources */,
 				2F4003622898FAD600C72B7F /* UIDeviceModel.swift in Sources */,
 				2FFB566C288660C700D4B972 /* WeatherData.swift in Sources */,
 				2F4003392897710400C72B7F /* XibAutoLayoutViewController.swift in Sources */,
 				2F40035F2898F9FE00C72B7F /* UIDeviceViewController.swift in Sources */,
+				2F4003B628A2585E00C72B7F /* TestBaseTableViewController.swift in Sources */,
 				2F4546AF288796DA0011B6CB /* LoginModel.swift in Sources */,
+				2FE2390C2934B5B600BE43AA /* TeseBaseCollectionViewModel.swift in Sources */,
 				2F4546AE288796DA0011B6CB /* LoginData.swift in Sources */,
 				2F4003772899002D00C72B7F /* UIimage_CreateImageWithGradViewController.swift in Sources */,
 				2FFB564128854C7400D4B972 /* APPNavigationViewController.swift in Sources */,
+				2F4003C628A4920D00C72B7F /* AutoCollectionViewCell.swift in Sources */,
 				2FFB548B287EA04B00D4B972 /* HCYTipsPopUpView.swift in Sources */,
 				2FD5F7E2289223CE005CDF87 /* TSSActionSheetConfig.swift in Sources */,
 				2FD5F7DF289222DC005CDF87 /* ActionSheetViewController.swift in Sources */,
 				2F75641C288E432E007B69C3 /* TimeHelperViewController.swift in Sources */,
 				2FFB564D288562F400D4B972 /* importFile.swift in Sources */,
+				2F4003BD28A3428300C72B7F /* TeseBaseCollectionViewController.swift in Sources */,
 				2FD5F7E5289260C6005CDF87 /* TSSActionSheetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -881,6 +1036,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -889,14 +1045,17 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -922,7 +1081,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -935,6 +1094,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -943,14 +1103,17 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -969,7 +1132,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -994,6 +1157,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1012,6 +1176,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

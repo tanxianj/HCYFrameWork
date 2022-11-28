@@ -1,19 +1,19 @@
 import UIKit
 
-public class XJCycleScrollView: UIView {
+open class TSSCycleScrollView: UIView {
     
     ///  当没有数据时的图片 距离左侧位置
-    var placeholderleftAnchor:CGFloat = 0{
+    public var placeholderleftAnchor:CGFloat = 0{
         didSet{
             placeholderImage.leftAnchor.constraint(equalTo: self.leftAnchor, constant: placeholderleftAnchor).isActive = true
         }
     }
     
     /// 当没有数据时的图片
-    var placeholderImage:UIImageView = UIImageView()
+    public var placeholderImage:UIImageView = UIImageView()
     
     /// 任意数组形式的数据源
-    var dataSource: [Any]! = [] {
+    public var dataSource: [Any]! = [] {
         didSet {
             collectionView.isScrollEnabled = !isSingleImage
             placeholderImage.isHidden = !isSingleImage
@@ -24,84 +24,84 @@ public class XJCycleScrollView: UIView {
     }
     
     /// 自动滚动时长 default 3
-    var timeInterval: TimeInterval = 3 {
+    public var timeInterval: TimeInterval = 3 {
         didSet {
             setupTimer()
         }
     }
     
     /// 是否自动滚动 default true
-    var isAutoScroll: Bool = true {
+    public var isAutoScroll: Bool = true {
         didSet {
             setupTimer()
         }
     }
     
     /// 滚动方向 default horizontal
-    var scrollDirection: UICollectionView.ScrollDirection = .horizontal {
+    public var scrollDirection: UICollectionView.ScrollDirection = .horizontal {
         didSet {
             flowLayout.scrollDirection = scrollDirection
         }
     }
     
     /// banner 滚动 点击 自定义cell 和 设置cell显示内容 代理
-    weak var delegate: XJCycleScrollViewDelegate?
+    weak var delegate: TSSCycleScrollViewDelegate?
     /// 待注册的cell Identifier
     private var _Identifier:String?
     /// 待注册的cell Identifier
-    var Identifier: String{
+    private var Identifier: String{
         get {return _Identifier ?? ""}
         set {_Identifier = newValue}
     }
     
     /// 是否无限滚动 default
-    var infiniteLoop: Bool = true
+    public var infiniteLoop: Bool = true
     
     /// 是否显示 PageControl default true
-    var showPageControl: Bool = true {
+    public var showPageControl: Bool = true {
         didSet {
             pageControl?.isHidden = !showPageControl
         }
     }
     /// 只有一条数据时是否隐藏 PageControl default true
-    var hidesForSinglePage: Bool = true
+    public var hidesForSinglePage: Bool = true
     
     /// pageControlStyle default default
-    var pageControlStyle: XJCycleScrollViewPageControlStyle = .default {
+    public var pageControlStyle: TSSCycleScrollViewPageControlStyle = .default {
         didSet {
             setupPageControl()
         }
     }
     
     /// pageControlDotSize default 10 10
-    var pageControlDotSize: CGSize = CGSize(width: 10, height: 10) {
+    public var pageControlDotSize: CGSize = CGSize(width: 10, height: 10) {
         didSet {
             setupPageControl()
         }
     }
-    var pageControlAlignment: XJCycleScrollViewPageControlAlignment = .center(offset: 0)
+    public var pageControlAlignment: TSSCycleScrollViewPageControlAlignment = .center(offset: 0)
     /// 自定义的 pageControl 圆角 pageControl 是颜色是无效
-    var pageControlCornerRadius:CGFloat = 0.0
+    public var pageControlCornerRadius:CGFloat = 0.0
     
-    var currentPageColor: UIColor = .white {
+    public var currentPageColor: UIColor = .white {
         didSet {
             if let p = pageControl as? UIPageControl {
                 p.currentPageIndicatorTintColor = currentPageColor
-            } else if let p = pageControl as? XJPageControl {
+            } else if let p = pageControl as? TSSCycleScrollViewPageControl {
                 p.currentDotColor = currentPageColor
             }
         }
     }
-    var normalPageColor: UIColor = .lightGray {
+    public var normalPageColor: UIColor = .lightGray {
         didSet {
             if let p = pageControl as? UIPageControl {
                 p.pageIndicatorTintColor = normalPageColor
-            } else if let p = pageControl as? XJPageControl {
+            } else if let p = pageControl as? TSSCycleScrollViewPageControl {
                 p.dotColor = normalPageColor
             }
         }
     }
-    var currentPageImage: UIImage? {
+    public var currentPageImage: UIImage? {
         didSet {
             if pageControlStyle != .animated {
                 pageControlStyle = .animated
@@ -111,7 +111,7 @@ public class XJCycleScrollView: UIView {
             }
         }
     }
-    var normalPageImage: UIImage? {
+    public var normalPageImage: UIImage? {
         didSet {
             if pageControlStyle != .animated {
                 pageControlStyle = .animated
@@ -146,8 +146,8 @@ public class XJCycleScrollView: UIView {
         }
         switch pageControlStyle {
         case .animated:
-            pageControl = XJPageControl()
-            if let p = pageControl as? XJPageControl {
+            pageControl = TSSCycleScrollViewPageControl()
+            if let p = pageControl as? TSSCycleScrollViewPageControl {
                 p.numberOfPages = dataSource.count
                 p.currentDotColor = currentPageColor
                 p.dotColor = normalPageColor
@@ -178,7 +178,7 @@ public class XJCycleScrollView: UIView {
     }
     
     private func setCustomPageControlDotImage(image: UIImage, isCurrent: Bool) {
-        if let p = pageControl as? XJPageControl {
+        if let p = pageControl as? TSSCycleScrollViewPageControl {
             if isCurrent {
                 p.currentPageImage = image
                 p.pageControlCornerRadius = self.pageControlCornerRadius
@@ -236,7 +236,7 @@ public class XJCycleScrollView: UIView {
     }()
     
    
-   convenience init(frame: CGRect, delegate:XJCycleScrollViewDelegate) {
+    public convenience init(frame: CGRect, delegate:TSSCycleScrollViewDelegate) {
         self.init(frame: frame)
         self.delegate = delegate
     }
@@ -265,7 +265,7 @@ public class XJCycleScrollView: UIView {
             collectionView.scrollToItem(at: IndexPath(item: infiniteLoop ? totalItemsCount / 2 + 1 : 0, section: 0), at: .left, animated: false)
         }
         var size: CGSize = .zero
-        if let p = pageControl as? XJPageControl {
+        if let p = pageControl as? TSSCycleScrollViewPageControl {
             size = p.sizeForNumber(of: dataSource.count)
         } else {
             guard let p = pageControl as? UIPageControl else { return }
@@ -275,7 +275,7 @@ public class XJCycleScrollView: UIView {
         }
         var x = (bounds.width - size.width ) / 2
         var y = bounds.height - size.height
-        if case let XJCycleScrollViewPageControlAlignment.right(right, bottom) = pageControlAlignment {
+        if case let TSSCycleScrollViewPageControlAlignment.right(right, bottom) = pageControlAlignment {
             x = collectionView.bounds.width - size.width + right
             y = bounds.height - size.height
             var bounds = bounds
@@ -284,8 +284,8 @@ public class XJCycleScrollView: UIView {
             flowLayout.itemSize = bounds.size
             collectionView.frame = bounds
         }
-        if case let XJCycleScrollViewPageControlAlignment.left(left,bottom) = pageControlAlignment {
-            x = -30.0 + left
+        if case let TSSCycleScrollViewPageControlAlignment.left(left,bottom) = pageControlAlignment {
+            x =  left
             y = bounds.height - size.height
             var bounds = bounds
             bounds.size.height = bounds.height - bottom
@@ -293,7 +293,7 @@ public class XJCycleScrollView: UIView {
             flowLayout.itemSize = bounds.size
             collectionView.frame = bounds
         }
-        if case let XJCycleScrollViewPageControlAlignment.center(offset) = pageControlAlignment {
+        if case let TSSCycleScrollViewPageControlAlignment.center(offset) = pageControlAlignment {
             y = bounds.height - size.height
             var bounds = bounds
             bounds.size.height = bounds.height - offset
@@ -302,7 +302,7 @@ public class XJCycleScrollView: UIView {
             collectionView.frame = bounds
         }
         
-        if let p = pageControl as? XJPageControl {
+        if let p = pageControl as? TSSCycleScrollViewPageControl {
             p.sizeToFit()
         }
         pageControl?.frame = CGRect(x: x, y: y, width: size.width, height: size.height)
@@ -363,28 +363,36 @@ public class XJCycleScrollView: UIView {
     }
     
     deinit {
-        DebugLog("XJCycleScrollView deinit")
+        TSSLog("TSSCycleScrollView deinit")
     }
 }
 
-extension XJCycleScrollView: UICollectionViewDelegate, UICollectionViewDataSource {
+extension TSSCycleScrollView: UICollectionViewDelegate, UICollectionViewDataSource {
+    //MARK: register Cell for Default Cell
+    private func rgisterDefaultCell(collectionView:UICollectionView){
+        Identifier = "TSSCycleScrollViewDefaultCell"
+        collectionView.register(TSSCycleScrollViewDefaultCell.self, forCellWithReuseIdentifier: "TSSCycleScrollViewDefaultCell")
+    }
+    //MARK: register Cell for Class
     private  func registerClass(collectionView:UICollectionView){
         guard let string = self.delegate?.customCollectionViewCellClass() else{return}
         let name = String(cString: object_getClassName(string)).components(separatedBy: ".").last!
         Identifier = name
-        self.collectionView.register(string, forCellWithReuseIdentifier: name)
+        collectionView.register(string, forCellWithReuseIdentifier: name)
     }
+    //MARK: register Cell for Nib
     private  func registerNib(collectionView:UICollectionView){
         guard let string = self.delegate?.customCollectionViewCellNib() else{ return}
         Identifier = string
-        self.collectionView.register(UINib(nibName: string, bundle: nil), forCellWithReuseIdentifier: string)
+        collectionView.register(UINib(nibName: string, bundle: nil), forCellWithReuseIdentifier: string)
     }
+    
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return totalItemsCount
     }
-    
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if Identifier == ""{
+            rgisterDefaultCell(collectionView: collectionView)
             registerClass(collectionView: collectionView)
             registerNib(collectionView: collectionView)
         }
@@ -394,31 +402,32 @@ extension XJCycleScrollView: UICollectionViewDelegate, UICollectionViewDataSourc
         return cell
         
     }
-    
+    //MARK: UICollectionViewDelegate
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         delegate?.cycleScrollView(self, didSelectItemAt: currentPageControlIndex)
     }
 }
 
-extension XJCycleScrollView: UIScrollViewDelegate {
+extension TSSCycleScrollView: UIScrollViewDelegate {
+    //MARK: UIScrollViewDelegate
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         switch pageControl {
         case let pageControl as UIPageControl:
             pageControl.currentPage = currentPageControlIndex
-        case let pageControl as XJPageControl:
+        case let pageControl as TSSCycleScrollViewPageControl:
             pageControl.currentPage = currentPageControlIndex
         default: break
         }
     }
-    
+    //MARK: UIScrollViewDelegate
     public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         invalidateTimer()
     }
-    
+    //MARK: UIScrollViewDelegate
     public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         setupTimer()
     }
-    
+    //MARK: UIScrollViewDelegate
     public func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         delegate?.cycleScrollView(self, didScrollTo: currentPageControlIndex)
     }

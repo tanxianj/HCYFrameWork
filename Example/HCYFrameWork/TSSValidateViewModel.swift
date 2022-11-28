@@ -22,8 +22,8 @@ class TSSValidateViewModel:TSSBaseViewModelType{
         let result:Driver<String>
         let statusColor:Driver<UIColor>
     }
-    private let textObject = PublishSubject<String>()
-    private let typeObject = PublishSubject<TSSValidateTest>()
+    private let textObject = ReplaySubject<String>.create(bufferSize: 1)
+    private let typeObject = ReplaySubject<TSSValidateTest>.create(bufferSize: 1)
     init(){
         input = Input(textfiled: textObject.asObserver(), type: typeObject.asObserver())
 
@@ -57,17 +57,7 @@ class TSSValidateViewModel:TSSBaseViewModelType{
         .startWith(false)
         .asDriver(onErrorJustReturn: false)
         
-        //MARK: 不理解为什么这里要写一次
-        status.asObservable().subscribe(onNext: {_ in
-            
-        }).disposed(by: disposeBag)
-        
-        
-        
-        
-        
-        
-        let result =  status.asObservable().map { status -> String in
+        let result =  status.map { status -> String in
              return status ? "验证通过" : "验证未通过"
         }.asDriver(onErrorJustReturn: "")
         

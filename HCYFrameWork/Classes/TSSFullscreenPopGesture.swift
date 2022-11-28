@@ -3,13 +3,40 @@ import UIKit
 open class TSSFullscreenPopGesture {
     
     open class func configure() {
-        
+        UINavigationBar.tss_navbar_initialize()
         UINavigationController.tss_nav_initialize()
         UIViewController.tss_initialize()
     }
     
 }
-
+extension UINavigationBar{
+    open class func tss_navbar_initialize() {
+        // Inject "-pushViewController:animated:"
+        DispatchQueue.once(token: "com.UINavigationBar.MethodSwizzling.TSS", block: {
+            let originalMethod = class_getInstanceMethod(self, #selector(layoutSubviews))
+            let swizzledMethod = class_getInstanceMethod(self, #selector(tss_layoutSubviews))
+            method_exchangeImplementations(originalMethod!, swizzledMethod!)
+        })
+    }
+    @objc private func tss_layoutSubviews(){
+        self.tss_layoutSubviews()
+        
+        for view in self.subviews {
+           
+           let vName = String(describing:(view.self))
+           if vName.contains("_UINavigationBarContentView") {
+               if #available(iOS 11.0, *) {
+                   let margins = view.layoutMargins
+                   view.frame = CGRect(x: -margins.left, y: -margins.top, width: margins.left + margins.right + view.frame.size.width, height: margins.top + margins.bottom + view.frame.size.height)
+                  break
+               }else{
+                   self.superview?.layoutMargins = .zero
+               }
+               break
+           }
+       }
+   }
+}
 extension UINavigationController {
     
     private var tss_popGestureRecognizerDelegate: _TSSFullscreenPopGestureRecognizerDelegate {
@@ -24,12 +51,14 @@ extension UINavigationController {
     
     open class func tss_nav_initialize() {
         // Inject "-pushViewController:animated:"
-        DispatchQueue.once(token: "com.UINavigationController.MethodSwizzling", block: {
+        DispatchQueue.once(token: "com.UINavigationController.MethodSwizzling.TSS", block: {
             let originalMethod = class_getInstanceMethod(self, #selector(pushViewController(_:animated:)))
             let swizzledMethod = class_getInstanceMethod(self, #selector(tss_pushViewController(_:animated:)))
             method_exchangeImplementations(originalMethod!, swizzledMethod!)
         })
     }
+    
+    
     
     //    override open class func initialize() {
     //        // Inject "-pushViewController:animated:"
@@ -140,21 +169,12 @@ extension UIViewController {
     
     open class func tss_initialize() {
         
-        DispatchQueue.once(token: "com.UIViewController.MethodSwizzling", block: {
+        DispatchQueue.once(token: "com.UIViewController.MethodSwizzling.TSS", block: {
             let originalMethod = class_getInstanceMethod(self, #selector(viewWillAppear(_:)))
             let swizzledMethod = class_getInstanceMethod(self, #selector(tss_viewWillAppear(_:)))
             method_exchangeImplementations(originalMethod!, swizzledMethod!)
         })
     }
-    
-    //    override open class func initialize() {
-    //
-    //        DispatchQueue.once(token: "com.UIViewController.MethodSwizzling", block: {
-    //            let originalMethod = class_getInstanceMethod(self, #selector(viewWillAppear(_:)))
-    //            let swizzledMethod = class_getInstanceMethod(self, #selector(tss_viewWillAppear(_:)))
-    //            method_exchangeImplementations(originalMethod!, swizzledMethod!)
-    //        })
-    //    }
     
     @objc private func tss_viewWillAppear(_ animated: Bool) {
         // Forward to primary implementation.
@@ -275,55 +295,5 @@ fileprivate struct RuntimeKey {
     = UnsafeRawPointer(bitPattern: "KEY_tss_popGestureRecognizerDelegate".hashValue)
     static let KEY_tss_viewControllerBasedNavigationBarAppearanceEnabled
     = UnsafeRawPointer(bitPattern: "KEY_tss_viewControllerBasedNavigationBarAppearanceEnabled".hashValue)
-    static let KEY_tss_scrollViewPopGestureRecognizerEnable
-    = UnsafeRawPointer(bitPattern: "KEY_tss_scrollViewPopGestureRecognizerEnable".hashValue)
-}
-
-extension UIScrollView: UIGestureRecognizerDelegate {
     
-    public var tss_scrollViewPopGestureRecognizerEnable: Bool {
-        get {
-            guard let bools = objc_getAssociatedObject(self, RuntimeKey.KEY_tss_scrollViewPopGestureRecognizerEnable!) as? Bool else {
-                return false
-            }
-            return bools
-        }
-        set {
-            objc_setAssociatedObject(self, RuntimeKey.KEY_tss_scrollViewPopGestureRecognizerEnable!, newValue, .OBJC_ASSOCIATION_ASSIGN)
-        }
-    }
-    
-    //UIGestureRecognizerDelegate
-    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        if self.tss_scrollViewPopGestureRecognizerEnable, self.contentOffset.x <= 0, let gestureDelegate = otherGestureRecognizer.delegate {
-            if gestureDelegate.isKind(of: _TSSFullscreenPopGestureRecognizerDelegate.self) {
-                return true
-            }
-        }
-        return false
-    }
-}
-
-public extension DispatchQueue {
-    
-    private static var _onceTracker = [String]()
-    
-    /**
-     Executes a block of code, associated with a unique token, only once.  The code is thread safe and will
-     only execute the code once even in the presence of multithreaded calls.
-     
-     - parameter token: A unique reverse DNS style name such as com.vectorform.<name> or a GUID
-     - parameter block: Block to execute once
-     */
-    class func once(token: String, block: () -> Void) {
-        objc_sync_enter(self)
-        defer { objc_sync_exit(self) }
-        
-        if _onceTracker.contains(token) {
-            return
-        }
-        
-        _onceTracker.append(token)
-        block()
-    }
 }

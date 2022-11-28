@@ -17,6 +17,7 @@ class TSSSegmentedViewDemo: UITableViewController {
         view.backgroundColor = .white
         tableView.rowHeight = 44
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.navigationItem.leftBarButtonItem = self.tss_createNavigationItem(type: .left, imageName: "return",itemAction: nil)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
