@@ -21,7 +21,7 @@ extension String{
     /// string to double
     public var doubleValue: Double {
         guard let double = Double(self) else {
-            return Double.infinity
+            return 0.0
         }
         return double
     }

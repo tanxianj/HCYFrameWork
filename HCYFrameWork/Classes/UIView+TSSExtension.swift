@@ -1,5 +1,5 @@
 //
-//  UIVIew+Extension.swift
+//  UIView+TSSExtension.swift
 //  
 //
 //  Created by Jupiter_TSS on 4/7/22.
@@ -10,10 +10,10 @@ import UIKit
 fileprivate var VIEW_ACTION_KEY = ""
 
 extension UIView{
-    typealias View_action = ()->()
-    var viewAction:View_action{
+    typealias tmpViewAction = ()->()
+    var viewAction:tmpViewAction{
         get{
-            return objc_getAssociatedObject(self, &VIEW_ACTION_KEY) as! UIView.View_action
+            return objc_getAssociatedObject(self, &VIEW_ACTION_KEY) as! UIView.tmpViewAction
         }
         set{
             objc_setAssociatedObject(self, &VIEW_ACTION_KEY, newValue, .OBJC_ASSOCIATION_COPY)
@@ -115,7 +115,7 @@ extension UIView{
         }
     }
     ///  back self height
-    public var mj_h: CGFloat {
+    public var tss_h: CGFloat {
         get {
             return self.bounds.size.height
         }
@@ -124,7 +124,7 @@ extension UIView{
         }
     }
     ///  back self width
-    public var mj_w: CGFloat {
+    public var tss_w: CGFloat {
         get {
             return self.bounds.size.width
         }
@@ -133,7 +133,7 @@ extension UIView{
         }
     }
     /// back self frame origin x
-    public var mj_x: CGFloat {
+    public var tss_x: CGFloat {
         get {
             return self.frame.origin.x
         }
@@ -143,7 +143,7 @@ extension UIView{
     }
     
     /// back self frame origin y
-    public var mj_y: CGFloat {
+    public var tss_y: CGFloat {
         get {
             return self.frame.origin.y
         }
