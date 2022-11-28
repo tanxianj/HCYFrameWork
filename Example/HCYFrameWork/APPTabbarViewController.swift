@@ -47,7 +47,7 @@ class APPTabbarViewController: TSSBaseTabbarViewController {
               let normalImage = dic["normalImage"],
               let selectImage = dic["selectImage"],
               let workName = Bundle.main.infoDictionary?["CFBundleExecutable"],
-              let cls = NSClassFromString("\(workName).\(className)") as? UIViewController.Type  else {
+              let _ = NSClassFromString("\(workName).\(className)") as? UIViewController.Type  else {
                   return UIViewController()
               }
 //        let vc = cls.init()

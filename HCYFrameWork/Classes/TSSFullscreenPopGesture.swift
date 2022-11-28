@@ -10,7 +10,7 @@ open class TSSFullscreenPopGesture {
     
 }
 extension UINavigationBar{
-    open class func tss_navbar_initialize() {
+    public class func tss_navbar_initialize() {
         // Inject "-pushViewController:animated:"
         DispatchQueue.once(token: "com.UINavigationBar.MethodSwizzling.TSS", block: {
             let originalMethod = class_getInstanceMethod(self, #selector(layoutSubviews))
@@ -49,7 +49,7 @@ extension UINavigationController {
         return delegate
     }
     
-    open class func tss_nav_initialize() {
+    public class func tss_nav_initialize() {
         // Inject "-pushViewController:animated:"
         DispatchQueue.once(token: "com.UINavigationController.MethodSwizzling.TSS", block: {
             let originalMethod = class_getInstanceMethod(self, #selector(pushViewController(_:animated:)))
@@ -167,7 +167,7 @@ extension UIViewController {
         }
     }
     
-    open class func tss_initialize() {
+    public class func tss_initialize() {
         
         DispatchQueue.once(token: "com.UIViewController.MethodSwizzling.TSS", block: {
             let originalMethod = class_getInstanceMethod(self, #selector(viewWillAppear(_:)))
