@@ -16,9 +16,9 @@ class UIDeviceViewController: TSSBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        inputField.rx.textInput => viewModel.input.inputmm
-        viewModel.output.deviceName => deviceLab.rx.text
-        viewModel.output.actualWidth => viewWidth.rx.constant
+//        inputField.rx.textInput => viewModel.input.inputmm
+//        viewModel.output.deviceName => deviceLab.rx.text
+//        viewModel.output.actualWidth => viewWidth.rx.constant
         // Do any additional setup after loading the view.
     }
 

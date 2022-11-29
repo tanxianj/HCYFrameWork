@@ -190,7 +190,6 @@
 		229E027CB32E6595678436B3E213A6C2 /* MJRefreshNormalTrailer.h in Headers */ = {isa = PBXBuildFile; fileRef = 235C7D1CD28CDF973240B5A70D3343F5 /* MJRefreshNormalTrailer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22B5EA40A8BC0FC81910C9AC57A6AFF3 /* FLEXResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B27B04F27565297CF9F93BC20E28A6 /* FLEXResources.m */; settings = {COMPILER_FLAGS = "-Wno-unsupported-availability-guard -Wno-deprecated-declarations"; }; };
 		230C31259F9B1416024E1115E03E1E38 /* NSTimer+FLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 91932212BE96F94BEE1589BA1368A075 /* NSTimer+FLEX.m */; settings = {COMPILER_FLAGS = "-Wno-unsupported-availability-guard -Wno-deprecated-declarations"; }; };
-		23338706EB04E2C7A9CC1D7030F9F7A0 /* UIDevice+TSSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE57FF3F821666F622578F314CC7B6 /* UIDevice+TSSExtension.swift */; };
 		23BF068DA4053D1B67FAE7A34AB84609 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61C1795BCF006F6B1165F44CCBCE679 /* Empty.swift */; };
 		241AEE93E3758C12E5A6908088C090A3 /* FLEXObjcInternal.mm in Sources */ = {isa = PBXBuildFile; fileRef = A5D2C72624D9BB21F31656470F423C75 /* FLEXObjcInternal.mm */; settings = {COMPILER_FLAGS = "-Wno-unsupported-availability-guard -Wno-deprecated-declarations"; }; };
 		246D1F70442EBEDB28173CB80C3F99C4 /* TSSSegmentedBaseItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6EFAA85FBE211A912BDEA207F63098 /* TSSSegmentedBaseItemModel.swift */; };
@@ -1726,7 +1725,7 @@
 		1D5D12EBF1BEE5F67DCC147DF5528DD3 /* Concat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Concat.swift; path = RxSwift/Observables/Concat.swift; sourceTree = "<group>"; };
 		1D6B1948A4FB237ED6BE925F5D1B006F /* FLEXMethodCallingViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXMethodCallingViewController.m; path = Classes/Editing/FLEXMethodCallingViewController.m; sourceTree = "<group>"; };
 		1DCA6B126B8DED82B1CD739428196822 /* RxCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RxCocoa.release.xcconfig; sourceTree = "<group>"; };
-		1E62C22617B48A77BEABF589ED8FD9F5 /* FLEXSwiftInternal.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FLEXSwiftInternal.mm; path = Classes/Utility/Runtime/Objc/FLEXSwiftInternal.mm; sourceTree = "<group>"; };
+		1E62C22617B48A77BEABF589ED8FD9F5 /* FLEXSwiftInternal.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FLEXSwiftInternal.mm; path = Classes/Utility/Runtime/Objc/FLEXSwiftInternal.mm; sourceTree = "<group>"; };
 		1EAF463BB706C124DC2A129E2BE43B24 /* FLEXNSStringShortcuts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXNSStringShortcuts.m; path = Classes/ObjectExplorers/Sections/Shortcuts/FLEXNSStringShortcuts.m; sourceTree = "<group>"; };
 		1EF2F5B3C088C2D3A3A6E81EEC92D1A0 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
 		1F103D2EB5FED0F0DD004F202C175FD4 /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Kingfisher.modulemap; sourceTree = "<group>"; };
@@ -1825,7 +1824,7 @@
 		30D1C0AB96291FBD12B22E7CAE0996EC /* FLEX-Runtime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FLEX-Runtime.h"; path = "Classes/FLEX-Runtime.h"; sourceTree = "<group>"; };
 		3105018538D837647956D9CDE4896CB9 /* FLEXKeychainViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXKeychainViewController.h; path = Classes/GlobalStateExplorers/Keychain/FLEXKeychainViewController.h; sourceTree = "<group>"; };
 		318A0CD508D0F14F5C6F9B4F5FF8AECB /* NSObject+FLEX_Reflection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+FLEX_Reflection.h"; path = "Classes/Utility/Categories/NSObject+FLEX_Reflection.h"; sourceTree = "<group>"; };
-		31B70A640F59798774C71EB5EC7B72B8 /* HCYFrameWork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HCYFrameWork.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		31B70A640F59798774C71EB5EC7B72B8 /* HCYFrameWork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HCYFrameWork.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		320F7B2F570795628B85B34642C5A792 /* FLEXRuntime+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FLEXRuntime+Compare.h"; path = "Classes/Utility/Categories/FLEXRuntime+Compare.h"; sourceTree = "<group>"; };
 		321212306DF89D82F86D25293BBDF62B /* ImageBinder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageBinder.swift; path = Sources/SwiftUI/ImageBinder.swift; sourceTree = "<group>"; };
 		322327FF9C1D635AF92D3AEDBED27A9A /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
@@ -1915,7 +1914,7 @@
 		42D6738D5D2623F8AAAEE5842769845E /* FLEXManager+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FLEXManager+Private.h"; path = "Classes/Manager/Private/FLEXManager+Private.h"; sourceTree = "<group>"; };
 		42DA15C90632EAA9C080258FD640AF7D /* FLEXObjectListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXObjectListViewController.h; path = Classes/GlobalStateExplorers/FLEXObjectListViewController.h; sourceTree = "<group>"; };
 		42F0A5DE3BEE102C7886D4C8AFF8AA76 /* CLIColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLIColor.m; path = Sources/CocoaLumberjack/CLI/CLIColor.m; sourceTree = "<group>"; };
-		4353907C4A7F2F904A9C798993810357 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		4353907C4A7F2F904A9C798993810357 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		435ACD2B07BA5B894891B6F306ED60C1 /* SVGLineElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGLineElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGLineElement.m"; sourceTree = "<group>"; };
 		435BFD5AED00997F8B15281FEB0D6CDB /* CharacterData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CharacterData.m; path = "Source/DOM classes/Core DOM/CharacterData.m"; sourceTree = "<group>"; };
 		43709A21BC489958BD3D4C8C20DE1892 /* ProcessingInstruction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ProcessingInstruction.h; path = "Source/DOM classes/Core DOM/ProcessingInstruction.h"; sourceTree = "<group>"; };
@@ -1963,7 +1962,7 @@
 		4C918ED01BF42EB32F328F5ADCD3858D /* ConstraintMakerRelatable+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintMakerRelatable+Extensions.swift"; path = "Sources/ConstraintMakerRelatable+Extensions.swift"; sourceTree = "<group>"; };
 		4CA363D6492B071DADBCAFBEC7E04055 /* FLEXKBToolbarButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXKBToolbarButton.m; path = Classes/GlobalStateExplorers/RuntimeBrowser/FLEXKBToolbarButton.m; sourceTree = "<group>"; };
 		4CA96D41CA7BA6C4FBF353C312273EFB /* FHSViewSnapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FHSViewSnapshot.m; path = Classes/ViewHierarchy/SnapshotExplorer/FHSViewSnapshot.m; sourceTree = "<group>"; };
-		4CD4A38144DCE77FD31B4A4AE2A9B5D3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4CD4A38144DCE77FD31B4A4AE2A9B5D3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4DA6BA6C062DCAB0614725C7CD870BBF /* UIPasteboard+FLEX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIPasteboard+FLEX.h"; path = "Classes/Utility/Categories/UIPasteboard+FLEX.h"; sourceTree = "<group>"; };
 		4DB786DFE52A22A3D67E0F0C003185E6 /* FLEXFileBrowserSearchOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXFileBrowserSearchOperation.m; path = Classes/GlobalStateExplorers/FileBrowser/FLEXFileBrowserSearchOperation.m; sourceTree = "<group>"; };
 		4DF767683FEF3004D95A88EE5E1FF047 /* SVGLinearGradientElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGLinearGradientElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGLinearGradientElement.m"; sourceTree = "<group>"; };
@@ -2157,7 +2156,7 @@
 		6E9D05E510C3F765F095C1F2E30DFD28 /* DispatchQueueConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchQueueConfiguration.swift; path = RxSwift/Schedulers/Internal/DispatchQueueConfiguration.swift; sourceTree = "<group>"; };
 		6EF33992D62C42CF609BE8530B3B14DB /* Pods-HCYFrameWork_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HCYFrameWork_Example-frameworks.sh"; sourceTree = "<group>"; };
 		6F0E3E5779613C63C2DD2F211B457B02 /* FLEXArgumentInputFontView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputFontView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputFontView.h; sourceTree = "<group>"; };
-		6F79AA201E7723F50865B74BCCFBAB2A /* flex_fishhook.c */ = {isa = PBXFileReference; includeInIndex = 1; name = flex_fishhook.c; path = Classes/Utility/Runtime/flex_fishhook.c; sourceTree = "<group>"; };
+		6F79AA201E7723F50865B74BCCFBAB2A /* flex_fishhook.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = flex_fishhook.c; path = Classes/Utility/Runtime/flex_fishhook.c; sourceTree = "<group>"; };
 		6FC34CC230297814F1823B1D72AC336B /* flex_fishhook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = flex_fishhook.h; path = Classes/Utility/Runtime/flex_fishhook.h; sourceTree = "<group>"; };
 		6FD6E86F09E867D814CFEAFEE40B01A0 /* FLEXSystemLogViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXSystemLogViewController.m; path = Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogViewController.m; sourceTree = "<group>"; };
 		6FE57E69387A8F50EC9910F64E33183F /* FLEXMethodBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXMethodBase.h; path = Classes/Utility/Runtime/Objc/Reflection/FLEXMethodBase.h; sourceTree = "<group>"; };
@@ -2398,7 +2397,7 @@
 		9D1352EF53B3DE977063B4FE0FF2434F /* Disposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disposable.swift; path = RxSwift/Disposable.swift; sourceTree = "<group>"; };
 		9D3290778615BDCAC25D5ED6D74AFC51 /* FLEXRuntime+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FLEXRuntime+Compare.m"; path = "Classes/Utility/Categories/FLEXRuntime+Compare.m"; sourceTree = "<group>"; };
 		9D8494826C2E183E50A675680FA1BC49 /* TSSSwiftDate+ISOParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TSSSwiftDate+ISOParser.swift"; path = "HCYFrameWork/Classes/TSSSwiftDate+ISOParser.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DAAD71DF783C5281F9461B0D0E541CF /* RxRelay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RxRelay-prefix.pch"; sourceTree = "<group>"; };
 		9DAD3208233758A1DD68565B2471E51F /* TinySVGTextAreaElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TinySVGTextAreaElement.m; path = "Source/DOM classes/Unported or Partial DOM/TinySVGTextAreaElement.m"; sourceTree = "<group>"; };
 		9DE78D203C470D16E92EEDCB5568973D /* SVGTextLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGTextLayer.h; path = "Source/QuartzCore additions/SVGTextLayer.h"; sourceTree = "<group>"; };
@@ -2450,7 +2449,7 @@
 		A566E39472990D0402F9BD23DCB6C448 /* SVGElementInstance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGElementInstance.m; path = "Source/DOM classes/SVG-DOM/SVGElementInstance.m"; sourceTree = "<group>"; };
 		A59106529ED673C8432A6DFC15978412 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		A5BDA329C6DE16902B7A0518687D032D /* MJRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-umbrella.h"; sourceTree = "<group>"; };
-		A5D2C72624D9BB21F31656470F423C75 /* FLEXObjcInternal.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FLEXObjcInternal.mm; path = Classes/Utility/Runtime/Objc/FLEXObjcInternal.mm; sourceTree = "<group>"; };
+		A5D2C72624D9BB21F31656470F423C75 /* FLEXObjcInternal.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FLEXObjcInternal.mm; path = Classes/Utility/Runtime/Objc/FLEXObjcInternal.mm; sourceTree = "<group>"; };
 		A6348B3437A1C5097EDE36F308F79F5A /* IQKeyboardManagerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.debug.xcconfig; sourceTree = "<group>"; };
 		A6497B946E44549BD4B83D3774EEDB48 /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = Sources/CocoaLumberjack/DDOSLogger.m; sourceTree = "<group>"; };
 		A64ABB4030157F581C7EACA14C92CB52 /* SVGDefsElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGDefsElement.m; path = "Source/DOM classes/SVG-DOM/SVGDefsElement.m"; sourceTree = "<group>"; };
@@ -2752,7 +2751,7 @@
 		DCEB8160605FD66434335D851AF9971A /* SVGRectElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGRectElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGRectElement.m"; sourceTree = "<group>"; };
 		DCF64577B9880B38FD3927C7D2D38F83 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
 		DCF6F317CCD4070C738B1B666A917E0C /* MainScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MainScheduler.swift; path = RxSwift/Schedulers/MainScheduler.swift; sourceTree = "<group>"; };
-		DD0398B1E4F171129BC7F764CFABFBEC /* FLEXFirebaseTransaction.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FLEXFirebaseTransaction.mm; path = Classes/Network/FLEXFirebaseTransaction.mm; sourceTree = "<group>"; };
+		DD0398B1E4F171129BC7F764CFABFBEC /* FLEXFirebaseTransaction.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FLEXFirebaseTransaction.mm; path = Classes/Network/FLEXFirebaseTransaction.mm; sourceTree = "<group>"; };
 		DD0450A76A4AEDA46BDEB3B28BE517A2 /* CombineLatest+Collection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CombineLatest+Collection.swift"; path = "RxSwift/Observables/CombineLatest+Collection.swift"; sourceTree = "<group>"; };
 		DD35EC34CAA9744A5F4464AE44E071D6 /* FLEXRuntimeKeyPathTokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXRuntimeKeyPathTokenizer.h; path = Classes/GlobalStateExplorers/RuntimeBrowser/FLEXRuntimeKeyPathTokenizer.h; sourceTree = "<group>"; };
 		DD555616E63FE1C5C0ACBD2A00F33949 /* FLEXImagePreviewViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXImagePreviewViewController.h; path = Classes/ViewHierarchy/FLEXImagePreviewViewController.h; sourceTree = "<group>"; };
@@ -2760,7 +2759,6 @@
 		DD62CA87A259AF477A805EFB0FC525C6 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
 		DD7956D9B1F3CC6BCF5D37309B216C78 /* FLEXShortcutsSection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXShortcutsSection.h; path = Classes/ObjectExplorers/Sections/Shortcuts/FLEXShortcutsSection.h; sourceTree = "<group>"; };
 		DD813A70342533D0B06FC913A70A93B5 /* Attr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Attr.h; path = "Source/DOM classes/Core DOM/Attr.h"; sourceTree = "<group>"; };
-		DDCE57FF3F821666F622578F314CC7B6 /* UIDevice+TSSExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDevice+TSSExtension.swift"; path = "HCYFrameWork/Classes/UIDevice+TSSExtension.swift"; sourceTree = "<group>"; };
 		DE1178DCBF1DA9F62C098262FE460C40 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
 		DE2B99595116DE5161CA071CB4B28911 /* FLEXCollectionContentSection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXCollectionContentSection.h; path = Classes/ObjectExplorers/Sections/FLEXCollectionContentSection.h; sourceTree = "<group>"; };
 		DE6E2CFF19A82E7265B7D704E6FD3D35 /* SVGUnitTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGUnitTypes.h; path = "Source/DOM classes/SVG-DOM/SVGUnitTypes.h"; sourceTree = "<group>"; };
@@ -3270,7 +3268,6 @@
 				B392C3073D3AF64F7B0381920DBD146B /* TSSVIewProtocol.swift */,
 				D865675685CBCB5BEE52933D0A9AA8B5 /* TSSWaterCollectionFlowLayout.swift */,
 				479C63E95E8044D8DDA6443DE47498F6 /* UIColor+TSSExtension.swift */,
-				DDCE57FF3F821666F622578F314CC7B6 /* UIDevice+TSSExtension.swift */,
 				023C9FC7BDFA113A20005BD4740AFF43 /* UIImage+TSSExtension.swift */,
 				0E5DF798A3908334CCF6CED078309E97 /* UIImageView+TSSExtension.swift */,
 				FE30DEB541D8F668BAE903F188F98873 /* UILabel+TSSRx.swift */,
@@ -3418,7 +3415,6 @@
 				C327F46338F030643051E0A3027F05A1 /* WKWebView+Rx.swift */,
 				0486DA14B4C402A2D985B89874ECE806 /* Support Files */,
 			);
-			name = RxCocoa;
 			path = RxCocoa;
 			sourceTree = "<group>";
 		};
@@ -3464,7 +3460,6 @@
 				04D9E4B863DC015DDDDE73530D0DB98C /* UILayoutSupport+Extensions.swift */,
 				0D3F5B37FC818BF5E6F4ECF040A19BEE /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -3485,7 +3480,6 @@
 				D96495DD993FDF199DA568BB14B08351 /* Utilities.swift */,
 				506783CDBAFC98CBC0D39CA77200FA1C /* Support Files */,
 			);
-			name = Differentiator;
 			path = Differentiator;
 			sourceTree = "<group>";
 		};
@@ -3560,7 +3554,6 @@
 				CC09FECFCB9A9D747FC09069EBD3C9B0 /* Validation.swift */,
 				D2D87102BD964D0D03499C1044E4DABE /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -3633,7 +3626,6 @@
 				35269C3417CEBE837948A631B4CFFC78 /* IQUIViewController+Additions.swift */,
 				A1C3A84682BA4970D1FF251DEFB83D20 /* Support Files */,
 			);
-			name = IQKeyboardManagerSwift;
 			path = IQKeyboardManagerSwift;
 			sourceTree = "<group>";
 		};
@@ -3666,7 +3658,6 @@
 				DED27F6A813F245D5E57FAB4B24DA78D /* Resources */,
 				4F68184D2CD8B3337649381BBDCD3FDF /* Support Files */,
 			);
-			name = SVProgressHUD;
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -3725,7 +3716,6 @@
 				D8E0530206FFF832B2B4CE666980F69E /* Resources */,
 				1555436B34C782C7D7DFDDE58DEB0D82 /* Support Files */,
 			);
-			name = MJRefresh;
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
@@ -3810,7 +3800,6 @@
 				2942AA375601F6574602F1C10007512F /* WKInterfaceImage+Kingfisher.swift */,
 				2055F2A30609028659B4B150984B234E /* Support Files */,
 			);
-			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -3839,7 +3828,6 @@
 				979A64020FDC70684D0B064439FB3F51 /* Utils.swift */,
 				DE8035D7551A6233E1F01B9C151CB07E /* Support Files */,
 			);
-			name = RxRelay;
 			path = RxRelay;
 			sourceTree = "<group>";
 		};
@@ -3953,7 +3941,6 @@
 				376307136E45617A77791249669712BE /* ViewTransition.swift */,
 				8E2AD98B859775DE04B9B4343D13B033 /* Support Files */,
 			);
-			name = RxDataSources;
 			path = RxDataSources;
 			sourceTree = "<group>";
 		};
@@ -4324,7 +4311,6 @@
 				046F8B8456D31EDAA1E6E281B4E62D1D /* UIView+FLEX_Layout.m */,
 				94250EC1950A6E67DF9A029CAF68384B /* Support Files */,
 			);
-			name = FLEX;
 			path = FLEX;
 			sourceTree = "<group>";
 		};
@@ -4505,7 +4491,6 @@
 				86FF958FD51BABBAA8067032EB4F8488 /* Zip+Collection.swift */,
 				05F74ABE4EF9A04D69EEDA922F89DF7F /* Support Files */,
 			);
-			name = RxSwift;
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
@@ -4798,7 +4783,6 @@
 				9DAD3208233758A1DD68565B2471E51F /* TinySVGTextAreaElement.m */,
 				A3D8C8EA64FA47C7366D29AF2D9D92B3 /* Support Files */,
 			);
-			name = SVGKit;
 			path = SVGKit;
 			sourceTree = "<group>";
 		};
@@ -4839,7 +4823,6 @@
 				63664F7CE2C7EEBEEEBFFA9E36CCA046 /* Core */,
 				AA760621140A1D7E3A9D5256B18F9F22 /* Support Files */,
 			);
-			name = CocoaLumberjack;
 			path = CocoaLumberjack;
 			sourceTree = "<group>";
 		};
@@ -6139,7 +6122,6 @@
 				289139E6D6189A95AEDA9AC757DD38CF /* TSSVIewProtocol.swift in Sources */,
 				BE487FF4A451250A334EC746FE836A4B /* TSSWaterCollectionFlowLayout.swift in Sources */,
 				811D37731EC2080FCADB5ACFF97C1663 /* UIColor+TSSExtension.swift in Sources */,
-				23338706EB04E2C7A9CC1D7030F9F7A0 /* UIDevice+TSSExtension.swift in Sources */,
 				C599FC3785B90BC8A9DCCAC535460A27 /* UIImage+TSSExtension.swift in Sources */,
 				09AF5A4F63B4F41AFBEAB4E159706A62 /* UIImageView+TSSExtension.swift in Sources */,
 				D0747BC631F43EB8679CFBEB9217DF6D /* UILabel+TSSRx.swift in Sources */,
@@ -7472,8 +7454,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

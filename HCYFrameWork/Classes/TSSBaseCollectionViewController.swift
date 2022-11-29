@@ -67,11 +67,11 @@ extension TSSBaseCollectionViewController{
     open override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
 //        let duration:TimeInterval = coordinator.transitionDuration
         
-        if UIDevice.tss_isLandscape(){
-            collectionView.collectionViewLayout = horizontalLayout ?? layout
-        }else{
-            collectionView.collectionViewLayout = verticalLayout ?? layout
-        }
+//        if UIDevice.tss_isLandscape(){
+//            collectionView.collectionViewLayout = horizontalLayout ?? layout
+//        }else{
+//            collectionView.collectionViewLayout = verticalLayout ?? layout
+//        }
         
     }
     
