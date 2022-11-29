@@ -16,7 +16,8 @@ Pod::Spec.new do |s|
     #   * Try to keep it short, snappy and to the point.
     #   * Write the description between the DESC delimiters below.
     #   * Finally, don't worry about the indent, CocoaPods strips it!
-    
+    s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
+
     s.description      = <<-DESC
     TODO: Add long description of the pod here.
     DESC
