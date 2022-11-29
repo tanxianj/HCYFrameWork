@@ -96,17 +96,17 @@ Pod::Spec.new do |s|
     # s.public_header_files = 'Pod/Classes/**/*.h'
     # s.frameworks = 'UIKit', 'MapKit'
     # s.dependency 'AFNetworking', '~> 2.3'
-    s.dependency 'SnapKit' ,'~> 5.6.0'
-    s.dependency 'SVGKit' ,'~> 3.0.0' # 3.0.0 SVGLength.m 232 line if( [platform hasPrefix:@"x86_64"] || [platform hasPrefix:@"arm64"])
-    s.dependency 'RxSwift','~> 6.5.0'
-    s.dependency 'RxCocoa','~> 6.5.0'
-    s.dependency 'RxDataSources','~> 5.0.0'
-    s.dependency 'Alamofire','~> 5.6.2'
+    s.dependency 'SnapKit', '~> 5.6.0'
+    s.dependency 'SVGKit', '~> 3.0.0' # 3.0.0 SVGLength.m 232 line if( [platform hasPrefix:@"x86_64"] || [platform hasPrefix:@"arm64"])
+    s.dependency 'RxSwift', '~> 6.5.0'
+    s.dependency 'RxCocoa', '~> 6.5.0'
+    s.dependency 'RxDataSources', '~> 5.0.0'
+    s.dependency 'Alamofire', '~> 5.6.2'
     #    s.dependency 'RxAlamofire'
     #    s.dependency 'AlamofireObjectMapper', '~> 5.2.1'
-    s.dependency 'MJRefresh','~> 3.7.5'
-    s.dependency 'Kingfisher','~> 7.3.2'
-    s.dependency 'SVProgressHUD','~> 2.2.5'
-    s.dependency 'IQKeyboardManagerSwift','~> 6.5.10'
+    s.dependency 'MJRefresh', '~> 3.7.5'
+    s.dependency 'Kingfisher', '~> 7.3.2'
+    s.dependency 'SVProgressHUD', '~> 2.2.5'
+    s.dependency 'IQKeyboardManagerSwift', '~> 6.5.10'
     s.dependency 'FLEX',:configurations => ['Debug'] #为Debug 模式引入
 end
