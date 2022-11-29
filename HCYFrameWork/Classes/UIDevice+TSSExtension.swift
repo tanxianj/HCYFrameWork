@@ -8,7 +8,9 @@
 import Foundation
 import UIKit
 fileprivate let inchtomm = 25.4
-fileprivate let diagonalPixels = sqrt(TSSScreenW * TSSScreenW + TSSScreenH * TSSScreenH )
+fileprivate let KScreenW = min(UIScreen.main.bounds.width, UIScreen.main.bounds.height)
+fileprivate let KScreenH = max(UIScreen.main.bounds.width, UIScreen.main.bounds.height)
+fileprivate let diagonalPixels = sqrt(KScreenW * KScreenW + KScreenH * KScreenH )
 fileprivate let actualPixelSize = UIDevice().modelSizeWithInch / diagonalPixels * inchtomm
 extension UIDevice {
     
