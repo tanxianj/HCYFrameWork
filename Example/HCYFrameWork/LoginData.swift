@@ -4,33 +4,21 @@
 
 import Foundation
 
-struct LoginData{
+struct LoginData : Codable {
 
-	var captcha : String!
-	var captchaKey : String!
+    let captcha : String?
+    let captchaKey : String?
 
 
-	/**
-	 * Instantiate the instance using the passed dictionary values to set the properties values
-	 */
-	init(fromDictionary dictionary: [String:Any]){
-		captcha = dictionary["captcha"] as? String
-		captchaKey = dictionary["captchaKey"] as? String
-	}
+    enum CodingKeys: String, CodingKey {
+        case captcha = "captcha"
+        case captchaKey = "captchaKey"
+    }
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        captcha = try values.decodeIfPresent(String.self, forKey: .captcha)
+        captchaKey = try values.decodeIfPresent(String.self, forKey: .captchaKey)
+    }
 
-	/**
-	 * Returns all the available property values in the form of [String:Any] object where the key is the approperiate json key and the value is the value of the corresponding property
-	 */
-	func toDictionary() -> [String:Any]
-	{
-		var dictionary = [String:Any]()
-		if captcha != nil{
-			dictionary["captcha"] = captcha
-		}
-		if captchaKey != nil{
-			dictionary["captchaKey"] = captchaKey
-		}
-		return dictionary
-	}
 
 }

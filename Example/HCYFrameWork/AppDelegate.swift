@@ -8,6 +8,7 @@
 
 import UIKit
 import HCYFrameWork
+import IQKeyboardManagerSwift
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,9 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         TSSFullscreenPopGesture.configure()
+        
+        IQKeyboardManager.shared.enable = true
+//        IQKeyboardManager.shared.toolbarBarTintColor = .red
+        IQKeyboardManager.shared.toolbarTintColor = .systemBlue
+        IQKeyboardManager.shared.enableAutoToolbar = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         // Override point for customization after application launch.
         UITableViewCell.appearance().selectionStyle = .none
-        let config = TSSNetworkingConfig(code: "code", data: "data", msg: "msg", header: ["Content-Type":"application/json"])
+        let config = TSSNetworkingConfig(header: ["Content-Type":"application/json"])
         TSSNetworkingManager.sharedInstance().restConfig(config)
         initUI()
         registerNotification()

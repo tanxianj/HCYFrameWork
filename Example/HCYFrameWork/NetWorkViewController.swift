@@ -27,25 +27,32 @@ class NetWorkViewController: TSSBaseViewController {
 
     
      @IBAction func getBtn(_ sender: Any) {
-         TSSNetworkingManager.sharedInstance().getRequestWith(url: getUrl,timeOut: 1,dataModel: LoginModel.self) { statusCode, model, responseData in
-             self.captchaKey = model.data.captchaKey
-             let base64String =  model.data.captcha.replacingOccurrences(of: "data:image/png;base64,", with: "")
+         TSSNetworkingManager.sharedInstance().getRequestWith(url: getUrl, dataModel: LoginModel.self, success: { statusCode, model, responseData in
+             self.captchaKey = model.data!.captchaKey!
+             let base64String =  model.data!.captcha!.replacingOccurrences(of: "data:image/png;base64,", with: "")
              let base64EncodeData = Data(base64Encoded: base64String,options:Data.Base64DecodingOptions.ignoreUnknownCharacters)
 
              self.codeImageV.image = UIImage(data: base64EncodeData!)
-         } failure: { error in
-         
-         }
+         }, failure: { error in
+             
+         })
+             
         
      }
      
      
      @IBAction func postBtn(_ sender: UIButton) {
-         TSSNetworkingManager.sharedInstance().postRequestWith(url: postUrl,parameters: ["username":"lei","password":"MTIzNDU2aGN5X3NoYXJlZF9iaWtlc0AyMDIy","captcha":self.codeTextField.text ?? "","captchaKey":self.captchaKey],timeOut: 10,encoding: JSONEncoding.default, dataModel: TSSBaseModel.self) { statusCode, model, responseData in
+         TSSNetworkingManager.sharedInstance().postRequestWith(url: postUrl,
+                                                               parameters: ["username":"lei",
+                                                                            "password":"MTIzNDU2aGN5X3NoYXJlZF9iaWtlc0AyMDIy",
+                                                                            "captcha":self.codeTextField.text ?? "",
+                                                                            "captchaKey":self.captchaKey],
+                                                               dataModel: LoginModel.self, success: { statusCode, model, responseData in
              
-         } failure: { error in
+         }, failure: { error in
              
-         }
+         })
+             
          
      }
 }

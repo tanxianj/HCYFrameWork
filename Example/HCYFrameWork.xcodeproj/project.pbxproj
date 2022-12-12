@@ -82,6 +82,8 @@
 		2F75641D288E432E007B69C3 /* TimeHelperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F75641B288E432E007B69C3 /* TimeHelperViewController.xib */; };
 		2F949B34288E83F1001CB391 /* GetLabelWidthHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F949B33288E83F1001CB391 /* GetLabelWidthHeightViewController.swift */; };
 		2F986B5D2873EBD500140514 /* HCYFrameWork.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2F986B5C2873EBD500140514 /* HCYFrameWork.podspec */; };
+		2FD393912946C67400490379 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD3938F2946C67400490379 /* WeatherModel.swift */; };
+		2FD393922946C67400490379 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD393902946C67400490379 /* WeatherData.swift */; };
 		2FD5F7DF289222DC005CDF87 /* ActionSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F7DD289222DC005CDF87 /* ActionSheetViewController.swift */; };
 		2FD5F7E0289222DC005CDF87 /* ActionSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FD5F7DE289222DC005CDF87 /* ActionSheetViewController.xib */; };
 		2FD5F7E2289223CE005CDF87 /* TSSActionSheetConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5F7E1289223CE005CDF87 /* TSSActionSheetConfig.swift */; };
@@ -100,10 +102,6 @@
 		2FFB564D288562F400D4B972 /* importFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB564C288562F400D4B972 /* importFile.swift */; };
 		2FFB564F2885641100D4B972 /* PopupTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB564E2885641100D4B972 /* PopupTestView.swift */; };
 		2FFB56512885641800D4B972 /* PopupTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FFB56502885641800D4B972 /* PopupTestView.xib */; };
-		2FFB566A288660C700D4B972 /* MoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5666288660C700D4B972 /* MoreData.swift */; };
-		2FFB566B288660C700D4B972 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5667288660C700D4B972 /* List.swift */; };
-		2FFB566C288660C700D4B972 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5668288660C700D4B972 /* WeatherData.swift */; };
-		2FFB56742886649100D4B972 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB56732886649100D4B972 /* WeatherModel.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -187,6 +185,8 @@
 		2F75641B288E432E007B69C3 /* TimeHelperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeHelperViewController.xib; sourceTree = "<group>"; };
 		2F949B33288E83F1001CB391 /* GetLabelWidthHeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLabelWidthHeightViewController.swift; sourceTree = "<group>"; };
 		2F986B5C2873EBD500140514 /* HCYFrameWork.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HCYFrameWork.podspec; path = ../HCYFrameWork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2FD3938F2946C67400490379 /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		2FD393902946C67400490379 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		2FD5F7DD289222DC005CDF87 /* ActionSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetViewController.swift; sourceTree = "<group>"; };
 		2FD5F7DE289222DC005CDF87 /* ActionSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionSheetViewController.xib; sourceTree = "<group>"; };
 		2FD5F7E1289223CE005CDF87 /* TSSActionSheetConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSActionSheetConfig.swift; sourceTree = "<group>"; };
@@ -205,10 +205,6 @@
 		2FFB564C288562F400D4B972 /* importFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = importFile.swift; sourceTree = "<group>"; };
 		2FFB564E2885641100D4B972 /* PopupTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupTestView.swift; sourceTree = "<group>"; };
 		2FFB56502885641800D4B972 /* PopupTestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupTestView.xib; sourceTree = "<group>"; };
-		2FFB5666288660C700D4B972 /* MoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreData.swift; sourceTree = "<group>"; };
-		2FFB5667288660C700D4B972 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
-		2FFB5668288660C700D4B972 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
-		2FFB56732886649100D4B972 /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		478DB2C0E877F97F5D6920D9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		49FDAC754A98C8C816037983 /* HCYFrameWork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HCYFrameWork.podspec; path = ../HCYFrameWork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* HCYFrameWork_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCYFrameWork_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -655,10 +651,8 @@
 		2FFB565428865EEB00D4B972 /* weatherModel */ = {
 			isa = PBXGroup;
 			children = (
-				2FFB5668288660C700D4B972 /* WeatherData.swift */,
-				2FFB5667288660C700D4B972 /* List.swift */,
-				2FFB5666288660C700D4B972 /* MoreData.swift */,
-				2FFB56732886649100D4B972 /* WeatherModel.swift */,
+				2FD393902946C67400490379 /* WeatherData.swift */,
+				2FD3938F2946C67400490379 /* WeatherModel.swift */,
 			);
 			name = weatherModel;
 			sourceTree = "<group>";
@@ -954,14 +948,11 @@
 				2F4003C928A494CD00C72B7F /* AutoTwoCollectionViewCell.swift in Sources */,
 				2F4003832899076500C72B7F /* UIImgae_svgImgWithViewController.swift in Sources */,
 				2F40038D28990E5700C72B7F /* ChangeTextFieldColorViewController.swift in Sources */,
-				2FFB566A288660C700D4B972 /* MoreData.swift in Sources */,
 				2F4003662898FEE400C72B7F /* UIimageViewController.swift in Sources */,
-				2FFB566B288660C700D4B972 /* List.swift in Sources */,
 				2FFB564A288562A700D4B972 /* PopUpDemoViewController.swift in Sources */,
 				2F40037B2899003500C72B7F /* UIImage_convenienceInitViewController.swift in Sources */,
 				2FFB564F2885641100D4B972 /* PopupTestView.swift in Sources */,
 				2F40034E2897815C00C72B7F /* TSSLabViewController.swift in Sources */,
-				2FFB56742886649100D4B972 /* WeatherModel.swift in Sources */,
 				2F4003CD28A4998A00C72B7F /* TestCollectionViewCell.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				2F4003AA289BA3F800C72B7F /* TSSNotiFicationViewController.swift in Sources */,
@@ -979,6 +970,7 @@
 				2F4003582897894300C72B7F /* TSSColorViewController.swift in Sources */,
 				2F0E74662875822100FA47E1 /* HomeViewController.swift in Sources */,
 				2F400399289A0F1200C72B7F /* TSSValidateTestVC.swift in Sources */,
+				2FD393912946C67400490379 /* WeatherModel.swift in Sources */,
 				2FFB548C287EA04B00D4B972 /* TSSActionSheetManager.swift in Sources */,
 				2FFB563F288544FB00D4B972 /* ListBaseViewController.swift in Sources */,
 				2F0CEB7F28B4886100518AFC /* TestCollectionheaderView.swift in Sources */,
@@ -990,11 +982,11 @@
 				2F40037F2899003C00C72B7F /* UIImage_ScaleImageViewController.swift in Sources */,
 				2F4003432897714C00C72B7F /* AutoLayoutViewController.swift in Sources */,
 				2F4003622898FAD600C72B7F /* UIDeviceModel.swift in Sources */,
-				2FFB566C288660C700D4B972 /* WeatherData.swift in Sources */,
 				2F4003392897710400C72B7F /* XibAutoLayoutViewController.swift in Sources */,
 				2F40035F2898F9FE00C72B7F /* UIDeviceViewController.swift in Sources */,
 				2F4003B628A2585E00C72B7F /* TestBaseTableViewController.swift in Sources */,
 				2F4546AF288796DA0011B6CB /* LoginModel.swift in Sources */,
+				2FD393922946C67400490379 /* WeatherData.swift in Sources */,
 				2FE2390C2934B5B600BE43AA /* TeseBaseCollectionViewModel.swift in Sources */,
 				2F4546AE288796DA0011B6CB /* LoginData.swift in Sources */,
 				2F4003772899002D00C72B7F /* UIimage_CreateImageWithGradViewController.swift in Sources */,

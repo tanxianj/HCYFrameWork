@@ -9,7 +9,7 @@ import Alamofire
 import RxSwift
 open class TSSNetworkingManager{
     //MARK: success block
-    public typealias success<T:TSSBaseModelProtocol> = (_ statusCode:Int,_ model:T,_ responseData:Any)->Void
+    public typealias success<T:Decodable> = (_ statusCode:Int,_ model:T,_ responseData:Any)->Void
     //MARK: failure block
     public typealias failure = (_ error:Error)->Void
     /// -单列
@@ -51,10 +51,10 @@ extension TSSNetworkingManager{
     /// - Parameters:
     ///   - url: -
     ///   - parameters: -
-    ///   - dataModel: dataModel need inherit TSSBaseModelProtocol
+    ///   - dataModel: dataModel need inherit Decodable
     ///   - shouldCache: should Cache Default false
     ///   - success: -
-    open func postRequestWith<T:TSSBaseModelProtocol>(url:String,
+    public func postRequestWith<T:Decodable>(url:String,
                                                       parameters:[String:Any]?  = [:],
                                                       timeOut:TimeInterval = 15,
                                                       encoding:ParameterEncoding = URLEncoding.default,
@@ -75,10 +75,10 @@ extension TSSNetworkingManager{
     /// - Parameters:
     ///   - url: -
     ///   - parameters: -
-    ///   - dataModel: dataModel need inherit TSSBaseModelProtocol
+    ///   - dataModel: dataModel need inherit Decodable
     ///   - shouldCache: should Cache Default false
     ///   - success: -
-    open func getRequestWith<T:TSSBaseModelProtocol>(url:String,
+    public func getRequestWith<T:Decodable>(url:String,
                                                      parameters:[String:Any]?  = [:],
                                                      timeOut:TimeInterval = 15,
                                                      encoding:ParameterEncoding = URLEncoding.default,
@@ -104,7 +104,7 @@ extension TSSNetworkingManager{
     ///   - dataModel: data Model
     ///   - success: success block
     ///   - failure: failure block
-    open func baseRequestWith<T:TSSBaseModelProtocol>(method:HTTPMethod,
+    public func baseRequestWith<T:Decodable>(method:HTTPMethod,
                                                       url:String,
                                                       parameters:[String:Any]?  = [:],
                                                       timeOut:TimeInterval = 15,
@@ -118,61 +118,30 @@ extension TSSNetworkingManager{
                                     encoding: encoding,
                                     headers: config.header,
                                     requestModifier: {$0.timeoutInterval = timeOut})
-        .validate()
-        .responseJSON { response in
+        .responseDecodable(of:T.self,completionHandler: { response in
             switch response.result{
-            case .success(let value):
+            case .success(_):
+                guard let statusCode = response.response?.statusCode else{return}
+                guard let model = response.value else{return}
+                guard let data = response.data else{return}
+                
                 TSSLog("✅URL ===>>> \(url) ")
                 TSSLog("✅parameters ===>>> \(parameters ?? [String:Any]())")
                 TSSLog("✅statusCode ===>>> \(response.response!.statusCode)")
-                TSSLog("✅json ===>>> \n\(value)")
-                if let datasource = value as? [String:Any] {
-                    let model = dataModel.init(fromDictionary: datasource)
-                    success(response.response!.statusCode,model,value)
-                }
+                TSSLog("✅json ===>>> \n\(String(data: data, encoding: .utf8)!)")
                 
+                success(statusCode,model,data)
             case .failure(let error):
                 TSSLog("URL:\(url) ❌error===>>>\(error)")
                 failure(error)
             }
-        }
+            
+            
+        })
     }
     
-}
-/// Base Model Protocol
-public protocol TSSBaseModelProtocol{
-    init(fromDictionary dictionary: [String:Any])
-    func toDictionary() -> [String:Any]
 }
 
-/// Default Model
-public struct TSSBaseModel:TSSBaseModelProtocol{
-    public var code : Int!
-    public var data : Any!
-    public var msg : String!
-    
-    public init(fromDictionary dictionary: [String : Any]) {
-        code = dictionary[TSSNetworkingManager.sharedInstance().config.code] as? Int
-        data = dictionary[TSSNetworkingManager.sharedInstance().config.data]
-        msg = dictionary[TSSNetworkingManager.sharedInstance().config.msg] as? String
-    }
-    
-    public func toDictionary() -> [String : Any] {
-        var dictionary = [String:Any]()
-        if code != nil{
-            dictionary[TSSNetworkingManager.sharedInstance().config.code] = code
-        }
-        if data != nil{
-            dictionary[TSSNetworkingManager.sharedInstance().config.data] = data
-        }
-        if msg != nil{
-            dictionary[TSSNetworkingManager.sharedInstance().config.msg] = msg
-        }
-        return dictionary
-    }
-    
-    
-}
 extension TSSNetworkingManager{
     
     /// rest  Networking Config
@@ -184,30 +153,15 @@ extension TSSNetworkingManager{
 
 /// Networking Config
 public class TSSNetworkingConfig{
-    
-    /// default code name
-    public var code:String = "code"
-    
-    /// default data name
-    public var data:String = "data"
-    
-    /// /// default msg name
-    public var msg:String = "msg"
-    
     /// /// /// default api header
     public var header:HTTPHeaders? = nil
     
     /// init Networking Config
     /// - Parameters:
-    ///   - code: code name
-    ///   - data: data name
-    ///   - msg: msg name
     ///   - header: api header
-    public init(code:String = "code",data:String = "data", msg:String = "msg",header:HTTPHeaders? = nil){
-        self.code = code
-        self.data = data
-        self.msg = msg
+    public init(header:HTTPHeaders? = nil){
         self.header = header
     }
     
 }
+

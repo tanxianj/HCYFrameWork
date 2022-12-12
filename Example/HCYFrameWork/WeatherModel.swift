@@ -3,41 +3,40 @@
 //	Model file generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
 
 import Foundation
-import HCYFrameWork
-struct WeatherModel:TSSBaseModelProtocol{
+//api: https://v0.yiketianqi.com/api?unescape=1&version=v91&appid=43656176&appsecret=I42og6Lm&ext=&cityid=101270101&city=%E6%88%90%E9%83%BD
+struct WeatherModel : Codable {
 
-	var code : Int!
-	var data : WeatherData!
-	var msg : String!
+	let city : String?
+	let cityEn : String?
+	let cityid : String?
+	let country : String?
+	let countryEn : String?
+	let data : [WeatherData]?
+	let nums : Int?
+	let updateTime : String?
 
 
-	/**
-	 * Instantiate the instance using the passed dictionary values to set the properties values
-	 */
-	init(fromDictionary dictionary: [String:Any]){
-		code = dictionary["code"] as? Int
-		if let dataData = dictionary["data"] as? [String:Any]{
-				data = WeatherData(fromDictionary: dataData)
-			}
-		msg = dictionary["msg"] as? String
+	enum CodingKeys: String, CodingKey {
+		case city = "city"
+		case cityEn = "cityEn"
+		case cityid = "cityid"
+		case country = "country"
+		case countryEn = "countryEn"
+		case data = "data"
+		case nums = "nums"
+		case updateTime = "update_time"
+	}
+	init(from decoder: Decoder) throws {
+		let values = try decoder.container(keyedBy: CodingKeys.self)
+		city = try values.decodeIfPresent(String.self, forKey: .city)
+		cityEn = try values.decodeIfPresent(String.self, forKey: .cityEn)
+		cityid = try values.decodeIfPresent(String.self, forKey: .cityid)
+		country = try values.decodeIfPresent(String.self, forKey: .country)
+		countryEn = try values.decodeIfPresent(String.self, forKey: .countryEn)
+		data = try values.decodeIfPresent([WeatherData].self, forKey: .data)
+		nums = try values.decodeIfPresent(Int.self, forKey: .nums)
+		updateTime = try values.decodeIfPresent(String.self, forKey: .updateTime)
 	}
 
-	/**
-	 * Returns all the available property values in the form of [String:Any] object where the key is the approperiate json key and the value is the value of the corresponding property
-	 */
-	func toDictionary() -> [String:Any]
-	{
-		var dictionary = [String:Any]()
-		if code != nil{
-			dictionary["code"] = code
-		}
-		if data != nil{
-			dictionary["data"] = data.toDictionary()
-		}
-		if msg != nil{
-			dictionary["msg"] = msg
-		}
-		return dictionary
-	}
 
 }
