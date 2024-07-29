@@ -128,7 +128,7 @@ extension TSSNetworkingManager{
                 TSSLog("✅URL ===>>> \(url) ")
                 TSSLog("✅parameters ===>>> \(parameters ?? [String:Any]())")
                 TSSLog("✅statusCode ===>>> \(response.response!.statusCode)")
-                TSSLog("✅json ===>>> \n\(String(data: data, encoding: .utf8)!)")
+                TSSLog("✅json ===>>> \n\(String(data: data, encoding: .utf8)!))")
                 
                 success(statusCode,model,data)
             case .failure(let error):
